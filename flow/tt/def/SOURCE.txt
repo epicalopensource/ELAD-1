@@ -1,0 +1,4 @@
+Vendored, unmodified, from https://github.com/TinyTapeout/tt-support-tools
+  commit 01d5d2814fa9dd61e9d211e0b235a4a592a9316a (2026-08-20), tech/sky130A/def/analog/*.def, tech/sky130A/tile_sizes.yaml
+These are the templates Tiny Tapeout's precheck compares your GDS/LEF against.
+Update with:  flow/tt/tt_update_templates.sh <tt-support-tools ref>

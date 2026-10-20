@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Run a flow/tt Python tool with KLayout's Python API.
+#   flow/tt/kpy flow/tt/<tool>.py [args...]
+# Uses python3 when it can 'import klayout.db' (pip install klayout), otherwise KLayout itself
+# in batch mode (klayout -b -r), which every EDA box and the CI image have. Arguments travel in
+# $KPY_ARGV because 'klayout -r' cannot pass a plain argument list to a script.
+set -euo pipefail
+script=${1:?usage: flow/tt/kpy <script.py> [args...]}
+shift
+if [[ ${KPY_FORCE_KLAYOUT:-0} != 1 ]] && python3 -c 'import klayout.db' >/dev/null 2>&1; then
+  unset KPY_ARGV KPY_DIR            # may be inherited from a parent tool run under klayout
+  exec python3 "$script" "$@"
+fi
+command -v klayout >/dev/null 2>&1 || { echo "kpy: neither python3 'klayout' module nor klayout found" >&2; exit 2; }
+KPY_ARGV=$(printf '%s\n' "$@")
+KPY_DIR=$(cd "$(dirname "$script")" && pwd)
+export KPY_ARGV KPY_DIR
+exec klayout -b -r "$script"

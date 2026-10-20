@@ -9,3 +9,26 @@ test/sim_build
 test/__pycache__/
 test/results.xml
 test/gate_level_netlist.v
+
+# --- analog flow: generated results (rebuilt by make; CI keeps them as artifacts) ---
+cells/*/netlist/
+cells/*/sim/results/
+cells/*/sim/postlayout/
+cells/*/sim/.work.*
+cells/*/verify/
+cells/*/pex/
+cells/*/.pex.*
+cells/*/reports/
+cells/*/.stamps/
+backups/
+reports/
+.flow.lock
+__pycache__/
+# local copy of TT's precheck (make tt-precheck)
+.tt/
+# KLayout interactive DRC/LVS results and editor auto-backups (the flow writes its own in verify/)
+*.lvsdb
+*_extracted.cir
+sky130_drc.txt
+unsaved_backup_*
+untitled*.sch

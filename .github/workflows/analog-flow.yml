@@ -1,0 +1,124 @@
+name: analog-flow
+
+on:
+  push:
+    # main only: work branches are checked by their pull request, so a push there would run twice.
+    # Tags are excluded too: a pushed tag points at an OLD commit and would re-test outdated code.
+    branches: ["main"]
+    paths: ["cells/**", "flow/**", "flow.conf", "Makefile", "ci/**", ".github/workflows/analog-flow.yml",
+            "info.yaml", "src/**", "gds/**", "lef/**"]
+  pull_request:
+    paths: ["cells/**", "flow/**", "flow.conf", "Makefile", "ci/**", ".github/workflows/analog-flow.yml",
+            "info.yaml", "src/**", "gds/**", "lef/**"]
+  workflow_dispatch:
+    inputs:
+      cells:
+        description: "Cells to run (comma/space separated; empty = all)"
+        required: false
+        default: ""
+
+# A newer push to the same branch supersedes an in-flight run.
+concurrency:
+  group: analog-flow-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-24.04   # pinned: ubuntu-latest moves to 26 on 2026-10-19
+    outputs:
+      cells: ${{ steps.find.outputs.cells }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - id: find
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          BEFORE_SHA: ${{ github.event.before }}
+          INPUT_CELLS: ${{ github.event.inputs.cells }}
+        run: |
+          cells=$(ci/changed_cells.sh)
+          echo "cells=$cells" >> "$GITHUB_OUTPUT"
+          echo "Cells to run: $cells" >> "$GITHUB_STEP_SUMMARY"
+
+  cell:
+    needs: discover
+    if: needs.discover.outputs.cells != '[]'
+    runs-on: ubuntu-24.04   # pinned: ubuntu-latest moves to 26 on 2026-10-19
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false            # one broken cell must not hide the state of the others
+      matrix:
+        cell: ${{ fromJson(needs.discover.outputs.cells) }}
+    env:
+      CELL: ${{ matrix.cell }}    # passed via env, never interpolated into shell (injection-safe)
+      CI: "true"
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          lfs: true
+
+      # The full EDA image is very large; hosted runners need room before the pull.
+      - name: Free runner disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL || true
+          docker system prune -af >/dev/null || true
+          df -h /
+
+      - name: Pull EDA image
+        run: |
+          IMAGE=$(sed -nE 's/^[[:space:]]*FLOW_IMAGE[[:space:]]*\?=[[:space:]]*(.*[^[:space:]])[[:space:]]*$/\1/p' flow.conf | tail -n1)
+          echo "IMAGE=$IMAGE" >> "$GITHUB_ENV"
+          docker pull "$IMAGE"
+
+      - name: Doctor
+        run: flow/docker.sh flow/doctor.sh
+
+      - name: Run flow
+        run: flow/docker.sh flow/run.sh "$CELL"
+
+      - name: Publish summary
+        if: always()
+        run: cat "cells/$CELL/reports/summary.md" >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || echo "no summary for $CELL" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload cell results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: cell-${{ matrix.cell }}
+          retention-days: 14
+          if-no-files-found: warn
+          path: |
+            cells/${{ matrix.cell }}/netlist/
+            cells/${{ matrix.cell }}/sim/
+            cells/${{ matrix.cell }}/verify/
+            cells/${{ matrix.cell }}/pex/
+            cells/${{ matrix.cell }}/reports/
+
+  # Tiny Tapeout repositories only (info.yaml present): what TT will receive (gds/, lef/,
+  # src/project.v, info.yaml) must be exactly the layout this flow verified, and follow TT's
+  # rules. TT's own 'gds' and 'docs' workflows run separately and stay untouched.
+  tt:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          lfs: true
+      - name: Is this a Tiny Tapeout repository?
+        id: is_tt
+        run: if [ -f info.yaml ]; then echo "yes=true" >> "$GITHUB_OUTPUT"; else echo "yes=false" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-python@v6
+        if: steps.is_tt.outputs.yes == 'true'
+        with:
+          python-version: '3.12'
+      - name: Install KLayout Python API
+        if: steps.is_tt.outputs.yes == 'true'
+        run: pip install -q klayout==0.30.12 pyyaml
+      - name: Tiny Tapeout rule check (make tt-check)
+        if: steps.is_tt.outputs.yes == 'true'
+        shell: bash   # -eo pipefail: a failing check fails the step despite the tee
+        run: flow/tt/kpy flow/tt/tt_check.py | tee -a "$GITHUB_STEP_SUMMARY"

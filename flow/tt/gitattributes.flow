@@ -1,0 +1,6 @@
+# Layouts you draw: Git LFS, lockable (one person edits a layout at a time).
+cells/**/*.gds filter=lfs diff=lfs merge=lfs -text lockable
+# Files Tiny Tapeout reads stay in plain git: TT's 'gds' Action checks out WITHOUT Git LFS,
+# so an LFS pointer here would reach TT's precheck instead of your layout.
+gds/*.gds -text
+lef/*.lef text eol=lf

@@ -1,0 +1,40 @@
+# Project xschemrc — used by the flow's batch netlisting AND for interactive editing:
+#   xschem --rcfile flow/xschemrc cells/<cell>/schematic/<cell>.sch
+# Using the same rc in both places guarantees the netlist you simulate interactively is the
+# netlist the pipeline verifies.
+
+set flow_root [file normalize [file join [file dirname [info script]] ..]]
+
+proc flow_path_append {dir} {
+  global XSCHEM_LIBRARY_PATH
+  if {![info exists XSCHEM_LIBRARY_PATH] || $XSCHEM_LIBRARY_PATH eq ""} {
+    set XSCHEM_LIBRARY_PATH $dir
+  } else {
+    append XSCHEM_LIBRARY_PATH ":$dir"
+  }
+}
+
+# 1) PDK xschemrc: symbol libraries, model corner symbols, PDK defaults.
+if {[info exists ::env(PDK_ROOT)] && [info exists ::env(PDK)]} {
+  set flow_pdk_rc [file join $::env(PDK_ROOT) $::env(PDK) libs.tech xschem xschemrc]
+  if {[file exists $flow_pdk_rc]} {
+    source $flow_pdk_rc
+  } else {
+    puts stderr "FLOW-WARN: PDK xschemrc not found: $flow_pdk_rc"
+  }
+}
+
+# 2) Project cells resolvable as 'inv/schematic/inv.sym' (preferred, unambiguous) or 'inv.sym'.
+flow_path_append [file join $flow_root cells]
+foreach d [lsort [glob -nocomplain -type d [file join $flow_root cells * schematic]]] {
+  flow_path_append $d
+}
+
+# 3) Netlist mode requested by flow/stages/netlist.sh (unset during interactive use).
+#    lvs: top level emitted as '.subckt <cell> <pins>' with no testbench/model code.
+if {[info exists ::env(FLOW_NETLIST_MODE)]} {
+  switch -- $::env(FLOW_NETLIST_MODE) {
+    lvs { set lvs_netlist 1; set top_subckt 1 }
+    tb  { set lvs_netlist 0; set top_subckt 0 }
+  }
+}
