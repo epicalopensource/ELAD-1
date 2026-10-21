@@ -444,14 +444,21 @@ def layout(placed, sub, attr_text):
 
     pin_dir = {}            # (part id, pin name) -> handled
     def stub_label(part, p, kind="lab"):
+        """A short wire from the pin to a label (or supply symbol). Only a stub that touches no
+        other net is drawn; if every direction is blocked, the label sits on the pin itself,
+        which connects in xschem without a wire."""
         x, y = part.at(p)
-        dx, dy = part.natural(p)
-        ex, ey = x + STUB * dx, y + STUB * dy
-        segs = [(p.net, x, y, ex, ey)]
-        pts = [(p.net, ex, ey)]
-        if board.check(p.net, segs, pts) is None:
-            ex, ey = x + 2 * STUB * dx, y + 2 * STUB * dy      # a little further out
+        nat = part.natural(p)
+        dirs = [nat] + [d for d in ((-1, 0), (1, 0), (0, -1), (0, 1)) if d != nat]
+        for (dx, dy), n in [(d, n) for d in dirs for n in (1, 2, 3)]:
+            ex, ey = x + n * STUB * dx, y + n * STUB * dy
             segs, pts = [(p.net, x, y, ex, ey)], [(p.net, ex, ey)]
+            if board.check(p.net, segs, pts) is not None:
+                break
+        else:
+            board.add(p.net, [], [(p.net, x, y)])
+            lines.append(_lab(x, y, p.net, nat, newlab()))
+            return
         board.add(p.net, segs, pts)
         lines.append(f"N {x:g} {y:g} {ex:g} {ey:g} {{lab={esc(p.net)}}}")
         if kind == "vdd" and (dx, dy) == (0, -1):

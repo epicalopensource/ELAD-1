@@ -6,7 +6,8 @@
 #   make doctor              check tools, PDK, decks inside the current environment
 #   make new-cell NAME=ota   scaffold a cell folder
 #   make docker-flow         run the flow inside the pinned container (local == CI)
-#   make import-spice NETLIST=ota.spice [ALL=1] [STYLE=bus|labels]  SPICE netlist -> xschem .sch + .sym
+#   make import-spice NETLIST=ota.spice [ALL=1] [STYLE=bus|labels]  SPICE netlist -> xschem .sch + .sym (self-checked)
+#   make import-check NETLIST=ota.spice  check existing schematics against a netlist
 # Tiny Tapeout (repository created from TinyTapeout/ttsky-analog-template):
 #   make tt-init TOP=tt_um_<you>_<name>   name the project, create the top-level layout shell
 #   make tt                  verify every cell, export gds/ + lef/, check all TT rules
@@ -22,7 +23,7 @@ ALL_CELLS := $(sort $(filter-out _%,$(notdir $(patsubst %/,%,$(wildcard cells/*/
 CELLS ?= $(ALL_CELLS)
 
 .DEFAULT_GOAL := flow
-.PHONY: flow cells $(ALL_CELLS) report doctor watch new-cell docker-flow clean help import-spice \
+.PHONY: flow cells $(ALL_CELLS) report doctor watch new-cell docker-flow clean help import-spice import-check \
         tt-init tt tt-export tt-check tt-precheck tt-rename tt-wire
 
 flow:            ## parallel run (make -k -j) + always-run report; non-zero exit on any failure
@@ -51,6 +52,11 @@ docker-flow:
 import-spice:    ## make import-spice NETLIST=<file> [ALL=1] [FORCE=1] [STYLE=pro|bus|labels] [SUBCKT="a b"]
 	@test -n "$(NETLIST)" || { echo "usage: make import-spice NETLIST=<file.spice> [ALL=1] [FORCE=1]"; exit 2; }
 	@python3 flow/lib/sch_from_spice.py "$(NETLIST)" $(SUBCKT) --cells $(if $(ALL),--all) $(if $(FORCE),--force) $(if $(STYLE),--style $(STYLE))
+	@python3 flow/lib/import_verify.py "$(NETLIST)" $(SUBCKT)
+
+import-check:    ## make import-check NETLIST=<file> [SUBCKT="a b"]  - do the schematics still match the netlist?
+	@test -n "$(NETLIST)" || { echo "usage: make import-check NETLIST=<file.spice> [SUBCKT=\"a b\"]"; exit 2; }
+	@python3 flow/lib/import_verify.py "$(NETLIST)" $(SUBCKT)
 
 clean:           ## remove generated results (sources: schematic/, layout/, sim/specs.txt are kept)
 	@for c in $(CELLS); do \
