@@ -1,0 +1,3 @@
+# Pass/fail limits for measurements printed by the testbench (.meas or `meas` in .control).
+# <name>  <min|->  <max|->      SI suffixes allowed: f p n u m k meg g
+# tpd      -        50p
