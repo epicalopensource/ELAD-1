@@ -30,6 +30,7 @@ Supported elements
   X<name> ... <subckt> params                -> <subckt>.sym (generated, or an existing project symbol)
   R C L V I                                   -> devices/res, capa, ind, vsource, isource
   M<name> d g s b <model> params              -> sky130 symbol when <model> is a sky130_fd_pr__ fet
+  D<name> anode cathode sky130_fd_pr__<diode> area= pj=   -> sky130_fd_pr/diode.sym (pj -> perim)
 Anything else is reported and the run stops, rather than silently dropping a device.
 
 Pin ports: '*.PININFO A:I B:O C:B' lines (Cadence style) set ipin/opin/iopin; otherwise every
@@ -165,6 +166,11 @@ def _parse_element(s: str) -> Element:
         if len(pos) < 5:
             raise ImportError_(f"cannot read MOSFET line: {s}")
         return Element(name, pos[:4], pos[4], kv)
+    if kind == "d":
+        pos, kv = _split_params(toks[1:])
+        if len(pos) != 3:
+            raise ImportError_(f"cannot read diode line (D<name> anode cathode model params): {s}")
+        return Element(name, pos[:2], pos[2], kv)
     if kind in PRIMS:
         nets = toks[1:3]
         rest = " ".join(toks[3:])
@@ -315,6 +321,21 @@ def resolve(el: Element, finder: SymbolFinder, local: dict[str, Path]) -> tuple[
         return sym, attrs, notes
     model = el.model
     pdk = re.match(r"sky130_fd_pr__(\w+)$", model)
+    if kind == "d":
+        if not (pdk and "diode" in pdk.group(1)):
+            raise ImportError_(f"{el.name}: diode model '{model}' is not a sky130_fd_pr__ diode")
+        sym = finder.find("sky130_fd_pr/diode.sym")
+        if sym is None:
+            raise ImportError_(f"{el.name}: sky130_fd_pr/diode.sym not found on the symbol path")
+        attrs = {"name": el.name, "model": pdk.group(1)}
+        tkeys = {k.lower(): k for k in sym.template}
+        for k, v in el.params:
+            kl = {"pj": "perim"}.get(k.lower(), k.lower())   # SPICE pj = the symbol's perim
+            if kl in tkeys:
+                attrs[tkeys[kl]] = v
+            else:
+                notes.append(f"{el.name}: parameter {k}={v} has no attribute on {sym.ref}, dropped")
+        return sym, attrs, notes
     if pdk:
         sym = finder.find(f"sky130_fd_pr/{pdk.group(1)}.sym")
         if sym is None:
