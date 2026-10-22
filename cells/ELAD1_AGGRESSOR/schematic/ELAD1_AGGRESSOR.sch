@@ -4,22 +4,22 @@ K {}
 V {}
 S {}
 E {}
-C {sky130_fd_pr/nfet_01v8.sym} -20 200 0 0 {name=B1N model=nfet_01v8 W=0.65 L=0.15}
-C {sky130_fd_pr/pfet_01v8.sym} -20 0 0 0 {name=B1P model=pfet_01v8 W=1 L=0.15}
-C {sky130_fd_pr/nfet_01v8.sym} 220 200 0 0 {name=B2N model=nfet_01v8 W=2 L=0.15}
-C {sky130_fd_pr/pfet_01v8.sym} 220 0 0 0 {name=B2P model=pfet_01v8 W=4 L=0.15}
-C {sky130_fd_pr/nfet_01v8.sym} 500 200 0 1 {name=IN0 model=nfet_01v8 W=2 L=0.15}
-C {sky130_fd_pr/pfet_01v8.sym} 500 0 0 1 {name=IP0 model=pfet_01v8 W=4 L=0.15}
-C {sky130_fd_pr/nfet_01v8.sym} -20 400 0 0 {name=C0 model=nfet_01v8 W=5 L=4}
-C {sky130_fd_pr/nfet_01v8.sym} 740 200 0 1 {name=IN1 model=nfet_01v8 W=2 L=0.15}
-C {sky130_fd_pr/pfet_01v8.sym} 740 0 0 1 {name=IP1 model=pfet_01v8 W=4 L=0.15}
-C {sky130_fd_pr/nfet_01v8.sym} 220 400 0 0 {name=C1 model=nfet_01v8 W=5 L=4}
-C {sky130_fd_pr/nfet_01v8.sym} 980 200 0 1 {name=IN2 model=nfet_01v8 W=2 L=0.15}
-C {sky130_fd_pr/pfet_01v8.sym} 980 0 0 1 {name=IP2 model=pfet_01v8 W=4 L=0.15}
-C {sky130_fd_pr/nfet_01v8.sym} 460 400 0 0 {name=C2 model=nfet_01v8 W=5 L=4}
-C {sky130_fd_pr/nfet_01v8.sym} 1180 200 0 0 {name=IN3 model=nfet_01v8 W=2 L=0.15}
-C {sky130_fd_pr/pfet_01v8.sym} 1180 0 0 0 {name=IP3 model=pfet_01v8 W=4 L=0.15}
-C {sky130_fd_pr/nfet_01v8.sym} 700 400 0 0 {name=C3 model=nfet_01v8 W=5 L=4}
+C {sky130_fd_pr/nfet_01v8.sym} -20 200 0 0 {name=B1N model=nfet_01v8 W=0.65 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} -20 0 0 0 {name=B1P model=pfet_01v8 W=1 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 220 200 0 0 {name=B2N model=nfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} 220 0 0 0 {name=B2P model=pfet_01v8 W=4 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 500 200 0 1 {name=IN0 model=nfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} 500 0 0 1 {name=IP0 model=pfet_01v8 W=4 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} -20 400 0 0 {name=C0 model=nfet_01v8 W=5 L=4 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 740 200 0 1 {name=IN1 model=nfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} 740 0 0 1 {name=IP1 model=pfet_01v8 W=4 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 220 400 0 0 {name=C1 model=nfet_01v8 W=5 L=4 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 980 200 0 1 {name=IN2 model=nfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} 980 0 0 1 {name=IP2 model=pfet_01v8 W=4 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 460 400 0 0 {name=C2 model=nfet_01v8 W=5 L=4 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1180 200 0 0 {name=IN3 model=nfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} 1180 0 0 0 {name=IP3 model=pfet_01v8 W=4 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 700 400 0 0 {name=C3 model=nfet_01v8 W=5 L=4 nf=1 mult=1 sa=0 sb=0 sd=0}
 N 0 200 20 200 {lab=VGND}
 C {devices/lab_pin.sym} 20 200 0 1 {name=l1 sig_type=std_logic lab=VGND}
 N 0 0 20 0 {lab=VDPWR}
@@ -63,7 +63,7 @@ N 480 230 480 270 {lab=VGND}
 N 720 230 720 270 {lab=VGND}
 N 960 230 960 270 {lab=VGND}
 N 1200 230 1200 270 {lab=VGND}
-C {devices/gnd.sym} 0 270 0 0 {name=l17 lab=VGND}
+C {devices/gnd.sym} 0 270 0 0 {name=l17 lab=VGND global=false}
 N 0 -70 240 -70 {lab=VDPWR}
 N 240 -70 480 -70 {lab=VDPWR}
 N 480 -70 720 -70 {lab=VDPWR}
@@ -75,7 +75,7 @@ N 480 -30 480 -70 {lab=VDPWR}
 N 720 -30 720 -70 {lab=VDPWR}
 N 960 -30 960 -70 {lab=VDPWR}
 N 1200 -30 1200 -70 {lab=VDPWR}
-C {devices/vdd.sym} 0 -70 0 0 {name=l18 lab=VDPWR}
+C {devices/vdd.sym} 0 -70 0 0 {name=l18 lab=VDPWR global=false}
 N 0 370 0 350 {lab=VGND}
 C {devices/lab_pin.sym} 0 350 1 0 {name=l19 sig_type=std_logic lab=VGND}
 N 240 370 240 350 {lab=VGND}
@@ -91,7 +91,7 @@ N 0 430 0 470 {lab=VGND}
 N 240 430 240 470 {lab=VGND}
 N 480 430 480 470 {lab=VGND}
 N 720 430 720 470 {lab=VGND}
-C {devices/gnd.sym} 0 470 0 0 {name=l23 lab=VGND}
+C {devices/gnd.sym} 0 470 0 0 {name=l23 lab=VGND global=false}
 N 480 170 480 130 {lab=o0}
 N 480 30 480 130 {lab=o0}
 N -40 400 -60 400 {lab=o0}

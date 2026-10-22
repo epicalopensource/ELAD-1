@@ -16,7 +16,7 @@ C {ELAD1_HEATER.sym} 3880 0 0 0 {name=XHTR}
 N 680 130 700 130 {lab=VDPWR}
 C {devices/lab_pin.sym} 700 130 0 1 {name=l1 sig_type=std_logic lab=VDPWR}
 N 680 150 680 170 {lab=VGND}
-C {devices/gnd.sym} 680 170 0 0 {name=l2 lab=VGND}
+C {devices/gnd.sym} 680 170 0 0 {name=l2 lab=VGND global=false}
 N 1080 -10 1100 -10 {lab=VGND}
 C {devices/lab_pin.sym} 1100 -10 0 1 {name=l3 sig_type=std_logic lab=VGND}
 N 1480 -10 1500 -10 {lab=VGND}

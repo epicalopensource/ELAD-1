@@ -373,7 +373,22 @@ def resolve(el: Element, finder: SymbolFinder, local: dict[str, Path]) -> tuple[
             attrs[tkeys.get(kl, k)] = v
         else:
             notes.append(f"{el.name}: parameter {k}={v} has no attribute on {sym.ref}, dropped")
+    if pdk:
+        _add_template_defaults(attrs, sym)
     return sym, attrs, notes
+
+
+def _add_template_defaults(attrs: dict, sym) -> None:
+    """Give a PDK instance the plain default attributes of its symbol (nf=1, mult=1, sa=0 ...),
+    as xschem does when a symbol is placed by hand. The sky130 symbols compute ad/as/pd/ps with
+    expressions such as expr('int((@nf + 1)/2) * @W / @nf * 0.29'); without nf on the instance
+    the simulation netlist keeps a literal '@nf' and ngspice stops. Computed defaults (values
+    with '@' or expr) stay in the symbol; only plain values are copied."""
+    have = {k.lower() for k in attrs}
+    for k, v in sym.template.items():
+        if k.lower() in have or k.lower() in ("name", "spiceprefix") or "@" in v or "expr" in v:
+            continue
+        attrs[k] = v
 
 
 def _snap(v: float) -> int:

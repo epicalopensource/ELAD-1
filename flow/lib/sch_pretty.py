@@ -442,6 +442,10 @@ def layout(placed, sub, attr_text):
             x, y = part.at(p)
             board.pts.append((p.net, x, y))
 
+    # Supply symbols (vdd.sym, gnd.sym) are global labels in xschem; inside a cell that would
+    # make VDPWR/VGND chip-wide nets and disconnect the cell from what its pins are wired to
+    # (a testbench driving the VGND pin from node 0 would see a floating ground). Every supply
+    # symbol is therefore drawn with global=false: same look, local net, connected via the pin.
     pin_dir = {}            # (part id, pin name) -> handled
     def stub_label(part, p, kind="lab"):
         """A short wire from the pin to a label (or supply symbol). Only a stub that touches no
@@ -462,9 +466,9 @@ def layout(placed, sub, attr_text):
         board.add(p.net, segs, pts)
         lines.append(f"N {x:g} {y:g} {ex:g} {ey:g} {{lab={esc(p.net)}}}")
         if kind == "vdd" and (dx, dy) == (0, -1):
-            lines.append(f"C {{devices/vdd.sym}} {ex:g} {ey:g} 0 0 {{name=l{newlab()} lab={esc(p.net)}}}")
+            lines.append(f"C {{devices/vdd.sym}} {ex:g} {ey:g} 0 0 {{name=l{newlab()} lab={esc(p.net)} global=false}}")
         elif kind == "gnd" and (dx, dy) == (0, 1):
-            lines.append(f"C {{devices/gnd.sym}} {ex:g} {ey:g} 0 0 {{name=l{newlab()} lab={esc(p.net)}}}")
+            lines.append(f"C {{devices/gnd.sym}} {ex:g} {ey:g} 0 0 {{name=l{newlab()} lab={esc(p.net)} global=false}}")
         else:
             lines.append(_lab(ex, ey, p.net, (dx, dy), newlab()))
 
@@ -498,7 +502,7 @@ def layout(placed, sub, attr_text):
                 for s in segs:
                     lines.append(f"N {s[1]:g} {s[2]:g} {s[3]:g} {s[4]:g} {{lab={esc(net)}}}")
                 sym = "vdd" if kind == "vdd" else "gnd"
-                lines.append(f"C {{devices/{sym}.sym}} {sx:g} {ry:g} 0 0 {{name=l{newlab()} lab={esc(net)}}}")
+                lines.append(f"C {{devices/{sym}.sym}} {sx:g} {ry:g} 0 0 {{name=l{newlab()} lab={esc(net)} global=false}}")
                 for part, p, _ in items:
                     pin_dir[(id(part), p.name)] = 1
                 continue

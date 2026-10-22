@@ -1,3 +1,8 @@
-# Pass/fail limits for measurements printed by the testbench (.meas or `meas` in .control).
-# <name>  <min|->  <max|->      SI suffixes allowed: f p n u m k meg g
-# tpd      -        50p
+# Pass/fail limits for tb_ELAD1_AGGRESSOR (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
+# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
+iavg      3u    8u    # average supply current, AGG_CLK 5 MHz      sim 5.19u  pkg 5.05u
+ipk       1m    5m    # peak supply current                        sim 2.53m  pkg 2.86m
+vloc_pp   -     50m   # local rail ripple behind 5 ohm             sim 12.8m  pkg 14.4m
+o0_min    -     0.1   # bank output reaches ground (it toggles)    sim -0.015
+o0_max    1.7   -     # bank output reaches VDPWR                  sim 1.81

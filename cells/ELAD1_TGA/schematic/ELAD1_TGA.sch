@@ -4,8 +4,8 @@ K {}
 V {}
 S {}
 E {}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} -20 0 0 0 {name=MN model=nfet_01v8_lvt W=4 L=0.15}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 220 0 0 0 {name=MP model=pfet_01v8_lvt W=12 L=0.35}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -20 0 0 0 {name=MN model=nfet_01v8_lvt W=4 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 220 0 0 0 {name=MP model=pfet_01v8_lvt W=12 L=0.35 nf=1 mult=1 sa=0 sb=0 sd=0}
 N 0 0 20 0 {lab=VGND}
 C {devices/lab_pin.sym} 20 0 0 1 {name=l1 sig_type=std_logic lab=VGND}
 N 240 0 260 0 {lab=VDPWR}

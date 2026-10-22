@@ -1,3 +1,7 @@
-# Pass/fail limits for measurements printed by the testbench (.meas or `meas` in .control).
-# <name>  <min|->  <max|->      SI suffixes allowed: f p n u m k meg g
-# tpd      -        50p
+# Pass/fail limits for tb_ELAD1_HEATER (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
+# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
+i_heater  0.75m  1.0m  # heater current, 1.8 V through 500 ohm path   sim 0.875m pkg 0.893m
+r_hin     1.3k   1.8k  # resistance seen at ua5 (heater + switch)      sim 1557   pkg 1515
+p_switch  -      35u   # switch dissipation (design: ~1-2 % of heat)   sim 17u
+i_off     -      1n    # leakage with HEN=0                            sim 5 pA   pkg 8 pA
