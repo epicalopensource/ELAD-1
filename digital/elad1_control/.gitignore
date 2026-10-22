@@ -1,0 +1,13 @@
+runs/
+final.new/
+final/odb/
+final/def/
+final/spef/
+final/sdf/
+final/sdc/
+final/mag/
+final/mag_gds/
+final/klayout_gds/
+final/render/
+final/json_h/
+final/vh/

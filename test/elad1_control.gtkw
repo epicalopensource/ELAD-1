@@ -1,0 +1,39 @@
+[*] GTKWave save file for test/sim_build/tb_elad1_control.vcd (open with: flow/digital.sh wave)
+[timestart] 0
+*-19.000000 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[size] 1500 850
+[sst_width] 220
+[signals_width] 230
+[sst_expanded] 1
+@200
+-Clock and reset
+@28
+tb.clk
+tb.rst_n
+tb.ena
+@200
+-Inputs ui_in = {APPLY, RATE[1:0], AGGR, HEATER, STRUCT, MODE[1:0]}
+@22
+tb.ui[7:0]
+@28
+(0)tb.ui[7:0]
+@200
+-Controller state (0 SAFE, 1 QUIET, 2 LOAD, 3 CONNECT, 4 ACTIVE, 5 STOP)
+@24
+tb.dut.u_ctl.state[2:0]
+tb.dut.u_ctl.cnt[3:0]
+@200
+-To the analog core (bit order {N, PC, PG, MC, MG})
+@28
+tb.en[4:0]
+tb.clr[4:0]
+tb.hen
+tb.agg_clk
+@200
+-Status uo_out = {ERR, AGG_ON, HEAT_ON, STRUCT, MODE[1:0], BUSY, ACTIVE}
+@22
+tb.uo[7:0]
+@28
+(6)tb.uo[7:0]
+(7)tb.uo[7:0]
+(0)tb.uo[7:0]

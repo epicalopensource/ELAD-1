@@ -1,0 +1,25 @@
+{
+  "DESIGN_NAME": "elad1_control",
+  "VERILOG_FILES": ["dir::../../src/elad1_control.v"],
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 20,
+
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [0, 0, 140, 46],
+  "TOP_MARGIN_MULT": 2,
+  "BOTTOM_MARGIN_MULT": 2,
+  "LEFT_MARGIN_MULT": 6,
+  "RIGHT_MARGIN_MULT": 6,
+  "PL_TARGET_DENSITY_PCT": 65,
+
+  "DESIGN_REPAIR_MAX_SLEW_PCT": 30,
+  "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 20,
+
+  "RT_MAX_LAYER": "met4",
+  "PDN_MULTILAYER": false,
+  "PDN_VPITCH": 50,
+  "PDN_VOFFSET": 10,
+
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg"
+}
