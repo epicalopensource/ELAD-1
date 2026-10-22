@@ -4,13 +4,16 @@ K {}
 V {}
 S {}
 E {}
-C {sky130_fd_pr/nfet_01v8.sym} -20 0 0 0 {name=M model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-N 0 0 20 0 {lab=VGND}
-C {devices/lab_pin.sym} 20 0 0 1 {name=l1 sig_type=std_logic lab=VGND}
-N 0 -30 0 -50 {lab=VGND}
-C {devices/lab_pin.sym} 0 -50 1 0 {name=l2 sig_type=std_logic lab=VGND}
-N -40 0 -60 0 {lab=VGND}
-C {devices/lab_pin.sym} -60 0 0 0 {name=l3 sig_type=std_logic lab=VGND}
-N 0 30 0 50 {lab=VGND}
-C {devices/gnd.sym} 0 50 0 0 {name=l4 lab=VGND global=false}
-C {devices/iopin.sym} -220 -30 0 1 {name=p5 lab=VGND}
+N -120 80 -20 80 {}
+N -20 80 20 80 {}
+N 20 80 50 80 {}
+N 50 80 80 80 {}
+N -20 0 -20 80 {}
+N 20 30 20 80 {}
+N 20 0 50 0 {}
+N 50 0 50 80 {}
+N 20 -30 80 -30 {}
+N 80 -30 80 80 {}
+C {devices/iopin.sym} -120 80 0 1 {name=p1 lab=VGND}
+C {sky130_fd_pr/nfet_01v8.sym} 0 0 0 0 {name=M model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+T {ELAD1_NDUMMY: dummy unit, all pins VGND} -120 -110 0 0 0.3 0.3 {}

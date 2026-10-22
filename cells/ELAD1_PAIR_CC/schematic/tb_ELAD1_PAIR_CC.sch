@@ -4,52 +4,47 @@ K {}
 V {}
 S {}
 E {}
-C {devices/isource.sym} 0 0 2 1 {name=IT value="DC 10u"}
-C {devices/vsource.sym} 240 0 0 0 {name=VP value=1.0}
-C {devices/vsource.sym} 480 0 0 0 {name=VM value=1.0}
-C {devices/vsource.sym} 720 0 0 0 {name=VD1 value=1.2}
-C {devices/vsource.sym} 960 0 0 0 {name=VD2 value=1.2}
-C {ELAD1_PAIR_CC.sym} 1520 0 0 0 {name=XDUT}
-N 0 70 240 70 {lab=0}
-N 240 70 480 70 {lab=0}
-N 480 70 720 70 {lab=0}
-N 720 70 960 70 {lab=0}
-N 0 30 0 70 {lab=0}
-N 240 30 240 70 {lab=0}
-N 480 30 480 70 {lab=0}
-N 720 30 720 70 {lab=0}
-N 960 30 960 70 {lab=0}
-C {devices/gnd.sym} 0 70 0 0 {name=l1 lab=0 global=false}
-N 1600 20 1620 20 {lab=0}
-C {devices/lab_pin.sym} 1620 20 0 1 {name=l2 sig_type=std_logic lab=0}
-N 960 -30 960 -70 {lab=D2}
-N 1600 -20 1620 -20 {lab=D2}
-N 1620 -20 1620 -70 {lab=D2}
-N 960 -70 1620 -70 {lab=D2}
-C {devices/lab_pin.sym} 960 -70 0 0 {name=l3 sig_type=std_logic lab=D2}
-N 720 -30 720 -80 {lab=D1}
-N 1440 20 1420 20 {lab=D1}
-N 1420 20 1420 -80 {lab=D1}
-N 720 -80 1420 -80 {lab=D1}
-C {devices/lab_pin.sym} 720 -80 0 0 {name=l4 sig_type=std_logic lab=D1}
-N 480 -30 480 -50 {lab=VINM}
-N 480 -50 460 -50 {lab=VINM}
-N 460 -50 460 80 {lab=VINM}
-N 1440 0 1400 0 {lab=VINM}
-N 1400 0 1400 80 {lab=VINM}
-N 460 80 1400 80 {lab=VINM}
-C {devices/lab_pin.sym} 460 80 0 0 {name=l5 sig_type=std_logic lab=VINM}
-N 240 -30 240 -90 {lab=VINP}
-N 1440 -20 1400 -20 {lab=VINP}
-N 1400 -20 1400 -90 {lab=VINP}
-N 240 -90 1400 -90 {lab=VINP}
-C {devices/lab_pin.sym} 240 -90 0 0 {name=l6 sig_type=std_logic lab=VINP}
-N 0 -30 0 -100 {lab=VBIAS}
-N 1600 0 1640 0 {lab=VBIAS}
-N 1640 0 1640 -100 {lab=VBIAS}
-N 0 -100 1640 -100 {lab=VBIAS}
-C {devices/lab_pin.sym} 0 -100 0 0 {name=l7 sig_type=std_logic lab=VBIAS}
-C {devices/code_shown.sym} -400 -420 0 0 {name=s1 only_toplevel=false value=".control
+N -120 220 -100 220 {}
+N -100 220 -80 220 {}
+N -240 220 -240 240 {}
+N -240 220 -120 220 {}
+N -300 180 -190 180 {}
+N -190 180 -80 180 {}
+N -420 180 -420 200 {}
+N -420 180 -300 180 {}
+N -480 140 -280 140 {}
+N -280 140 -80 140 {}
+N -600 140 -600 160 {}
+N -600 140 -480 140 {}
+N -660 100 -370 100 {}
+N -370 100 -80 100 {}
+N -780 100 -780 120 {}
+N -780 100 -660 100 {}
+N -840 60 -460 60 {}
+N -460 60 -80 60 {}
+N -960 60 -960 80 {}
+N -960 60 -840 60 {}
+C {ELAD1_PAIR_CC.sym} 0 140 0 0 {name=XDUT}
+C {devices/lab_pin.sym} -100 220 0 0 {name=l1 sig_type=std_logic lab=D2}
+C {devices/vsource.sym} -240 270 0 0 {name=VD2 value=1.2}
+C {devices/gnd.sym} -240 300 0 0 {name=l2 lab=0 global=false}
+C {devices/lab_pin.sym} -190 180 0 0 {name=l3 sig_type=std_logic lab=D1}
+C {devices/vsource.sym} -420 230 0 0 {name=VD1 value=1.2}
+C {devices/gnd.sym} -420 260 0 0 {name=l4 lab=0 global=false}
+C {devices/lab_pin.sym} -280 140 0 0 {name=l5 sig_type=std_logic lab=VINM}
+C {devices/vsource.sym} -600 190 0 0 {name=VM value=1.0}
+C {devices/gnd.sym} -600 220 0 0 {name=l6 lab=0 global=false}
+C {devices/lab_pin.sym} -370 100 0 0 {name=l7 sig_type=std_logic lab=VINP}
+C {devices/vsource.sym} -780 150 0 0 {name=VP value=1.0}
+C {devices/gnd.sym} -780 180 0 0 {name=l8 lab=0 global=false}
+C {devices/lab_pin.sym} -460 60 0 0 {name=l9 sig_type=std_logic lab=VBIAS}
+C {devices/isource.sym} -960 110 2 0 {name=IT value="DC 10u"}
+C {devices/gnd.sym} -960 140 0 0 {name=l10 lab=0 global=false}
+C {devices/gnd.sym} 0 260 0 0 {name=l11 lab=0 global=false}
+T {tb_ELAD1_PAIR_CC - NMOS differential pair at the package operating point:} -1000 -155 0 0 0.4 0.4 {}
+T {ITAIL 10 uA forced into VBIAS (ua0), VCM 1.0 V on both inputs, both drains held at 1.2 V.
+Offset: VINP swept +-20 mV around VCM with VINM fixed; VOS = VINP - VCM where ID1 = ID2.} -1000 -110 0 0 0.22 0.22 {}
+C {devices/code_shown.sym} 200 200 0 0 {name=s1 only_toplevel=false value=".control
 op
 let vbias = v(VBIAS)
 let vtail = v(xdut.TAIL)
@@ -65,7 +60,4 @@ let vos = vinp_bal-1.0
 print vos
 write tb_ELAD1_PAIR_CC.raw
 .endc"}
-C {sky130_fd_pr/corner.sym} -400 -620 0 0 {name=CORNER only_toplevel=true corner=tt}
-T {tb_ELAD1_PAIR_CC - NMOS differential pair at the package operating point:
-ITAIL 10 uA forced into VBIAS (ua0), VCM 1.0 V on both inputs, both drains held at 1.2 V.
-Offset: VINP swept +-20 mV around VCM with VINM fixed; VOS = VINP - VCM where ID1 = ID2.} -400 -915 0 0 0.4 0.4 {}
+C {sky130_fd_pr/corner.sym} 200 0 0 0 {name=CORNER only_toplevel=true corner=tt}

@@ -4,16 +4,17 @@ K {}
 V {}
 S {}
 E {}
-C {sky130_fd_pr/nfet_01v8.sym} -20 0 0 0 {name=M model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-N 0 0 20 0 {lab=B}
-C {devices/lab_pin.sym} 20 0 0 1 {name=l1 sig_type=std_logic lab=B}
-N 0 -30 0 -70 {lab=D}
-N -60 -70 0 -70 {lab=D}
-N -40 0 -60 0 {lab=G}
-N -120 0 -60 0 {lab=G}
-N 0 30 0 70 {lab=S}
-N -60 70 0 70 {lab=S}
-C {devices/iopin.sym} -60 -70 0 1 {name=p2 lab=D}
-C {devices/iopin.sym} -120 0 0 1 {name=p3 lab=G}
-C {devices/iopin.sym} -60 70 0 1 {name=p4 lab=S}
-C {devices/iopin.sym} -280 -70 0 1 {name=p5 lab=B}
+N -120 -80 20 -80 {}
+N 20 -80 20 -30 {}
+N -120 0 -20 0 {}
+N -120 80 20 80 {}
+N 20 30 20 80 {}
+N 20 0 60 0 {}
+N 60 0 60 40 {}
+N 60 40 160 40 {}
+C {devices/iopin.sym} -120 -80 0 1 {name=p1 lab=D}
+C {devices/iopin.sym} -120 0 0 1 {name=p2 lab=G}
+C {devices/iopin.sym} -120 80 0 1 {name=p3 lab=S}
+C {devices/iopin.sym} 160 40 0 0 {name=p4 lab=B}
+C {sky130_fd_pr/nfet_01v8.sym} 0 0 0 0 {name=M model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+T {ELAD1_NUNIT: NMOS matching unit} -120 -170 0 0 0.3 0.3 {}

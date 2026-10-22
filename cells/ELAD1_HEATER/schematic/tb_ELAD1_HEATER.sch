@@ -4,34 +4,30 @@ K {}
 V {}
 S {}
 E {}
-C {devices/vsource.sym} 0 0 0 0 {name=VEXT value=1.8}
-C {devices/res.sym} 600 100 0 0 {name=RP value=500}
-C {devices/vsource.sym} 240 0 0 0 {name=VHEN value=1.8}
-C {ELAD1_HEATER.sym} 960 0 0 0 {name=XDUT}
-N 0 70 240 70 {lab=0}
-N 0 30 0 70 {lab=0}
-N 240 30 240 70 {lab=0}
-C {devices/gnd.sym} 0 70 0 0 {name=l1 lab=0 global=false}
-N 1040 -10 1060 -10 {lab=0}
-C {devices/lab_pin.sym} 1060 -10 0 1 {name=l2 sig_type=std_logic lab=0}
-N 880 -10 860 -10 {lab=HIN}
-N 860 -10 860 130 {lab=HIN}
-N 600 130 860 130 {lab=HIN}
-C {devices/lab_pin.sym} 600 130 0 0 {name=l3 sig_type=std_logic lab=HIN}
-N 240 -30 240 -70 {lab=HEN}
-N 880 10 840 10 {lab=HEN}
-N 840 10 840 -70 {lab=HEN}
-N 240 -70 840 -70 {lab=HEN}
-C {devices/lab_pin.sym} 240 -70 0 0 {name=l4 sig_type=std_logic lab=HEN}
-N 0 -30 0 -50 {lab=EXT}
-N 0 -50 -20 -50 {lab=EXT}
-N -20 -50 -20 80 {lab=EXT}
-N 600 70 600 50 {lab=EXT}
-N 600 50 580 50 {lab=EXT}
-N 580 50 580 80 {lab=EXT}
-N -20 80 580 80 {lab=EXT}
-C {devices/lab_pin.sym} -20 80 0 0 {name=l5 sig_type=std_logic lab=EXT}
-C {devices/code_shown.sym} -400 -400 0 0 {name=s1 only_toplevel=false value=".control
+N -120 100 -100 100 {}
+N -100 100 -80 100 {}
+N -240 100 -240 120 {}
+N -240 100 -120 100 {}
+N -300 60 -190 60 {}
+N -190 60 -80 60 {}
+N -330 60 -300 60 {}
+N -420 60 -390 60 {}
+N -540 60 -540 80 {}
+N -540 60 -420 60 {}
+C {ELAD1_HEATER.sym} 0 80 0 0 {name=XDUT}
+C {devices/lab_pin.sym} -100 100 0 0 {name=l1 sig_type=std_logic lab=HEN}
+C {devices/vsource.sym} -240 150 0 0 {name=VHEN value=1.8}
+C {devices/gnd.sym} -240 180 0 0 {name=l2 lab=0 global=false}
+C {devices/lab_pin.sym} -190 60 0 0 {name=l3 sig_type=std_logic lab=HIN}
+C {devices/res.sym} -360 60 3 0 {name=RP value=500}
+C {devices/lab_pin.sym} -420 60 0 0 {name=l4 sig_type=std_logic lab=EXT}
+C {devices/vsource.sym} -540 110 0 0 {name=VEXT value=1.8}
+C {devices/gnd.sym} -540 140 0 0 {name=l5 lab=0 global=false}
+C {devices/gnd.sym} 0 140 0 0 {name=l6 lab=0 global=false}
+T {tb_ELAD1_HEATER - local heater driven through the Tiny Tapeout analog path.} -580 -155 0 0 0.4 0.4 {}
+T {VEXT 1.8 V -> RP 500 ohm (TT path envelope) -> ua5 (HIN). HEN=1: heater on; HEN=0: leakage.
+Package tt 27C: 0.893 mA, V(HIN) 1.353 V, R(HIN) 1515 ohm, leakage 8 pA.} -580 -110 0 0 0.22 0.22 {}
+C {devices/code_shown.sym} 200 200 0 0 {name=s1 only_toplevel=false value=".control
 op
 let i_heater = -i(VEXT)
 let r_hin = v(HIN)/i_heater
@@ -46,7 +42,4 @@ alter VHEN dc = 1.8
 dc VEXT 0 1.8 0.01
 write tb_ELAD1_HEATER.raw
 .endc"}
-C {sky130_fd_pr/corner.sym} -400 -600 0 0 {name=CORNER only_toplevel=true corner=tt}
-T {tb_ELAD1_HEATER - local heater driven through the Tiny Tapeout analog path.
-VEXT 1.8 V -> RP 500 ohm (TT path envelope) -> ua5 (HIN). HEN=1: heater on; HEN=0: leakage.
-Package tt 27C: 0.893 mA, V(HIN) 1.353 V, R(HIN) 1515 ohm, leakage 8 pA.} -400 -895 0 0 0.4 0.4 {}
+C {sky130_fd_pr/corner.sym} 200 0 0 0 {name=CORNER only_toplevel=true corner=tt}

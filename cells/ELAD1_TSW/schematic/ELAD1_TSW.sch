@@ -4,51 +4,41 @@ K {}
 V {}
 S {}
 E {}
-C {ELAD1_TGA.sym} 540 0 0 0 {name=X1}
-C {ELAD1_TGA.sym} 940 0 0 0 {name=X2}
-C {sky130_fd_pr/nfet_01v8.sym} -20 0 0 0 {name=SH model=nfet_01v8 W=1 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
-N 0 0 20 0 {lab=VGND}
-C {devices/lab_pin.sym} 20 0 0 1 {name=l1 sig_type=std_logic lab=VGND}
-N 620 0 640 0 {lab=VDPWR}
-C {devices/lab_pin.sym} 640 0 0 1 {name=l2 sig_type=std_logic lab=VDPWR}
-N 1020 0 1040 0 {lab=VDPWR}
-C {devices/lab_pin.sym} 1040 0 0 1 {name=l3 sig_type=std_logic lab=VDPWR}
-N 620 20 640 20 {lab=VGND}
-C {devices/lab_pin.sym} 640 20 0 1 {name=l4 sig_type=std_logic lab=VGND}
-N 1020 20 1040 20 {lab=VGND}
-C {devices/lab_pin.sym} 1040 20 0 1 {name=l5 sig_type=std_logic lab=VGND}
-N 0 30 0 50 {lab=VGND}
-C {devices/gnd.sym} 0 50 0 0 {name=l6 lab=VGND global=false}
-N 460 -20 440 -20 {lab=A}
-N 380 -20 440 -20 {lab=A}
-N 860 0 840 0 {lab=B}
-N 780 0 840 0 {lab=B}
-N 460 20 440 20 {lab=EN}
-N 440 20 440 70 {lab=EN}
-N 860 20 840 20 {lab=EN}
-N 840 20 840 70 {lab=EN}
-N 380 70 440 70 {lab=EN}
-N 440 70 840 70 {lab=EN}
-N 460 0 420 0 {lab=M}
-N 420 0 420 -70 {lab=M}
-N 860 -20 820 -20 {lab=M}
-N 820 -20 820 -70 {lab=M}
-N 0 -30 0 -70 {lab=M}
-N 0 -70 420 -70 {lab=M}
-N 420 -70 820 -70 {lab=M}
-C {devices/lab_pin.sym} 0 -70 0 0 {name=l10 sig_type=std_logic lab=M}
-N 620 -20 640 -20 {lab=ENB}
-N 640 -20 640 -80 {lab=ENB}
-N 1020 -20 1040 -20 {lab=ENB}
-N 1040 -20 1040 -80 {lab=ENB}
-N -40 0 -60 0 {lab=ENB}
-N -60 0 -60 -80 {lab=ENB}
-N -120 -80 -60 -80 {lab=ENB}
-N -60 -80 640 -80 {lab=ENB}
-N 640 -80 1040 -80 {lab=ENB}
-C {devices/iopin.sym} 380 -20 0 1 {name=p7 lab=A}
-C {devices/iopin.sym} 780 0 0 1 {name=p8 lab=B}
-C {devices/iopin.sym} 380 70 0 1 {name=p9 lab=EN}
-C {devices/iopin.sym} -120 -80 0 1 {name=p11 lab=ENB}
-C {devices/iopin.sym} -280 -80 0 1 {name=p12 lab=VDPWR}
-C {devices/iopin.sym} -280 -40 0 1 {name=p13 lab=VGND}
+N -160 0 -60 0 {}
+N 60 0 120 0 {}
+N 120 0 180 0 {}
+N 300 0 400 0 {}
+N 120 0 120 170 {}
+N 40 200 80 200 {}
+N 120 230 120 290 {}
+N 120 200 150 200 {}
+N 150 200 150 290 {}
+N -160 -130 0 -130 {}
+N 0 -130 0 -60 {}
+N 0 -130 240 -130 {}
+N 240 -130 240 -60 {}
+N -160 130 0 130 {}
+N 0 60 0 130 {}
+N 240 60 240 100 {}
+N -160 -190 -100 -190 {}
+N -160 290 120 290 {}
+N 120 290 150 290 {}
+C {devices/iopin.sym} -160 0 0 1 {name=p1 lab=A}
+C {devices/iopin.sym} 400 0 0 0 {name=p2 lab=B}
+C {devices/iopin.sym} -160 130 0 1 {name=p3 lab=EN}
+C {devices/iopin.sym} -160 -130 0 1 {name=p4 lab=ENB}
+C {devices/iopin.sym} -160 -190 0 1 {name=p5 lab=VDPWR}
+C {devices/iopin.sym} -160 290 0 1 {name=p6 lab=VGND}
+C {ELAD1_TGA.sym} 0 0 0 0 {name=X1}
+C {ELAD1_TGA.sym} 240 0 0 0 {name=X2}
+C {sky130_fd_pr/nfet_01v8.sym} 100 200 0 0 {name=SH model=nfet_01v8 W=1 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {devices/lab_pin.sym} 120 0 0 1 {name=l7 sig_type=std_logic lab=M}
+C {devices/lab_pin.sym} 40 200 0 0 {name=l8 sig_type=std_logic lab=ENB}
+C {devices/lab_pin.sym} 240 100 0 1 {name=l9 sig_type=std_logic lab=EN}
+C {devices/vdd.sym} -100 -190 0 0 {name=l10 lab=VDPWR global=false}
+C {devices/vdd.sym} 40 -60 0 0 {name=l11 lab=VDPWR global=false}
+C {devices/gnd.sym} 40 60 0 0 {name=l12 lab=VGND global=false}
+C {devices/vdd.sym} 280 -60 0 0 {name=l13 lab=VDPWR global=false}
+C {devices/gnd.sym} 280 60 0 0 {name=l14 lab=VGND global=false}
+T {ELAD1_TSW: T-switch, two low-Vt gates in series with a shunt to VGND on the middle node} -160 -280 0 0 0.35 0.35 {}
+T {ON (EN=1): A-M-B connected, shunt off.  OFF: both gates open and M held at VGND (isolation)} -160 -245 0 0 0.22 0.22 {}
