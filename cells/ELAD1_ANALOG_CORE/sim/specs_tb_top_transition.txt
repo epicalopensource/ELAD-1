@@ -1,0 +1,11 @@
+# Limits for tb_top_transition (live MIRROR grouped -> centroid reconfiguration at 10 uA).
+# Run with: flow/tb.sh ELAD1_ANALOG_CORE   (checked by flow/lib/tb_rows.py)
+# <row tag> <key> <min|-> <max|-> [filter key=value ...]   SI suffixes allowed.
+# These are regression limits around the typical-corner results (tt, 27 C, 1.8 V), not datasheet
+# specifications. "sim" = this testbench with the open_pdks sky130A models; "pkg" = ELAD1 design
+# package top-level results (reduced model library; "PVT" = its 5-corner range).
+transition  vp0max   -     1.85   # ua0 peak while the paths are open (source compliance 1.8 V): sim 1.8001 V, pkg 1.8001 V
+transition  iout_g   9.9u  10.1u  # output current before the change: sim 10.012 uA, pkg 10.011 uA
+transition  iout_c   9.9u  10.1u  # output current after the change:  sim 9.9998 uA, pkg 9.9998 uA
+transition  tsettle  0     8u     # settling to 1e-4 after CONNECT: sim 4.92 us, pkg 4.88 us
+transition  ipk      -     1m     # peak servo current after CONNECT: sim 0.244 mA, pkg 0.255 mA

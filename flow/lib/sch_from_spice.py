@@ -29,6 +29,8 @@ Supported elements
   X<name> ... sky130_fd_pr__<device> params   -> the PDK symbol sky130_fd_pr/<device>.sym
   X<name> ... <subckt> params                -> <subckt>.sym (generated, or an existing project symbol)
   R C L V I                                   -> devices/res, capa, ind, vsource, isource
+  E/G n+ n- nc+ nc- gain                      -> devices/vcvs, vccs
+  E/G n+ n- vol=|cur='expr', B n+ n- V|I='expr' -> devices/bsource (behavioural; E/G are renamed B...)
   M<name> d g s b <model> params              -> sky130 symbol when <model> is a sky130_fd_pr__ fet
   D<name> anode cathode sky130_fd_pr__<diode> area= pj=   -> sky130_fd_pr/diode.sym (pj -> perim)
 Anything else is reported and the run stops, rather than silently dropping a device.
@@ -53,6 +55,12 @@ DERIVED = {"ad", "as", "pd", "ps", "nrd", "nrs", "sa", "sb", "sd"}   # sky130 te
 PRIMS = {"r": ("devices/res.sym", "R"), "c": ("devices/capa.sym", "C"),
          "l": ("devices/ind.sym", "L"), "v": ("devices/vsource.sym", "V"),
          "i": ("devices/isource.sym", "I")}
+
+
+# controlled sources: linear E (voltage-controlled voltage) and G (voltage-controlled current) keep their
+# own symbol; E/G written with an expression (vol=... / cur=...) become a B (behavioural) source.
+LINEAR = {"e": "devices/vcvs.sym", "g": "devices/vccs.sym"}
+BSRC = "devices/bsource.sym"
 
 
 class ImportError_(Exception):
@@ -171,6 +179,26 @@ def _parse_element(s: str) -> Element:
         if len(pos) != 3:
             raise ImportError_(f"cannot read diode line (D<name> anode cathode model params): {s}")
         return Element(name, pos[:2], pos[2], kv)
+    if kind in LINEAR or kind == "b":
+        body = s.split(None, 3)
+        if len(body) < 4:
+            raise ImportError_(f"cannot read controlled source: {s}")
+        nets2, rest = body[1:3], body[3].strip()
+        m = re.match(r"(vol|cur|value)\s*=\s*(.+)$", rest, re.I) if kind != "b" else \
+            re.match(r"([vi])\s*=\s*(.+)$", rest, re.I)
+        if m:                                              # behavioural: B<name> n+ n- V|I = 'expr'
+            expr = m.group(2).strip()
+            if len(expr) > 1 and expr[0] == expr[-1] and expr[0] in "'\"":
+                expr = expr[1:-1]
+            var = ("V" if kind == "e" else "I") if kind != "b" else m.group(1).upper()
+            bname = name if kind == "b" else "B" + name[1:]
+            return Element(bname, nets2, "", [("VAR", var)], expr)
+        if kind == "b":
+            raise ImportError_(f"B source needs V=... or I=...: {s}")
+        parts = rest.split(None, 2)                        # E/G linear: n+ n- nc+ nc- gain
+        if len(parts) != 3:
+            raise ImportError_(f"cannot read {name} (expected: {name} n+ n- nc+ nc- gain): {s}")
+        return Element(name, nets2 + parts[:2], "", [], parts[2].strip())
     if kind in PRIMS:
         nets = toks[1:3]
         rest = " ".join(toks[3:])
@@ -319,6 +347,17 @@ def resolve(el: Element, finder: SymbolFinder, local: dict[str, Path]) -> tuple[
         attrs = {"name": el.name, "value": el.value}
         attrs.update({k.lower(): v for k, v in el.params})
         return sym, attrs, notes
+    if kind in LINEAR:
+        sym = finder.find(LINEAR[kind])
+        if sym is None:
+            raise ImportError_(f"{LINEAR[kind]} not found on the symbol path")
+        return sym, {"name": el.name, "value": el.value}, notes
+    if kind == "b":
+        sym = finder.find(BSRC)
+        if sym is None:
+            raise ImportError_(f"{BSRC} not found on the symbol path")
+        var = dict(el.params).get("VAR", "V")
+        return sym, {"name": el.name, "VAR": var, "FUNC": "\"'" + el.value.replace('"', "'") + "'\"", "m": "1"}, notes
     model = el.model
     pdk = re.match(r"sky130_fd_pr__(\w+)$", model)
     if kind == "d":

@@ -1,0 +1,10 @@
+# Limits for tb_top_mirror (mirror mode through selector + TT path, both variants, Kelvin on/off).
+# Run with: flow/tb.sh ELAD1_ANALOG_CORE   (checked by flow/lib/tb_rows.py)
+# <row tag> <key> <min|-> <max|-> [filter key=value ...]   SI suffixes allowed.
+# These are regression limits around the typical-corner results (tt, 27 C, 1.8 V), not datasheet
+# specifications. "sim" = this testbench with the open_pdks sky130A models; "pkg" = ELAD1 design
+# package top-level results (reduced model library; "PVT" = its 5-corner range).
+mirror  err_pct  -0.01  0.01  kelvin=1   # sim -0.00069..-0.00017 %, pkg -0.00078..-0.00016 %
+mirror  err_pct  -0.5   0     kelvin=0   # sim -0.027..-0.174 %,     pkg -0.024..-0.160 %
+mirror  dvds_mv  -0.05  0.05  kelvin=1   # VDS match inside the macro with Kelvin: sim |dvds| <= 0.009 mV
+mirror  v_ua0    0.5    0.85             # voltage the IREF source needs on ua0: sim 0.587..0.739 V, pkg 0.517..0.805 V PVT

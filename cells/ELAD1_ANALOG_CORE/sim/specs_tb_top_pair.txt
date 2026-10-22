@@ -1,0 +1,10 @@
+# Limits for tb_top_pair (pair mode through selector + TT path, both variants, ITAIL 4/10/20 uA).
+# Run with: flow/tb.sh ELAD1_ANALOG_CORE   (checked by flow/lib/tb_rows.py)
+# <row tag> <key> <min|-> <max|-> [filter key=value ...]   SI suffixes allowed.
+# These are regression limits around the typical-corner results (tt, 27 C, 1.8 V), not datasheet
+# specifications. "sim" = this testbench with the open_pdks sky130A models; "pkg" = ELAD1 design
+# package top-level results (reduced model library; "PVT" = its 5-corner range).
+pairop   isum_ratio  0.9   1.0    # drain current / ITAIL: sim 0.935..0.956, pkg 0.915..0.979 PVT
+pairop   vbias_pin   0.5   0.85   # ua0 voltage at ITAIL: sim 0.623..0.739 V, pkg 0.556..0.805 V PVT
+pairop   drop_mv     0     15     # drain-path drop (switch + TT path): sim 2.2..10.6 mV, pkg max 11.6 mV PVT
+pairvos  vos_uv      -5    5      # offset with nominal models (no mismatch): sim ~0, pkg max 1.8 uV PVT
