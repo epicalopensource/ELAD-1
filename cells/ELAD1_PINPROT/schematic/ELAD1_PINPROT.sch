@@ -8,9 +8,9 @@ C {devices/res.sym} 360 300 0 0 {name=RLINK value=0.001}
 C {sky130_fd_pr/diode.sym} 0 200 0 0 {name=DN model=diode_pw2nd_05v5 area=36 perim=40}
 C {sky130_fd_pr/diode.sym} 0 0 0 0 {name=DP model=diode_pd2nw_05v5 area=36 perim=40}
 N 0 230 0 250 {lab=VGND}
-C {devices/gnd.sym} 0 250 0 0 {name=l1 lab=VGND}
+C {devices/gnd.sym} 0 250 0 0 {name=l1 lab=VGND global=false}
 N 0 -30 0 -50 {lab=VDPWR}
-C {devices/vdd.sym} 0 -50 0 0 {name=l2 lab=VDPWR}
+C {devices/vdd.sym} 0 -50 0 0 {name=l2 lab=VDPWR global=false}
 N 360 270 360 170 {lab=PAD}
 N 0 30 0 170 {lab=PAD}
 N -60 170 0 170 {lab=PAD}

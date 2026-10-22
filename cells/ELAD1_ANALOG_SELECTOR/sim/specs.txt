@@ -1,3 +1,10 @@
-# Pass/fail limits for measurements printed by the testbench (.meas or `meas` in .control).
-# <name>  <min|->  <max|->      SI suffixes allowed: f p n u m k meg g
-# tpd      -        50p
+# Pass/fail limits for tb_ELAD1_ANALOG_SELECTOR (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
+# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
+ron_ua0          -  1k     # ua0 -> REF_G precision path (TGA), 10 uA      sim 373
+ron_ua4          -  1k     # ua4 -> OUT_G precision path (TGA), 10 uA      sim 373
+sense_err_ua3    -  1m     # ua3 senses REF_G (no current)                  sim 31 nV
+sense_err_ua2    -  1m     # ua2 Kelvin-senses OUT_G (no current)           sim 13 nV
+v_ref_c_clamped  -  50m    # inactive REF_C held by its clamp (1M pull-up)  sim 19.5 mV
+i_idle_ua0       -  1n     # idle: leakage into ua0 at 0.7 V                sim 24 pA
+v_ref_g_idle     -  10m    # idle: REF_G clamped again                      sim ~0

@@ -4,54 +4,54 @@ K {}
 V {}
 S {}
 E {}
-C {sky130_fd_pr/nfet_01v8.sym} 20 0 0 1 {name=A0 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 260 0 0 1 {name=A1 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 500 0 0 1 {name=A2 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 700 0 0 0 {name=A3 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 980 0 0 1 {name=B0 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 1220 0 0 1 {name=B1 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 1460 0 0 1 {name=B2 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 1660 0 0 0 {name=B3 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 500 200 0 1 {name=T0 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 740 200 0 1 {name=T1 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 980 200 0 1 {name=T2 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 1220 200 0 1 {name=T3 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 1460 200 0 1 {name=R0 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 1700 200 0 1 {name=R1 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 1940 200 0 1 {name=R2 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 2140 200 0 0 {name=R3 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 2420 200 0 1 {name=DUM0 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 2660 200 0 1 {name=DUM1 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 2900 200 0 1 {name=DUM2 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 3140 200 0 1 {name=DUM3 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 3380 200 0 1 {name=DUM4 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 3620 200 0 1 {name=DUM5 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 3860 200 0 1 {name=DUM6 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 4100 200 0 1 {name=DUM7 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 4340 200 0 1 {name=DUM8 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 4580 200 0 1 {name=DUM9 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 4820 200 0 1 {name=DUM10 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 5060 200 0 1 {name=DUM11 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 5300 200 0 1 {name=DUM12 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 5540 200 0 1 {name=DUM13 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 5780 200 0 1 {name=DUM14 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 6020 200 0 1 {name=DUM15 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 6260 200 0 1 {name=DUM16 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 6500 200 0 1 {name=DUM17 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 6740 200 0 1 {name=DUM18 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 6980 200 0 1 {name=DUM19 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 7220 200 0 1 {name=DUM20 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 7460 200 0 1 {name=DUM21 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 7700 200 0 1 {name=DUM22 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 7940 200 0 1 {name=DUM23 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 8180 200 0 1 {name=DUM24 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 8420 200 0 1 {name=DUM25 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 8660 200 0 1 {name=DUM26 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 8900 200 0 1 {name=DUM27 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 9140 200 0 1 {name=DUM28 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 9380 200 0 1 {name=DUM29 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 9620 200 0 1 {name=DUM30 model=nfet_01v8 W=2 L=1}
-C {sky130_fd_pr/nfet_01v8.sym} 9820 200 0 0 {name=DUM31 model=nfet_01v8 W=2 L=1}
+C {sky130_fd_pr/nfet_01v8.sym} 20 0 0 1 {name=A0 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 260 0 0 1 {name=A1 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 500 0 0 1 {name=A2 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 700 0 0 0 {name=A3 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 980 0 0 1 {name=B0 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1220 0 0 1 {name=B1 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1460 0 0 1 {name=B2 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1660 0 0 0 {name=B3 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 500 200 0 1 {name=T0 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 740 200 0 1 {name=T1 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 980 200 0 1 {name=T2 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1220 200 0 1 {name=T3 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1460 200 0 1 {name=R0 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1700 200 0 1 {name=R1 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1940 200 0 1 {name=R2 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 2140 200 0 0 {name=R3 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 2420 200 0 1 {name=DUM0 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 2660 200 0 1 {name=DUM1 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 2900 200 0 1 {name=DUM2 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 3140 200 0 1 {name=DUM3 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 3380 200 0 1 {name=DUM4 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 3620 200 0 1 {name=DUM5 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 3860 200 0 1 {name=DUM6 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 4100 200 0 1 {name=DUM7 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 4340 200 0 1 {name=DUM8 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 4580 200 0 1 {name=DUM9 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 4820 200 0 1 {name=DUM10 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 5060 200 0 1 {name=DUM11 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 5300 200 0 1 {name=DUM12 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 5540 200 0 1 {name=DUM13 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 5780 200 0 1 {name=DUM14 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 6020 200 0 1 {name=DUM15 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 6260 200 0 1 {name=DUM16 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 6500 200 0 1 {name=DUM17 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 6740 200 0 1 {name=DUM18 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 6980 200 0 1 {name=DUM19 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 7220 200 0 1 {name=DUM20 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 7460 200 0 1 {name=DUM21 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 7700 200 0 1 {name=DUM22 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 7940 200 0 1 {name=DUM23 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 8180 200 0 1 {name=DUM24 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 8420 200 0 1 {name=DUM25 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 8660 200 0 1 {name=DUM26 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 8900 200 0 1 {name=DUM27 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 9140 200 0 1 {name=DUM28 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 9380 200 0 1 {name=DUM29 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 9620 200 0 1 {name=DUM30 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 9820 200 0 0 {name=DUM31 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
 N 0 0 -20 0 {lab=VGND}
 C {devices/lab_pin.sym} -20 0 0 0 {name=l1 sig_type=std_logic lab=VGND}
 N 240 0 220 0 {lab=VGND}
@@ -227,7 +227,7 @@ N 9120 230 9120 270 {lab=VGND}
 N 9360 230 9360 270 {lab=VGND}
 N 9600 230 9600 270 {lab=VGND}
 N 9840 230 9840 270 {lab=VGND}
-C {devices/gnd.sym} 480 270 0 0 {name=l49 lab=VGND}
+C {devices/gnd.sym} 480 270 0 0 {name=l49 lab=VGND global=false}
 N 2400 170 2400 150 {lab=VGND}
 C {devices/lab_pin.sym} 2400 150 1 0 {name=l50 sig_type=std_logic lab=VGND}
 N 2640 170 2640 150 {lab=VGND}

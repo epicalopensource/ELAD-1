@@ -6,7 +6,7 @@ S {}
 E {}
 C {ELAD1_TGA.sym} 540 0 0 0 {name=X1}
 C {ELAD1_TGA.sym} 940 0 0 0 {name=X2}
-C {sky130_fd_pr/nfet_01v8.sym} -20 0 0 0 {name=SH model=nfet_01v8 W=1 L=0.15}
+C {sky130_fd_pr/nfet_01v8.sym} -20 0 0 0 {name=SH model=nfet_01v8 W=1 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
 N 0 0 20 0 {lab=VGND}
 C {devices/lab_pin.sym} 20 0 0 1 {name=l1 sig_type=std_logic lab=VGND}
 N 620 0 640 0 {lab=VDPWR}
@@ -18,7 +18,7 @@ C {devices/lab_pin.sym} 640 20 0 1 {name=l4 sig_type=std_logic lab=VGND}
 N 1020 20 1040 20 {lab=VGND}
 C {devices/lab_pin.sym} 1040 20 0 1 {name=l5 sig_type=std_logic lab=VGND}
 N 0 30 0 50 {lab=VGND}
-C {devices/gnd.sym} 0 50 0 0 {name=l6 lab=VGND}
+C {devices/gnd.sym} 0 50 0 0 {name=l6 lab=VGND global=false}
 N 460 -20 440 -20 {lab=A}
 N 380 -20 440 -20 {lab=A}
 N 860 0 840 0 {lab=B}

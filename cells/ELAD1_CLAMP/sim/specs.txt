@@ -1,3 +1,6 @@
-# Pass/fail limits for measurements printed by the testbench (.meas or `meas` in .control).
-# <name>  <min|->  <max|->      SI suffixes allowed: f p n u m k meg g
-# tpd      -        50p
+# Pass/fail limits for tb_ELAD1_CLAMP (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
+# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
+v_clamped   -     50m   # CLR=1 holds NODE against a 1 Mohm pull-up   sim 19.5 mV
+v_released  1.79  -     # CLR=0 releases NODE completely              sim 1.80 V
+i_leak      -     100p  # off-state leakage onto a live 0.9 V node    sim 1 pA

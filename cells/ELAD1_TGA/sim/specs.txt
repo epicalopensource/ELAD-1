@@ -1,3 +1,7 @@
-# Pass/fail limits for measurements printed by the testbench (.meas or `meas` in .control).
-# <name>  <min|->  <max|->      SI suffixes allowed: f p n u m k meg g
-# tpd      -        50p
+# Pass/fail limits for tb_ELAD1_TGA (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
+# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
+ron_max     -  2k      # precision/current TG: design requirement Ron <= ~2 kohm (all PVT)   sim 698  pkg 639
+ron_0p7     -  1k      # Ron at 0.7 V                                                        sim 373  pkg 318
+ron_1p2     -  1.5k    # Ron at 1.2 V                                                        sim 628  pkg 555
+i_leak_off  -  50n     # off leakage, A=0.3 V, B=1.8 V (low-Vt, worst case)                  sim 10.5n pkg 11.5n
