@@ -9,7 +9,8 @@ with xschem, and that netlist is compared with the source, instance by instance:
 ports (in order), terminals (in order), model, and the sizes W, L, nf, area, perim/pj, m/mult,
 and the value of R/C/L/V/I. Names are compared case-insensitively (SPICE is case-insensitive).
 Not compared: parameters the sky130 symbols compute themselves (ad, as, pd, ps, nrd, nrs, sa, sb,
-sd), comments, and instance order.
+sd), comments, and instance order. Array instances (A[3:0] drawn once) count as their units:
+XA[3] is compared as XA3.
 
 A difference means the schematic does not describe the source circuit: do not use it; report
 the printed lines. Exit status: 0 all checked cells match, 1 a difference, 2 usage error.
@@ -26,9 +27,15 @@ SCALE = {"a": 1e-18, "f": 1e-15, "p": 1e-12, "n": 1e-9, "u": 1e-6, "m": 1e-3,
          "k": 1e3, "meg": 1e6, "g": 1e9, "t": 1e12}
 
 
+ARRAY = re.compile(r"\[(\d+)\]")
+
+
 def logical_lines(path: Path) -> list[str]:
     out: list[str] = []
     for raw in path.read_text(errors="replace").splitlines():
+        # instance arrays drawn as one symbol (A[3:0]) netlist as XA[3], XA[2] ...; a netlist
+        # written unit by unit names them XA3, XA2 ...: the same devices, so compare them as such
+        raw = ARRAY.sub(r"\1", raw)
         if raw.startswith("+") and out:
             out[-1] += " " + raw[1:]
         else:

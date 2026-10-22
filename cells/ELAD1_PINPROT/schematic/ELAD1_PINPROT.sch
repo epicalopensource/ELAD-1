@@ -4,20 +4,21 @@ K {}
 V {}
 S {}
 E {}
-C {devices/res.sym} 360 300 0 0 {name=RLINK value=0.001}
-C {sky130_fd_pr/diode.sym} 0 200 0 0 {name=DN model=diode_pw2nd_05v5 area=36 perim=40}
-C {sky130_fd_pr/diode.sym} 0 0 0 0 {name=DP model=diode_pd2nw_05v5 area=36 perim=40}
-N 0 230 0 250 {lab=VGND}
-C {devices/gnd.sym} 0 250 0 0 {name=l1 lab=VGND global=false}
-N 0 -30 0 -50 {lab=VDPWR}
-C {devices/vdd.sym} 0 -50 0 0 {name=l2 lab=VDPWR global=false}
-N 360 270 360 170 {lab=PAD}
-N 0 30 0 170 {lab=PAD}
-N -60 170 0 170 {lab=PAD}
-N 0 170 360 170 {lab=PAD}
-N 360 330 360 370 {lab=CORE}
-N 300 370 360 370 {lab=CORE}
-C {devices/iopin.sym} -60 170 0 1 {name=p3 lab=PAD}
-C {devices/iopin.sym} 300 370 0 1 {name=p4 lab=CORE}
-C {devices/iopin.sym} -220 -30 0 1 {name=p5 lab=VDPWR}
-C {devices/iopin.sym} -220 10 0 1 {name=p6 lab=VGND}
+N -220 0 -100 0 {}
+N -100 0 -30 0 {}
+N 30 0 160 0 {}
+N -100 -30 -100 0 {}
+N -100 0 -100 30 {}
+N -220 -130 -100 -130 {}
+N -100 -130 -100 -90 {}
+N -220 130 -100 130 {}
+N -100 90 -100 130 {}
+C {devices/iopin.sym} -220 0 0 1 {name=p1 lab=PAD}
+C {devices/iopin.sym} 160 0 0 0 {name=p2 lab=CORE}
+C {devices/iopin.sym} -220 -130 0 1 {name=p3 lab=VDPWR}
+C {devices/iopin.sym} -220 130 0 1 {name=p4 lab=VGND}
+C {devices/res.sym} 0 0 3 0 {name=RLINK value=0.001 footprint=1206 device=resistor}
+C {sky130_fd_pr/diode.sym} -100 -60 0 0 {name=DP model=diode_pd2nw_05v5 area=36 perim=40}
+C {sky130_fd_pr/diode.sym} -100 60 0 0 {name=DN model=diode_pw2nd_05v5 area=36 perim=40}
+T {ELAD1_PINPROT: pad link + ESD diodes} -220 -220 0 0 0.35 0.35 {}
+T {DP: PAD to VDPWR, DN: VGND to PAD} -220 -185 0 0 0.22 0.22 {}
