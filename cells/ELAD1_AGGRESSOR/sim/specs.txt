@@ -1,8 +1,9 @@
 # Pass/fail limits for tb_ELAD1_AGGRESSOR (flow: cells/<CELL>/sim/specs.txt).
 # <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
-# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
-iavg      3u    8u    # average supply current, AGG_CLK 5 MHz      sim 5.19u  pkg 5.05u
-ipk       1m    5m    # peak supply current                        sim 2.53m  pkg 2.86m
-vloc_pp   -     50m   # local rail ripple behind 5 ohm             sim 12.8m  pkg 14.4m
-o0_min    -     0.1   # bank output reaches ground (it toggles)    sim -0.015
-o0_max    1.7   -     # bank output reaches VDPWR                  sim 1.81
+# "sim" = this testbench with the open_pdks sky130A models.
+i_off        -     10n    # EN = 0: no current                                    sim 0.2 nA
+i_inj        50u   130u   # AGG_CLK = 1: current steered into the tap             sim 74.6u
+i_dum        50u   130u   # AGG_CLK = 0: same current through the dummy branch    sim 74.7u
+i_step_pct   -5    5      # supply current change between the states (%)          sim -0.15
+v_tap_step   40m   120m   # tap step into 800 ohm (substrate stand-in)            sim 59.7m
+vx_max       -     0.6    # X stays low: the switches never both open             sim 0.098

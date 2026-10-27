@@ -1,0 +1,10 @@
+# Limits for tb_substrate_aggressor (on-chip aggressor at 20 kHz, synthetic substrate network).
+# Run with: flow/tb.sh ELAD1_AGGRESSOR   (checked by flow/lib/tb_rows.py)
+# <row tag> <key> <min|-> <max|-> [filter key=value ...]   SI suffixes allowed.
+# Regression limits around the typical-corner result (tt, 27 C, 1.8 V) of THIS synthetic network.
+aggr  tap_step    30m   120m   # tap step while the aggressor injects:      sim 57.5 mV
+aggr  sense_step  30m   120m   # the same step read on ua2 (calibration):   sim 57.5 mV
+aggr  pad_a       -60m  -5m    # baseline victim pad step:                  sim -15.7 mV
+aggr  pad_b       -10m  0      # guarded victim pad step:                   sim -1.90 mV
+aggr  ratio       4     20     # guard-ring isolation pad_a / pad_b:        sim 8.26
+aggr  i_step_pct  -5    5      # supply current change between states (%):  sim 0.19

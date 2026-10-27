@@ -92,53 +92,63 @@ N 3940 1210 3940 1310 {}
 N 3880 1370 3880 1420 {}
 N 4160 1140 4160 1210 {}
 N 4380 1140 4380 1210 {}
-N 4760 340 4760 1140 {}
-N 4680 280 4700 280 {}
-N 4820 280 4840 280 {}
-N 4980 780 4980 1140 {}
-N 4900 720 4920 720 {}
-N 5040 720 5060 720 {}
+N 4760 120 4760 1140 {}
+N 4680 60 4700 60 {}
+N 4820 60 4840 60 {}
+N 4980 560 4980 1140 {}
+N 4900 500 4920 500 {}
+N 5040 500 5060 500 {}
 N 5200 340 5200 1140 {}
 N 5120 280 5140 280 {}
 N 5260 280 5280 280 {}
-N 5420 1000 5420 1140 {}
-N 5340 940 5360 940 {}
-N 5480 940 5500 940 {}
-N 4760 1140 4760 1210 {}
-N 4760 1210 4760 1310 {}
-N 4700 1370 4700 1420 {}
+N 5420 780 5420 1140 {}
+N 5340 720 5360 720 {}
+N 5480 720 5500 720 {}
+N 5640 340 5640 1140 {}
+N 5560 280 5580 280 {}
+N 5700 280 5720 280 {}
+N 5860 1000 5860 1140 {}
+N 5780 940 5800 940 {}
+N 5920 940 5940 940 {}
+N 4760 1140 4980 1140 {}
 N 4980 1140 4980 1210 {}
 N 5200 1140 5200 1210 {}
 N 5200 1210 5200 1310 {}
 N 5140 1370 5140 1420 {}
 N 5420 1140 5420 1210 {}
+N 5640 1140 5640 1210 {}
+N 5640 1210 5640 1310 {}
+N 5580 1370 5580 1420 {}
+N 5860 1140 5860 1210 {}
 N -300 0 160 0 {}
 N 160 0 1200 0 {}
 N 1200 0 2240 0 {}
 N 2240 0 3500 0 {}
-N 3500 0 5460 0 {}
+N 3500 0 4760 0 {}
+N 4760 0 5900 0 {}
 N -300 220 2460 220 {}
 N 2460 220 3720 220 {}
-N 3720 220 4760 220 {}
-N 4760 220 5200 220 {}
-N 5200 220 5460 220 {}
+N 3720 220 5200 220 {}
+N 5200 220 5640 220 {}
+N 5640 220 5900 220 {}
 N -300 440 600 440 {}
 N 600 440 1640 440 {}
 N 1640 440 2680 440 {}
 N 2680 440 3940 440 {}
-N 3940 440 5460 440 {}
+N 3940 440 4980 440 {}
+N 4980 440 5900 440 {}
 N -300 660 380 660 {}
 N 380 660 1420 660 {}
 N 1420 660 2900 660 {}
 N 2900 660 4160 660 {}
-N 4160 660 4980 660 {}
-N 4980 660 5460 660 {}
+N 4160 660 5420 660 {}
+N 5420 660 5900 660 {}
 N -300 880 820 880 {}
 N 820 880 1860 880 {}
 N 1860 880 3120 880 {}
 N 3120 880 4380 880 {}
-N 4380 880 5420 880 {}
-N 5420 880 5460 880 {}
+N 4380 880 5860 880 {}
+N 5860 880 5900 880 {}
 N -300 1570 -160 1570 {}
 N -160 1570 -120 1570 {}
 N 0 1570 60 1570 {}
@@ -161,11 +171,11 @@ N 0 2210 60 2210 {}
 N 300 2210 380 2210 {}
 N -300 2370 -200 2370 {}
 N -300 2450 -200 2450 {}
-C {devices/iopin.sym} -300 0 0 1 {name=p145 lab=UA0}
-C {devices/iopin.sym} -300 220 0 1 {name=p146 lab=UA1}
-C {devices/iopin.sym} -300 440 0 1 {name=p147 lab=UA2}
-C {devices/iopin.sym} -300 660 0 1 {name=p148 lab=UA3}
-C {devices/iopin.sym} -300 880 0 1 {name=p149 lab=UA4}
+C {devices/iopin.sym} -300 0 0 1 {name=p155 lab=UA0}
+C {devices/iopin.sym} -300 220 0 1 {name=p156 lab=UA1}
+C {devices/iopin.sym} -300 440 0 1 {name=p157 lab=UA2}
+C {devices/iopin.sym} -300 660 0 1 {name=p158 lab=UA3}
+C {devices/iopin.sym} -300 880 0 1 {name=p159 lab=UA4}
 C {devices/iopin.sym} 380 1210 0 0 {name=p17 lab=REF_G}
 C {devices/iopin.sym} 820 1210 0 0 {name=p21 lab=OUT_G}
 C {devices/iopin.sym} 1420 1210 0 0 {name=p39 lab=REF_C}
@@ -180,22 +190,23 @@ C {devices/iopin.sym} 3720 1210 0 0 {name=p105 lab=VINP_C}
 C {devices/iopin.sym} 3940 1210 0 0 {name=p109 lab=VINM_C}
 C {devices/iopin.sym} 4160 1210 0 0 {name=p113 lab=D1_C}
 C {devices/iopin.sym} 4380 1210 0 0 {name=p115 lab=D2_C}
-C {devices/iopin.sym} 4760 1210 0 0 {name=p133 lab=VQUIET_A}
-C {devices/iopin.sym} 5200 1210 0 0 {name=p139 lab=VQUIET_B}
-C {devices/iopin.sym} 4980 1210 0 0 {name=p137 lab=OUT_A}
-C {devices/iopin.sym} 5420 1210 0 0 {name=p143 lab=OUT_B}
-C {devices/iopin.sym} -300 1570 0 1 {name=p150 lab=EN_MG}
-C {devices/iopin.sym} -300 1730 0 1 {name=p157 lab=EN_MC}
-C {devices/iopin.sym} -300 1890 0 1 {name=p164 lab=EN_PG}
-C {devices/iopin.sym} -300 2050 0 1 {name=p171 lab=EN_PC}
-C {devices/iopin.sym} -300 2210 0 1 {name=p178 lab=EN_N}
-C {devices/iopin.sym} 300 1570 0 1 {name=p155 lab=CLR_MG}
-C {devices/iopin.sym} 300 1730 0 1 {name=p162 lab=CLR_MC}
-C {devices/iopin.sym} 300 1890 0 1 {name=p169 lab=CLR_PG}
-C {devices/iopin.sym} 300 2050 0 1 {name=p176 lab=CLR_PC}
-C {devices/iopin.sym} 300 2210 0 1 {name=p183 lab=CLR_N}
-C {devices/iopin.sym} -300 2370 0 1 {name=p185 lab=VDPWR}
-C {devices/iopin.sym} -300 2450 0 1 {name=p187 lab=VGND}
+C {devices/iopin.sym} 5200 1210 0 0 {name=p143 lab=VQUIET_A}
+C {devices/iopin.sym} 5640 1210 0 0 {name=p149 lab=VQUIET_B}
+C {devices/iopin.sym} 5420 1210 0 0 {name=p147 lab=OUT_A}
+C {devices/iopin.sym} 5860 1210 0 0 {name=p153 lab=OUT_B}
+C {devices/iopin.sym} 4980 1210 0 0 {name=p141 lab=SUBI}
+C {devices/iopin.sym} -300 1570 0 1 {name=p160 lab=EN_MG}
+C {devices/iopin.sym} -300 1730 0 1 {name=p167 lab=EN_MC}
+C {devices/iopin.sym} -300 1890 0 1 {name=p174 lab=EN_PG}
+C {devices/iopin.sym} -300 2050 0 1 {name=p181 lab=EN_PC}
+C {devices/iopin.sym} -300 2210 0 1 {name=p188 lab=EN_N}
+C {devices/iopin.sym} 300 1570 0 1 {name=p165 lab=CLR_MG}
+C {devices/iopin.sym} 300 1730 0 1 {name=p172 lab=CLR_MC}
+C {devices/iopin.sym} 300 1890 0 1 {name=p179 lab=CLR_PG}
+C {devices/iopin.sym} 300 2050 0 1 {name=p186 lab=CLR_PC}
+C {devices/iopin.sym} 300 2210 0 1 {name=p193 lab=CLR_N}
+C {devices/iopin.sym} -300 2370 0 1 {name=p195 lab=VDPWR}
+C {devices/iopin.sym} -300 2450 0 1 {name=p197 lab=VGND}
 C {ELAD1_TGA.sym} 160 60 1 0 {name=XSMG0}
 C {devices/lab_pin.sym} 80 60 0 0 {name=l1 sig_type=std_logic lab=EN_MG}
 C {devices/lab_pin.sym} 240 60 0 1 {name=l2 sig_type=std_logic lab=ENB_MG}
@@ -324,68 +335,79 @@ C {devices/lab_pin.sym} 3880 1420 0 0 {name=l111 sig_type=std_logic lab=CLR_PC}
 C {devices/gnd.sym} 3940 1430 0 0 {name=l112 lab=VGND global=false}
 C {devices/lab_pin.sym} 4160 1140 0 1 {name=l114 sig_type=std_logic lab=D1_C}
 C {devices/lab_pin.sym} 4380 1140 0 1 {name=l116 sig_type=std_logic lab=D2_C}
-C {ELAD1_TGB.sym} 4760 280 1 0 {name=XSN1A}
-C {devices/lab_pin.sym} 4680 280 0 0 {name=l117 sig_type=std_logic lab=EN_N}
-C {devices/lab_pin.sym} 4840 280 0 1 {name=l118 sig_type=std_logic lab=ENB_N}
-C {devices/vdd.sym} 4820 320 0 0 {name=l119 lab=VDPWR global=false}
-C {devices/gnd.sym} 4700 320 0 0 {name=l120 lab=VGND global=false}
-C {ELAD1_TSW.sym} 4980 720 1 0 {name=XSN3}
-C {devices/lab_pin.sym} 4900 720 0 0 {name=l121 sig_type=std_logic lab=EN_N}
-C {devices/lab_pin.sym} 5060 720 0 1 {name=l122 sig_type=std_logic lab=ENB_N}
-C {devices/vdd.sym} 5040 760 0 0 {name=l123 lab=VDPWR global=false}
-C {devices/gnd.sym} 4920 760 0 0 {name=l124 lab=VGND global=false}
-C {ELAD1_TGB.sym} 5200 280 1 0 {name=XSN1B}
+C {ELAD1_TGB.sym} 4760 60 1 0 {name=XSN0}
+C {devices/lab_pin.sym} 4680 60 0 0 {name=l117 sig_type=std_logic lab=EN_N}
+C {devices/lab_pin.sym} 4840 60 0 1 {name=l118 sig_type=std_logic lab=ENB_N}
+C {devices/vdd.sym} 4820 100 0 0 {name=l119 lab=VDPWR global=false}
+C {devices/gnd.sym} 4700 100 0 0 {name=l120 lab=VGND global=false}
+C {ELAD1_TGB.sym} 4980 500 1 0 {name=XSN2}
+C {devices/lab_pin.sym} 4900 500 0 0 {name=l121 sig_type=std_logic lab=EN_N}
+C {devices/lab_pin.sym} 5060 500 0 1 {name=l122 sig_type=std_logic lab=ENB_N}
+C {devices/vdd.sym} 5040 540 0 0 {name=l123 lab=VDPWR global=false}
+C {devices/gnd.sym} 4920 540 0 0 {name=l124 lab=VGND global=false}
+C {ELAD1_TGB.sym} 5200 280 1 0 {name=XSN1A}
 C {devices/lab_pin.sym} 5120 280 0 0 {name=l125 sig_type=std_logic lab=EN_N}
 C {devices/lab_pin.sym} 5280 280 0 1 {name=l126 sig_type=std_logic lab=ENB_N}
 C {devices/vdd.sym} 5260 320 0 0 {name=l127 lab=VDPWR global=false}
 C {devices/gnd.sym} 5140 320 0 0 {name=l128 lab=VGND global=false}
-C {ELAD1_TSW.sym} 5420 940 1 0 {name=XSN4}
-C {devices/lab_pin.sym} 5340 940 0 0 {name=l129 sig_type=std_logic lab=EN_N}
-C {devices/lab_pin.sym} 5500 940 0 1 {name=l130 sig_type=std_logic lab=ENB_N}
-C {devices/vdd.sym} 5480 980 0 0 {name=l131 lab=VDPWR global=false}
-C {devices/gnd.sym} 5360 980 0 0 {name=l132 lab=VGND global=false}
-C {devices/lab_pin.sym} 4760 1140 0 1 {name=l134 sig_type=std_logic lab=VQUIET_A}
-C {ELAD1_CLAMP.sym} 4760 1370 0 0 {name=XCL_VQ_A}
-C {devices/lab_pin.sym} 4700 1420 0 0 {name=l135 sig_type=std_logic lab=CLR_N}
-C {devices/gnd.sym} 4760 1430 0 0 {name=l136 lab=VGND global=false}
-C {devices/lab_pin.sym} 4980 1140 0 1 {name=l138 sig_type=std_logic lab=OUT_A}
-C {devices/lab_pin.sym} 5200 1140 0 1 {name=l140 sig_type=std_logic lab=VQUIET_B}
-C {ELAD1_CLAMP.sym} 5200 1370 0 0 {name=XCL_VQ_B}
-C {devices/lab_pin.sym} 5140 1420 0 0 {name=l141 sig_type=std_logic lab=CLR_N}
-C {devices/gnd.sym} 5200 1430 0 0 {name=l142 lab=VGND global=false}
-C {devices/lab_pin.sym} 5420 1140 0 1 {name=l144 sig_type=std_logic lab=OUT_B}
+C {ELAD1_TSW.sym} 5420 720 1 0 {name=XSN3}
+C {devices/lab_pin.sym} 5340 720 0 0 {name=l129 sig_type=std_logic lab=EN_N}
+C {devices/lab_pin.sym} 5500 720 0 1 {name=l130 sig_type=std_logic lab=ENB_N}
+C {devices/vdd.sym} 5480 760 0 0 {name=l131 lab=VDPWR global=false}
+C {devices/gnd.sym} 5360 760 0 0 {name=l132 lab=VGND global=false}
+C {ELAD1_TGB.sym} 5640 280 1 0 {name=XSN1B}
+C {devices/lab_pin.sym} 5560 280 0 0 {name=l133 sig_type=std_logic lab=EN_N}
+C {devices/lab_pin.sym} 5720 280 0 1 {name=l134 sig_type=std_logic lab=ENB_N}
+C {devices/vdd.sym} 5700 320 0 0 {name=l135 lab=VDPWR global=false}
+C {devices/gnd.sym} 5580 320 0 0 {name=l136 lab=VGND global=false}
+C {ELAD1_TSW.sym} 5860 940 1 0 {name=XSN4}
+C {devices/lab_pin.sym} 5780 940 0 0 {name=l137 sig_type=std_logic lab=EN_N}
+C {devices/lab_pin.sym} 5940 940 0 1 {name=l138 sig_type=std_logic lab=ENB_N}
+C {devices/vdd.sym} 5920 980 0 0 {name=l139 lab=VDPWR global=false}
+C {devices/gnd.sym} 5800 980 0 0 {name=l140 lab=VGND global=false}
+C {devices/lab_pin.sym} 4980 1140 0 1 {name=l142 sig_type=std_logic lab=SUBI}
+C {devices/lab_pin.sym} 5200 1140 0 1 {name=l144 sig_type=std_logic lab=VQUIET_A}
+C {ELAD1_CLAMP.sym} 5200 1370 0 0 {name=XCL_VQ_A}
+C {devices/lab_pin.sym} 5140 1420 0 0 {name=l145 sig_type=std_logic lab=CLR_N}
+C {devices/gnd.sym} 5200 1430 0 0 {name=l146 lab=VGND global=false}
+C {devices/lab_pin.sym} 5420 1140 0 1 {name=l148 sig_type=std_logic lab=OUT_A}
+C {devices/lab_pin.sym} 5640 1140 0 1 {name=l150 sig_type=std_logic lab=VQUIET_B}
+C {ELAD1_CLAMP.sym} 5640 1370 0 0 {name=XCL_VQ_B}
+C {devices/lab_pin.sym} 5580 1420 0 0 {name=l151 sig_type=std_logic lab=CLR_N}
+C {devices/gnd.sym} 5640 1430 0 0 {name=l152 lab=VGND global=false}
+C {devices/lab_pin.sym} 5860 1140 0 1 {name=l154 sig_type=std_logic lab=OUT_B}
 C {ELAD1_INV.sym} -60 1570 0 0 {name=XINV_MG}
-C {devices/lab_pin.sym} -160 1570 0 1 {name=l151 sig_type=std_logic lab=EN_MG}
-C {devices/lab_pin.sym} 60 1570 0 1 {name=l152 sig_type=std_logic lab=ENB_MG}
-C {devices/vdd.sym} -60 1520 0 0 {name=l153 lab=VDPWR global=false}
-C {devices/gnd.sym} -60 1620 0 0 {name=l154 lab=VGND global=false}
-C {devices/lab_pin.sym} 380 1570 0 1 {name=l156 sig_type=std_logic lab=CLR_MG}
+C {devices/lab_pin.sym} -160 1570 0 1 {name=l161 sig_type=std_logic lab=EN_MG}
+C {devices/lab_pin.sym} 60 1570 0 1 {name=l162 sig_type=std_logic lab=ENB_MG}
+C {devices/vdd.sym} -60 1520 0 0 {name=l163 lab=VDPWR global=false}
+C {devices/gnd.sym} -60 1620 0 0 {name=l164 lab=VGND global=false}
+C {devices/lab_pin.sym} 380 1570 0 1 {name=l166 sig_type=std_logic lab=CLR_MG}
 C {ELAD1_INV.sym} -60 1730 0 0 {name=XINV_MC}
-C {devices/lab_pin.sym} -160 1730 0 1 {name=l158 sig_type=std_logic lab=EN_MC}
-C {devices/lab_pin.sym} 60 1730 0 1 {name=l159 sig_type=std_logic lab=ENB_MC}
-C {devices/vdd.sym} -60 1680 0 0 {name=l160 lab=VDPWR global=false}
-C {devices/gnd.sym} -60 1780 0 0 {name=l161 lab=VGND global=false}
-C {devices/lab_pin.sym} 380 1730 0 1 {name=l163 sig_type=std_logic lab=CLR_MC}
+C {devices/lab_pin.sym} -160 1730 0 1 {name=l168 sig_type=std_logic lab=EN_MC}
+C {devices/lab_pin.sym} 60 1730 0 1 {name=l169 sig_type=std_logic lab=ENB_MC}
+C {devices/vdd.sym} -60 1680 0 0 {name=l170 lab=VDPWR global=false}
+C {devices/gnd.sym} -60 1780 0 0 {name=l171 lab=VGND global=false}
+C {devices/lab_pin.sym} 380 1730 0 1 {name=l173 sig_type=std_logic lab=CLR_MC}
 C {ELAD1_INV.sym} -60 1890 0 0 {name=XINV_PG}
-C {devices/lab_pin.sym} -160 1890 0 1 {name=l165 sig_type=std_logic lab=EN_PG}
-C {devices/lab_pin.sym} 60 1890 0 1 {name=l166 sig_type=std_logic lab=ENB_PG}
-C {devices/vdd.sym} -60 1840 0 0 {name=l167 lab=VDPWR global=false}
-C {devices/gnd.sym} -60 1940 0 0 {name=l168 lab=VGND global=false}
-C {devices/lab_pin.sym} 380 1890 0 1 {name=l170 sig_type=std_logic lab=CLR_PG}
+C {devices/lab_pin.sym} -160 1890 0 1 {name=l175 sig_type=std_logic lab=EN_PG}
+C {devices/lab_pin.sym} 60 1890 0 1 {name=l176 sig_type=std_logic lab=ENB_PG}
+C {devices/vdd.sym} -60 1840 0 0 {name=l177 lab=VDPWR global=false}
+C {devices/gnd.sym} -60 1940 0 0 {name=l178 lab=VGND global=false}
+C {devices/lab_pin.sym} 380 1890 0 1 {name=l180 sig_type=std_logic lab=CLR_PG}
 C {ELAD1_INV.sym} -60 2050 0 0 {name=XINV_PC}
-C {devices/lab_pin.sym} -160 2050 0 1 {name=l172 sig_type=std_logic lab=EN_PC}
-C {devices/lab_pin.sym} 60 2050 0 1 {name=l173 sig_type=std_logic lab=ENB_PC}
-C {devices/vdd.sym} -60 2000 0 0 {name=l174 lab=VDPWR global=false}
-C {devices/gnd.sym} -60 2100 0 0 {name=l175 lab=VGND global=false}
-C {devices/lab_pin.sym} 380 2050 0 1 {name=l177 sig_type=std_logic lab=CLR_PC}
+C {devices/lab_pin.sym} -160 2050 0 1 {name=l182 sig_type=std_logic lab=EN_PC}
+C {devices/lab_pin.sym} 60 2050 0 1 {name=l183 sig_type=std_logic lab=ENB_PC}
+C {devices/vdd.sym} -60 2000 0 0 {name=l184 lab=VDPWR global=false}
+C {devices/gnd.sym} -60 2100 0 0 {name=l185 lab=VGND global=false}
+C {devices/lab_pin.sym} 380 2050 0 1 {name=l187 sig_type=std_logic lab=CLR_PC}
 C {ELAD1_INV.sym} -60 2210 0 0 {name=XINV_N}
-C {devices/lab_pin.sym} -160 2210 0 1 {name=l179 sig_type=std_logic lab=EN_N}
-C {devices/lab_pin.sym} 60 2210 0 1 {name=l180 sig_type=std_logic lab=ENB_N}
-C {devices/vdd.sym} -60 2160 0 0 {name=l181 lab=VDPWR global=false}
-C {devices/gnd.sym} -60 2260 0 0 {name=l182 lab=VGND global=false}
-C {devices/lab_pin.sym} 380 2210 0 1 {name=l184 sig_type=std_logic lab=CLR_N}
-C {devices/vdd.sym} -200 2370 0 0 {name=l186 lab=VDPWR global=false}
-C {devices/gnd.sym} -200 2450 0 0 {name=l188 lab=VGND global=false}
+C {devices/lab_pin.sym} -160 2210 0 1 {name=l189 sig_type=std_logic lab=EN_N}
+C {devices/lab_pin.sym} 60 2210 0 1 {name=l190 sig_type=std_logic lab=ENB_N}
+C {devices/vdd.sym} -60 2160 0 0 {name=l191 lab=VDPWR global=false}
+C {devices/gnd.sym} -60 2260 0 0 {name=l192 lab=VGND global=false}
+C {devices/lab_pin.sym} 380 2210 0 1 {name=l194 sig_type=std_logic lab=CLR_N}
+C {devices/vdd.sym} -200 2370 0 0 {name=l196 lab=VDPWR global=false}
+C {devices/gnd.sym} -200 2450 0 0 {name=l198 lab=VGND global=false}
 T {MIRROR GROUPED: EN_MG / ENB_MG, clamps CLR_MG} 100 -150 0 0 0.3 0.3 {}
 T {MIRROR CENTROID: EN_MC / ENB_MC, clamps CLR_MC} 1140 -150 0 0 0.3 0.3 {}
 T {PAIR GROUPED: EN_PG / ENB_PG, clamps CLR_PG} 2180 -150 0 0 0.3 0.3 {}
