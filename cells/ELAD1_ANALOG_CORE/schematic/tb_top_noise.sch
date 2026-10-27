@@ -151,7 +151,7 @@ C {devices/res.sym} -560 450 3 0 {name=RPA2 value=500}
 C {devices/lab_pin.sym} -620 450 0 0 {name=l20 sig_type=std_logic lab=P2}
 C {devices/capa.sym} -740 500 0 0 {name=CPE2 value=2.5p}
 C {devices/gnd.sym} -740 530 0 0 {name=l21 lab=0 global=false}
-C {devices/vsource.sym} -860 500 0 0 {name=VP2 value=0}
+C {devices/res.sym} -860 500 0 0 {name=RM2 value=1e9}
 C {devices/gnd.sym} -860 530 0 0 {name=l22 lab=0 global=false}
 C {devices/lab_pin.sym} -360 310 0 0 {name=l23 sig_type=std_logic lab=UA1}
 C {devices/capa.sym} -500 360 0 0 {name=CPI1 value=2.5p}
@@ -221,31 +221,41 @@ C {devices/lab_pin.sym} -980 1390 0 0 {name=l68 sig_type=std_logic lab=HEN}
 C {devices/vsource.sym} -860 1440 0 0 {name=VHEN value=0}
 C {devices/gnd.sym} -860 1470 0 0 {name=l69 lab=0 global=false}
 C {devices/lab_pin.sym} -720 1390 0 0 {name=l70 sig_type=std_logic lab=AGG_CLK}
-C {devices/vsource.sym} -600 1440 0 0 {name=VAGG value="PULSE(0 1.8 1u 100p 100p 9.99e-08 2e-07)"}
+C {devices/vsource.sym} -600 1440 0 0 {name=VAGG value="PULSE(0 1.8 10u 2n 2n 24.998u 50u)"}
 C {devices/gnd.sym} -600 1470 0 0 {name=l71 lab=0 global=false}
 C {devices/vdd.sym} -460 1390 0 0 {name=l72 lab=VDPWR global=false}
 C {devices/res.sym} -400 1390 1 0 {name=RPDN value=5}
 C {devices/lab_pin.sym} -340 1390 0 1 {name=l73 sig_type=std_logic lab=vsup}
 C {devices/vsource.sym} -220 1440 0 0 {name=VSUP value=1.8}
 C {devices/gnd.sym} -220 1470 0 0 {name=l74 lab=0 global=false}
-T {tb_top_noise - noise mode (both victim stages, baseline and guarded) with the aggressor running.} -1020 -220 0 0 0.4 0.4 {}
+T {tb_top_noise - noise mode: both victims biased, the aggressor running, the injector pins in use.} -1020 -265 0 0 0.4 0.4 {}
 T {ua1: VQUIET, the common bias of both victims   ua3 / ua4: victim outputs into the board load RL || CL
-The aggressor clock AGG_CLK is the controller clock (10 MHz) divided by 2: period 2e-07 s.
-For the clock divided by 16 set PULSE(0 1.8 1u 100p 100p 7.999e-7 1.6e-6).
-The 5 ohm PDN puts the aggressor's switching current on the shared rail VDPWR.
-Measured over 3..6 us: peak-to-peak on each output (p3pp, p4pp), between them (dpp) and on VDPWR.} -1020 -175 0 0 0.22 0.22 {}
+ua0: injector force, held at 0 V by the bench source   ua2: injector sense into a 1 Gohm meter
+The aggressor clock AGG_CLK is the controller clock (40 kHz) divided by 2: 20 kHz, period 50 us.
+There is no substrate model at this level: SUBI reaches the substrate only in layout. Here the aggressor
+current returns through the ua0 force path, so SUBI steps by I x (path resistance) and ua2 must read it.
+Measured: victim DC before the clock starts, SUBI step and its ua2 reading, victim output steps (only
+rail coupling here, so they must stay small) and the VDPWR ripple through the 5 ohm PDN.} -1020 -220 0 0 0.22 0.22 {}
 C {devices/code_shown.sym} 1680 200 0 0 {name=s1 only_toplevel=false value=".option reltol=1e-4 abstol=1e-13 vntol=1e-7 gmin=1e-15 method=gear
-.save v(P1) v(P3) v(P4) v(VDPWR) v(AGG_CLK)
-.tran 0.2n 6u
+.save v(P1) v(P2) v(P3) v(P4) v(VDPWR) v(AGG_CLK) v(xcore.subi) i(vsup)
+.tran 20n 110u
 .control
 run
-meas tran v3dc avg v(P3) from=0.5u to=0.95u
-meas tran v4dc avg v(P4) from=0.5u to=0.95u
-let vdiff = v(P3)-v(P4)
-meas tran p3pp pp v(P3) from=3u to=6u
-meas tran p4pp pp v(P4) from=3u to=6u
-meas tran dpp pp vdiff from=3u to=6u
-meas tran vdd_pp pp v(VDPWR) from=3u to=6u
-echo ROW noise div=2 v3dc=$&v3dc v4dc=$&v4dc p3pp=$&p3pp p4pp=$&p4pp dpp=$&dpp vdd_pp=$&vdd_pp
+meas tran v3dc avg v(P3) from=5u to=9.5u
+meas tran v4dc avg v(P4) from=5u to=9.5u
+meas tran sh avg v(xcore.subi) from=80u to=84.9u
+meas tran sl avg v(xcore.subi) from=105u to=109.9u
+meas tran p2h avg v(P2) from=80u to=84.9u
+meas tran p2l avg v(P2) from=105u to=109.9u
+meas tran p3h avg v(P3) from=80u to=84.9u
+meas tran p3l avg v(P3) from=105u to=109.9u
+meas tran p4h avg v(P4) from=80u to=84.9u
+meas tran p4l avg v(P4) from=105u to=109.9u
+meas tran vdd_pp pp v(VDPWR) from=60u to=110u
+let subi_step = sh-sl
+let sense_err = abs((p2h-p2l)-(sh-sl))
+let p3_step = abs(p3h-p3l)
+let p4_step = abs(p4h-p4l)
+echo ROW noise div=2 v3dc=$&v3dc v4dc=$&v4dc subi_step=$&subi_step sense_err=$&sense_err p3_step=$&p3_step p4_step=$&p4_step vdd_pp=$&vdd_pp
 .endc"}
 C {sky130_fd_pr/corner.sym} 1680 0 0 0 {name=CORNER only_toplevel=true corner=tt}

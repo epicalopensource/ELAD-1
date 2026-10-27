@@ -1,0 +1,11 @@
+# Limits for tb_substrate_injection (pin-driven injector, DC sweep of ua0, synthetic substrate network).
+# Run with: flow/tb.sh ELAD1_AGGRESSOR   (checked by flow/lib/tb_rows.py)
+# <row tag> <key> <min|-> <max|-> [filter key=value ...]   SI suffixes allowed.
+# Regression limits around the typical-corner result (tt, 27 C, 1.8 V) of THIS synthetic network; the real
+# substrate decides the silicon numbers. Transfers are pad change / tap change (V/V), tap read on ua2.
+inject  tap_hi     60m   200m   # tap (ua2 reading) with ua0 = +0.5 V:   sim 112 mV
+inject  t_a        -0.6  -0.1   # baseline victim pad / tap:             sim -0.275
+inject  t_b        -0.1  0      # guarded victim pad / tap:              sim -0.0331
+inject  ratio      4     20     # guard-ring isolation t_a / t_b:        sim 8.32
+inject  sense_err  -     100u   # ua2 reading vs true tap voltage:       sim 0.2 uV
+inject  tap0       -     1m     # tap at ua0 = 0 V, aggressor idle:      sim 5.7 uV

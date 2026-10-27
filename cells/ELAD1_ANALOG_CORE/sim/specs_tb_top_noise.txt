@@ -1,12 +1,12 @@
-# Limits for tb_top_noise (victims baseline/guarded, aggressor at clk/2, outputs into 1 Gohm || 5 pF).
+# Limits for tb_top_noise (victims baseline/guarded, aggressor at 20 kHz, injector pins ua0/ua2 in use).
 # Run with: flow/tb.sh ELAD1_ANALOG_CORE   (checked by flow/lib/tb_rows.py)
 # <row tag> <key> <min|-> <max|-> [filter key=value ...]   SI suffixes allowed.
 # These are regression limits around the typical-corner results (tt, 27 C, 1.8 V), not datasheet
-# specifications. "sim" = this testbench with the open_pdks sky130A models; "pkg" = ELAD1 design
-# package top-level results (reduced model library; "PVT" = its 5-corner range).
-noise  v3dc    0.8  1.0    # baseline victim output DC: sim 0.915 V, pkg 0.900 V
-noise  v4dc    0.8  1.0    # guarded victim output DC:  sim 0.915 V, pkg 0.900 V
-noise  p3pp    -    100u   # baseline output pk-pk while the aggressor runs: sim 16.8 uV, pkg 11.0 uV
-noise  p4pp    -    100u   # guarded output pk-pk: sim 19.4 uV, pkg 12.1 uV
-noise  dpp     -    20u    # difference ua3-ua4 pk-pk: sim 2.6 uV, pkg 1.1 uV
-noise  vdd_pp  -    30m    # VDPWR ripple through the 5 ohm PDN: sim 12.2 mV, pkg 14.4 mV
+# specifications. No substrate model at this level: the aggressor current returns through the ua0 path.
+noise  v3dc       0.8  1.0    # baseline victim output DC:                         sim 0.915 V
+noise  v4dc       0.8  1.0    # guarded victim output DC:                          sim 0.915 V
+noise  subi_step  50m  250m   # tap SUBI step, aggressor into the ua0 path:        sim 111 mV
+noise  sense_err  -    1m     # ua2 reading of the step vs the true tap step:      sim 0.2 uV
+noise  p3_step    -    1m     # baseline output step (rail coupling only here):    sim 11 uV
+noise  p4_step    -    1m     # guarded output step (rail coupling only here):     sim 11 uV
+noise  vdd_pp     -    5m     # VDPWR ripple through the 5 ohm PDN:                sim 0.48 mV

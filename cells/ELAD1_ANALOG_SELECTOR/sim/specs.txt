@@ -6,5 +6,8 @@ ron_ua4          -  1k     # ua4 -> OUT_G precision path (TGA), 10 uA      sim 3
 sense_err_ua3    -  1m     # ua3 senses REF_G (no current)                  sim 31 nV
 sense_err_ua2    -  1m     # ua2 Kelvin-senses OUT_G (no current)           sim 13 nV
 v_ref_c_clamped  -  50m    # inactive REF_C held by its clamp (1M pull-up)  sim 19.5 mV
-i_idle_ua0       -  1n     # idle: leakage into ua0 at 0.7 V                sim 24 pA
+i_idle_ua0       -  1n     # idle: leakage into ua0 at 0.7 V (6 switches)   sim 26 pA
 v_ref_g_idle     -  10m    # idle: REF_G clamped again                      sim ~0
+ron_subi         -  2k     # noise: ua0 -> SUBI injector force path (TGB)   sim 1034
+sense_err_subi   -  1m     # noise: ua2 senses SUBI (no current)            sim 10 nV
+v_subi           30m 80m   # noise: SUBI with 0.1 V on ua0, 800 ohm tap     sim 43.6m
