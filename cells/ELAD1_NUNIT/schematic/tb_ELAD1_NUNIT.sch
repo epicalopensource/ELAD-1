@@ -1,25 +1,26 @@
-v {xschem version=3.4.4 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
-N -100 120 -80 120 {}
-N -80 120 -60 120 {}
-N -220 120 -220 140 {}
-N -220 120 -100 120 {}
-N 60 120 90 120 {}
-N 0 40 0 60 {}
+T {tb_ELAD1_NUNIT - matching unit W/L 2/1 um, diode-connected as in the mirror REF branch.} -260 -175 0 0 0.4 0.4 {}
+T {I1 forces 1.25 uA per unit (= IREF 5 uA over 4 units). Sweep 0.1-10 uA for the plot.
+Checks: VGS, threshold voltage and gm/ID at 1.25 uA (package tt 27C: VGS 0.632 V, VTH 0.603 V).} -260 -130 0 0 0.22 0.22 {}
+N -100 120 -80 120 {lab=G}
+N -80 120 -60 120 {lab=G}
+N -220 120 -220 140 {lab=G}
+N -220 120 -100 120 {lab=G}
+N 60 120 90 120 {lab=0}
+N 0 40 0 60 {lab=D}
 C {ELAD1_NUNIT.sym} 0 120 0 0 {name=XDUT}
-C {devices/lab_pin.sym} -80 120 0 0 {name=l1 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} -80 120 0 0 {name=l1 sig_type=std_logic lab=G}
 C {devices/isource.sym} -220 170 2 0 {name=I1 value="DC 1.25u"}
 C {devices/gnd.sym} -220 200 0 0 {name=l2 lab=0 global=false}
 C {devices/gnd.sym} 90 120 0 0 {name=l3 lab=0 global=false}
 C {devices/lab_pin.sym} 0 40 0 0 {name=l4 sig_type=std_logic lab=D}
 C {devices/gnd.sym} 0 180 0 0 {name=l5 lab=0 global=false}
-T {tb_ELAD1_NUNIT - matching unit W/L 2/1 um, diode-connected as in the mirror REF branch.} -260 -175 0 0 0.4 0.4 {}
-T {I1 forces 1.25 uA per unit (= IREF 5 uA over 4 units). Sweep 0.1-10 uA for the plot.
-Checks: VGS, threshold voltage and gm/ID at 1.25 uA (package tt 27C: VGS 0.632 V, VTH 0.603 V).} -260 -130 0 0 0.22 0.22 {}
 C {devices/code_shown.sym} 290 180 0 0 {name=s1 only_toplevel=false value=".control
 op
 let vgs = v(D)
