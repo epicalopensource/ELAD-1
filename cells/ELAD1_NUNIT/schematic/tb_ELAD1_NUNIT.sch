@@ -14,20 +14,29 @@ N -220 120 -220 140 {lab=G}
 N -220 120 -100 120 {lab=G}
 N 60 120 90 120 {lab=0}
 N 0 40 0 60 {lab=D}
+N -0 40 170 40 {lab=D}
+N 170 100 170 120 {lab=0}
 C {ELAD1_NUNIT.sym} 0 120 0 0 {name=XDUT}
 C {devices/lab_pin.sym} -80 120 0 0 {name=l1 sig_type=std_logic lab=G}
-C {devices/isource.sym} -220 170 2 0 {name=I1 value="DC 1.25u"}
+C {vsource.sym} -220 170 0 0 {name=VGS value= 0.7}
 C {devices/gnd.sym} -220 200 0 0 {name=l2 lab=0 global=false}
 C {devices/gnd.sym} 90 120 0 0 {name=l3 lab=0 global=false}
 C {devices/lab_pin.sym} 0 40 0 0 {name=l4 sig_type=std_logic lab=D}
 C {devices/gnd.sym} 0 180 0 0 {name=l5 lab=0 global=false}
-C {devices/code_shown.sym} 290 180 0 0 {name=s1 only_toplevel=false value=".control
-op
-let vgs = v(D)
-let vth = @m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]
-let gm_id = @m.xdut.xm.msky130_fd_pr__nfet_01v8[gm]/1.25e-6
-print vgs vth gm_id
-dc I1 0.1u 10u 0.1u
-write tb_ELAD1_NUNIT.raw
-.endc"}
+C {devices/code_shown.sym} 290 180 0 0 {name=s1 only_toplevel=false value=".option temp=27
+.param W=2
+.save all
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[id]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gm]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gds]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[vdsat]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[cgg]
+.control
+set vdsv = 0.9
+source nfet_ctl.cir
+.endc "
+}
 C {sky130_fd_pr/corner.sym} 290 -20 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {vsource.sym} 170 70 0 0 {name=VDS value= 0.9}
+C {devices/gnd.sym} 170 120 0 0 {name=l6 lab=0 global=false}
