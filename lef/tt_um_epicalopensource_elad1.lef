@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_epical_elad1
+MACRO tt_um_epicalopensource_elad1
   CLASS BLOCK ;
-  FOREIGN tt_um_epical_elad1 ;
+  FOREIGN tt_um_epicalopensource_elad1 ;
   ORIGIN 0.000 0.000 ;
   SIZE 334.880 BY 225.760 ;
   PIN clk
@@ -514,5 +514,5 @@ MACRO tt_um_epical_elad1
         RECT 94.050 221.800 94.150 222.300 ;
         RECT 94.450 221.800 94.550 222.300 ;
   END
-END tt_um_epical_elad1
+END tt_um_epicalopensource_elad1
 END LIBRARY
