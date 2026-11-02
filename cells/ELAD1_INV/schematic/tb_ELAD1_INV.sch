@@ -31,8 +31,11 @@ C {devices/vdd.sym} -220 330 0 0 {name=l7 lab=VDPWR global=false}
 C {devices/vsource.sym} -100 380 0 0 {name=VDD value=1.8}
 C {devices/gnd.sym} -100 410 0 0 {name=l8 lab=0 global=false}
 C {devices/code_shown.sym} 420 200 0 0 {name=s1 only_toplevel=false value=".option temp=27
+.param WN=0.65
+.param WP=1
+.param LEN=0.15
 .control
 set vddv = 1.8
 source inv_ctl.cir
-.endc "}
+.endc"}
 C {sky130_fd_pr/corner.sym} 420 0 0 0 {name=CORNER only_toplevel=true corner=tt}

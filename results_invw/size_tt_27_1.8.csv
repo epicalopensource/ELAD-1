@@ -1,0 +1,6 @@
+label,corner,temp,vdd,WN,WP,L,vm,voh,vol,gain_max,vil,vih,isc_pk,ileak,tphl,tplh,trise,tfall,pavg,ecyc
+w05,tt,27,1.8,0.5,1.25,0.15,,
+w1,tt,27,1.8,1.0,2.5,0.15,,
+w2,tt,27,1.8,2.0,5.0,0.15,,
+w4,tt,27,1.8,4.0,10.0,0.15,,
+w8,tt,27,1.8,8.0,20.0,0.15,,

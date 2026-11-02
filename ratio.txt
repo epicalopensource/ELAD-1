@@ -1,0 +1,8 @@
+# label WN WP L      PMOS/NMOS ratio sweep at WN = 1, minimum L
+cur 0.65 1.0 0.15
+r10 1.0 1.0 0.15
+r15 1.0 1.5 0.15
+r20 1.0 2.0 0.15
+r25 1.0 2.5 0.15
+r30 1.0 3.0 0.15
+r40 1.0 4.0 0.15

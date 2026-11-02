@@ -1,0 +1,6 @@
+# label WN WP L      overall size sweep at ratio 2.5, minimum L
+w05 0.5 1.25 0.15
+w1 1.0 2.5 0.15
+w2 2.0 5.0 0.15
+w4 4.0 10.0 0.15
+w8 8.0 20.0 0.15

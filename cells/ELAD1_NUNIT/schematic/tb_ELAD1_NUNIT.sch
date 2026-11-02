@@ -25,6 +25,7 @@ C {devices/lab_pin.sym} 0 40 0 0 {name=l4 sig_type=std_logic lab=D}
 C {devices/gnd.sym} 0 180 0 0 {name=l5 lab=0 global=false}
 C {devices/code_shown.sym} 290 180 0 0 {name=s1 only_toplevel=false value=".option temp=27
 .param W=2
+.param LEN=1
 .save all
 .save @m.xdut.xm.msky130_fd_pr__nfet_01v8[id]
 .save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gm]
