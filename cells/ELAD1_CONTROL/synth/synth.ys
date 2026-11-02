@@ -1,0 +1,14 @@
+# ELAD1_CONTROL: RTL -> sky130_fd_sc_hd gate-level netlist (run via run.sh)
+read_verilog -sv ../../../src/elad1_control.v
+synth -top elad1_control -flatten
+dfflibmap -liberty hd_tt_nolp.lib
+abc -liberty hd_tt_nolp.lib
+opt_clean -purge
+hilomap -hicell sky130_fd_sc_hd__conb_1 HI -locell sky130_fd_sc_hd__conb_1 LO
+setundef -zero
+splitnets
+# every output port gets a real driver (no 'assign'), so the SPICE subckt can express it
+insbuf -buf sky130_fd_sc_hd__buf_2 A X
+opt_clean -purge
+stat -liberty hd_tt_nolp.lib
+write_verilog -noattr -noexpr -nohex -nodec elad1_control.nl.v
