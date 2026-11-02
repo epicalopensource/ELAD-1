@@ -168,7 +168,7 @@ N 1360 -630 1360 -650 {lab=RST_N}
 C {devices/lab_pin.sym} 1360 -650 3 0 {name=l66 sig_type=std_logic lab=RST_N}
 N 1360 -570 1360 -550 {lab=0}
 C {devices/lab_pin.sym} 1360 -550 1 0 {name=l67 sig_type=std_logic lab=0}
-C {devices/vsource.sym} 1520 -600 0 0 {name=VENA value="PWL(0 1.8 4.5u 1.8 4.501u 0)"}
+C {devices/vsource.sym} 1520 -600 0 0 {name=VENA value="PWL(0 1.8 3.2u 1.8 3.201u 0)"}
 N 1520 -630 1520 -650 {lab=ENA}
 C {devices/lab_pin.sym} 1520 -650 3 0 {name=l68 sig_type=std_logic lab=ENA}
 N 1520 -570 1520 -550 {lab=0}
@@ -253,29 +253,32 @@ N 2480 -370 2480 -390 {lab=UIOI7}
 C {devices/lab_pin.sym} 2480 -390 3 0 {name=l100 sig_type=std_logic lab=UIOI7}
 N 2480 -310 2480 -290 {lab=0}
 C {devices/lab_pin.sym} 2480 -290 1 0 {name=l101 sig_type=std_logic lab=0}
-T {Digital: clk 10 MHz, reset released at 300 ns, APPLY (ui_in[7]) 0.8-1.3 us with MODE = 10 (pair), STRUCT = 1 (CC); ena dropped at 4.5 us (safe-state check). uio_in held at 0.} 1160 -760 0 0 0.3 0.3 {}
+T {Digital: clk 10 MHz, reset released at 300 ns, APPLY (ui_in[7]) 0.8-1.3 us with MODE = 10 (pair), STRUCT = 1 (CC); ena dropped at 3.2 us (safe-state check). uio_in held at 0.} 1160 -760 0 0 0.3 0.3 {}
 C {sky130_fd_pr/corner.sym} -1200 -1000 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {devices/code_shown.sym} -1200 -900 0 0 {name=s1 only_toplevel=false value=".option method=gear
+C {devices/code_shown.sym} -1200 -900 0 0 {name=s1 only_toplevel=false value="* KLU (selected by the PDK .spiceinit) is extremely slow on this mixed digital + analog
+* circuit in ngspice-47 (0.5 us took 34 min); the Sparse solver runs it in seconds.
+.option sparse
+.option method=gear
 .control
-tran 2n 5.5u
+tran 2n 3.6u
 let id3 = -i(VD3)
 let id4 = -i(VD4)
 meas tran t_busy   when v(UO1)=0.9 rise=1
 meas tran t_active when v(UO0)=0.9 rise=1
 meas tran t_safe   when v(UO0)=0.9 fall=1
-meas tran i3_on    avg id3 from=3.5u to=4.4u
-meas tran i4_on    avg id4 from=3.5u to=4.4u
+meas tran i3_on    avg id3 from=2.6u to=3.1u
+meas tran i4_on    avg id4 from=2.6u to=3.1u
 let di = id3 - id4
-meas tran di_on    avg di  from=3.5u to=4.4u
-meas tran vbias_on avg v(PIN0) from=3.5u to=4.4u
-meas tran i3_off   avg id3 from=5.2u to=5.5u
-meas tran mode1    find v(UO3) at=4u
-meas tran mode0    find v(UO2) at=4u
-meas tran struct   find v(UO4) at=4u
-meas tran heat_on  find v(UO5) at=4u
-meas tran err      find v(UO7) at=4u
-meas tran uio_max  max v(UIOO3) from=1u to=5u
-meas tran oe_max   max v(OE5)   from=1u to=5u
+meas tran di_on    avg di  from=2.6u to=3.1u
+meas tran vbias_on avg v(PIN0) from=2.6u to=3.1u
+meas tran i3_off   avg id3 from=3.4u to=3.6u
+meas tran mode1    find v(UO3) at=3u
+meas tran mode0    find v(UO2) at=3u
+meas tran struct   find v(UO4) at=3u
+meas tran heat_on  find v(UO5) at=3u
+meas tran err      find v(UO7) at=3u
+meas tran uio_max  max v(UIOO3) from=1u to=3.1u
+meas tran oe_max   max v(OE5)   from=1u to=3.1u
 write tb_top.raw v(UO0) v(UO1) v(UI7) v(PIN0) id3 id4
 .endc"}
 T {tb_tt_um_epicalopensource_elad1: whole chip, transistor level. Pass/fail limits in cells/tt_um_epicalopensource_elad1/sim/specs.txt} -1260 -1200 0 0 0.6 0.6 {}

@@ -1,10 +1,10 @@
 # Pass/fail limits for tb_tt_um_epicalopensource_elad1 (flow: cells/<CELL>/sim/specs.txt).
 # <name>  <min|->  <max|->   SI suffixes allowed. Whole chip at transistor level: TT pin model ->
-# ELAD1_IO -> ELAD1_CORE (controller + analog core). Request MODE 10 (pair), STRUCT 1 (CC), ITAIL 10 uA.
+# ELAD1_CORE (controller + analog core). Request MODE 10 (pair), STRUCT 1 (CC), ITAIL 10 uA.
 # Typical-corner (tt, 27 C, 1.8 V) values in comments ("sim"); cell-level references in brackets.
 t_busy     1.0u    1.3u     # APPLY (0.80 us) -> BUSY: 2.5..3 clk at 10 MHz         sim 1.10 us
 t_active   1.9u    2.2u     # APPLY -> ACTIVE: 11.5..12 clk                          sim 2.00 us
-t_safe     4.5u    4.51u    # ena low at 4.50 us -> ACTIVE low (asynchronous safe)    sim 4.5015 us
+t_safe     3.2u    3.21u    # ena low at 3.20 us -> ACTIVE low (asynchronous safe)    sim 3.2015 us
 i3_on      4.6u    4.85u    # I(ua3) = ID1 with the pair connected                   sim 4.733 uA [cell 4.734]
 i4_on      4.6u    4.85u    # I(ua4) = ID2                                           sim 4.733 uA [cell 4.734]
 di_on      -10n    10n      # ID1 - ID2, nominal models (no mismatch)                sim ~0
