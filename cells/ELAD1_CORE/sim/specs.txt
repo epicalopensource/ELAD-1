@@ -1,0 +1,19 @@
+# Pass/fail limits for tb_ELAD1_CORE (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. ELAD1_CORE (controller + analog core) at transistor level,
+# driven through the TT analog pin model. Request MODE 10 (pair), STRUCT 1 (CC), ITAIL 10 uA.
+# Same stimulus and limits as the top-level testbench (the top adds only the uio tie cells), so the
+# two results must agree. Also the testbench used for ELAD1_CORE post-layout simulation.
+# Typical-corner (tt, 27 C, 1.8 V) values in comments ("sim").
+t_busy     1.0u    1.3u     # APPLY (0.80 us) -> BUSY: 2.5..3 clk at 10 MHz         sim 1.10 us
+t_active   1.9u    2.2u     # APPLY -> ACTIVE: 11.5..12 clk                          sim 2.00 us
+t_safe     3.2u    3.21u    # ena low at 3.20 us -> ACTIVE low (asynchronous safe)    sim 3.2014 us
+i3_on      4.6u    4.85u    # I(ua3) = ID1 with the pair connected                   sim 4.733 uA
+i4_on      4.6u    4.85u    # I(ua4) = ID2                                           sim 4.733 uA
+di_on      -10n    10n      # ID1 - ID2, nominal models (no mismatch)                sim ~0
+vbias_on   0.64    0.71     # V(ua0) chip side at 10 uA (incl. selector switch)      sim 0.675 V
+i3_off     -1n     1n       # I(ua3) after ena low: path open                        sim 16 pA
+mode1      1.6     -        # uo_out[3] = MODE[1] echo                               sim 1.8 V
+mode0      -       0.2      # uo_out[2] = MODE[0] echo                               sim 0 V
+struct     1.6     -        # uo_out[4] = STRUCT echo                                sim 1.8 V
+heat_on    -       0.2      # uo_out[5] heater off (not requested)                   sim 0 V
+err        -       0.2      # uo_out[7] no error                                     sim 0 V
