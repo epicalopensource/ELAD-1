@@ -39,6 +39,6 @@ N 690 -160 690 -80 {lab=VGND}
 C {devices/iopin.sym} 110 -230 0 1 {name=p1 lab=REF}
 C {devices/iopin.sym} 530 -230 0 0 {name=p2 lab=OUT}
 C {devices/iopin.sym} 110 -80 0 1 {name=p3 lab=VGND}
-C {sky130_fd_pr/nfet_01v8.sym} 230 -160 0 1 {name=XA model=nfet_01v8 W=2 L=1 nf=1 mult=4 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} 390 -160 0 0 {name=XB model=nfet_01v8 W=2 L=1 nf=1 mult=4 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} 650 -160 0 0 {name=XDUM model=nfet_01v8 W=2 L=1 nf=1 mult=4 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 230 -160 0 1 {name=M1 model=nfet_01v8 W=8 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 390 -160 0 0 {name=M2 model=nfet_01v8 W=8 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 650 -160 0 0 {name=M3 model=nfet_01v8 W=8 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
