@@ -1,0 +1,44 @@
+[06:54:07] === report for ELAD1_MIRROR_GROUPED ===
+[06:54:07] 1/5 extraction
+[06:54:07] extract c: 24 devices, 3 C, 0 R
+[06:54:07] extract rc: 24 devices, 3 C, 0 R
+[06:54:07] 2/5 testbenches
+[06:54:07] 3/5 simulations
+  76 results/pre/dc.csv
+  46 results/pre/tran.csv
+ 122 total
+   76 results/postC/dc.csv
+   46 results/postC/tran.csv
+  122 total
+[07:05:19] WARNING: no resistors in the RC netlist, postRC stage skipped
+[07:05:19] 4/5 collecting
+[07:05:19] 5/5 waveforms
+
+Note: No compatibility mode selected!
+
+
+Circuit: load /foss/designs/elad-1/cells/elad1_mirror_grouped/netlist/results/pre/raw/tran_pre_tt_27_5u.raw
+
+Error on line 2 or its substitute:
+  wrdata /foss/designs/elad-1/cells/elad1_mirror_grouped/report_20261103_0654/csv/wave_pre.csv v(ref) vout#branch
+Unable to find definition of model 
+    Simulation interrupted due to error!
+
+Error: incomplete or empty netlist
+       or no ".plot", ".print", or ".fourier" lines in batch mode;
+no simulations run!
+
+Note: No compatibility mode selected!
+
+
+Circuit: load /foss/designs/elad-1/cells/elad1_mirror_grouped/netlist/results/postc/raw/tran_postc_tt_27_5u.raw
+
+Error on line 2 or its substitute:
+  wrdata /foss/designs/elad-1/cells/elad1_mirror_grouped/report_20261103_0654/csv/wave_postc.csv v(ref) vout#branch
+Unable to find definition of model 
+    Simulation interrupted due to error!
+
+Error: incomplete or empty netlist
+       or no ".plot", ".print", or ".fourier" lines in batch mode;
+no simulations run!
+[07:05:19] done

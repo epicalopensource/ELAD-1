@@ -1,0 +1,216 @@
+| units: 500000 tech: sky130A format: MIT
+x VGND VGND VGND VGND s=20000,600 d=10000,300 l=200 w=200 x=279 y=988 sky130_fd_pr__nfet_01v8
+x VGND VGND VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=579 y=988 sky130_fd_pr__nfet_01v8
+x REF VGND OUT VGND s=20000,600 d=10000,300 l=200 w=200 x=2679 y=988 sky130_fd_pr__nfet_01v8
+x REF OUT VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=2979 y=988 sky130_fd_pr__nfet_01v8
+x REF VGND REF VGND s=20000,600 d=10000,300 l=200 w=200 x=2079 y=223 sky130_fd_pr__nfet_01v8
+x REF REF VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=2379 y=223 sky130_fd_pr__nfet_01v8
+x VGND VGND VGND VGND s=20000,600 d=10000,300 l=200 w=200 x=3279 y=223 sky130_fd_pr__nfet_01v8
+x VGND VGND VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=3579 y=223 sky130_fd_pr__nfet_01v8
+x REF VGND OUT VGND s=20000,600 d=10000,300 l=200 w=200 x=879 y=223 sky130_fd_pr__nfet_01v8
+x REF OUT VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=1179 y=223 sky130_fd_pr__nfet_01v8
+x REF VGND REF VGND s=20000,600 d=10000,300 l=200 w=200 x=1479 y=988 sky130_fd_pr__nfet_01v8
+x REF REF VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=1779 y=988 sky130_fd_pr__nfet_01v8
+x VGND VGND VGND VGND s=20000,600 d=10000,300 l=200 w=200 x=279 y=223 sky130_fd_pr__nfet_01v8
+x VGND VGND VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=579 y=223 sky130_fd_pr__nfet_01v8
+x REF VGND OUT VGND s=20000,600 d=10000,300 l=200 w=200 x=879 y=988 sky130_fd_pr__nfet_01v8
+x REF OUT VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=1179 y=988 sky130_fd_pr__nfet_01v8
+x REF VGND REF VGND s=20000,600 d=10000,300 l=200 w=200 x=2079 y=988 sky130_fd_pr__nfet_01v8
+x REF REF VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=2379 y=988 sky130_fd_pr__nfet_01v8
+x REF VGND REF VGND s=20000,600 d=10000,300 l=200 w=200 x=1479 y=223 sky130_fd_pr__nfet_01v8
+x REF REF VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=1779 y=223 sky130_fd_pr__nfet_01v8
+x REF VGND OUT VGND s=20000,600 d=10000,300 l=200 w=200 x=2679 y=223 sky130_fd_pr__nfet_01v8
+x REF OUT VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=2979 y=223 sky130_fd_pr__nfet_01v8
+x VGND VGND VGND VGND s=20000,600 d=10000,300 l=200 w=200 x=3279 y=988 sky130_fd_pr__nfet_01v8
+x VGND VGND VGND VGND s=10000,300 d=20000,600 l=200 w=200 x=3579 y=988 sky130_fd_pr__nfet_01v8
+C OUT0 2.1
+R OUT 2217
+= OUT nfet_1_2$2$1$1_0/a_325_40#
+= OUT vias_gen_14/m1_0_0#
+= OUT nfet_1_2$1$2_0/a_325_40#
+= OUT vias_gen_18/m1_0_0#
+= OUT nfet_1_2$2$1_0/a_325_40#
+= OUT vias_gen_3/m1_0_0#
+= OUT vias_gen$6_0/m2_0_0#
+= OUT m2_2903_258#
+= OUT nfet_1_2$1_0/a_325_40#
+= OUT vias_gen_7/m1_0_0#
+= OUT vias_gen$6_1/m2_0_0#
+= OUT m2_1103_258#
+R VGND 32823
+= VGND vias_gen_11/VSUBS
+= VGND vias_gen_11/m1_0_0#
+= VGND nfet_1_2$1$1$1$1_0/a_625_40#
+= VGND vias_gen$5_7/VSUBS
+= VGND vias_gen$5_7/m1_0_0#
+= VGND nfet_1_2$1$1$1$1_0/a_425_0#
+= VGND nfet_1_2$1$1$1$1_0/a_125_0#
+= VGND vias_gen$5_3/m1_0_0#
+= VGND m1_3279_690#
+= VGND nfet_1_2$1$1$1$1_0/VSUBS
+= VGND nfet_1_2$1$1$1$1_0/a_325_40#
+= VGND nfet_1_2$1$1$1$1_0/a_25_40#
+= VGND vias_gen_13/VSUBS
+= VGND vias_gen_13/m1_0_0#
+= VGND nfet_1_2$2$1$1_0/a_625_40#
+= VGND vias_gen_12/VSUBS
+= VGND vias_gen_12/m1_0_0#
+= VGND vias_gen$5_3/VSUBS
+= VGND vias_gen$3_0/VSUBS
+= VGND vias_gen$3_0/m1_0_0#
+= VGND vias_gen_0/m1_0_0#
+= VGND nfet_1_2$1$1$1_0/a_625_40#
+= VGND vias_gen$5_6/m1_0_0#
+= VGND m2_3746_471#
+= VGND nfet_1_2$1$1$1_0/a_425_0#
+= VGND nfet_1_2$1$1$1_0/a_125_0#
+= VGND vias_gen$5_2/m1_0_0#
+= VGND m1_3278_471#
+= VGND vias_gen_0/VSUBS
+= VGND vias_gen$3_2/VSUBS
+= VGND vias_gen$3_2/m1_0_0#
+= VGND nfet_1_2$1$1$1_0/a_25_40#
+= VGND vias_gen_2/m1_0_0#
+= VGND m2_3203_0#
+= VGND nfet_1_2$2$1_0/a_625_40#
+= VGND vias_gen$3_1/VSUBS
+= VGND vias_gen$3_1/m1_0_0#
+= VGND nfet_1_2$1$1$1_0/a_325_40#
+= VGND vias_gen_1/m1_0_0#
+= VGND m2_3503_0#
+= VGND vias_gen$5_6/VSUBS
+= VGND nfet_1_2$1$1$1_0/VSUBS
+= VGND vias_gen_2/VSUBS
+= VGND vias_gen_1/VSUBS
+= VGND vias_gen$5_2/VSUBS
+= VGND guard_ring_gen_0/a_n100_n100#
+= VGND nfet_1_2$2$1$1_0/VSUBS
+= VGND vias_gen_25/VSUBS
+= VGND vias_gen_15/VSUBS
+= VGND vias_gen_14/VSUBS
+= VGND vias_gen$4_0/VSUBS
+= VGND vias_gen_24/VSUBS
+= VGND nfet_1_2$1$1$2_0/VSUBS
+= VGND vias_gen_16/VSUBS
+= VGND vias_gen$7_0/VSUBS
+= VGND nfet_1_2$1$2_0/VSUBS
+= VGND nfet_1_2$2$2_0/VSUBS
+= VGND vias_gen_19/VSUBS
+= VGND vias_gen_18/VSUBS
+= VGND vias_gen_17/VSUBS
+= VGND vias_gen$5_5/VSUBS
+= VGND nfet_1_2$3_0/VSUBS
+= VGND vias_gen_21/VSUBS
+= VGND vias_gen_20/VSUBS
+= VGND vias_gen$5_1/VSUBS
+= VGND vias_gen$3_3/VSUBS
+= VGND vias_gen_23/VSUBS
+= VGND nfet_1_2$2$1_0/VSUBS
+= VGND vias_gen_4/VSUBS
+= VGND vias_gen_3/VSUBS
+= VGND vias_gen$6_0/VSUBS
+= VGND vias_gen$3_4/VSUBS
+= VGND vias_gen_22/VSUBS
+= VGND nfet_1_2$1$1_0/VSUBS
+= VGND vias_gen_5/VSUBS
+= VGND vias_gen$3_6/VSUBS
+= VGND vias_gen$3_5/VSUBS
+= VGND nfet_1_2$1_0/VSUBS
+= VGND nfet_1_2$2_0/VSUBS
+= VGND vias_gen_8/VSUBS
+= VGND vias_gen_7/VSUBS
+= VGND vias_gen_6/VSUBS
+= VGND vias_gen$6_1/VSUBS
+= VGND vias_gen$3_8/VSUBS
+= VGND vias_gen$3_7/VSUBS
+= VGND nfet_1_2_0/VSUBS
+= VGND vias_gen$5_4/VSUBS
+= VGND vias_gen_10/VSUBS
+= VGND vias_gen_9/VSUBS
+= VGND vias_gen$5_0/VSUBS
+= VGND VSUBS
+= VGND nfet_1_2$2$1$1_0/a_25_40#
+= VGND vias_gen_15/m1_0_0#
+= VGND nfet_1_2$1$1$2_0/a_625_40#
+= VGND nfet_1_2$1$1$2_0/a_25_40#
+= VGND vias_gen_16/m1_0_0#
+= VGND nfet_1_2$2$2_0/a_625_40#
+= VGND nfet_1_2$1$2_0/a_625_40#
+= VGND nfet_1_2$1$2_0/a_25_40#
+= VGND nfet_1_2$2$2_0/a_25_40#
+= VGND vias_gen_19/m1_0_0#
+= VGND nfet_1_2$3_0/a_625_40#
+= VGND vias_gen_17/m1_0_0#
+= VGND vias_gen$5_5/m1_0_0#
+= VGND nfet_1_2$3_0/a_425_0#
+= VGND nfet_1_2$3_0/a_125_0#
+= VGND nfet_1_2$3_0/a_325_40#
+= VGND nfet_1_2$3_0/a_25_40#
+= VGND vias_gen_21/m1_0_0#
+= VGND vias_gen_20/m1_0_0#
+= VGND vias_gen$5_1/m1_0_0#
+= VGND m1_279_690#
+= VGND vias_gen$3_3/m1_0_0#
+= VGND nfet_1_2$2$1_0/a_25_40#
+= VGND vias_gen_4/m1_0_0#
+= VGND m2_2603_0#
+= VGND nfet_1_2$1$1_0/a_625_40#
+= VGND vias_gen$3_4/m1_0_0#
+= VGND nfet_1_2$1$1_0/a_25_40#
+= VGND vias_gen_5/m1_0_0#
+= VGND m2_2003_0#
+= VGND nfet_1_2$2_0/a_625_40#
+= VGND vias_gen$3_6/m1_0_0#
+= VGND nfet_1_2$1_0/a_25_40#
+= VGND vias_gen_8/m1_0_0#
+= VGND m2_803_0#
+= VGND nfet_1_2_0/a_625_40#
+= VGND vias_gen$3_5/m1_0_0#
+= VGND nfet_1_2$1_0/a_625_40#
+= VGND nfet_1_2$2_0/a_25_40#
+= VGND vias_gen_6/m1_0_0#
+= VGND m2_1403_0#
+= VGND vias_gen$3_8/m1_0_0#
+= VGND vias_gen$3_7/m1_0_0#
+= VGND m2_503_0#
+= VGND nfet_1_2_0/a_325_40#
+= VGND vias_gen_9/m1_0_0#
+= VGND m2_203_0#
+= VGND nfet_1_2_0/a_25_40#
+= VGND nfet_1_2_0/a_425_0#
+= VGND nfet_1_2_0/a_125_0#
+= VGND vias_gen$5_4/m1_0_0#
+= VGND vias_gen_10/m1_0_0#
+= VGND vias_gen$5_0/m1_0_0#
+= VGND m1_279_471#
+C REF0 8.6
+R REF 7158
+= REF nfet_1_2$2$1$1_0/a_425_0#
+= REF nfet_1_2$2$1$1_0/a_125_0#
+= REF vias_gen_25/m1_0_0#
+= REF nfet_1_2$1$1$2_0/a_325_40#
+= REF vias_gen$4_0/m1_0_0#
+= REF vias_gen_23/m1_0_0#
+= REF m2_2303_258#
+= REF nfet_1_2$1$1_0/a_325_40#
+= REF vias_gen_24/m1_0_0#
+= REF nfet_1_2$2$2_0/a_325_40#
+= REF nfet_1_2$1$1$2_0/a_425_0#
+= REF nfet_1_2$1$1$2_0/a_125_0#
+= REF vias_gen$7_0/m1_0_0#
+= REF m1_878_463#
+= REF vias_gen_22/m1_0_0#
+= REF m2_1703_258#
+= REF nfet_1_2$2_0/a_325_40#
+= REF nfet_1_2$1$2_0/a_425_0#
+= REF nfet_1_2$1$2_0/a_125_0#
+= REF nfet_1_2$2$2_0/a_425_0#
+= REF nfet_1_2$2$2_0/a_125_0#
+= REF nfet_1_2$2$1_0/a_425_0#
+= REF nfet_1_2$2$1_0/a_125_0#
+= REF nfet_1_2$1$1_0/a_425_0#
+= REF nfet_1_2$1$1_0/a_125_0#
+= REF nfet_1_2$1_0/a_425_0#
+= REF nfet_1_2$1_0/a_125_0#
+= REF nfet_1_2$2_0/a_425_0#
+= REF nfet_1_2$2_0/a_125_0#

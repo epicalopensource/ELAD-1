@@ -1,0 +1,383 @@
+timestamp 1622213067
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use vias_gen$5 vias_gen$5_0 -1 0 440 0 -1 523
+use vias_gen vias_gen_9 0 -1 555 1 0 258
+use vias_gen vias_gen_10 0 -1 255 1 0 258
+use vias_gen$5 vias_gen$5_4 -1 0 744 0 -1 523
+use nfet_1_2 nfet_1_2_0 1 0 154 0 1 183
+use vias_gen$3 vias_gen$3_7 0 1 503 -1 0 200
+use vias_gen$3 vias_gen$3_8 0 1 203 -1 0 200
+use vias_gen$6 vias_gen$6_1 1 0 1103 0 1 557
+use vias_gen vias_gen_6 0 -1 1455 1 0 258
+use vias_gen vias_gen_7 0 -1 1155 1 0 258
+use vias_gen vias_gen_8 0 -1 855 1 0 258
+use nfet_1_2$2 nfet_1_2$2_0 1 0 1354 0 1 183
+use nfet_1_2$1 nfet_1_2$1_0 1 0 754 0 1 183
+use vias_gen$3 vias_gen$3_5 0 1 1403 -1 0 200
+use vias_gen$3 vias_gen$3_6 0 1 803 -1 0 200
+use vias_gen vias_gen_5 0 -1 2055 1 0 258
+use nfet_1_2$1$1 nfet_1_2$1$1_0 1 0 1954 0 1 183
+use vias_gen vias_gen_22 0 -1 1755 1 0 258
+use vias_gen$3 vias_gen$3_4 0 1 2003 -1 0 200
+use vias_gen$6 vias_gen$6_0 1 0 2795 0 1 557
+use vias_gen vias_gen_3 0 -1 2955 1 0 258
+use vias_gen vias_gen_4 0 -1 2655 1 0 258
+use nfet_1_2$2$1 nfet_1_2$2$1_0 1 0 2554 0 1 183
+use vias_gen vias_gen_23 0 -1 2355 1 0 258
+use vias_gen$3 vias_gen$3_3 0 1 2603 -1 0 200
+use vias_gen$5 vias_gen$5_2 -1 0 3442 0 -1 523
+use vias_gen vias_gen_1 0 -1 3555 1 0 258
+use vias_gen vias_gen_2 0 -1 3255 1 0 258
+use nfet_1_2$1$1$1 nfet_1_2$1$1$1_0 1 0 3154 0 1 183
+use vias_gen$5 vias_gen$5_6 -1 0 3746 0 -1 523
+use vias_gen$3 vias_gen$3_1 0 1 3503 -1 0 200
+use vias_gen$3 vias_gen$3_2 0 1 3203 -1 0 200
+use vias_gen vias_gen_0 0 -1 3855 1 0 258
+use vias_gen$3 vias_gen$3_0 0 1 3803 -1 0 200
+use vias_gen$5 vias_gen$5_1 -1 0 449 0 -1 742
+use vias_gen vias_gen_20 0 -1 555 1 0 824
+use vias_gen vias_gen_21 0 -1 255 1 0 824
+use nfet_1_2$3 nfet_1_2$3_0 1 0 154 0 -1 1029
+use vias_gen$5 vias_gen$5_5 -1 0 748 0 -1 742
+use vias_gen vias_gen_17 0 -1 1455 1 0 824
+use vias_gen vias_gen_18 0 -1 1155 1 0 824
+use vias_gen vias_gen_19 0 -1 855 1 0 824
+use nfet_1_2$2$2 nfet_1_2$2$2_0 1 0 1354 0 -1 1029
+use nfet_1_2$1$2 nfet_1_2$1$2_0 1 0 754 0 -1 1029
+use vias_gen$7 vias_gen$7_0 1 0 1636 0 1 683
+use vias_gen vias_gen_16 0 -1 2055 1 0 824
+use nfet_1_2$1$1$2 nfet_1_2$1$1$2_0 1 0 1954 0 -1 1029
+use vias_gen vias_gen_24 0 -1 1755 1 0 824
+use vias_gen$4 vias_gen$4_0 1 0 2233 0 1 683
+use vias_gen vias_gen_14 0 -1 2955 1 0 824
+use vias_gen vias_gen_15 0 -1 2655 1 0 824
+use vias_gen vias_gen_25 0 -1 2355 1 0 824
+use nfet_1_2$2$1$1 nfet_1_2$2$1$1_0 1 0 2554 0 -1 1029
+use vias_gen$5 vias_gen$5_3 -1 0 3451 0 -1 742
+use vias_gen vias_gen_12 0 -1 3555 1 0 824
+use vias_gen vias_gen_13 0 -1 3255 1 0 824
+use nfet_1_2$1$1$1$1 nfet_1_2$1$1$1$1_0 1 0 3154 0 -1 1029
+use vias_gen$5 vias_gen$5_7 -1 0 3750 0 -1 742
+use vias_gen vias_gen_11 0 -1 3855 1 0 824
+use guard_ring_gen guard_ring_gen_0 1 0 125 0 1 125
+node "OUT" 2 889.844 1103 557 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 195822 6066 0 0 0 0 0 0
+node "REF" 2 696.835 0 683 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 157938 4918 0 0 0 0 0 0
+node "m2_3746_471#" 3 264.684 3746 471 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55328 2232 0 0 0 0 0 0 0 0
+node "m2_3503_0#" 2 98.84 3503 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49608 2012 0 0 0 0 0 0 0 0
+node "m2_3203_0#" 2 101.345 3203 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49608 2012 0 0 0 0 0 0 0 0
+node "m2_2903_258#" 2 85.0048 2903 258 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36192 1496 0 0 0 0 0 0 0 0
+node "m2_2603_0#" 2 99.9575 2603 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49608 2012 0 0 0 0 0 0 0 0
+node "m2_2303_258#" 2 85.9613 2303 258 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36192 1496 0 0 0 0 0 0 0 0
+node "m2_2003_0#" 2 99.9575 2003 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49608 2012 0 0 0 0 0 0 0 0
+node "m2_1703_258#" 2 85.9613 1703 258 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36192 1496 0 0 0 0 0 0 0 0
+node "m2_1403_0#" 2 99.9575 1403 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49608 2012 0 0 0 0 0 0 0 0
+node "m2_1103_258#" 2 85.0048 1103 258 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36192 1496 0 0 0 0 0 0 0 0
+node "m2_803_0#" 2 101.312 803 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49608 2012 0 0 0 0 0 0 0 0
+node "m2_503_0#" 2 98.8116 503 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49608 2012 0 0 0 0 0 0 0 0
+node "m2_203_0#" 3 263.64 203 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54756 2210 0 0 0 0 0 0 0 0
+node "VGND" 3 1842.43 0 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 814000 8540 0 0 0 0 0 0 0 0 0 0
+node "m1_3278_471#" 1 95.0698 3278 471 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26104 1108 0 0 0 0 0 0 0 0 0 0
+node "m1_279_471#" 1 94.9032 279 471 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26104 1108 0 0 0 0 0 0 0 0 0 0
+node "m1_3279_690#" 1 157.299 3279 690 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26104 1108 0 0 0 0 0 0 0 0 0 0
+node "m1_878_463#" 9 1207.73 878 463 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 319880 9880 0 0 0 0 0 0 0 0 0 0
+node "m1_279_690#" 1 157.203 279 690 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26104 1108 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "REF" "m2_2003_0#" 46.2733
+cap "REF" "m2_203_0#" 63.8295
+cap "m1_279_690#" "m2_803_0#" 14.9494
+cap "m2_1403_0#" "m1_878_463#" 133.266
+cap "REF" "m2_1103_258#" 46.2733
+cap "REF" "OUT" 340.929
+cap "m1_279_471#" "VGND" 34.405
+cap "m2_3203_0#" "REF" 0.124393
+cap "m2_2903_258#" "OUT" 56.693
+cap "m1_878_463#" "m2_503_0#" 0.855628
+cap "m1_878_463#" "m1_3278_471#" 7.72973
+cap "m2_2903_258#" "m2_3203_0#" 56.4935
+cap "m2_1703_258#" "VGND" 12.0338
+cap "m2_3746_471#" "m1_3278_471#" 25.4917
+cap "m2_1103_258#" "m2_803_0#" 56.4935
+cap "m1_878_463#" "m2_2603_0#" 133.266
+cap "OUT" "m2_803_0#" 1.00604
+cap "OUT" "m2_3503_0#" 58.5982
+cap "m2_3203_0#" "m2_3503_0#" 77.4351
+cap "OUT" "m1_3279_690#" 19.6488
+cap "m2_3746_471#" "m1_878_463#" 0.2545
+cap "REF" "m1_279_471#" 10.2188
+cap "m2_2303_258#" "m2_2603_0#" 56.4935
+cap "m2_3203_0#" "m1_3279_690#" 14.5893
+cap "m1_878_463#" "m2_2303_258#" 132.514
+cap "m1_279_690#" "m2_503_0#" 55.2922
+cap "m2_1403_0#" "m2_2003_0#" 10.6086
+cap "REF" "m2_1703_258#" 46.2733
+cap "REF" "VGND" 24.1502
+cap "m2_1403_0#" "m2_1103_258#" 56.4935
+cap "m1_279_471#" "m2_803_0#" 14.9494
+cap "m1_279_690#" "m1_878_463#" 7.78231
+cap "m2_503_0#" "m2_203_0#" 79.0546
+cap "m2_1403_0#" "OUT" 49.8533
+cap "m2_2903_258#" "VGND" 12.0338
+cap "m2_2603_0#" "m2_2003_0#" 10.6086
+cap "m1_878_463#" "m2_2003_0#" 133.056
+cap "OUT" "m2_503_0#" 0.258637
+cap "OUT" "m1_3278_471#" 20.7134
+cap "m1_878_463#" "m2_203_0#" 0.2545
+cap "m2_803_0#" "VGND" 162.369
+cap "m2_3503_0#" "VGND" 154.306
+cap "m2_3203_0#" "m1_3278_471#" 14.7688
+cap "m1_878_463#" "m2_1103_258#" 136.455
+cap "m2_2303_258#" "m2_2003_0#" 56.4935
+cap "m1_3279_690#" "VGND" 0.0407407
+cap "OUT" "m2_2603_0#" 58.5982
+cap "OUT" "m1_878_463#" 172.174
+cap "m2_3203_0#" "m2_2603_0#" 10.6086
+cap "m2_2903_258#" "REF" 0.294982
+cap "m2_3203_0#" "m1_878_463#" 65.0961
+cap "m2_3746_471#" "OUT" 71.676
+cap "OUT" "m2_2303_258#" 47.9482
+cap "m1_279_471#" "m2_503_0#" 56.015
+cap "m1_279_690#" "m2_203_0#" 24.9067
+cap "m2_1403_0#" "m2_1703_258#" 56.4935
+cap "REF" "m2_803_0#" 56.9706
+cap "REF" "m2_3503_0#" 0.0679285
+cap "m2_1403_0#" "VGND" 167.655
+cap "REF" "m1_3279_690#" 0.858865
+cap "m1_878_463#" "m1_279_471#" 7.78231
+cap "m2_503_0#" "VGND" 154.306
+cap "m1_3278_471#" "VGND" 34.405
+cap "OUT" "m2_2003_0#" 49.8533
+cap "m1_878_463#" "m2_1703_258#" 132.514
+cap "OUT" "m2_203_0#" 0.113986
+cap "m2_2603_0#" "VGND" 167.655
+cap "m1_878_463#" "VGND" 161.802
+cap "m2_3503_0#" "m1_3279_690#" 55.2818
+cap "m2_1403_0#" "REF" 46.2733
+cap "OUT" "m2_1103_258#" 37.3711
+cap "m2_3746_471#" "VGND" 155.432
+cap "m1_279_690#" "m1_279_471#" 50.894
+cap "m2_2303_258#" "VGND" 12.0338
+cap "m2_3203_0#" "OUT" 58.5982
+cap "REF" "m2_503_0#" 56.2249
+cap "m2_1403_0#" "m2_803_0#" 10.6086
+cap "m1_279_471#" "m2_203_0#" 23.683
+cap "REF" "m2_2603_0#" 1.91637
+cap "REF" "m1_878_463#" 96.4099
+cap "m2_2903_258#" "m2_2603_0#" 56.4935
+cap "m2_2903_258#" "m1_878_463#" 136.455
+cap "m2_3746_471#" "REF" 0.0795638
+cap "m2_503_0#" "m2_803_0#" 77.4351
+cap "m2_1703_258#" "m2_2003_0#" 56.4935
+cap "m2_3503_0#" "m1_3278_471#" 55.7761
+cap "VGND" "m2_2003_0#" 167.655
+cap "REF" "m2_2303_258#" 38.6504
+cap "m2_203_0#" "VGND" 154.463
+cap "m1_3279_690#" "m1_3278_471#" 50.7926
+cap "m1_878_463#" "m2_803_0#" 65.0961
+cap "OUT" "m2_1703_258#" 47.9482
+cap "m2_3503_0#" "m1_878_463#" 0.855628
+cap "m2_1103_258#" "VGND" 12.0338
+cap "OUT" "VGND" 95.5464
+cap "m2_3746_471#" "m2_3503_0#" 79.2708
+cap "m1_878_463#" "m1_3279_690#" 7.67785
+cap "REF" "m1_279_690#" 23.6169
+cap "m2_3203_0#" "VGND" 162.369
+cap "m2_3746_471#" "m1_3279_690#" 25.0861
+cap "nfet_1_2$2$1$1_0/a_325_40#" "nfet_1_2$2$1$1_0/a_425_0#" 145.215
+cap "guard_ring_gen_0/a_n100_n100#" "nfet_1_2$2$1$1_0/a_425_0#" 554.535
+cap "nfet_1_2$2$1$1_0/a_325_40#" "guard_ring_gen_0/a_n100_n100#" 56.842
+cap "guard_ring_gen_0/a_n100_n100#" "nfet_1_2$2$1$1_0/a_325_40#" 20.8874
+cap "nfet_1_2$2$1$1_0/a_425_0#" "nfet_1_2$2$1$1_0/a_325_40#" 136.94
+cap "guard_ring_gen_0/a_n100_n100#" "nfet_1_2$2$1$1_0/a_425_0#" 1067.59
+cap "nfet_1_2$2$1$1_0/a_425_0#" "guard_ring_gen_0/a_n100_n100#" 290.41
+cap "nfet_1_2$2$1$1_0/a_325_40#" "guard_ring_gen_0/a_n100_n100#" 258.425
+cap "nfet_1_2$2$1$1_0/a_425_0#" "nfet_1_2$2$1$1_0/a_325_40#" 165.798
+merge "vias_gen_11/VSUBS" "vias_gen_11/m1_0_0#" -13994.2 0 0 0 0 0 0 0 0 -200000 -6000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -46920 -3440 -810478 -29966 -215280 -11504 0 0 0 0 0 0 0 0
+merge "vias_gen_11/m1_0_0#" "nfet_1_2$1$1$1$1_0/a_625_40#"
+merge "nfet_1_2$1$1$1$1_0/a_625_40#" "vias_gen$5_7/VSUBS"
+merge "vias_gen$5_7/VSUBS" "vias_gen$5_7/m1_0_0#"
+merge "vias_gen$5_7/m1_0_0#" "nfet_1_2$1$1$1$1_0/a_425_0#"
+merge "nfet_1_2$1$1$1$1_0/a_425_0#" "nfet_1_2$1$1$1$1_0/a_125_0#"
+merge "nfet_1_2$1$1$1$1_0/a_125_0#" "vias_gen$5_3/m1_0_0#"
+merge "vias_gen$5_3/m1_0_0#" "m1_3279_690#"
+merge "m1_3279_690#" "nfet_1_2$1$1$1$1_0/VSUBS"
+merge "nfet_1_2$1$1$1$1_0/VSUBS" "nfet_1_2$1$1$1$1_0/a_325_40#"
+merge "nfet_1_2$1$1$1$1_0/a_325_40#" "nfet_1_2$1$1$1$1_0/a_25_40#"
+merge "nfet_1_2$1$1$1$1_0/a_25_40#" "vias_gen_13/VSUBS"
+merge "vias_gen_13/VSUBS" "vias_gen_13/m1_0_0#"
+merge "vias_gen_13/m1_0_0#" "nfet_1_2$2$1$1_0/a_625_40#"
+merge "nfet_1_2$2$1$1_0/a_625_40#" "vias_gen_12/VSUBS"
+merge "vias_gen_12/VSUBS" "vias_gen_12/m1_0_0#"
+merge "vias_gen_12/m1_0_0#" "vias_gen$5_3/VSUBS"
+merge "vias_gen$5_3/VSUBS" "vias_gen$3_0/VSUBS"
+merge "vias_gen$3_0/VSUBS" "vias_gen$3_0/m1_0_0#"
+merge "vias_gen$3_0/m1_0_0#" "vias_gen_0/m1_0_0#"
+merge "vias_gen_0/m1_0_0#" "nfet_1_2$1$1$1_0/a_625_40#"
+merge "nfet_1_2$1$1$1_0/a_625_40#" "vias_gen$5_6/m1_0_0#"
+merge "vias_gen$5_6/m1_0_0#" "m2_3746_471#"
+merge "m2_3746_471#" "nfet_1_2$1$1$1_0/a_425_0#"
+merge "nfet_1_2$1$1$1_0/a_425_0#" "nfet_1_2$1$1$1_0/a_125_0#"
+merge "nfet_1_2$1$1$1_0/a_125_0#" "vias_gen$5_2/m1_0_0#"
+merge "vias_gen$5_2/m1_0_0#" "m1_3278_471#"
+merge "m1_3278_471#" "vias_gen_0/VSUBS"
+merge "vias_gen_0/VSUBS" "vias_gen$3_2/VSUBS"
+merge "vias_gen$3_2/VSUBS" "vias_gen$3_2/m1_0_0#"
+merge "vias_gen$3_2/m1_0_0#" "nfet_1_2$1$1$1_0/a_25_40#"
+merge "nfet_1_2$1$1$1_0/a_25_40#" "vias_gen_2/m1_0_0#"
+merge "vias_gen_2/m1_0_0#" "m2_3203_0#"
+merge "m2_3203_0#" "nfet_1_2$2$1_0/a_625_40#"
+merge "nfet_1_2$2$1_0/a_625_40#" "vias_gen$3_1/VSUBS"
+merge "vias_gen$3_1/VSUBS" "vias_gen$3_1/m1_0_0#"
+merge "vias_gen$3_1/m1_0_0#" "nfet_1_2$1$1$1_0/a_325_40#"
+merge "nfet_1_2$1$1$1_0/a_325_40#" "vias_gen_1/m1_0_0#"
+merge "vias_gen_1/m1_0_0#" "m2_3503_0#"
+merge "m2_3503_0#" "vias_gen$5_6/VSUBS"
+merge "vias_gen$5_6/VSUBS" "nfet_1_2$1$1$1_0/VSUBS"
+merge "nfet_1_2$1$1$1_0/VSUBS" "vias_gen_2/VSUBS"
+merge "vias_gen_2/VSUBS" "vias_gen_1/VSUBS"
+merge "vias_gen_1/VSUBS" "vias_gen$5_2/VSUBS"
+merge "vias_gen$5_2/VSUBS" "guard_ring_gen_0/a_n100_n100#"
+merge "guard_ring_gen_0/a_n100_n100#" "nfet_1_2$2$1$1_0/VSUBS"
+merge "nfet_1_2$2$1$1_0/VSUBS" "vias_gen_25/VSUBS"
+merge "vias_gen_25/VSUBS" "vias_gen_15/VSUBS"
+merge "vias_gen_15/VSUBS" "vias_gen_14/VSUBS"
+merge "vias_gen_14/VSUBS" "vias_gen$4_0/VSUBS"
+merge "vias_gen$4_0/VSUBS" "vias_gen_24/VSUBS"
+merge "vias_gen_24/VSUBS" "nfet_1_2$1$1$2_0/VSUBS"
+merge "nfet_1_2$1$1$2_0/VSUBS" "vias_gen_16/VSUBS"
+merge "vias_gen_16/VSUBS" "vias_gen$7_0/VSUBS"
+merge "vias_gen$7_0/VSUBS" "nfet_1_2$1$2_0/VSUBS"
+merge "nfet_1_2$1$2_0/VSUBS" "nfet_1_2$2$2_0/VSUBS"
+merge "nfet_1_2$2$2_0/VSUBS" "vias_gen_19/VSUBS"
+merge "vias_gen_19/VSUBS" "vias_gen_18/VSUBS"
+merge "vias_gen_18/VSUBS" "vias_gen_17/VSUBS"
+merge "vias_gen_17/VSUBS" "vias_gen$5_5/VSUBS"
+merge "vias_gen$5_5/VSUBS" "nfet_1_2$3_0/VSUBS"
+merge "nfet_1_2$3_0/VSUBS" "vias_gen_21/VSUBS"
+merge "vias_gen_21/VSUBS" "vias_gen_20/VSUBS"
+merge "vias_gen_20/VSUBS" "vias_gen$5_1/VSUBS"
+merge "vias_gen$5_1/VSUBS" "vias_gen$3_3/VSUBS"
+merge "vias_gen$3_3/VSUBS" "vias_gen_23/VSUBS"
+merge "vias_gen_23/VSUBS" "nfet_1_2$2$1_0/VSUBS"
+merge "nfet_1_2$2$1_0/VSUBS" "vias_gen_4/VSUBS"
+merge "vias_gen_4/VSUBS" "vias_gen_3/VSUBS"
+merge "vias_gen_3/VSUBS" "vias_gen$6_0/VSUBS"
+merge "vias_gen$6_0/VSUBS" "vias_gen$3_4/VSUBS"
+merge "vias_gen$3_4/VSUBS" "vias_gen_22/VSUBS"
+merge "vias_gen_22/VSUBS" "nfet_1_2$1$1_0/VSUBS"
+merge "nfet_1_2$1$1_0/VSUBS" "vias_gen_5/VSUBS"
+merge "vias_gen_5/VSUBS" "vias_gen$3_6/VSUBS"
+merge "vias_gen$3_6/VSUBS" "vias_gen$3_5/VSUBS"
+merge "vias_gen$3_5/VSUBS" "nfet_1_2$1_0/VSUBS"
+merge "nfet_1_2$1_0/VSUBS" "nfet_1_2$2_0/VSUBS"
+merge "nfet_1_2$2_0/VSUBS" "vias_gen_8/VSUBS"
+merge "vias_gen_8/VSUBS" "vias_gen_7/VSUBS"
+merge "vias_gen_7/VSUBS" "vias_gen_6/VSUBS"
+merge "vias_gen_6/VSUBS" "vias_gen$6_1/VSUBS"
+merge "vias_gen$6_1/VSUBS" "vias_gen$3_8/VSUBS"
+merge "vias_gen$3_8/VSUBS" "vias_gen$3_7/VSUBS"
+merge "vias_gen$3_7/VSUBS" "nfet_1_2_0/VSUBS"
+merge "nfet_1_2_0/VSUBS" "vias_gen$5_4/VSUBS"
+merge "vias_gen$5_4/VSUBS" "vias_gen_10/VSUBS"
+merge "vias_gen_10/VSUBS" "vias_gen_9/VSUBS"
+merge "vias_gen_9/VSUBS" "vias_gen$5_0/VSUBS"
+merge "vias_gen$5_0/VSUBS" "VSUBS"
+merge "VSUBS" "nfet_1_2$2$1$1_0/a_25_40#"
+merge "nfet_1_2$2$1$1_0/a_25_40#" "vias_gen_15/m1_0_0#"
+merge "vias_gen_15/m1_0_0#" "nfet_1_2$1$1$2_0/a_625_40#"
+merge "nfet_1_2$1$1$2_0/a_625_40#" "nfet_1_2$1$1$2_0/a_25_40#"
+merge "nfet_1_2$1$1$2_0/a_25_40#" "vias_gen_16/m1_0_0#"
+merge "vias_gen_16/m1_0_0#" "nfet_1_2$2$2_0/a_625_40#"
+merge "nfet_1_2$2$2_0/a_625_40#" "nfet_1_2$1$2_0/a_625_40#"
+merge "nfet_1_2$1$2_0/a_625_40#" "nfet_1_2$1$2_0/a_25_40#"
+merge "nfet_1_2$1$2_0/a_25_40#" "nfet_1_2$2$2_0/a_25_40#"
+merge "nfet_1_2$2$2_0/a_25_40#" "vias_gen_19/m1_0_0#"
+merge "vias_gen_19/m1_0_0#" "nfet_1_2$3_0/a_625_40#"
+merge "nfet_1_2$3_0/a_625_40#" "vias_gen_17/m1_0_0#"
+merge "vias_gen_17/m1_0_0#" "vias_gen$5_5/m1_0_0#"
+merge "vias_gen$5_5/m1_0_0#" "nfet_1_2$3_0/a_425_0#"
+merge "nfet_1_2$3_0/a_425_0#" "nfet_1_2$3_0/a_125_0#"
+merge "nfet_1_2$3_0/a_125_0#" "nfet_1_2$3_0/a_325_40#"
+merge "nfet_1_2$3_0/a_325_40#" "nfet_1_2$3_0/a_25_40#"
+merge "nfet_1_2$3_0/a_25_40#" "vias_gen_21/m1_0_0#"
+merge "vias_gen_21/m1_0_0#" "vias_gen_20/m1_0_0#"
+merge "vias_gen_20/m1_0_0#" "vias_gen$5_1/m1_0_0#"
+merge "vias_gen$5_1/m1_0_0#" "m1_279_690#"
+merge "m1_279_690#" "vias_gen$3_3/m1_0_0#"
+merge "vias_gen$3_3/m1_0_0#" "nfet_1_2$2$1_0/a_25_40#"
+merge "nfet_1_2$2$1_0/a_25_40#" "vias_gen_4/m1_0_0#"
+merge "vias_gen_4/m1_0_0#" "m2_2603_0#"
+merge "m2_2603_0#" "nfet_1_2$1$1_0/a_625_40#"
+merge "nfet_1_2$1$1_0/a_625_40#" "vias_gen$3_4/m1_0_0#"
+merge "vias_gen$3_4/m1_0_0#" "nfet_1_2$1$1_0/a_25_40#"
+merge "nfet_1_2$1$1_0/a_25_40#" "vias_gen_5/m1_0_0#"
+merge "vias_gen_5/m1_0_0#" "m2_2003_0#"
+merge "m2_2003_0#" "nfet_1_2$2_0/a_625_40#"
+merge "nfet_1_2$2_0/a_625_40#" "vias_gen$3_6/m1_0_0#"
+merge "vias_gen$3_6/m1_0_0#" "nfet_1_2$1_0/a_25_40#"
+merge "nfet_1_2$1_0/a_25_40#" "vias_gen_8/m1_0_0#"
+merge "vias_gen_8/m1_0_0#" "m2_803_0#"
+merge "m2_803_0#" "nfet_1_2_0/a_625_40#"
+merge "nfet_1_2_0/a_625_40#" "vias_gen$3_5/m1_0_0#"
+merge "vias_gen$3_5/m1_0_0#" "nfet_1_2$1_0/a_625_40#"
+merge "nfet_1_2$1_0/a_625_40#" "nfet_1_2$2_0/a_25_40#"
+merge "nfet_1_2$2_0/a_25_40#" "vias_gen_6/m1_0_0#"
+merge "vias_gen_6/m1_0_0#" "m2_1403_0#"
+merge "m2_1403_0#" "vias_gen$3_8/m1_0_0#"
+merge "vias_gen$3_8/m1_0_0#" "vias_gen$3_7/m1_0_0#"
+merge "vias_gen$3_7/m1_0_0#" "VGND"
+merge "VGND" "nfet_1_2_0/a_325_40#"
+merge "nfet_1_2_0/a_325_40#" "vias_gen_9/m1_0_0#"
+merge "vias_gen_9/m1_0_0#" "m2_503_0#"
+merge "m2_503_0#" "nfet_1_2_0/a_25_40#"
+merge "nfet_1_2_0/a_25_40#" "nfet_1_2_0/a_425_0#"
+merge "nfet_1_2_0/a_425_0#" "nfet_1_2_0/a_125_0#"
+merge "nfet_1_2_0/a_125_0#" "vias_gen$5_4/m1_0_0#"
+merge "vias_gen$5_4/m1_0_0#" "vias_gen_10/m1_0_0#"
+merge "vias_gen_10/m1_0_0#" "vias_gen$5_0/m1_0_0#"
+merge "vias_gen$5_0/m1_0_0#" "m2_203_0#"
+merge "m2_203_0#" "m1_279_471#"
+merge "nfet_1_2$2$1$1_0/a_425_0#" "nfet_1_2$2$1$1_0/a_125_0#" -4996.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -196352 -10328 -33904 -1928 -23760 -984 0 0 0 0 0 0
+merge "nfet_1_2$2$1$1_0/a_125_0#" "vias_gen_25/m1_0_0#"
+merge "vias_gen_25/m1_0_0#" "nfet_1_2$1$1$2_0/a_325_40#"
+merge "nfet_1_2$1$1$2_0/a_325_40#" "vias_gen$4_0/m1_0_0#"
+merge "vias_gen$4_0/m1_0_0#" "vias_gen_23/m1_0_0#"
+merge "vias_gen_23/m1_0_0#" "m2_2303_258#"
+merge "m2_2303_258#" "nfet_1_2$1$1_0/a_325_40#"
+merge "nfet_1_2$1$1_0/a_325_40#" "vias_gen_24/m1_0_0#"
+merge "vias_gen_24/m1_0_0#" "nfet_1_2$2$2_0/a_325_40#"
+merge "nfet_1_2$2$2_0/a_325_40#" "nfet_1_2$1$1$2_0/a_425_0#"
+merge "nfet_1_2$1$1$2_0/a_425_0#" "nfet_1_2$1$1$2_0/a_125_0#"
+merge "nfet_1_2$1$1$2_0/a_125_0#" "vias_gen$7_0/m1_0_0#"
+merge "vias_gen$7_0/m1_0_0#" "REF"
+merge "REF" "vias_gen_22/m1_0_0#"
+merge "vias_gen_22/m1_0_0#" "m2_1703_258#"
+merge "m2_1703_258#" "nfet_1_2$2_0/a_325_40#"
+merge "nfet_1_2$2_0/a_325_40#" "nfet_1_2$1$2_0/a_425_0#"
+merge "nfet_1_2$1$2_0/a_425_0#" "nfet_1_2$1$2_0/a_125_0#"
+merge "nfet_1_2$1$2_0/a_125_0#" "nfet_1_2$2$2_0/a_425_0#"
+merge "nfet_1_2$2$2_0/a_425_0#" "nfet_1_2$2$2_0/a_125_0#"
+merge "nfet_1_2$2$2_0/a_125_0#" "nfet_1_2$2$1_0/a_425_0#"
+merge "nfet_1_2$2$1_0/a_425_0#" "nfet_1_2$2$1_0/a_125_0#"
+merge "nfet_1_2$2$1_0/a_125_0#" "nfet_1_2$1$1_0/a_425_0#"
+merge "nfet_1_2$1$1_0/a_425_0#" "nfet_1_2$1$1_0/a_125_0#"
+merge "nfet_1_2$1$1_0/a_125_0#" "nfet_1_2$1_0/a_425_0#"
+merge "nfet_1_2$1_0/a_425_0#" "nfet_1_2$1_0/a_125_0#"
+merge "nfet_1_2$1_0/a_125_0#" "nfet_1_2$2_0/a_425_0#"
+merge "nfet_1_2$2_0/a_425_0#" "nfet_1_2$2_0/a_125_0#"
+merge "nfet_1_2$2_0/a_125_0#" "m1_878_463#"
+merge "nfet_1_2$2$1$1_0/a_325_40#" "vias_gen_14/m1_0_0#" -1282.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23920 -1408 -33904 -1928 -21120 -904 0 0 0 0 0 0
+merge "vias_gen_14/m1_0_0#" "nfet_1_2$1$2_0/a_325_40#"
+merge "nfet_1_2$1$2_0/a_325_40#" "vias_gen_18/m1_0_0#"
+merge "vias_gen_18/m1_0_0#" "nfet_1_2$2$1_0/a_325_40#"
+merge "nfet_1_2$2$1_0/a_325_40#" "vias_gen_3/m1_0_0#"
+merge "vias_gen_3/m1_0_0#" "vias_gen$6_0/m2_0_0#"
+merge "vias_gen$6_0/m2_0_0#" "m2_2903_258#"
+merge "m2_2903_258#" "nfet_1_2$1_0/a_325_40#"
+merge "nfet_1_2$1_0/a_325_40#" "vias_gen_7/m1_0_0#"
+merge "vias_gen_7/m1_0_0#" "vias_gen$6_1/m2_0_0#"
+merge "vias_gen$6_1/m2_0_0#" "OUT"
+merge "OUT" "m2_1103_258#"

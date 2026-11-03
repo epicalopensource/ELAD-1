@@ -1,0 +1,6 @@
+[13:11:52] === report for ELAD1_MIRROR_CC ===
+[13:11:52] 1/5 extraction
+[13:11:53] extract c: 24 devices, 3 C, 0 R
+[13:11:53] extract rc: 24 devices, 3 C, 0 R
+[13:11:53] 2/5 testbenches
+[13:11:53] 3/5 simulations

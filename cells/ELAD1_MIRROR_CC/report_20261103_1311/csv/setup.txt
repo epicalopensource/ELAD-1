@@ -1,0 +1,5 @@
+date: Tue Nov  3 01:11:52 PM CET 2026
+-r--r--r-- 1 designer designers 61434 2026-11-02 10:20:11.467695952 +0100 /foss/designs/ELAD-1/cells/ELAD1_MIRROR_CC/layout/ELAD1_MIRROR_CC.gds
+******
+** ngspice-47 : Circuit level simulation program
+8.3.684
