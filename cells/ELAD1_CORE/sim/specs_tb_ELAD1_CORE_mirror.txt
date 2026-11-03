@@ -1,0 +1,22 @@
+# Limits for tb_ELAD1_CORE_mirror: current-mirror experiment through the controller (flow/tb.sh ELAD1_CORE tb_ELAD1_CORE_mirror,
+# checked by flow/lib/tb_rows.py). <row tag> <key> <min|-> <max|->, SI suffixes allowed.
+# Request MODE 01 (mirror), STRUCT 1 (CC) -> ELAD1_MIRROR_CC; IREF = 10 uA into ua0.
+# Regression limits around the typical-corner result (tt, 27 C, 1.8 V, ngspice-47, open_pdks 1689ac3f).
+mirror  t_busy    1.0u    1.3u     # APPLY (0.80 us) -> BUSY                          sim 1.101 us
+mirror  t_active  1.9u    2.2u     # APPLY -> ACTIVE                                  sim 2.002 us
+mirror  t_safe    3.8u    3.81u    # ena low at 3.80 us -> ACTIVE low (asynchronous)  sim 3.8027 us
+mirror  iout_fix  10.2u   10.8u    # I(ua4) with ua4 fixed at 1.2 V (VDS 1.19 vs 0.67) sim 10.522 uA
+mirror  err_fix   2       8        # copy error at unequal VDS, % (channel-length mod.) sim +5.22 %
+mirror  iout_kel  9.99u   10.01u   # I(ua4) with Kelvin servo (VDS matched)           sim 10.000 uA
+mirror  err_kel   -0.05   0.05     # copy error with VDS matched, %                   sim -0.0002 %
+mirror  dvds_kel  -0.05   0.05     # V(ua2) - V(ua3) after the servo, mV              sim -0.0001 mV
+mirror  vref      0.64    0.71     # reference VGS sensed on ua3                      sim 0.6722 V
+mirror  vua0      0.64    0.71     # voltage the 10 uA source sees on ua0             sim 0.6758 V
+mirror  rsw_ref   100     1000     # ua0 switch resistance (V(ua0)-V(ua3))/10 uA, ohm sim 363 ohm
+mirror  iout_off  -2n     2n       # I(ua4) after ena low: path open                  sim 0.31 nA
+mirror  mode1     -       0.2      # uo_out[3] = MODE[1] = 0                          sim 0 V
+mirror  mode0     1.6     -        # uo_out[2] = MODE[0] = 1                          sim 1.8 V
+mirror  struct    1.6     -        # uo_out[4] = STRUCT = 1                           sim 1.8 V
+mirror  heat_on   -       0.2      # uo_out[5] heater off                             sim 0 V
+mirror  err       -       0.2      # uo_out[7] no error                               sim 0 V
+mirror  agg_x_max -       1.9      # aggressor load node stays at VDPWR               sim 1.80 V
