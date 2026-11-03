@@ -259,6 +259,9 @@ C {devices/code_shown.sym} -1200 -900 0 0 {name=s1 only_toplevel=false value="* 
 * circuit in ngspice-47 (0.5 us took 34 min); the Sparse solver runs it in seconds.
 .option sparse
 .option method=gear
+* Start-up guess for nodes held only by an xhigh_po resistor (the PDK model has an
+* unphysical high-voltage solution; see cells/ELAD1_CORE/sim/specs.txt agg_x_max).
+.nodeset v(xdut.xcore.xana.xagg.x)=1.8 v(xdut.xcore.xana.out_a)=1.8 v(xdut.xcore.xana.out_b)=1.8
 .control
 tran 2n 3.6u
 let id3 = -i(VD3)
@@ -272,6 +275,7 @@ let di = id3 - id4
 meas tran di_on    avg di  from=2.6u to=3.1u
 meas tran vbias_on avg v(PIN0) from=2.6u to=3.1u
 meas tran i3_off   avg id3 from=3.4u to=3.6u
+meas tran agg_x_max max v(xdut.xcore.xana.xagg.x)
 meas tran mode1    find v(UO3) at=3u
 meas tran mode0    find v(UO2) at=3u
 meas tran struct   find v(UO4) at=3u

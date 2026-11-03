@@ -17,3 +17,4 @@ mode0      -       0.2      # uo_out[2] = MODE[0] echo                          
 struct     1.6     -        # uo_out[4] = STRUCT echo                                sim 1.8 V
 heat_on    -       0.2      # uo_out[5] heater off (not requested)                   sim 0 V
 err        -       0.2      # uo_out[7] no error                                     sim 0 V
+agg_x_max  -       1.9      # aggressor load node <= VDPWR (catches the unphysical xhigh_po start-up state)  sim 1.8 V

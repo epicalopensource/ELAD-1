@@ -3,7 +3,7 @@ G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
-spice_sym_def="tcleval(.include [file join $::flow_root cells ELAD1_CONTROL synth ELAD1_CONTROL.spice])"
+spice_sym_def="tcleval([flow_netlist_include ELAD1_CONTROL])"
 }
 V {}
 S {}

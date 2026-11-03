@@ -17,3 +17,4 @@ heat_on    -       0.2      # uo_out[5] heater off (not requested)              
 err        -       0.2      # uo_out[7] no error                                     sim 0 V
 uio_max    -       0.1      # uio_out tied low (conb_1)                              sim 0 V
 oe_max     -       0.1      # uio_oe tied low (conb_1)                               sim 0 V
+agg_x_max  -       1.9      # aggressor load node <= VDPWR (catches the unphysical xhigh_po start-up state)  sim 1.8 V
