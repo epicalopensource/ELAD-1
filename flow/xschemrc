@@ -38,3 +38,17 @@ if {[info exists ::env(FLOW_NETLIST_MODE)]} {
     tb  { set lvs_netlist 0; set top_subckt 0 }
   }
 }
+
+# 4) Netlist-backed cells (no transistor-level schematic, e.g. the hardened ELAD1_CONTROL):
+#    symbols call  spice_sym_def="tcleval([flow_netlist_include <CELL>])"
+#    -> simulation:  .include cells/<CELL>/synth/<CELL>.spice
+#    -> LVS netlist: .include cells/<CELL>/synth/<CELL>_lvs.spice (if it exists)
+proc flow_netlist_include {cell} {
+  global flow_root lvs_netlist
+  set f [file join $flow_root cells $cell synth $cell.spice]
+  if {[info exists lvs_netlist] && $lvs_netlist} {
+    set l [file join $flow_root cells $cell synth ${cell}_lvs.spice]
+    if {[file exists $l]} { set f $l }
+  }
+  return ".include $f"
+}
