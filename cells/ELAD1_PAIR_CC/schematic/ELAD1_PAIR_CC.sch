@@ -48,16 +48,27 @@ N 520 100 560 100 {lab=VGND}
 N 560 100 560 200 {lab=VGND}
 N 520 130 540 130 {lab=VGND}
 N 540 130 540 200 {lab=VGND}
+N 380 110 380 140 {lab=TAIL}
+N 380 30 380 50 {lab=TAIL}
+N 320 30 380 30 {lab=TAIL}
+N 320 30 320 140 {lab=TAIL}
+N 340 80 380 80 {lab=VGND}
+N 420 80 420 140 {lab=TAIL}
+N 320 140 420 140 {lab=TAIL}
+N 250 80 340 80 {lab=VGND}
 C {devices/iopin.sym} -220 -90 0 1 {name=p1 lab=D1}
 C {devices/iopin.sym} 380 -90 0 0 {name=p2 lab=D2}
 C {devices/iopin.sym} -220 0 0 1 {name=p3 lab=VINP}
 C {devices/iopin.sym} 380 0 0 0 {name=p4 lab=VINM}
 C {devices/iopin.sym} -220 70 0 1 {name=p5 lab=VBIAS}
 C {devices/iopin.sym} -220 200 0 1 {name=p6 lab=VGND}
-C {sky130_fd_pr/nfet_01v8.sym} 0 0 0 0 {name=MN1 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} 200 0 0 1 {name=MN2 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} 80 130 0 0 {name=MN3 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} -80 130 0 1 {name=MR2 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} 500 130 0 0 {name=MN4 model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 0 0 0 0 {name=MN1 model=nfet_01v8 W=2 L=1 nf=1 mult=4 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 200 0 0 1 {name=MN2 model=nfet_01v8 W=2 L=1 nf=1 mult=4 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 80 130 0 0 {name=MN3 model=nfet_01v8 W=2 L=1 nf=1 mult=4 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} -80 130 0 1 {name=MR2 model=nfet_01v8 W=2 L=1 nf=1 mult=4 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 500 130 0 0 {name=MN4 model=nfet_01v8 W=2 L=1 nf=1 mult=4 sa=0 sb=0 sd=0}
 C {devices/lab_pin.sym} 100 60 0 1 {name=l7 sig_type=std_logic lab=TAIL}
 C {devices/lab_pin.sym} 100 -50 0 1 {name=l8 sig_type=std_logic lab=VGND}
+C {sky130_fd_pr/nfet_01v8.sym} 400 80 0 1 {name=MN5 model=nfet_01v8 W=2 L=1 nf=1 mult=16 sa=0 sb=0 sd=0}
+C {devices/lab_pin.sym} 320 120 0 1 {name=l1 sig_type=std_logic lab=TAIL}
+C {devices/lab_pin.sym} 250 80 0 0 {name=l2 sig_type=std_logic lab=VGND}

@@ -46,9 +46,11 @@ Processing ELAD1_MIRROR_CC_flat
 ELAD1_MIRROR_CC_flat: 8 warnings
 Total of 8 warnings.
 exttosim finished.
-Note:  This option has been deprecated and is unused.
 Extracting VGND
+Extracting REF
+Extracting OUT
+Warning:  Orphaned node "OUT" arbitrarily attached to "OUT.t6"
 Total Nets: 3
-Nets extracted: 1 (0.333333)
-Nets output: 1 (0.333333)
+Nets extracted: 3 (1.000000)
+Nets output: 3 (1.000000)
 exttospice finished.
