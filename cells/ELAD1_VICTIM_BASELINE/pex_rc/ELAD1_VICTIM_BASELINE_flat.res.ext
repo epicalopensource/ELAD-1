@@ -1,0 +1,1498 @@
+scale 1000 1 500000
+rnode "SUBQ.n0" 0 0 48 728 0
+rnode "SUBQ.n1" 0 0 181 599 0
+rnode "SUBQ.n2" 0 0 181 599 0
+rnode "SUBQ.n3" 0 0 109 599 0
+rnode "SUBQ.n4" 0 0 48 800 0
+rnode "SUBQ.n5" 0 0 48 800 0
+rnode "SUBQ.n6" 0 0 109 2225 0
+rnode "SUBQ.n7" 0 0 48 2024 0
+rnode "SUBQ.n8" 0 0 48 1880 0
+rnode "SUBQ.n9" 0 0 48 1736 0
+rnode "SUBQ.n10" 0 0 48 1592 0
+rnode "SUBQ.n11" 0 0 48 1448 0
+rnode "SUBQ.n12" 0 0 48 1304 0
+rnode "SUBQ.n13" 0 0 48 1160 0
+rnode "SUBQ.n14" 0 0 48 1016 0
+rnode "SUBQ.n15" 0 0 48 944 0
+rnode "SUBQ.n16" 0 0 48 944 0
+rnode "SUBQ.n17" 0 0 48 1088 0
+rnode "SUBQ.n18" 0 0 48 1232 0
+rnode "SUBQ.n19" 0 0 48 1376 0
+rnode "SUBQ.n20" 0 0 48 1520 0
+rnode "SUBQ.n21" 0 0 48 1664 0
+rnode "SUBQ.n22" 0 0 48 1808 0
+rnode "SUBQ.n23" 0 0 48 1952 0
+rnode "SUBQ.n24" 0 0 48 2096 0
+rnode "SUBQ.n25" 0 0 181 2225 0
+rnode "SUBQ.n26" 0 0 181 2225 0
+rnode "SUBQ.n27" 0 0 253 2225 0
+rnode "SUBQ.n28" 0 0 253 2225 0
+rnode "SUBQ.n29" 0 0 325 599 0
+rnode "SUBQ.n30" 0 0 325 599 0
+rnode "SUBQ.n31" 0 0 469 599 0
+rnode "SUBQ.n32" 0 0 469 599 0
+rnode "SUBQ.n33" 0 0 469 599 0
+rnode "SUBQ.n34" 0 0 469 2225 0
+rnode "SUBQ.n35" 0 0 325 2225 0
+rnode "SUBQ.n36" 0 0 469 2225 0
+rnode "SUBQ.n37" 0 0 325 2225 0
+rnode "SUBQ.n38" 0 0 469 2225 0
+rnode "SUBQ.n39" 0 0 325 2225 0
+rnode "SUBQ.n40" 0 0 613 2225 0
+rnode "SUBQ.n41" 0 0 613 2225 0
+rnode "SUBQ.n42" 0 0 613 2225 0
+rnode "SUBQ.n43" 0 0 613 2225 0
+rnode "SUBQ.n44" 0 0 613 599 0
+rnode "SUBQ.n45" 0 0 613 599 0
+rnode "SUBQ.n46" 0 0 757 599 0
+rnode "SUBQ.n47" 0 0 757 599 0
+rnode "SUBQ.n48" 0 0 757 599 0
+rnode "SUBQ.t4" 0 0 699 325 0
+rnode "SUBQ.n49" 0 0 757 2225 0
+rnode "SUBQ.n50" 0 0 757 2225 0
+rnode "SUBQ.n51" 0 0 901 2225 0
+rnode "SUBQ.n52" 0 0 901 2225 0
+rnode "SUBQ.n53" 0 0 901 2225 0
+rnode "SUBQ.n54" 0 0 901 2225 0
+rnode "SUBQ.n55" 0 0 901 599 0
+rnode "SUBQ.n56" 0 0 901 599 0
+rnode "SUBQ.n57" 0 0 1045 599 0
+rnode "SUBQ.n58" 0 0 1045 599 0
+rnode "SUBQ.n59" 0 0 1045 599 0
+rnode "SUBQ.t5" 0 0 999 325 0
+rnode "SUBQ.t0" 0 0 912 1990 0
+rnode "SUBQ.n60" 0 0 1045 2225 0
+rnode "SUBQ.n61" 0 0 1045 2225 0
+rnode "SUBQ.n62" 0 0 1189 2225 0
+rnode "SUBQ.n63" 0 0 1189 2225 0
+rnode "SUBQ.n64" 0 0 1189 2225 0
+rnode "SUBQ.n65" 0 0 1189 2225 0
+rnode "SUBQ.n66" 0 0 1189 599 0
+rnode "SUBQ.n67" 0 0 1189 599 0
+rnode "SUBQ.n68" 0 0 1261 599 0
+rnode "SUBQ.n69" 0 0 1244 361 0
+rnode "SUBQ.n70" 0 0 1405 599 0
+rnode "SUBQ.n71" 0 0 1405 599 0
+rnode "SUBQ.n72" 0 0 1261 599 0
+rnode "SUBQ.n73" 0 0 1405 599 0
+rnode "SUBQ.n74" 0 0 1261 599 0
+rnode "SUBQ.n75" 0 0 1405 2225 0
+rnode "SUBQ.n76" 0 0 1261 2225 0
+rnode "SUBQ.n77" 0 0 1405 2225 0
+rnode "SUBQ.n78" 0 0 1261 2225 0
+rnode "SUBQ.n79" 0 0 1405 2225 0
+rnode "SUBQ.n80" 0 0 1261 2225 0
+rnode "SUBQ.n81" 0 0 1549 2225 0
+rnode "SUBQ.n82" 0 0 1549 2225 0
+rnode "SUBQ.n83" 0 0 1549 2225 0
+rnode "SUBQ.t2" 0 0 1543 325 0
+rnode "SUBQ.n84" 0 0 1549 599 0
+rnode "SUBQ.n85" 0 0 1549 599 0
+rnode "SUBQ.n86" 0 0 1693 599 0
+rnode "SUBQ.n87" 0 0 1693 599 0
+rnode "SUBQ.n88" 0 0 1693 599 0
+rnode "SUBQ.n89" 0 0 1693 2225 0
+rnode "SUBQ.n90" 0 0 1549 2225 0
+rnode "SUBQ.n91" 0 0 1693 2225 0
+rnode "SUBQ.n92" 0 0 1693 2225 0
+rnode "SUBQ.n93" 0 0 1837 2225 0
+rnode "SUBQ.n94" 0 0 1837 2225 0
+rnode "SUBQ.n95" 0 0 1837 2225 0
+rnode "SUBQ.n96" 0 0 1837 2225 0
+rnode "SUBQ.n97" 0 0 1837 599 0
+rnode "SUBQ.n98" 0 0 1837 599 0
+rnode "SUBQ.n99" 0 0 1981 599 0
+rnode "SUBQ.n100" 0 0 1981 599 0
+rnode "SUBQ.n101" 0 0 1981 599 0
+rnode "SUBQ.n102" 0 0 1981 2225 0
+rnode "SUBQ.t3" 0 0 1843 325 0
+rnode "SUBQ.n103" 0 0 1981 2225 0
+rnode "SUBQ.n104" 0 0 1981 2225 0
+rnode "SUBQ.n105" 0 0 2125 2225 0
+rnode "SUBQ.n106" 0 0 2125 2225 0
+rnode "SUBQ.n107" 0 0 2125 2225 0
+rnode "SUBQ.n108" 0 0 2088 361 0
+rnode "SUBQ.n109" 0 0 2125 599 0
+rnode "SUBQ.n110" 0 0 2125 599 0
+rnode "SUBQ.n111" 0 0 2269 599 0
+rnode "SUBQ.n112" 0 0 2269 599 0
+rnode "SUBQ.n113" 0 0 2269 599 0
+rnode "SUBQ.n114" 0 0 2269 2225 0
+rnode "SUBQ.n115" 0 0 2125 2225 0
+rnode "SUBQ.n116" 0 0 2269 2225 0
+rnode "SUBQ.n117" 0 0 2269 2225 0
+rnode "SUBQ.n118" 0 0 2413 2225 0
+rnode "SUBQ.n119" 0 0 2413 2225 0
+rnode "SUBQ.n120" 0 0 2413 2225 0
+rnode "SUBQ.t6" 0 0 2387 325 0
+rnode "SUBQ.n121" 0 0 2413 599 0
+rnode "SUBQ.n122" 0 0 2413 599 0
+rnode "SUBQ.n123" 0 0 2557 599 0
+rnode "SUBQ.n124" 0 0 2557 599 0
+rnode "SUBQ.n125" 0 0 2557 599 0
+rnode "SUBQ.n126" 0 0 2557 2225 0
+rnode "SUBQ.n127" 0 0 2413 2225 0
+rnode "SUBQ.n128" 0 0 2557 2225 0
+rnode "SUBQ.n129" 0 0 2557 2225 0
+rnode "SUBQ.n130" 0 0 2701 2225 0
+rnode "SUBQ.n131" 0 0 2701 2225 0
+rnode "SUBQ.n132" 0 0 2701 2225 0
+rnode "SUBQ.t7" 0 0 2687 325 0
+rnode "SUBQ.n133" 0 0 2701 599 0
+rnode "SUBQ.n134" 0 0 2701 599 0
+rnode "SUBQ.n135" 0 0 2845 599 0
+rnode "SUBQ.n136" 0 0 2845 599 0
+rnode "SUBQ.n137" 0 0 2845 599 0
+rnode "SUBQ.n138" 0 0 2845 2225 0
+rnode "SUBQ.n139" 0 0 2701 2225 0
+rnode "SUBQ.n140" 0 0 2845 2225 0
+rnode "SUBQ.n141" 0 0 2845 2225 0
+rnode "SUBQ.n142" 0 0 2989 2225 0
+rnode "SUBQ.n143" 0 0 2989 2225 0
+rnode "SUBQ.n144" 0 0 2989 2225 0
+rnode "SUBQ.n145" 0 0 2932 361 0
+rnode "SUBQ.n146" 0 0 2989 599 0
+rnode "SUBQ.n147" 0 0 2989 599 0
+rnode "SUBQ.n148" 0 0 3133 599 0
+rnode "SUBQ.n149" 0 0 3133 599 0
+rnode "SUBQ.n150" 0 0 3133 599 0
+rnode "SUBQ.n151" 0 0 3133 2225 0
+rnode "SUBQ.n152" 0 0 2989 2225 0
+rnode "SUBQ.n153" 0 0 3133 2225 0
+rnode "SUBQ.n154" 0 0 3133 2225 0
+rnode "SUBQ.n155" 0 0 3277 2225 0
+rnode "SUBQ.n156" 0 0 3277 2225 0
+rnode "SUBQ.n157" 0 0 3277 2225 0
+rnode "SUBQ.n158" 0 0 3277 2225 0
+rnode "SUBQ.n159" 0 0 3277 599 0
+rnode "SUBQ.n160" 0 0 3277 599 0
+rnode "SUBQ.n161" 0 0 3421 599 0
+rnode "SUBQ.n162" 0 0 3421 599 0
+rnode "SUBQ.n163" 0 0 3421 599 0
+rnode "SUBQ.n164" 0 0 3421 2225 0
+rnode "SUBQ.n165" 0 0 3421 2225 0
+rnode "SUBQ.n166" 0 0 3421 2225 0
+rnode "SUBQ.n167" 0 0 3481 2024 0
+rnode "SUBQ.n168" 0 0 3481 2096 0
+rnode "SUBQ.n169" 0 0 3481 2024 0
+rnode "SUBQ.n170" 0 0 3481 1952 0
+rnode "SUBQ.n171" 0 0 3481 1880 0
+rnode "SUBQ.n172" 0 0 3481 1736 0
+rnode "SUBQ.n173" 0 0 3481 1808 0
+rnode "SUBQ.n174" 0 0 3481 1736 0
+rnode "SUBQ.n175" 0 0 3481 1664 0
+rnode "SUBQ.n176" 0 0 3481 1592 0
+rnode "SUBQ.n177" 0 0 3481 1448 0
+rnode "SUBQ.n178" 0 0 3481 1520 0
+rnode "SUBQ.n179" 0 0 3481 1448 0
+rnode "SUBQ.n180" 0 0 3481 1376 0
+rnode "SUBQ.n181" 0 0 3481 1304 0
+rnode "SUBQ.n182" 0 0 3481 1160 0
+rnode "SUBQ.n183" 0 0 3481 1232 0
+rnode "SUBQ.n184" 0 0 3481 1160 0
+rnode "SUBQ.n185" 0 0 3481 1088 0
+rnode "SUBQ.n186" 0 0 3481 1016 0
+rnode "SUBQ.n187" 0 0 3481 872 0
+rnode "SUBQ.n188" 0 0 3481 944 0
+rnode "SUBQ.n189" 0 0 3481 872 0
+rnode "SUBQ.n190" 0 0 3481 800 0
+rnode "SUBQ.n191" 0 0 3481 1880 0
+rnode "SUBQ.n192" 0 0 3481 2096 0
+rnode "SUBQ.n193" 0 0 3481 1304 0
+rnode "SUBQ.n194" 0 0 3481 2096 0
+rnode "SUBQ.n195" 0 0 3481 2096 0
+rnode "SUBQ.n196" 0 0 3481 1016 0
+rnode "SUBQ.n197" 0 0 3481 2096 0
+rnode "SUBQ.n198" 0 0 3481 2096 0
+rnode "SUBQ.n199" 0 0 3481 1592 0
+rnode "SUBQ.n200" 0 0 3481 2096 0
+rnode "SUBQ.n201" 0 0 3481 2096 0
+rnode "SUBQ.n202" 0 0 3481 2096 0
+rnode "SUBQ.n203" 0 0 3481 2096 0
+rnode "SUBQ.n204" 0 0 3481 2096 0
+rnode "SUBQ.n205" 0 0 3481 728 0
+rnode "SUBQ.n206" 0 0 3481 728 0
+rnode "SUBQ.n207" 0 0 3481 728 0
+rnode "SUBQ.n208" 0 0 3481 800 0
+rnode "SUBQ.n209" 0 0 3481 800 0
+rnode "SUBQ.n210" 0 0 3481 872 0
+rnode "SUBQ.n211" 0 0 3481 944 0
+rnode "SUBQ.n212" 0 0 3481 944 0
+rnode "SUBQ.n213" 0 0 3481 1016 0
+rnode "SUBQ.n214" 0 0 3481 1088 0
+rnode "SUBQ.n215" 0 0 3481 1088 0
+rnode "SUBQ.n216" 0 0 3481 1160 0
+rnode "SUBQ.n217" 0 0 3481 1232 0
+rnode "SUBQ.n218" 0 0 3481 1232 0
+rnode "SUBQ.n219" 0 0 3481 1304 0
+rnode "SUBQ.n220" 0 0 3481 1376 0
+rnode "SUBQ.n221" 0 0 3481 1376 0
+rnode "SUBQ.n222" 0 0 3481 1448 0
+rnode "SUBQ.n223" 0 0 3481 1520 0
+rnode "SUBQ.n224" 0 0 3481 1520 0
+rnode "SUBQ.n225" 0 0 3481 1592 0
+rnode "SUBQ.n226" 0 0 3481 1664 0
+rnode "SUBQ.n227" 0 0 3481 1664 0
+rnode "SUBQ.n228" 0 0 3481 1736 0
+rnode "SUBQ.n229" 0 0 3481 1808 0
+rnode "SUBQ.n230" 0 0 3481 1808 0
+rnode "SUBQ.n231" 0 0 3481 1880 0
+rnode "SUBQ.n232" 0 0 3481 1952 0
+rnode "SUBQ.n233" 0 0 3481 1952 0
+rnode "SUBQ.n234" 0 0 3481 2024 0
+rnode "SUBQ.n235" 0 0 3481 2096 0
+rnode "SUBQ.n236" 0 0 3481 2096 0
+rnode "SUBQ.n237" 0 0 3421 2225 0
+rnode "SUBQ.n238" 0 0 3349 2225 0
+rnode "SUBQ.n239" 0 0 3349 2225 0
+rnode "SUBQ.n240" 0 0 3349 2225 0
+rnode "SUBQ.n241" 0 0 3349 2225 0
+rnode "SUBQ.n242" 0 0 3349 599 0
+rnode "SUBQ.n243" 0 0 3349 599 0
+rnode "SUBQ.n244" 0 0 3349 599 0
+rnode "SUBQ.n245" 0 0 3277 599 0
+rnode "SUBQ.n246" 0 0 3205 599 0
+rnode "SUBQ.n247" 0 0 3205 599 0
+rnode "SUBQ.n248" 0 0 3205 599 0
+rnode "SUBQ.n249" 0 0 3205 2225 0
+rnode "SUBQ.n250" 0 0 3205 2225 0
+rnode "SUBQ.n251" 0 0 3205 2225 0
+rnode "SUBQ.n252" 0 0 3205 2225 0
+rnode "SUBQ.n253" 0 0 3133 2225 0
+rnode "SUBQ.n254" 0 0 3061 2225 0
+rnode "SUBQ.n255" 0 0 3061 2225 0
+rnode "SUBQ.n256" 0 0 3061 2225 0
+rnode "SUBQ.n257" 0 0 3061 2225 0
+rnode "SUBQ.n258" 0 0 3061 599 0
+rnode "SUBQ.n259" 0 0 3061 599 0
+rnode "SUBQ.n260" 0 0 3061 599 0
+rnode "SUBQ.n261" 0 0 2989 599 0
+rnode "SUBQ.n262" 0 0 2965 599 0
+rnode "SUBQ.n263" 0 0 2917 599 0
+rnode "SUBQ.n264" 0 0 2917 599 0
+rnode "SUBQ.n265" 0 0 2917 2225 0
+rnode "SUBQ.n266" 0 0 2917 2225 0
+rnode "SUBQ.n267" 0 0 2917 2225 0
+rnode "SUBQ.n268" 0 0 2917 2225 0
+rnode "SUBQ.n269" 0 0 2845 2225 0
+rnode "SUBQ.n270" 0 0 2773 2225 0
+rnode "SUBQ.n271" 0 0 2773 2225 0
+rnode "SUBQ.n272" 0 0 2773 2225 0
+rnode "SUBQ.n273" 0 0 2773 2225 0
+rnode "SUBQ.n274" 0 0 2773 599 0
+rnode "SUBQ.n275" 0 0 2773 599 0
+rnode "SUBQ.n276" 0 0 2773 599 0
+rnode "SUBQ.n277" 0 0 2701 599 0
+rnode "SUBQ.n278" 0 0 2629 599 0
+rnode "SUBQ.n279" 0 0 2629 599 0
+rnode "SUBQ.n280" 0 0 2629 599 0
+rnode "SUBQ.t1" 0 0 2614 1990 0
+rnode "SUBQ.n281" 0 0 2629 2225 0
+rnode "SUBQ.n282" 0 0 2629 2225 0
+rnode "SUBQ.n283" 0 0 2629 2225 0
+rnode "SUBQ.n284" 0 0 2629 2225 0
+rnode "SUBQ.n285" 0 0 2557 2225 0
+rnode "SUBQ.n286" 0 0 2485 2225 0
+rnode "SUBQ.n287" 0 0 2485 2225 0
+rnode "SUBQ.n288" 0 0 2485 2225 0
+rnode "SUBQ.n289" 0 0 2485 2225 0
+rnode "SUBQ.n290" 0 0 2485 599 0
+rnode "SUBQ.n291" 0 0 2485 599 0
+rnode "SUBQ.n292" 0 0 2485 599 0
+rnode "SUBQ.n293" 0 0 2413 599 0
+rnode "SUBQ.n294" 0 0 2341 599 0
+rnode "SUBQ.n295" 0 0 2341 599 0
+rnode "SUBQ.n296" 0 0 2341 599 0
+rnode "SUBQ.n297" 0 0 2341 2225 0
+rnode "SUBQ.n298" 0 0 2341 2225 0
+rnode "SUBQ.n299" 0 0 2341 2225 0
+rnode "SUBQ.n300" 0 0 2341 2225 0
+rnode "SUBQ.n301" 0 0 2269 2225 0
+rnode "SUBQ.n302" 0 0 2197 2225 0
+rnode "SUBQ.n303" 0 0 2197 2225 0
+rnode "SUBQ.n304" 0 0 2197 2225 0
+rnode "SUBQ.n305" 0 0 2197 2225 0
+rnode "SUBQ.n306" 0 0 2197 599 0
+rnode "SUBQ.n307" 0 0 2197 599 0
+rnode "SUBQ.n308" 0 0 2197 599 0
+rnode "SUBQ.n309" 0 0 2125 599 0
+rnode "SUBQ.n310" 0 0 2056 601 0
+rnode "SUBQ.n311" 0 0 2053 599 0
+rnode "SUBQ.n312" 0 0 2053 599 0
+rnode "SUBQ.n313" 0 0 2053 599 0
+rnode "SUBQ.n314" 0 0 2053 2225 0
+rnode "SUBQ.n315" 0 0 2053 2225 0
+rnode "SUBQ.n316" 0 0 2053 2225 0
+rnode "SUBQ.n317" 0 0 2053 2225 0
+rnode "SUBQ.n318" 0 0 1981 2225 0
+rnode "SUBQ.n319" 0 0 1909 2225 0
+rnode "SUBQ.n320" 0 0 1909 2225 0
+rnode "SUBQ.n321" 0 0 1909 2225 0
+rnode "SUBQ.n322" 0 0 1909 2225 0
+rnode "SUBQ.n323" 0 0 1909 599 0
+rnode "SUBQ.n324" 0 0 1909 599 0
+rnode "SUBQ.n325" 0 0 1909 599 0
+rnode "SUBQ.n326" 0 0 1837 599 0
+rnode "SUBQ.n327" 0 0 1765 599 0
+rnode "SUBQ.n328" 0 0 1765 599 0
+rnode "SUBQ.n329" 0 0 1765 599 0
+rnode "SUBQ.n330" 0 0 1765 2225 0
+rnode "SUBQ.n331" 0 0 1765 2225 0
+rnode "SUBQ.n332" 0 0 1765 2225 0
+rnode "SUBQ.n333" 0 0 1765 2225 0
+rnode "SUBQ.n334" 0 0 1693 2225 0
+rnode "SUBQ.n335" 0 0 1621 2225 0
+rnode "SUBQ.n336" 0 0 1621 2225 0
+rnode "SUBQ.n337" 0 0 1621 2225 0
+rnode "SUBQ.n338" 0 0 1621 2225 0
+rnode "SUBQ.n339" 0 0 1621 599 0
+rnode "SUBQ.n340" 0 0 1621 599 0
+rnode "SUBQ.n341" 0 0 1621 599 0
+rnode "SUBQ.n342" 0 0 1549 599 0
+rnode "SUBQ.n343" 0 0 1477 599 0
+rnode "SUBQ.n344" 0 0 1477 599 0
+rnode "SUBQ.n345" 0 0 1477 599 0
+rnode "SUBQ.n346" 0 0 1477 2225 0
+rnode "SUBQ.n347" 0 0 1477 2225 0
+rnode "SUBQ.n348" 0 0 1477 2225 0
+rnode "SUBQ.n349" 0 0 1477 2225 0
+rnode "SUBQ.n350" 0 0 1405 2225 0
+rnode "SUBQ.n351" 0 0 1261 2225 0
+rnode "SUBQ.n352" 0 0 1333 2225 0
+rnode "SUBQ.n353" 0 0 1333 2225 0
+rnode "SUBQ.n354" 0 0 1333 2225 0
+rnode "SUBQ.n355" 0 0 1333 2225 0
+rnode "SUBQ.n356" 0 0 1333 599 0
+rnode "SUBQ.n357" 0 0 1333 599 0
+rnode "SUBQ.n358" 0 0 1333 599 0
+rnode "SUBQ.n359" 0 0 1277 601 0
+rnode "SUBQ.n360" 0 0 1277 601 0
+rnode "SUBQ.n361" 0 0 1213 601 0
+rnode "SUBQ.n362" 0 0 1189 599 0
+rnode "SUBQ.n363" 0 0 1117 599 0
+rnode "SUBQ.n364" 0 0 1117 599 0
+rnode "SUBQ.n365" 0 0 1117 599 0
+rnode "SUBQ.n366" 0 0 1045 2225 0
+rnode "SUBQ.n367" 0 0 1117 2225 0
+rnode "SUBQ.n368" 0 0 1117 2225 0
+rnode "SUBQ.n369" 0 0 1117 2225 0
+rnode "SUBQ.n370" 0 0 1117 2225 0
+rnode "SUBQ.n371" 0 0 1045 2225 0
+rnode "SUBQ.n372" 0 0 973 2225 0
+rnode "SUBQ.n373" 0 0 973 2225 0
+rnode "SUBQ.n374" 0 0 973 2225 0
+rnode "SUBQ.n375" 0 0 973 2225 0
+rnode "SUBQ.n376" 0 0 973 599 0
+rnode "SUBQ.n377" 0 0 973 599 0
+rnode "SUBQ.n378" 0 0 973 599 0
+rnode "SUBQ.n379" 0 0 901 599 0
+rnode "SUBQ.n380" 0 0 829 599 0
+rnode "SUBQ.n381" 0 0 829 599 0
+rnode "SUBQ.n382" 0 0 829 599 0
+rnode "SUBQ.n383" 0 0 757 2225 0
+rnode "SUBQ.n384" 0 0 829 2225 0
+rnode "SUBQ.n385" 0 0 829 2225 0
+rnode "SUBQ.n386" 0 0 829 2225 0
+rnode "SUBQ.n387" 0 0 829 2225 0
+rnode "SUBQ.n388" 0 0 757 2225 0
+rnode "SUBQ.n389" 0 0 685 2225 0
+rnode "SUBQ.n390" 0 0 685 2225 0
+rnode "SUBQ.n391" 0 0 685 2225 0
+rnode "SUBQ.n392" 0 0 685 2225 0
+rnode "SUBQ.n393" 0 0 685 599 0
+rnode "SUBQ.n394" 0 0 685 599 0
+rnode "SUBQ.n395" 0 0 685 599 0
+rnode "SUBQ.n396" 0 0 613 599 0
+rnode "SUBQ.n397" 0 0 541 599 0
+rnode "SUBQ.n398" 0 0 541 599 0
+rnode "SUBQ.n399" 0 0 541 599 0
+rnode "SUBQ.n400" 0 0 541 2225 0
+rnode "SUBQ.n401" 0 0 541 2225 0
+rnode "SUBQ.n402" 0 0 541 2225 0
+rnode "SUBQ.n403" 0 0 541 2225 0
+rnode "SUBQ.n404" 0 0 469 2225 0
+rnode "SUBQ.n405" 0 0 253 2225 0
+rnode "SUBQ.n406" 0 0 253 2225 0
+rnode "SUBQ.n407" 0 0 325 2225 0
+rnode "SUBQ.n408" 0 0 397 2225 0
+rnode "SUBQ.n409" 0 0 397 2225 0
+rnode "SUBQ.n410" 0 0 397 2225 0
+rnode "SUBQ.n411" 0 0 397 2225 0
+rnode "SUBQ.n412" 0 0 397 599 0
+rnode "SUBQ.n413" 0 0 397 599 0
+rnode "SUBQ.n414" 0 0 397 599 0
+rnode "SUBQ.n415" 0 0 325 599 0
+rnode "SUBQ.n416" 0 0 253 599 0
+rnode "SUBQ.n417" 0 0 253 599 0
+rnode "SUBQ.n418" 0 0 253 599 0
+rnode "SUBQ.n419" 0 0 181 599 0
+rnode "SUBQ.n420" 0 0 181 2225 0
+rnode "SUBQ.n421" 0 0 181 2225 0
+rnode "SUBQ.n422" 0 0 48 2096 0
+rnode "SUBQ.n423" 0 0 109 2225 0
+rnode "SUBQ.n424" 0 0 109 2225 0
+rnode "SUBQ.n425" 0 0 109 2225 0
+rnode "SUBQ.n426" 0 0 48 2096 0
+rnode "SUBQ.n427" 0 0 48 2024 0
+rnode "SUBQ.n428" 0 0 48 2024 0
+rnode "SUBQ.n429" 0 0 48 2024 0
+rnode "SUBQ.n430" 0 0 48 1952 0
+rnode "SUBQ.n431" 0 0 48 1952 0
+rnode "SUBQ.n432" 0 0 48 1808 0
+rnode "SUBQ.n433" 0 0 48 1880 0
+rnode "SUBQ.n434" 0 0 48 1880 0
+rnode "SUBQ.n435" 0 0 48 1880 0
+rnode "SUBQ.n436" 0 0 48 1808 0
+rnode "SUBQ.n437" 0 0 48 1736 0
+rnode "SUBQ.n438" 0 0 48 1736 0
+rnode "SUBQ.n439" 0 0 48 1736 0
+rnode "SUBQ.n440" 0 0 48 1664 0
+rnode "SUBQ.n441" 0 0 48 1664 0
+rnode "SUBQ.n442" 0 0 48 1520 0
+rnode "SUBQ.n443" 0 0 48 1592 0
+rnode "SUBQ.n444" 0 0 48 1592 0
+rnode "SUBQ.n445" 0 0 48 1592 0
+rnode "SUBQ.n446" 0 0 48 1520 0
+rnode "SUBQ.n447" 0 0 48 1448 0
+rnode "SUBQ.n448" 0 0 48 1448 0
+rnode "SUBQ.n449" 0 0 48 1448 0
+rnode "SUBQ.n450" 0 0 48 1376 0
+rnode "SUBQ.n451" 0 0 48 1376 0
+rnode "SUBQ.n452" 0 0 48 1232 0
+rnode "SUBQ.n453" 0 0 48 1304 0
+rnode "SUBQ.n454" 0 0 48 1304 0
+rnode "SUBQ.n455" 0 0 48 1304 0
+rnode "SUBQ.n456" 0 0 48 1232 0
+rnode "SUBQ.n457" 0 0 48 1160 0
+rnode "SUBQ.n458" 0 0 48 1160 0
+rnode "SUBQ.n459" 0 0 48 1160 0
+rnode "SUBQ.n460" 0 0 48 1088 0
+rnode "SUBQ.n461" 0 0 48 1088 0
+rnode "SUBQ.n462" 0 0 48 1016 0
+rnode "SUBQ.n463" 0 0 48 1016 0
+rnode "SUBQ.n464" 0 0 48 1016 0
+rnode "SUBQ.n465" 0 0 48 944 0
+rnode "SUBQ.n466" 0 0 48 800 0
+rnode "SUBQ.n467" 0 0 48 872 0
+rnode "SUBQ.n468" 0 0 48 872 0
+rnode "SUBQ.n469" 0 0 48 872 0
+rnode "SUBQ.n470" 0 0 48 872 0
+rnode "SUBQ.n471" 0 0 48 2096 0
+rnode "SUBQ.n472" 0 0 48 728 0
+rnode "SUBQ.n473" 0 0 48 728 0
+rnode "SUBQ.n474" 0 0 48 728 0
+rnode "SUBQ.n475" 0 0 109 599 0
+rnode "SUBQ.n476" 0 0 109 599 0
+rnode "SUBQ.n477" 0 0 48 622 0
+rnode "SUBQ" 0 0 28 593 0
+resist "SUBQ.n359" "SUBQ.n68" 0.0384615
+resist "SUBQ" "SUBQ.n477" 0.0543478
+resist "SUBQ.n362" "SUBQ.n361" 0.0576923
+resist "SUBQ.n262" "SUBQ.n261" 0.0652174
+resist "SUBQ.n311" "SUBQ.n310" 0.0833418
+resist "SUBQ.n310" "SUBQ.n309" 0.0881495
+resist "SUBQ.n361" "SUBQ.n68" 0.115385
+resist "SUBQ.n359" "SUBQ.n358" 0.141827
+resist "SUBQ.n262" "SUBQ.n135" 0.146739
+resist "SUBQ.n477" "SUBQ.n476" 0.165761
+resist "SUBQ.n311" "SUBQ.n99" 0.186246
+resist "SUBQ.n309" "SUBQ.n308" 0.186873
+resist "SUBQ.n363" "SUBQ.n362" 0.19283
+resist "SUBQ.n325" "SUBQ.n99" 0.195652
+resist "SUBQ.n326" "SUBQ.n325" 0.195652
+resist "SUBQ.n327" "SUBQ.n326" 0.195652
+resist "SUBQ.n327" "SUBQ.n86" 0.195652
+resist "SUBQ.n341" "SUBQ.n86" 0.195652
+resist "SUBQ.n342" "SUBQ.n341" 0.195652
+resist "SUBQ.n343" "SUBQ.n342" 0.195652
+resist "SUBQ.n343" "SUBQ.n70" 0.195652
+resist "SUBQ.n358" "SUBQ.n70" 0.195652
+resist "SUBQ.n276" "SUBQ.n135" 0.195652
+resist "SUBQ.n277" "SUBQ.n276" 0.195652
+resist "SUBQ.n278" "SUBQ.n277" 0.195652
+resist "SUBQ.n278" "SUBQ.n123" 0.195652
+resist "SUBQ.n292" "SUBQ.n123" 0.195652
+resist "SUBQ.n293" "SUBQ.n292" 0.195652
+resist "SUBQ.n294" "SUBQ.n293" 0.195652
+resist "SUBQ.n294" "SUBQ.n111" 0.195652
+resist "SUBQ.n308" "SUBQ.n111" 0.195652
+resist "SUBQ.n244" "SUBQ.n161" 0.195652
+resist "SUBQ.n245" "SUBQ.n244" 0.195652
+resist "SUBQ.n246" "SUBQ.n245" 0.195652
+resist "SUBQ.n246" "SUBQ.n148" 0.195652
+resist "SUBQ.n260" "SUBQ.n148" 0.195652
+resist "SUBQ.n261" "SUBQ.n260" 0.195652
+resist "SUBQ.n236" "SUBQ.n167" 0.195652
+resist "SUBQ.n232" "SUBQ.n167" 0.195652
+resist "SUBQ.n232" "SUBQ.n231" 0.195652
+resist "SUBQ.n231" "SUBQ.n230" 0.195652
+resist "SUBQ.n230" "SUBQ.n172" 0.195652
+resist "SUBQ.n226" "SUBQ.n172" 0.195652
+resist "SUBQ.n226" "SUBQ.n225" 0.195652
+resist "SUBQ.n225" "SUBQ.n224" 0.195652
+resist "SUBQ.n224" "SUBQ.n177" 0.195652
+resist "SUBQ.n220" "SUBQ.n177" 0.195652
+resist "SUBQ.n220" "SUBQ.n219" 0.195652
+resist "SUBQ.n219" "SUBQ.n218" 0.195652
+resist "SUBQ.n218" "SUBQ.n182" 0.195652
+resist "SUBQ.n214" "SUBQ.n182" 0.195652
+resist "SUBQ.n214" "SUBQ.n213" 0.195652
+resist "SUBQ.n213" "SUBQ.n212" 0.195652
+resist "SUBQ.n212" "SUBQ.n187" 0.195652
+resist "SUBQ.n208" "SUBQ.n187" 0.195652
+resist "SUBQ.n208" "SUBQ.n207" 0.195652
+resist "SUBQ.n238" "SUBQ.n237" 0.195652
+resist "SUBQ.n238" "SUBQ.n155" 0.195652
+resist "SUBQ.n252" "SUBQ.n155" 0.195652
+resist "SUBQ.n253" "SUBQ.n252" 0.195652
+resist "SUBQ.n254" "SUBQ.n253" 0.195652
+resist "SUBQ.n254" "SUBQ.n142" 0.195652
+resist "SUBQ.n268" "SUBQ.n142" 0.195652
+resist "SUBQ.n269" "SUBQ.n268" 0.195652
+resist "SUBQ.n270" "SUBQ.n269" 0.195652
+resist "SUBQ.n270" "SUBQ.n130" 0.195652
+resist "SUBQ.n284" "SUBQ.n130" 0.195652
+resist "SUBQ.n285" "SUBQ.n284" 0.195652
+resist "SUBQ.n286" "SUBQ.n285" 0.195652
+resist "SUBQ.n286" "SUBQ.n118" 0.195652
+resist "SUBQ.n300" "SUBQ.n118" 0.195652
+resist "SUBQ.n301" "SUBQ.n300" 0.195652
+resist "SUBQ.n302" "SUBQ.n301" 0.195652
+resist "SUBQ.n302" "SUBQ.n105" 0.195652
+resist "SUBQ.n317" "SUBQ.n105" 0.195652
+resist "SUBQ.n318" "SUBQ.n317" 0.195652
+resist "SUBQ.n319" "SUBQ.n318" 0.195652
+resist "SUBQ.n319" "SUBQ.n93" 0.195652
+resist "SUBQ.n333" "SUBQ.n93" 0.195652
+resist "SUBQ.n334" "SUBQ.n333" 0.195652
+resist "SUBQ.n335" "SUBQ.n334" 0.195652
+resist "SUBQ.n335" "SUBQ.n81" 0.195652
+resist "SUBQ.n349" "SUBQ.n81" 0.195652
+resist "SUBQ.n350" "SUBQ.n349" 0.195652
+resist "SUBQ.n352" "SUBQ.n350" 0.195652
+resist "SUBQ.n352" "SUBQ.n351" 0.195652
+resist "SUBQ.n351" "SUBQ.n62" 0.195652
+resist "SUBQ.n370" "SUBQ.n62" 0.195652
+resist "SUBQ.n371" "SUBQ.n370" 0.195652
+resist "SUBQ.n372" "SUBQ.n371" 0.195652
+resist "SUBQ.n372" "SUBQ.n51" 0.195652
+resist "SUBQ.n387" "SUBQ.n51" 0.195652
+resist "SUBQ.n388" "SUBQ.n387" 0.195652
+resist "SUBQ.n389" "SUBQ.n388" 0.195652
+resist "SUBQ.n389" "SUBQ.n40" 0.195652
+resist "SUBQ.n403" "SUBQ.n40" 0.195652
+resist "SUBQ.n404" "SUBQ.n403" 0.195652
+resist "SUBQ.n408" "SUBQ.n404" 0.195652
+resist "SUBQ.n408" "SUBQ.n407" 0.195652
+resist "SUBQ.n407" "SUBQ.n406" 0.195652
+resist "SUBQ.n406" "SUBQ.n25" 0.195652
+resist "SUBQ.n425" "SUBQ.n25" 0.195652
+resist "SUBQ.n427" "SUBQ.n426" 0.195652
+resist "SUBQ.n427" "SUBQ.n23" 0.195652
+resist "SUBQ.n435" "SUBQ.n23" 0.195652
+resist "SUBQ.n436" "SUBQ.n435" 0.195652
+resist "SUBQ.n437" "SUBQ.n436" 0.195652
+resist "SUBQ.n437" "SUBQ.n21" 0.195652
+resist "SUBQ.n445" "SUBQ.n21" 0.195652
+resist "SUBQ.n446" "SUBQ.n445" 0.195652
+resist "SUBQ.n447" "SUBQ.n446" 0.195652
+resist "SUBQ.n447" "SUBQ.n19" 0.195652
+resist "SUBQ.n455" "SUBQ.n19" 0.195652
+resist "SUBQ.n456" "SUBQ.n455" 0.195652
+resist "SUBQ.n457" "SUBQ.n456" 0.195652
+resist "SUBQ.n457" "SUBQ.n17" 0.195652
+resist "SUBQ.n464" "SUBQ.n17" 0.195652
+resist "SUBQ.n465" "SUBQ.n464" 0.195652
+resist "SUBQ.n467" "SUBQ.n465" 0.195652
+resist "SUBQ.n467" "SUBQ.n466" 0.195652
+resist "SUBQ.n466" "SUBQ.n0" 0.195652
+resist "SUBQ.n363" "SUBQ.n57" 0.195652
+resist "SUBQ.n378" "SUBQ.n57" 0.195652
+resist "SUBQ.n379" "SUBQ.n378" 0.195652
+resist "SUBQ.n380" "SUBQ.n379" 0.195652
+resist "SUBQ.n380" "SUBQ.n46" 0.195652
+resist "SUBQ.n395" "SUBQ.n46" 0.195652
+resist "SUBQ.n396" "SUBQ.n395" 0.195652
+resist "SUBQ.n397" "SUBQ.n396" 0.195652
+resist "SUBQ.n397" "SUBQ.n31" 0.195652
+resist "SUBQ.n414" "SUBQ.n31" 0.195652
+resist "SUBQ.n415" "SUBQ.n414" 0.195652
+resist "SUBQ.n416" "SUBQ.n415" 0.195652
+resist "SUBQ.n416" "SUBQ.n1" 0.195652
+resist "SUBQ.n476" "SUBQ.n1" 0.195652
+resist "SUBQ.n477" "SUBQ.n0" 0.288043
+resist "SUBQ.n207" "SUBQ.n161" 0.451087
+resist "SUBQ.n237" "SUBQ.n236" 0.451087
+resist "SUBQ.n426" "SUBQ.n425" 0.453804
+resist "SUBQ.n360" "SUBQ.n359" 4.5
+resist "SUBQ.n361" "SUBQ.n360" 4.5
+resist "SUBQ.n362" "SUBQ.n67" 9.3
+resist "SUBQ.n72" "SUBQ.n68" 9.3
+resist "SUBQ.n358" "SUBQ.n357" 9.3
+resist "SUBQ.n71" "SUBQ.n70" 9.3
+resist "SUBQ.n344" "SUBQ.n343" 9.3
+resist "SUBQ.n342" "SUBQ.n85" 9.3
+resist "SUBQ.n341" "SUBQ.n340" 9.3
+resist "SUBQ.n87" "SUBQ.n86" 9.3
+resist "SUBQ.n328" "SUBQ.n327" 9.3
+resist "SUBQ.n326" "SUBQ.n98" 9.3
+resist "SUBQ.n325" "SUBQ.n324" 9.3
+resist "SUBQ.n100" "SUBQ.n99" 9.3
+resist "SUBQ.n308" "SUBQ.n307" 9.3
+resist "SUBQ.n112" "SUBQ.n111" 9.3
+resist "SUBQ.n295" "SUBQ.n294" 9.3
+resist "SUBQ.n293" "SUBQ.n122" 9.3
+resist "SUBQ.n292" "SUBQ.n291" 9.3
+resist "SUBQ.n124" "SUBQ.n123" 9.3
+resist "SUBQ.n279" "SUBQ.n278" 9.3
+resist "SUBQ.n277" "SUBQ.n134" 9.3
+resist "SUBQ.n276" "SUBQ.n275" 9.3
+resist "SUBQ.n136" "SUBQ.n135" 9.3
+resist "SUBQ.n312" "SUBQ.n311" 9.3
+resist "SUBQ.n309" "SUBQ.n110" 9.3
+resist "SUBQ.n263" "SUBQ.n262" 9.3
+resist "SUBQ.n261" "SUBQ.n147" 9.3
+resist "SUBQ.n260" "SUBQ.n259" 9.3
+resist "SUBQ.n149" "SUBQ.n148" 9.3
+resist "SUBQ.n247" "SUBQ.n246" 9.3
+resist "SUBQ.n245" "SUBQ.n160" 9.3
+resist "SUBQ.n244" "SUBQ.n243" 9.3
+resist "SUBQ.n162" "SUBQ.n161" 9.3
+resist "SUBQ.n236" "SUBQ.n235" 9.3
+resist "SUBQ.n234" "SUBQ.n167" 9.3
+resist "SUBQ.n233" "SUBQ.n232" 9.3
+resist "SUBQ.n231" "SUBQ.n171" 9.3
+resist "SUBQ.n230" "SUBQ.n229" 9.3
+resist "SUBQ.n228" "SUBQ.n172" 9.3
+resist "SUBQ.n227" "SUBQ.n226" 9.3
+resist "SUBQ.n225" "SUBQ.n176" 9.3
+resist "SUBQ.n224" "SUBQ.n223" 9.3
+resist "SUBQ.n222" "SUBQ.n177" 9.3
+resist "SUBQ.n221" "SUBQ.n220" 9.3
+resist "SUBQ.n219" "SUBQ.n181" 9.3
+resist "SUBQ.n218" "SUBQ.n217" 9.3
+resist "SUBQ.n216" "SUBQ.n182" 9.3
+resist "SUBQ.n215" "SUBQ.n214" 9.3
+resist "SUBQ.n213" "SUBQ.n186" 9.3
+resist "SUBQ.n212" "SUBQ.n211" 9.3
+resist "SUBQ.n210" "SUBQ.n187" 9.3
+resist "SUBQ.n209" "SUBQ.n208" 9.3
+resist "SUBQ.n207" "SUBQ.n206" 9.3
+resist "SUBQ.n237" "SUBQ.n166" 9.3
+resist "SUBQ.n239" "SUBQ.n238" 9.3
+resist "SUBQ.n156" "SUBQ.n155" 9.3
+resist "SUBQ.n252" "SUBQ.n251" 9.3
+resist "SUBQ.n253" "SUBQ.n154" 9.3
+resist "SUBQ.n255" "SUBQ.n254" 9.3
+resist "SUBQ.n143" "SUBQ.n142" 9.3
+resist "SUBQ.n268" "SUBQ.n267" 9.3
+resist "SUBQ.n269" "SUBQ.n141" 9.3
+resist "SUBQ.n271" "SUBQ.n270" 9.3
+resist "SUBQ.n131" "SUBQ.n130" 9.3
+resist "SUBQ.n284" "SUBQ.n283" 9.3
+resist "SUBQ.n285" "SUBQ.n129" 9.3
+resist "SUBQ.n287" "SUBQ.n286" 9.3
+resist "SUBQ.n119" "SUBQ.n118" 9.3
+resist "SUBQ.n300" "SUBQ.n299" 9.3
+resist "SUBQ.n301" "SUBQ.n117" 9.3
+resist "SUBQ.n303" "SUBQ.n302" 9.3
+resist "SUBQ.n106" "SUBQ.n105" 9.3
+resist "SUBQ.n317" "SUBQ.n316" 9.3
+resist "SUBQ.n318" "SUBQ.n104" 9.3
+resist "SUBQ.n320" "SUBQ.n319" 9.3
+resist "SUBQ.n94" "SUBQ.n93" 9.3
+resist "SUBQ.n333" "SUBQ.n332" 9.3
+resist "SUBQ.n334" "SUBQ.n92" 9.3
+resist "SUBQ.n336" "SUBQ.n335" 9.3
+resist "SUBQ.n82" "SUBQ.n81" 9.3
+resist "SUBQ.n349" "SUBQ.n348" 9.3
+resist "SUBQ.n350" "SUBQ.n79" 9.3
+resist "SUBQ.n353" "SUBQ.n352" 9.3
+resist "SUBQ.n351" "SUBQ.n80" 9.3
+resist "SUBQ.n63" "SUBQ.n62" 9.3
+resist "SUBQ.n370" "SUBQ.n369" 9.3
+resist "SUBQ.n371" "SUBQ.n61" 9.3
+resist "SUBQ.n373" "SUBQ.n372" 9.3
+resist "SUBQ.n52" "SUBQ.n51" 9.3
+resist "SUBQ.n387" "SUBQ.n386" 9.3
+resist "SUBQ.n388" "SUBQ.n50" 9.3
+resist "SUBQ.n390" "SUBQ.n389" 9.3
+resist "SUBQ.n41" "SUBQ.n40" 9.3
+resist "SUBQ.n403" "SUBQ.n402" 9.3
+resist "SUBQ.n404" "SUBQ.n38" 9.3
+resist "SUBQ.n409" "SUBQ.n408" 9.3
+resist "SUBQ.n407" "SUBQ.n39" 9.3
+resist "SUBQ.n406" "SUBQ.n405" 9.3
+resist "SUBQ.n26" "SUBQ.n25" 9.3
+resist "SUBQ.n425" "SUBQ.n424" 9.3
+resist "SUBQ.n474" "SUBQ.n0" 9.3
+resist "SUBQ.n466" "SUBQ.n4" 9.3
+resist "SUBQ.n468" "SUBQ.n467" 9.3
+resist "SUBQ.n465" "SUBQ.n16" 9.3
+resist "SUBQ.n464" "SUBQ.n463" 9.3
+resist "SUBQ.n461" "SUBQ.n17" 9.3
+resist "SUBQ.n458" "SUBQ.n457" 9.3
+resist "SUBQ.n456" "SUBQ.n18" 9.3
+resist "SUBQ.n455" "SUBQ.n454" 9.3
+resist "SUBQ.n451" "SUBQ.n19" 9.3
+resist "SUBQ.n448" "SUBQ.n447" 9.3
+resist "SUBQ.n446" "SUBQ.n20" 9.3
+resist "SUBQ.n445" "SUBQ.n444" 9.3
+resist "SUBQ.n441" "SUBQ.n21" 9.3
+resist "SUBQ.n438" "SUBQ.n437" 9.3
+resist "SUBQ.n436" "SUBQ.n22" 9.3
+resist "SUBQ.n435" "SUBQ.n434" 9.3
+resist "SUBQ.n431" "SUBQ.n23" 9.3
+resist "SUBQ.n428" "SUBQ.n427" 9.3
+resist "SUBQ.n426" "SUBQ.n24" 9.3
+resist "SUBQ.n476" "SUBQ.n475" 9.3
+resist "SUBQ.n2" "SUBQ.n1" 9.3
+resist "SUBQ.n417" "SUBQ.n416" 9.3
+resist "SUBQ.n415" "SUBQ.n30" 9.3
+resist "SUBQ.n414" "SUBQ.n413" 9.3
+resist "SUBQ.n32" "SUBQ.n31" 9.3
+resist "SUBQ.n398" "SUBQ.n397" 9.3
+resist "SUBQ.n396" "SUBQ.n45" 9.3
+resist "SUBQ.n395" "SUBQ.n394" 9.3
+resist "SUBQ.n47" "SUBQ.n46" 9.3
+resist "SUBQ.n381" "SUBQ.n380" 9.3
+resist "SUBQ.n379" "SUBQ.n56" 9.3
+resist "SUBQ.n378" "SUBQ.n377" 9.3
+resist "SUBQ.n58" "SUBQ.n57" 9.3
+resist "SUBQ.n364" "SUBQ.n363" 9.3
+resist "SUBQ.t3" "SUBQ.n96" 11.6095
+resist "SUBQ.n90" "SUBQ.t2" 11.6095
+resist "SUBQ.n235" "SUBQ.n234" 20.0348
+resist "SUBQ.n234" "SUBQ.n233" 20.0348
+resist "SUBQ.n233" "SUBQ.n171" 20.0348
+resist "SUBQ.n229" "SUBQ.n171" 20.0348
+resist "SUBQ.n229" "SUBQ.n228" 20.0348
+resist "SUBQ.n228" "SUBQ.n227" 20.0348
+resist "SUBQ.n227" "SUBQ.n176" 20.0348
+resist "SUBQ.n223" "SUBQ.n176" 20.0348
+resist "SUBQ.n223" "SUBQ.n222" 20.0348
+resist "SUBQ.n222" "SUBQ.n221" 20.0348
+resist "SUBQ.n221" "SUBQ.n181" 20.0348
+resist "SUBQ.n217" "SUBQ.n181" 20.0348
+resist "SUBQ.n217" "SUBQ.n216" 20.0348
+resist "SUBQ.n216" "SUBQ.n215" 20.0348
+resist "SUBQ.n215" "SUBQ.n186" 20.0348
+resist "SUBQ.n211" "SUBQ.n186" 20.0348
+resist "SUBQ.n211" "SUBQ.n210" 20.0348
+resist "SUBQ.n210" "SUBQ.n209" 20.0348
+resist "SUBQ.n209" "SUBQ.n206" 20.0348
+resist "SUBQ.n239" "SUBQ.n166" 20.0348
+resist "SUBQ.n239" "SUBQ.n156" 20.0348
+resist "SUBQ.n251" "SUBQ.n156" 20.0348
+resist "SUBQ.n251" "SUBQ.n154" 20.0348
+resist "SUBQ.n255" "SUBQ.n154" 20.0348
+resist "SUBQ.n255" "SUBQ.n143" 20.0348
+resist "SUBQ.n267" "SUBQ.n143" 20.0348
+resist "SUBQ.n267" "SUBQ.n141" 20.0348
+resist "SUBQ.n271" "SUBQ.n141" 20.0348
+resist "SUBQ.n271" "SUBQ.n131" 20.0348
+resist "SUBQ.n283" "SUBQ.n131" 20.0348
+resist "SUBQ.n283" "SUBQ.n129" 20.0348
+resist "SUBQ.n287" "SUBQ.n129" 20.0348
+resist "SUBQ.n287" "SUBQ.n119" 20.0348
+resist "SUBQ.n299" "SUBQ.n119" 20.0348
+resist "SUBQ.n299" "SUBQ.n117" 20.0348
+resist "SUBQ.n303" "SUBQ.n117" 20.0348
+resist "SUBQ.n303" "SUBQ.n106" 20.0348
+resist "SUBQ.n316" "SUBQ.n106" 20.0348
+resist "SUBQ.n316" "SUBQ.n104" 20.0348
+resist "SUBQ.n320" "SUBQ.n104" 20.0348
+resist "SUBQ.n320" "SUBQ.n94" 20.0348
+resist "SUBQ.n332" "SUBQ.n94" 20.0348
+resist "SUBQ.n332" "SUBQ.n92" 20.0348
+resist "SUBQ.n336" "SUBQ.n92" 20.0348
+resist "SUBQ.n336" "SUBQ.n82" 20.0348
+resist "SUBQ.n348" "SUBQ.n82" 20.0348
+resist "SUBQ.n348" "SUBQ.n79" 20.0348
+resist "SUBQ.n353" "SUBQ.n79" 20.0348
+resist "SUBQ.n353" "SUBQ.n80" 20.0348
+resist "SUBQ.n80" "SUBQ.n63" 20.0348
+resist "SUBQ.n369" "SUBQ.n63" 20.0348
+resist "SUBQ.n369" "SUBQ.n61" 20.0348
+resist "SUBQ.n373" "SUBQ.n61" 20.0348
+resist "SUBQ.n373" "SUBQ.n52" 20.0348
+resist "SUBQ.n386" "SUBQ.n52" 20.0348
+resist "SUBQ.n386" "SUBQ.n50" 20.0348
+resist "SUBQ.n390" "SUBQ.n50" 20.0348
+resist "SUBQ.n390" "SUBQ.n41" 20.0348
+resist "SUBQ.n402" "SUBQ.n41" 20.0348
+resist "SUBQ.n402" "SUBQ.n38" 20.0348
+resist "SUBQ.n409" "SUBQ.n38" 20.0348
+resist "SUBQ.n409" "SUBQ.n39" 20.0348
+resist "SUBQ.n405" "SUBQ.n39" 20.0348
+resist "SUBQ.n405" "SUBQ.n26" 20.0348
+resist "SUBQ.n424" "SUBQ.n26" 20.0348
+resist "SUBQ.n428" "SUBQ.n24" 20.0348
+resist "SUBQ.n431" "SUBQ.n428" 20.0348
+resist "SUBQ.n434" "SUBQ.n431" 20.0348
+resist "SUBQ.n434" "SUBQ.n22" 20.0348
+resist "SUBQ.n438" "SUBQ.n22" 20.0348
+resist "SUBQ.n441" "SUBQ.n438" 20.0348
+resist "SUBQ.n444" "SUBQ.n441" 20.0348
+resist "SUBQ.n444" "SUBQ.n20" 20.0348
+resist "SUBQ.n448" "SUBQ.n20" 20.0348
+resist "SUBQ.n451" "SUBQ.n448" 20.0348
+resist "SUBQ.n454" "SUBQ.n451" 20.0348
+resist "SUBQ.n454" "SUBQ.n18" 20.0348
+resist "SUBQ.n458" "SUBQ.n18" 20.0348
+resist "SUBQ.n461" "SUBQ.n458" 20.0348
+resist "SUBQ.n463" "SUBQ.n461" 20.0348
+resist "SUBQ.n463" "SUBQ.n16" 20.0348
+resist "SUBQ.n468" "SUBQ.n16" 20.0348
+resist "SUBQ.n468" "SUBQ.n4" 20.0348
+resist "SUBQ.n474" "SUBQ.n4" 20.0348
+resist "SUBQ.n243" "SUBQ.n162" 20.0348
+resist "SUBQ.n243" "SUBQ.n160" 20.0348
+resist "SUBQ.n247" "SUBQ.n160" 20.0348
+resist "SUBQ.n247" "SUBQ.n149" 20.0348
+resist "SUBQ.n259" "SUBQ.n149" 20.0348
+resist "SUBQ.n259" "SUBQ.n147" 20.0348
+resist "SUBQ.n263" "SUBQ.n147" 20.0348
+resist "SUBQ.n263" "SUBQ.n136" 20.0348
+resist "SUBQ.n275" "SUBQ.n136" 20.0348
+resist "SUBQ.n275" "SUBQ.n134" 20.0348
+resist "SUBQ.n279" "SUBQ.n134" 20.0348
+resist "SUBQ.n279" "SUBQ.n124" 20.0348
+resist "SUBQ.n291" "SUBQ.n124" 20.0348
+resist "SUBQ.n291" "SUBQ.n122" 20.0348
+resist "SUBQ.n295" "SUBQ.n122" 20.0348
+resist "SUBQ.n295" "SUBQ.n112" 20.0348
+resist "SUBQ.n307" "SUBQ.n112" 20.0348
+resist "SUBQ.n307" "SUBQ.n110" 20.0348
+resist "SUBQ.n312" "SUBQ.n110" 20.0348
+resist "SUBQ.n312" "SUBQ.n100" 20.0348
+resist "SUBQ.n324" "SUBQ.n100" 20.0348
+resist "SUBQ.n324" "SUBQ.n98" 20.0348
+resist "SUBQ.n328" "SUBQ.n98" 20.0348
+resist "SUBQ.n328" "SUBQ.n87" 20.0348
+resist "SUBQ.n340" "SUBQ.n87" 20.0348
+resist "SUBQ.n340" "SUBQ.n85" 20.0348
+resist "SUBQ.n344" "SUBQ.n85" 20.0348
+resist "SUBQ.n344" "SUBQ.n71" 20.0348
+resist "SUBQ.n357" "SUBQ.n71" 20.0348
+resist "SUBQ.n357" "SUBQ.n72" 20.0348
+resist "SUBQ.n72" "SUBQ.n67" 20.0348
+resist "SUBQ.n364" "SUBQ.n67" 20.0348
+resist "SUBQ.n364" "SUBQ.n58" 20.0348
+resist "SUBQ.n377" "SUBQ.n58" 20.0348
+resist "SUBQ.n377" "SUBQ.n56" 20.0348
+resist "SUBQ.n381" "SUBQ.n56" 20.0348
+resist "SUBQ.n381" "SUBQ.n47" 20.0348
+resist "SUBQ.n394" "SUBQ.n47" 20.0348
+resist "SUBQ.n394" "SUBQ.n45" 20.0348
+resist "SUBQ.n398" "SUBQ.n45" 20.0348
+resist "SUBQ.n398" "SUBQ.n32" 20.0348
+resist "SUBQ.n413" "SUBQ.n32" 20.0348
+resist "SUBQ.n413" "SUBQ.n30" 20.0348
+resist "SUBQ.n417" "SUBQ.n30" 20.0348
+resist "SUBQ.n417" "SUBQ.n2" 20.0348
+resist "SUBQ.n475" "SUBQ.n2" 20.0348
+resist "SUBQ.t0" "SUBQ.n54" 21.2841
+resist "SUBQ.n139" "SUBQ.t7" 27.0888
+resist "SUBQ.n392" "SUBQ.t4" 27.0888
+resist "SUBQ.n265" "SUBQ.n145" 29.0237
+resist "SUBQ.n281" "SUBQ.t1" 29.0237
+resist "SUBQ.n76" "SUBQ.n69" 32.8936
+resist "SUBQ.n235" "SUBQ.n166" 46.1913
+resist "SUBQ.n206" "SUBQ.n162" 46.1913
+resist "SUBQ.n424" "SUBQ.n24" 46.4696
+resist "SUBQ.n475" "SUBQ.n474" 46.4696
+resist "SUBQ.n127" "SUBQ.t6" 50.3078
+resist "SUBQ.n375" "SUBQ.t5" 50.3078
+resist "SUBQ.n314" "SUBQ.n108" 67.7221
+resist "SUBQ.n115" "SUBQ.n108" 71.5919
+resist "SUBQ.n297" "SUBQ.t6" 89.0062
+resist "SUBQ.n366" "SUBQ.t5" 89.0062
+resist "SUBQ.n69" "SUBQ.n65" 106.42
+resist "SUBQ.n152" "SUBQ.n145" 110.29
+resist "SUBQ.t1" "SUBQ.n126" 110.29
+resist "SUBQ.n281" "SUBQ.t7" 112.225
+resist "SUBQ.n383" "SUBQ.t4" 112.225
+resist "SUBQ.n203" "SUBQ.n164" 116.095
+resist "SUBQ.n375" "SUBQ.t0" 118.03
+resist "SUBQ.n471" "SUBQ.n6" 118.03
+resist "SUBQ.n429" "SUBQ.n7" 122.017
+resist "SUBQ.n433" "SUBQ.n8" 122.017
+resist "SUBQ.n439" "SUBQ.n9" 122.017
+resist "SUBQ.n443" "SUBQ.n10" 122.017
+resist "SUBQ.n449" "SUBQ.n11" 122.017
+resist "SUBQ.n453" "SUBQ.n12" 122.017
+resist "SUBQ.n459" "SUBQ.n13" 122.017
+resist "SUBQ.n462" "SUBQ.n14" 122.017
+resist "SUBQ.n470" "SUBQ.n469" 122.017
+resist "SUBQ.n473" "SUBQ.n472" 122.017
+resist "SUBQ.n202" "SUBQ.n168" 122.017
+resist "SUBQ.n192" "SUBQ.n191" 122.017
+resist "SUBQ.n201" "SUBQ.n175" 122.017
+resist "SUBQ.n200" "SUBQ.n178" 122.017
+resist "SUBQ.n198" "SUBQ.n180" 122.017
+resist "SUBQ.n194" "SUBQ.n184" 122.017
+resist "SUBQ.n197" "SUBQ.n185" 122.017
+resist "SUBQ.n195" "SUBQ.n189" 122.017
+resist "SUBQ.n204" "SUBQ.n190" 122.017
+resist "SUBQ.n202" "SUBQ.n169" 122.017
+resist "SUBQ.n192" "SUBQ.n170" 122.017
+resist "SUBQ.n201" "SUBQ.n174" 122.017
+resist "SUBQ.n200" "SUBQ.n199" 122.017
+resist "SUBQ.n198" "SUBQ.n179" 122.017
+resist "SUBQ.n194" "SUBQ.n183" 122.017
+resist "SUBQ.n197" "SUBQ.n196" 122.017
+resist "SUBQ.n195" "SUBQ.n188" 122.017
+resist "SUBQ.n205" "SUBQ.n204" 122.017
+resist "SUBQ.n472" "SUBQ.n5" 122.017
+resist "SUBQ.n470" "SUBQ.n15" 122.017
+resist "SUBQ.n460" "SUBQ.n14" 122.017
+resist "SUBQ.n452" "SUBQ.n13" 122.017
+resist "SUBQ.n450" "SUBQ.n12" 122.017
+resist "SUBQ.n442" "SUBQ.n11" 122.017
+resist "SUBQ.n440" "SUBQ.n10" 122.017
+resist "SUBQ.n432" "SUBQ.n9" 122.017
+resist "SUBQ.n430" "SUBQ.n8" 122.017
+resist "SUBQ.n422" "SUBQ.n7" 122.017
+resist "SUBQ.n322" "SUBQ.t3" 127.704
+resist "SUBQ.n346" "SUBQ.t2" 127.704
+resist "SUBQ.n241" "SUBQ.n164" 139.314
+resist "SUBQ.n241" "SUBQ.n158" 139.314
+resist "SUBQ.n249" "SUBQ.n158" 139.314
+resist "SUBQ.n249" "SUBQ.n151" 139.314
+resist "SUBQ.n257" "SUBQ.n151" 139.314
+resist "SUBQ.n257" "SUBQ.n152" 139.314
+resist "SUBQ.n265" "SUBQ.n138" 139.314
+resist "SUBQ.n273" "SUBQ.n138" 139.314
+resist "SUBQ.n273" "SUBQ.n139" 139.314
+resist "SUBQ.n289" "SUBQ.n126" 139.314
+resist "SUBQ.n289" "SUBQ.n127" 139.314
+resist "SUBQ.n297" "SUBQ.n114" 139.314
+resist "SUBQ.n305" "SUBQ.n114" 139.314
+resist "SUBQ.n305" "SUBQ.n115" 139.314
+resist "SUBQ.n314" "SUBQ.n102" 139.314
+resist "SUBQ.n322" "SUBQ.n102" 139.314
+resist "SUBQ.n330" "SUBQ.n96" 139.314
+resist "SUBQ.n330" "SUBQ.n89" 139.314
+resist "SUBQ.n338" "SUBQ.n89" 139.314
+resist "SUBQ.n338" "SUBQ.n90" 139.314
+resist "SUBQ.n346" "SUBQ.n75" 139.314
+resist "SUBQ.n355" "SUBQ.n75" 139.314
+resist "SUBQ.n355" "SUBQ.n76" 139.314
+resist "SUBQ.n367" "SUBQ.n65" 139.314
+resist "SUBQ.n367" "SUBQ.n366" 139.314
+resist "SUBQ.n384" "SUBQ.n54" 139.314
+resist "SUBQ.n384" "SUBQ.n383" 139.314
+resist "SUBQ.n392" "SUBQ.n43" 139.314
+resist "SUBQ.n400" "SUBQ.n43" 139.314
+resist "SUBQ.n400" "SUBQ.n34" 139.314
+resist "SUBQ.n411" "SUBQ.n34" 139.314
+resist "SUBQ.n411" "SUBQ.n35" 139.314
+resist "SUBQ.n35" "SUBQ.n28" 139.314
+resist "SUBQ.n420" "SUBQ.n28" 139.314
+resist "SUBQ.n420" "SUBQ.n6" 139.314
+resist "SUBQ.n203" "SUBQ.n202" 231.492
+resist "SUBQ.n203" "SUBQ.n192" 231.492
+resist "SUBQ.n203" "SUBQ.n201" 231.492
+resist "SUBQ.n203" "SUBQ.n200" 231.492
+resist "SUBQ.n203" "SUBQ.n198" 231.492
+resist "SUBQ.n203" "SUBQ.n194" 231.492
+resist "SUBQ.n203" "SUBQ.n197" 231.492
+resist "SUBQ.n203" "SUBQ.n195" 231.492
+resist "SUBQ.n204" "SUBQ.n203" 231.492
+resist "SUBQ.n472" "SUBQ.n471" 231.492
+resist "SUBQ.n471" "SUBQ.n470" 231.492
+resist "SUBQ.n471" "SUBQ.n14" 231.492
+resist "SUBQ.n471" "SUBQ.n13" 231.492
+resist "SUBQ.n471" "SUBQ.n12" 231.492
+resist "SUBQ.n471" "SUBQ.n11" 231.492
+resist "SUBQ.n471" "SUBQ.n10" 231.492
+resist "SUBQ.n471" "SUBQ.n9" 231.492
+resist "SUBQ.n471" "SUBQ.n8" 231.492
+resist "SUBQ.n471" "SUBQ.n7" 231.492
+resist "SUBQ.n240" "SUBQ.n165" 308.348
+resist "SUBQ.n240" "SUBQ.n157" 308.348
+resist "SUBQ.n250" "SUBQ.n157" 308.348
+resist "SUBQ.n250" "SUBQ.n153" 308.348
+resist "SUBQ.n256" "SUBQ.n153" 308.348
+resist "SUBQ.n256" "SUBQ.n144" 308.348
+resist "SUBQ.n266" "SUBQ.n144" 308.348
+resist "SUBQ.n266" "SUBQ.n140" 308.348
+resist "SUBQ.n272" "SUBQ.n140" 308.348
+resist "SUBQ.n272" "SUBQ.n132" 308.348
+resist "SUBQ.n282" "SUBQ.n132" 308.348
+resist "SUBQ.n282" "SUBQ.n128" 308.348
+resist "SUBQ.n288" "SUBQ.n128" 308.348
+resist "SUBQ.n288" "SUBQ.n120" 308.348
+resist "SUBQ.n298" "SUBQ.n120" 308.348
+resist "SUBQ.n298" "SUBQ.n116" 308.348
+resist "SUBQ.n304" "SUBQ.n116" 308.348
+resist "SUBQ.n304" "SUBQ.n107" 308.348
+resist "SUBQ.n315" "SUBQ.n107" 308.348
+resist "SUBQ.n315" "SUBQ.n103" 308.348
+resist "SUBQ.n321" "SUBQ.n103" 308.348
+resist "SUBQ.n321" "SUBQ.n95" 308.348
+resist "SUBQ.n331" "SUBQ.n95" 308.348
+resist "SUBQ.n331" "SUBQ.n91" 308.348
+resist "SUBQ.n337" "SUBQ.n91" 308.348
+resist "SUBQ.n337" "SUBQ.n83" 308.348
+resist "SUBQ.n347" "SUBQ.n83" 308.348
+resist "SUBQ.n347" "SUBQ.n77" 308.348
+resist "SUBQ.n354" "SUBQ.n77" 308.348
+resist "SUBQ.n354" "SUBQ.n78" 308.348
+resist "SUBQ.n78" "SUBQ.n64" 308.348
+resist "SUBQ.n368" "SUBQ.n64" 308.348
+resist "SUBQ.n368" "SUBQ.n60" 308.348
+resist "SUBQ.n374" "SUBQ.n60" 308.348
+resist "SUBQ.n374" "SUBQ.n53" 308.348
+resist "SUBQ.n385" "SUBQ.n53" 308.348
+resist "SUBQ.n385" "SUBQ.n49" 308.348
+resist "SUBQ.n391" "SUBQ.n49" 308.348
+resist "SUBQ.n391" "SUBQ.n42" 308.348
+resist "SUBQ.n401" "SUBQ.n42" 308.348
+resist "SUBQ.n401" "SUBQ.n36" 308.348
+resist "SUBQ.n410" "SUBQ.n36" 308.348
+resist "SUBQ.n410" "SUBQ.n37" 308.348
+resist "SUBQ.n37" "SUBQ.n27" 308.348
+resist "SUBQ.n421" "SUBQ.n27" 308.348
+resist "SUBQ.n423" "SUBQ.n421" 308.348
+resist "SUBQ.n430" "SUBQ.n429" 308.348
+resist "SUBQ.n433" "SUBQ.n432" 308.348
+resist "SUBQ.n440" "SUBQ.n439" 308.348
+resist "SUBQ.n443" "SUBQ.n442" 308.348
+resist "SUBQ.n450" "SUBQ.n449" 308.348
+resist "SUBQ.n453" "SUBQ.n452" 308.348
+resist "SUBQ.n460" "SUBQ.n459" 308.348
+resist "SUBQ.n462" "SUBQ.n15" 308.348
+resist "SUBQ.n469" "SUBQ.n5" 308.348
+resist "SUBQ.n242" "SUBQ.n163" 308.348
+resist "SUBQ.n242" "SUBQ.n159" 308.348
+resist "SUBQ.n248" "SUBQ.n159" 308.348
+resist "SUBQ.n248" "SUBQ.n150" 308.348
+resist "SUBQ.n258" "SUBQ.n150" 308.348
+resist "SUBQ.n258" "SUBQ.n146" 308.348
+resist "SUBQ.n264" "SUBQ.n146" 308.348
+resist "SUBQ.n264" "SUBQ.n137" 308.348
+resist "SUBQ.n274" "SUBQ.n137" 308.348
+resist "SUBQ.n274" "SUBQ.n133" 308.348
+resist "SUBQ.n280" "SUBQ.n133" 308.348
+resist "SUBQ.n280" "SUBQ.n125" 308.348
+resist "SUBQ.n290" "SUBQ.n125" 308.348
+resist "SUBQ.n290" "SUBQ.n121" 308.348
+resist "SUBQ.n296" "SUBQ.n121" 308.348
+resist "SUBQ.n296" "SUBQ.n113" 308.348
+resist "SUBQ.n306" "SUBQ.n113" 308.348
+resist "SUBQ.n306" "SUBQ.n109" 308.348
+resist "SUBQ.n313" "SUBQ.n109" 308.348
+resist "SUBQ.n313" "SUBQ.n101" 308.348
+resist "SUBQ.n323" "SUBQ.n101" 308.348
+resist "SUBQ.n323" "SUBQ.n97" 308.348
+resist "SUBQ.n329" "SUBQ.n97" 308.348
+resist "SUBQ.n329" "SUBQ.n88" 308.348
+resist "SUBQ.n339" "SUBQ.n88" 308.348
+resist "SUBQ.n339" "SUBQ.n84" 308.348
+resist "SUBQ.n345" "SUBQ.n84" 308.348
+resist "SUBQ.n345" "SUBQ.n73" 308.348
+resist "SUBQ.n356" "SUBQ.n73" 308.348
+resist "SUBQ.n356" "SUBQ.n74" 308.348
+resist "SUBQ.n74" "SUBQ.n66" 308.348
+resist "SUBQ.n365" "SUBQ.n66" 308.348
+resist "SUBQ.n365" "SUBQ.n59" 308.348
+resist "SUBQ.n376" "SUBQ.n59" 308.348
+resist "SUBQ.n376" "SUBQ.n55" 308.348
+resist "SUBQ.n382" "SUBQ.n55" 308.348
+resist "SUBQ.n382" "SUBQ.n48" 308.348
+resist "SUBQ.n393" "SUBQ.n48" 308.348
+resist "SUBQ.n393" "SUBQ.n44" 308.348
+resist "SUBQ.n399" "SUBQ.n44" 308.348
+resist "SUBQ.n399" "SUBQ.n33" 308.348
+resist "SUBQ.n412" "SUBQ.n33" 308.348
+resist "SUBQ.n412" "SUBQ.n29" 308.348
+resist "SUBQ.n418" "SUBQ.n29" 308.348
+resist "SUBQ.n419" "SUBQ.n418" 308.348
+resist "SUBQ.n419" "SUBQ.n3" 308.348
+resist "SUBQ.n170" "SUBQ.n169" 308.348
+resist "SUBQ.n191" "SUBQ.n173" 308.348
+resist "SUBQ.n174" "SUBQ.n173" 308.348
+resist "SUBQ.n199" "SUBQ.n175" 308.348
+resist "SUBQ.n179" "SUBQ.n178" 308.348
+resist "SUBQ.n193" "SUBQ.n180" 308.348
+resist "SUBQ.n193" "SUBQ.n183" 308.348
+resist "SUBQ.n185" "SUBQ.n184" 308.348
+resist "SUBQ.n196" "SUBQ.n188" 308.348
+resist "SUBQ.n190" "SUBQ.n189" 308.348
+resist "SUBQ.n235" "SUBQ.n168" 585
+resist "SUBQ.n234" "SUBQ.n169" 585
+resist "SUBQ.n233" "SUBQ.n170" 585
+resist "SUBQ.n191" "SUBQ.n171" 585
+resist "SUBQ.n229" "SUBQ.n173" 585
+resist "SUBQ.n203" "SUBQ.n173" 585
+resist "SUBQ.n228" "SUBQ.n174" 585
+resist "SUBQ.n227" "SUBQ.n175" 585
+resist "SUBQ.n199" "SUBQ.n176" 585
+resist "SUBQ.n223" "SUBQ.n178" 585
+resist "SUBQ.n222" "SUBQ.n179" 585
+resist "SUBQ.n221" "SUBQ.n180" 585
+resist "SUBQ.n193" "SUBQ.n181" 585
+resist "SUBQ.n203" "SUBQ.n193" 585
+resist "SUBQ.n217" "SUBQ.n183" 585
+resist "SUBQ.n216" "SUBQ.n184" 585
+resist "SUBQ.n215" "SUBQ.n185" 585
+resist "SUBQ.n196" "SUBQ.n186" 585
+resist "SUBQ.n211" "SUBQ.n188" 585
+resist "SUBQ.n210" "SUBQ.n189" 585
+resist "SUBQ.n209" "SUBQ.n190" 585
+resist "SUBQ.n206" "SUBQ.n205" 585
+resist "SUBQ.n474" "SUBQ.n473" 585
+resist "SUBQ.n5" "SUBQ.n4" 585
+resist "SUBQ.n469" "SUBQ.n468" 585
+resist "SUBQ.n16" "SUBQ.n15" 585
+resist "SUBQ.n463" "SUBQ.n462" 585
+resist "SUBQ.n461" "SUBQ.n460" 585
+resist "SUBQ.n459" "SUBQ.n458" 585
+resist "SUBQ.n452" "SUBQ.n18" 585
+resist "SUBQ.n454" "SUBQ.n453" 585
+resist "SUBQ.n451" "SUBQ.n450" 585
+resist "SUBQ.n449" "SUBQ.n448" 585
+resist "SUBQ.n442" "SUBQ.n20" 585
+resist "SUBQ.n444" "SUBQ.n443" 585
+resist "SUBQ.n441" "SUBQ.n440" 585
+resist "SUBQ.n439" "SUBQ.n438" 585
+resist "SUBQ.n432" "SUBQ.n22" 585
+resist "SUBQ.n434" "SUBQ.n433" 585
+resist "SUBQ.n431" "SUBQ.n430" 585
+resist "SUBQ.n429" "SUBQ.n428" 585
+resist "SUBQ.n422" "SUBQ.n24" 585
+resist "SUBQ.n475" "SUBQ.n3" 585
+resist "SUBQ.n6" "SUBQ.n3" 585
+resist "SUBQ.n419" "SUBQ.n2" 585
+resist "SUBQ.n420" "SUBQ.n419" 585
+resist "SUBQ.n418" "SUBQ.n417" 585
+resist "SUBQ.n418" "SUBQ.n28" 585
+resist "SUBQ.n30" "SUBQ.n29" 585
+resist "SUBQ.n35" "SUBQ.n29" 585
+resist "SUBQ.n413" "SUBQ.n412" 585
+resist "SUBQ.n412" "SUBQ.n411" 585
+resist "SUBQ.n33" "SUBQ.n32" 585
+resist "SUBQ.n34" "SUBQ.n33" 585
+resist "SUBQ.n399" "SUBQ.n398" 585
+resist "SUBQ.n400" "SUBQ.n399" 585
+resist "SUBQ.n45" "SUBQ.n44" 585
+resist "SUBQ.n44" "SUBQ.n43" 585
+resist "SUBQ.n394" "SUBQ.n393" 585
+resist "SUBQ.n393" "SUBQ.n392" 585
+resist "SUBQ.n48" "SUBQ.n47" 585
+resist "SUBQ.n383" "SUBQ.n48" 585
+resist "SUBQ.n382" "SUBQ.n381" 585
+resist "SUBQ.n384" "SUBQ.n382" 585
+resist "SUBQ.n56" "SUBQ.n55" 585
+resist "SUBQ.n55" "SUBQ.n54" 585
+resist "SUBQ.n377" "SUBQ.n376" 585
+resist "SUBQ.n376" "SUBQ.n375" 585
+resist "SUBQ.n59" "SUBQ.n58" 585
+resist "SUBQ.n366" "SUBQ.n59" 585
+resist "SUBQ.n365" "SUBQ.n364" 585
+resist "SUBQ.n367" "SUBQ.n365" 585
+resist "SUBQ.n67" "SUBQ.n66" 585
+resist "SUBQ.n66" "SUBQ.n65" 585
+resist "SUBQ.n74" "SUBQ.n72" 585
+resist "SUBQ.n76" "SUBQ.n74" 585
+resist "SUBQ.n357" "SUBQ.n356" 585
+resist "SUBQ.n356" "SUBQ.n355" 585
+resist "SUBQ.n73" "SUBQ.n71" 585
+resist "SUBQ.n75" "SUBQ.n73" 585
+resist "SUBQ.n345" "SUBQ.n344" 585
+resist "SUBQ.n346" "SUBQ.n345" 585
+resist "SUBQ.n85" "SUBQ.n84" 585
+resist "SUBQ.n90" "SUBQ.n84" 585
+resist "SUBQ.n340" "SUBQ.n339" 585
+resist "SUBQ.n339" "SUBQ.n338" 585
+resist "SUBQ.n88" "SUBQ.n87" 585
+resist "SUBQ.n89" "SUBQ.n88" 585
+resist "SUBQ.n329" "SUBQ.n328" 585
+resist "SUBQ.n330" "SUBQ.n329" 585
+resist "SUBQ.n98" "SUBQ.n97" 585
+resist "SUBQ.n97" "SUBQ.n96" 585
+resist "SUBQ.n324" "SUBQ.n323" 585
+resist "SUBQ.n323" "SUBQ.n322" 585
+resist "SUBQ.n101" "SUBQ.n100" 585
+resist "SUBQ.n102" "SUBQ.n101" 585
+resist "SUBQ.n313" "SUBQ.n312" 585
+resist "SUBQ.n314" "SUBQ.n313" 585
+resist "SUBQ.n110" "SUBQ.n109" 585
+resist "SUBQ.n115" "SUBQ.n109" 585
+resist "SUBQ.n307" "SUBQ.n306" 585
+resist "SUBQ.n306" "SUBQ.n305" 585
+resist "SUBQ.n113" "SUBQ.n112" 585
+resist "SUBQ.n114" "SUBQ.n113" 585
+resist "SUBQ.n296" "SUBQ.n295" 585
+resist "SUBQ.n297" "SUBQ.n296" 585
+resist "SUBQ.n122" "SUBQ.n121" 585
+resist "SUBQ.n127" "SUBQ.n121" 585
+resist "SUBQ.n291" "SUBQ.n290" 585
+resist "SUBQ.n290" "SUBQ.n289" 585
+resist "SUBQ.n125" "SUBQ.n124" 585
+resist "SUBQ.n126" "SUBQ.n125" 585
+resist "SUBQ.n280" "SUBQ.n279" 585
+resist "SUBQ.n281" "SUBQ.n280" 585
+resist "SUBQ.n134" "SUBQ.n133" 585
+resist "SUBQ.n139" "SUBQ.n133" 585
+resist "SUBQ.n275" "SUBQ.n274" 585
+resist "SUBQ.n274" "SUBQ.n273" 585
+resist "SUBQ.n137" "SUBQ.n136" 585
+resist "SUBQ.n138" "SUBQ.n137" 585
+resist "SUBQ.n264" "SUBQ.n263" 585
+resist "SUBQ.n265" "SUBQ.n264" 585
+resist "SUBQ.n147" "SUBQ.n146" 585
+resist "SUBQ.n152" "SUBQ.n146" 585
+resist "SUBQ.n259" "SUBQ.n258" 585
+resist "SUBQ.n258" "SUBQ.n257" 585
+resist "SUBQ.n150" "SUBQ.n149" 585
+resist "SUBQ.n151" "SUBQ.n150" 585
+resist "SUBQ.n248" "SUBQ.n247" 585
+resist "SUBQ.n249" "SUBQ.n248" 585
+resist "SUBQ.n160" "SUBQ.n159" 585
+resist "SUBQ.n159" "SUBQ.n158" 585
+resist "SUBQ.n243" "SUBQ.n242" 585
+resist "SUBQ.n242" "SUBQ.n241" 585
+resist "SUBQ.n163" "SUBQ.n162" 585
+resist "SUBQ.n164" "SUBQ.n163" 585
+resist "SUBQ.n166" "SUBQ.n165" 585
+resist "SUBQ.n165" "SUBQ.n164" 585
+resist "SUBQ.n240" "SUBQ.n239" 585
+resist "SUBQ.n241" "SUBQ.n240" 585
+resist "SUBQ.n157" "SUBQ.n156" 585
+resist "SUBQ.n158" "SUBQ.n157" 585
+resist "SUBQ.n251" "SUBQ.n250" 585
+resist "SUBQ.n250" "SUBQ.n249" 585
+resist "SUBQ.n154" "SUBQ.n153" 585
+resist "SUBQ.n153" "SUBQ.n151" 585
+resist "SUBQ.n256" "SUBQ.n255" 585
+resist "SUBQ.n257" "SUBQ.n256" 585
+resist "SUBQ.n144" "SUBQ.n143" 585
+resist "SUBQ.n152" "SUBQ.n144" 585
+resist "SUBQ.n267" "SUBQ.n266" 585
+resist "SUBQ.n266" "SUBQ.n265" 585
+resist "SUBQ.n141" "SUBQ.n140" 585
+resist "SUBQ.n140" "SUBQ.n138" 585
+resist "SUBQ.n272" "SUBQ.n271" 585
+resist "SUBQ.n273" "SUBQ.n272" 585
+resist "SUBQ.n132" "SUBQ.n131" 585
+resist "SUBQ.n139" "SUBQ.n132" 585
+resist "SUBQ.n283" "SUBQ.n282" 585
+resist "SUBQ.n282" "SUBQ.n281" 585
+resist "SUBQ.n129" "SUBQ.n128" 585
+resist "SUBQ.n128" "SUBQ.n126" 585
+resist "SUBQ.n288" "SUBQ.n287" 585
+resist "SUBQ.n289" "SUBQ.n288" 585
+resist "SUBQ.n120" "SUBQ.n119" 585
+resist "SUBQ.n127" "SUBQ.n120" 585
+resist "SUBQ.n299" "SUBQ.n298" 585
+resist "SUBQ.n298" "SUBQ.n297" 585
+resist "SUBQ.n117" "SUBQ.n116" 585
+resist "SUBQ.n116" "SUBQ.n114" 585
+resist "SUBQ.n304" "SUBQ.n303" 585
+resist "SUBQ.n305" "SUBQ.n304" 585
+resist "SUBQ.n107" "SUBQ.n106" 585
+resist "SUBQ.n115" "SUBQ.n107" 585
+resist "SUBQ.n316" "SUBQ.n315" 585
+resist "SUBQ.n315" "SUBQ.n314" 585
+resist "SUBQ.n104" "SUBQ.n103" 585
+resist "SUBQ.n103" "SUBQ.n102" 585
+resist "SUBQ.n321" "SUBQ.n320" 585
+resist "SUBQ.n322" "SUBQ.n321" 585
+resist "SUBQ.n95" "SUBQ.n94" 585
+resist "SUBQ.n96" "SUBQ.n95" 585
+resist "SUBQ.n332" "SUBQ.n331" 585
+resist "SUBQ.n331" "SUBQ.n330" 585
+resist "SUBQ.n92" "SUBQ.n91" 585
+resist "SUBQ.n91" "SUBQ.n89" 585
+resist "SUBQ.n337" "SUBQ.n336" 585
+resist "SUBQ.n338" "SUBQ.n337" 585
+resist "SUBQ.n83" "SUBQ.n82" 585
+resist "SUBQ.n90" "SUBQ.n83" 585
+resist "SUBQ.n348" "SUBQ.n347" 585
+resist "SUBQ.n347" "SUBQ.n346" 585
+resist "SUBQ.n79" "SUBQ.n77" 585
+resist "SUBQ.n77" "SUBQ.n75" 585
+resist "SUBQ.n354" "SUBQ.n353" 585
+resist "SUBQ.n355" "SUBQ.n354" 585
+resist "SUBQ.n80" "SUBQ.n78" 585
+resist "SUBQ.n78" "SUBQ.n76" 585
+resist "SUBQ.n64" "SUBQ.n63" 585
+resist "SUBQ.n65" "SUBQ.n64" 585
+resist "SUBQ.n369" "SUBQ.n368" 585
+resist "SUBQ.n368" "SUBQ.n367" 585
+resist "SUBQ.n61" "SUBQ.n60" 585
+resist "SUBQ.n366" "SUBQ.n60" 585
+resist "SUBQ.n374" "SUBQ.n373" 585
+resist "SUBQ.n375" "SUBQ.n374" 585
+resist "SUBQ.n53" "SUBQ.n52" 585
+resist "SUBQ.n54" "SUBQ.n53" 585
+resist "SUBQ.n386" "SUBQ.n385" 585
+resist "SUBQ.n385" "SUBQ.n384" 585
+resist "SUBQ.n50" "SUBQ.n49" 585
+resist "SUBQ.n383" "SUBQ.n49" 585
+resist "SUBQ.n391" "SUBQ.n390" 585
+resist "SUBQ.n392" "SUBQ.n391" 585
+resist "SUBQ.n42" "SUBQ.n41" 585
+resist "SUBQ.n43" "SUBQ.n42" 585
+resist "SUBQ.n402" "SUBQ.n401" 585
+resist "SUBQ.n401" "SUBQ.n400" 585
+resist "SUBQ.n38" "SUBQ.n36" 585
+resist "SUBQ.n36" "SUBQ.n34" 585
+resist "SUBQ.n410" "SUBQ.n409" 585
+resist "SUBQ.n411" "SUBQ.n410" 585
+resist "SUBQ.n39" "SUBQ.n37" 585
+resist "SUBQ.n37" "SUBQ.n35" 585
+resist "SUBQ.n405" "SUBQ.n27" 585
+resist "SUBQ.n28" "SUBQ.n27" 585
+resist "SUBQ.n421" "SUBQ.n26" 585
+resist "SUBQ.n421" "SUBQ.n420" 585
+resist "SUBQ.n424" "SUBQ.n423" 585
+resist "SUBQ.n423" "SUBQ.n6" 585
+resist "SUBQ.n262" "SUBQ.n145" 590.137
+resist "SUBQ.n360" "SUBQ.n69" 592.391
+resist "SUBQ.n310" "SUBQ.n108" 594.603
+resist "SUBQ.n168" "SUBQ.n165" 710.913
+resist "SUBQ.n205" "SUBQ.n163" 710.913
+resist "SUBQ.n423" "SUBQ.n422" 715.196
+resist "SUBQ.n473" "SUBQ.n3" 715.196
+rnode "VDPWR.t0" 0 34.0584 611 1990 0
+rnode "VDPWR" 0 630.364 0 2172 0
+resist "VDPWR" "VDPWR.t0" 72.9137
+rnode "OUT.t1" 0 8.88172 1743 325 0
+rnode "OUT.t0" 0 8.88172 1643 325 0
+rnode "OUT.n0" 0 22.0503 1693 361 0
+rnode "OUT.t2" 0 90.6934 2915 814 0
+rnode "OUT.n1" 0 704.755 3146 808 0
+rnode "OUT" 0 24.3334 3493 625 0
+resist "OUT" "OUT.n1" 0.244119
+resist "OUT.n0" "OUT.t0" 30
+resist "OUT.n0" "OUT.t1" 30
+resist "OUT.n1" "OUT.t2" 72.8865
+resist "OUT.n1" "OUT.n0" 102.615
+rnode "VGND.t12" 0 9.71209 2787 325 0
+rnode "VGND.t11" 0 32.5579 2687 325 0
+rnode "VGND.t8" 0 32.5579 2387 325 0
+rnode "VGND.n0" 0 33.5586 2537 475 0
+rnode "VGND.t13" 0 2.7569 2587 325 0
+rnode "VGND.t9" 0 2.7569 2487 325 0
+rnode "VGND.n1" 0 5.63888 2537 361 0
+rnode "VGND.n2" 0 13.7786 2537 361 0
+rnode "VGND.n3" 0 99.1966 2537 60 0
+rnode "VGND.t10" 0 9.68106 2287 325 0
+rnode "VGND.n4" 0 53.1607 2236 60 0
+rnode "VGND.t0" 0 9.68106 1943 325 0
+rnode "VGND.n5" 0 69.7021 1993 60 0
+rnode "VGND.t1" 0 9.68106 1443 325 0
+rnode "VGND.n6" 0 69.7021 1392 60 0
+rnode "VGND.t6" 0 9.68106 1099 325 0
+rnode "VGND.n7" 0 53.1056 1149 60 0
+rnode "VGND.t5" 0 32.5579 999 325 0
+rnode "VGND.t2" 0 32.5579 699 325 0
+rnode "VGND.n8" 0 33.5587 849 475 0
+rnode "VGND.t7" 0 2.7569 899 325 0
+rnode "VGND.t3" 0 2.7569 799 325 0
+rnode "VGND.n9" 0 5.63888 849 361 0
+rnode "VGND.n10" 0 13.7786 849 361 0
+rnode "VGND.n11" 0 41.325 849 60 0
+rnode "VGND.t4" 0 9.68106 599 325 0
+rnode "VGND.n12" 0 43.8424 548 60 0
+rnode "VGND" 0 4.0802 474 100 0
+resist "VGND" "VGND.n12" 0.01739
+resist "VGND.n5" "VGND.n4" 0.057105
+resist "VGND.n7" "VGND.n6" 0.057105
+resist "VGND.n11" "VGND.n7" 0.0705
+resist "VGND.n4" "VGND.n3" 0.070735
+resist "VGND.n12" "VGND.n11" 0.070735
+resist "VGND.n6" "VGND.n5" 0.141235
+resist "VGND.n10" "VGND.n8" 0.311323
+resist "VGND.n2" "VGND.n0" 0.311323
+resist "VGND.n3" "VGND.n2" 4.32264
+resist "VGND.n11" "VGND.n10" 4.32264
+resist "VGND.n9" "VGND.t7" 30
+resist "VGND.n9" "VGND.t3" 30
+resist "VGND.n1" "VGND.t13" 30
+resist "VGND.n1" "VGND.t9" 30
+resist "VGND.n8" "VGND.t2" 84.9911
+resist "VGND.n8" "VGND.t5" 84.9911
+resist "VGND.n0" "VGND.t11" 84.9911
+resist "VGND.n0" "VGND.t8" 84.9922
+resist "VGND.n10" "VGND.n9" 97.1568
+resist "VGND.n2" "VGND.n1" 97.1568
+resist "VGND.n4" "VGND.t10" 131.479
+resist "VGND.n5" "VGND.t0" 131.479
+resist "VGND.n6" "VGND.t1" 131.479
+resist "VGND.n7" "VGND.t6" 131.479
+resist "VGND.n12" "VGND.t4" 131.479
+resist "VGND.n3" "VGND.t12" 131.55
+rnode "VQUIET.n0" 0 14.9873 1876 498 0
+rnode "VQUIET.n1" 0 6.05645 1843 498 0
+rnode "VQUIET.n2" 0 7.01998 1843 498 0
+rnode "VQUIET.t0" 0 108.97 1843 325 0
+rnode "VQUIET.n3" 0 10.2384 1915 498 0
+rnode "VQUIET.n4" 0 82.575 1843 498 0
+rnode "VQUIET.n5" 0 4.15058 1843 498 0
+rnode "VQUIET.n6" 0 21.1422 1812 498 0
+rnode "VQUIET.n7" 0 34.195 1812 498 0
+rnode "VQUIET.n8" 0 72.374 1583 498 0
+rnode "VQUIET.n9" 0 15.1043 1575 498 0
+rnode "VQUIET.n10" 0 6.05645 1543 498 0
+rnode "VQUIET.n11" 0 7.01998 1543 498 0
+rnode "VQUIET.t1" 0 108.97 1543 325 0
+rnode "VQUIET.n12" 0 20.9089 1575 498 0
+rnode "VQUIET.n13" 0 4.1493 1543 498 0
+rnode "VQUIET.n14" 0 82.575 1543 498 0
+rnode "VQUIET.n15" 0 10.2403 1471 498 0
+rnode "VQUIET.n16" 0 14.8178 1511 498 0
+rnode "VQUIET.n17" 0 15.1043 1511 498 0
+rnode "VQUIET.n18" 0 105.173 1503 498 0
+rnode "VQUIET" 0 97.5657 472 498 0
+resist "VQUIET.n18" "VQUIET.n8" 0.0569697
+resist "VQUIET.n6" "VQUIET.n1" 0.0587121
+resist "VQUIET.n12" "VQUIET.n10" 0.0606061
+resist "VQUIET.n16" "VQUIET.n10" 0.0606061
+resist "VQUIET.n1" "VQUIET.n0" 0.0625
+resist "VQUIET.n17" "VQUIET.n9" 0.121212
+resist "VQUIET" "VQUIET.n18" 0.734197
+resist "VQUIET.n8" "VQUIET.n7" 1.8548
+resist "VQUIET.n9" "VQUIET.n8" 3.42515
+resist "VQUIET.n18" "VQUIET.n17" 3.42515
+resist "VQUIET.n12" "VQUIET.n9" 4.5
+resist "VQUIET.n17" "VQUIET.n16" 4.5
+resist "VQUIET.n7" "VQUIET.n6" 4.55957
+resist "VQUIET.n7" "VQUIET.n0" 4.56055
+resist "VQUIET.n11" "VQUIET.n10" 9.3
+resist "VQUIET.n2" "VQUIET.n1" 9.3
+resist "VQUIET.n3" "VQUIET.n0" 9.37386
+resist "VQUIET.n16" "VQUIET.n15" 9.37576
+resist "VQUIET.n13" "VQUIET.n11" 11.3242
+resist "VQUIET.n5" "VQUIET.n2" 11.3242
+resist "VQUIET.n13" "VQUIET.n12" 23.1391
+resist "VQUIET.n6" "VQUIET.n5" 23.1409
+resist "VQUIET.n14" "VQUIET.t1" 24.1
+resist "VQUIET.n4" "VQUIET.t0" 24.1
+resist "VQUIET.n15" "VQUIET.n11" 27.1059
+resist "VQUIET.n3" "VQUIET.n2" 27.1059
+resist "VQUIET.n14" "VQUIET.n13" 77.1773
+resist "VQUIET.n5" "VQUIET.n4" 77.1773
+resist "VQUIET.n15" "VQUIET.n14" 184.74
+resist "VQUIET.n4" "VQUIET.n3" 184.74
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 611 1921 612 1922  "SUBQ.t0" "a_611_1921#" 276 0 "VDPWR.t0" 602 60168,1148 "a_1213_1921#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 2313 1921 2314 1922  "SUBQ.t1" "a_2313_1921#" 276 0 "a_1213_1921#" 602 60168,1148 "a_2915_1627#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 611 1627 612 1628  "SUBQ.t0" "a_611_1627#" 276 0 "a_175_1333#" 602 60168,1148 "a_1213_1627#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 2313 1627 2314 1628  "SUBQ.t1" "a_2313_1627#" 276 0 "a_1213_1627#" 602 60168,1148 "a_2915_1627#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 611 1333 612 1334  "SUBQ.t0" "a_611_1333#" 276 0 "a_175_1333#" 602 60168,1148 "a_1213_1333#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 2313 1333 2314 1334  "SUBQ.t1" "a_2313_1333#" 276 0 "a_1213_1333#" 602 60168,1148 "a_2915_1039#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 611 1039 612 1040  "SUBQ.t0" "a_611_1039#" 276 0 "a_175_745#" 602 60168,1148 "a_1213_1039#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 2313 1039 2314 1040  "SUBQ.t1" "a_2313_1039#" 276 0 "a_1213_1039#" 602 60168,1148 "a_2915_1039#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 611 745 612 746  "SUBQ.t0" "a_611_745#" 276 0 "a_175_745#" 602 60168,1148 "a_1213_745#" 602 60168,1148
+device rsubckt sky130_fd_pr__res_xhigh_po_0p69 2313 745 2314 746  "SUBQ.t1" "a_2313_745#" 276 0 "a_1213_745#" 602 60168,1148 "OUT.t2" 602 60168,1148
+device msubckt sky130_fd_pr__nfet_01v8 599 225 600 226  "SUBQ.t4" "VGND.t2" 400 0 "VGND.t3" 200 0 "VGND.t4" 200 20000,600
+device msubckt sky130_fd_pr__nfet_01v8 899 225 900 226  "SUBQ.t5" "VGND.t5" 400 0 "VGND.t6" 200 0 "VGND.t7" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1443 225 1444 226  "SUBQ.t2" "VQUIET.t1" 400 0 "VGND.t1" 200 20000,600 "OUT.t0" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1743 225 1744 226  "SUBQ.t3" "VQUIET.t0" 400 0 "OUT.t1" 200 10000,300 "VGND.t0" 200 20000,600
+device msubckt sky130_fd_pr__nfet_01v8 2287 225 2288 226  "SUBQ.t6" "VGND.t8" 400 0 "VGND.t9" 200 0 "VGND.t10" 200 20000,600
+device msubckt sky130_fd_pr__nfet_01v8 2587 225 2588 226  "SUBQ.t7" "VGND.t11" 400 0 "VGND.t12" 200 0 "VGND.t13" 200 10000,300
