@@ -1,5 +1,0 @@
-** sch_path: /foss/designs/ELAD-1/cells/TOP
-.subckt TOP
-
-XR1 m p b sky130_fd_pr__res_xhigh_po_0p69 L=31.94 mult=1
-.ends
