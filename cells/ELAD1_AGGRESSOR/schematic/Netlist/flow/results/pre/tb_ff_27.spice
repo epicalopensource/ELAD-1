@@ -1,0 +1,21 @@
+* aggressor pre ff_27
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ff
+.include /foss/designs/ELAD-1/cells/ELAD1_AGGRESSOR/schematic/Netlist/ELAD1_AGGRESSOR.spice
+XDUT AGG_CLK EN VDPWR VGND SUBI  ELAD1_AGGRESSOR
+VDD VDPWR 0 1.8
+VG0 VGND 0 0
+VEN EN 0 1.8
+VSUB SUBI 0 0
+VCLK AGG_CLK 0 PULSE(0 1.8 1n 100p 100p 4.9n 10n)
+.option rshunt=1e12
+.temp 27
+.control
+set filetype=ascii
+tran 10p 60n
+wrdata results/pre/sweeps/on_ff_27.txt v(AGG_CLK) i(VSUB) i(VDD)
+alter VEN dc=0
+tran 10p 60n
+wrdata results/pre/sweeps/off_ff_27.txt v(AGG_CLK) i(VSUB) i(VDD)
+quit
+.endc
+.end

@@ -1,0 +1,85 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Error: -179035 out of range for sqrt
+    in line b.xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.brbody_1
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * aggressor pre tt_27
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+xdut.ckb                                   1.8
+agg_clk                                      0
+vdpwr                                      1.8
+vgnd                                         0
+xdut.enb                           3.27649e-07
+en                                         1.8
+xdut.gip                                   1.8
+xdut.gi                            3.20481e-06
+xdut.gdp                                   1.8
+xdut.gd                                    1.8
+xdut.x                               0.0878737
+subi                                         0
+xdut.d                               0.0606249
+xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.ra        0.123508
+xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.rbody_3               0
+xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.rend_3               0
+v.xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.vrend_3#branch               0
+v.xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.vrbody_3#branch               0
+vclk#branch                                  0
+vsub#branch                        4.05922e-14
+ven#branch                            -1.8e-12
+vg0#branch                         7.93684e-05
+vdd#branch                        -7.93685e-05
+
+ Reference value :  0.00000e+00 Reference value :  5.05500e-09 Reference value :  1.00350e-08 Reference value :  1.49650e-08 Reference value :  1.99350e-08 Reference value :  2.48050e-08 Reference value :  2.99850e-08 Reference value :  3.49550e-08 Reference value :  3.83750e-08 Reference value :  4.20950e-08 Reference value :  4.65750e-08 Reference value :  5.13250e-08 Reference value :  5.62450e-08
+No. of Data Rows : 6080
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+xdut.ckb                                   1.8
+agg_clk                                      0
+vdpwr                                      1.8
+vgnd                                         0
+xdut.enb                                   1.8
+en                                           0
+xdut.gip                               1.63183
+xdut.gi                            1.76793e-08
+xdut.gdp                              0.351775
+xdut.gd                            1.56245e-06
+xdut.x                                     1.8
+subi                                         0
+xdut.d                             3.76073e-10
+xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.ra             1.8
+xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.rbody_3               0
+xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.rend_3               0
+v.xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.vrend_3#branch               0
+v.xdut.xr1.xsky130_fd_pr__res_xhigh_po_0p69.vrbody_3#branch               0
+vclk#branch                                  0
+vsub#branch                        4.92321e-13
+ven#branch                                   0
+vg0#branch                         1.68848e-10
+vdd#branch                        -2.34677e-10
+
+ Reference value :  0.00000e+00 Reference value :  4.98500e-09 Reference value :  6.81500e-09 Reference value :  1.26150e-08 Reference value :  1.85050e-08 Reference value :  2.38950e-08 Reference value :  2.96950e-08 Reference value :  3.46350e-08 Reference value :  3.99550e-08 Reference value :  4.59050e-08 Reference value :  5.12050e-08 Reference value :  5.66750e-08
+No. of Data Rows : 6080
+ngspice-47 done

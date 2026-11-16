@@ -1,0 +1,4 @@
+Error: Could not find include file /foss/designs/ELAD-1/cells/ELAD1_AGGRESSOR/schematic/Netlist/ELAD1_AGGRESSOR.spice
+    While reading results/pre/tb_fs_-20.spice
+
+ERROR: fatal error in ngspice, exit(1)
