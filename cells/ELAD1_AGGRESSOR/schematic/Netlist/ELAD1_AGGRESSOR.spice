@@ -1,0 +1,40 @@
+** sch_path: /foss/designs/ELAD-1/cells/ELAD1_AGGRESSOR/schematic/ELAD1_AGGRESSOR.sch
+.subckt ELAD1_AGGRESSOR AGG_CLK EN VDPWR VGND SUBI
+*.PININFO AGG_CLK:B EN:B VDPWR:B VGND:B SUBI:B
+XIC AGG_CLK CKB VDPWR VGND ELAD1_INV
+XIE EN ENB VDPWR VGND ELAD1_INV
+XMGIP1 gip ENB VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0
++ sd=0 mult=1
+XMGIP2 GI CKB gip VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XMGIN1 GI ENB VGND VGND sky130_fd_pr__nfet_01v8 L=1 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMGIN2 GI CKB VGND VGND sky130_fd_pr__nfet_01v8 L=1 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMGDP1 gdp ENB VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0
++ sd=0 mult=1
+XMGDP2 GD AGG_CLK gdp VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0
++ sd=0 mult=1
+XMGDN1 GD ENB VGND VGND sky130_fd_pr__nfet_01v8 L=1 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMGDN2 GD AGG_CLK VGND VGND sky130_fd_pr__nfet_01v8 L=1 W=0.42 nf=1 ad=0.1218 as=0.1218 pd=1.42 ps=1.42 nrd=0.69047619047619
++ nrs=0.69047619047619 sa=0 sb=0 sd=0 mult=1
+XMINJ X GI SUBI VGND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XMDUM X GD D VGND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XRDUM VGND D sky130_fd_pr__res_generic_po W=1 L=15
+XR1 X VDPWR VGND sky130_fd_pr__res_xhigh_po_0p69 L=7.3 mult=1
+.ends
+
+* expanding   symbol:  ELAD1_INV.sym # of pins=4
+** sym_path: /foss/designs/ELAD-1/cells/ELAD1_INV/schematic/ELAD1_INV.sym
+** sch_path: /foss/designs/ELAD-1/cells/ELAD1_INV/schematic/ELAD1_INV.sch
+.subckt ELAD1_INV A Y VDPWR VGND
+*.PININFO A:B Y:B VDPWR:B VGND:B
+XMP Y A VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XMN Y A VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
++ nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
+.ends
+
