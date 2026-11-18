@@ -1,0 +1,763 @@
+timestamp 1623005821
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use vias_gen$5 vias_gen$5_10 0 1 520 -1 0 200
+use vias_gen$3 vias_gen$3_0 1 0 590 0 1 462
+use vias_gen vias_gen_1 1 0 124 0 1 780
+use vias_gen$2 vias_gen$2_29 0 1 520 -1 0 387
+use vias_gen$6 vias_gen$6_19 0 -1 711 1 0 567
+use vias_gen$2 vias_gen$2_39 0 1 651 -1 0 387
+use vias_gen$1 vias_gen$1_0 1 0 124 0 1 567
+use nfet__4_0.15 nfet__4_0.15_0 1 0 471 0 1 182
+use nfet__4_0.15$1 nfet__4_0.15$1_0 1 0 991 0 1 182
+use vias_gen$5 vias_gen$5_13 0 1 1299 -1 0 200
+use vias_gen$5 vias_gen$5_12 0 1 1038 -1 0 200
+use vias_gen$5 vias_gen$5_11 0 1 778 -1 0 200
+use vias_gen$2 vias_gen$2_38 0 1 910 -1 0 387
+use vias_gen$6 vias_gen$6_18 0 -1 970 1 0 567
+use vias_gen$2 vias_gen$2_37 0 1 1170 -1 0 387
+use vias_gen$6 vias_gen$6_17 0 -1 1230 1 0 567
+use vias_gen$2 vias_gen$2_28 0 1 778 -1 0 387
+use vias_gen$2 vias_gen$2_27 0 1 1038 -1 0 387
+use vias_gen$2 vias_gen$2_26 0 1 1299 -1 0 387
+use nfet__4_0.15$2 nfet__4_0.15$2_0 1 0 1511 0 1 182
+use vias_gen$5 vias_gen$5_15 0 1 1820 -1 0 200
+use vias_gen$5 vias_gen$5_14 0 1 1561 -1 0 200
+use vias_gen$2 vias_gen$2_36 0 1 1430 -1 0 387
+use vias_gen$6 vias_gen$6_16 0 -1 1490 1 0 567
+use vias_gen$2 vias_gen$2_35 0 1 1690 -1 0 387
+use vias_gen$6 vias_gen$6_15 0 -1 1750 1 0 567
+use vias_gen$2 vias_gen$2_34 0 1 1950 -1 0 387
+use vias_gen$6 vias_gen$6_14 0 -1 2010 1 0 567
+use vias_gen$2 vias_gen$2_25 0 1 1561 -1 0 387
+use vias_gen$2 vias_gen$2_24 0 1 1820 -1 0 387
+use nfet__4_0.15$3 nfet__4_0.15$3_0 1 0 2551 0 1 182
+use nfet__4_0.15$1$1 nfet__4_0.15$1$1_0 1 0 2031 0 1 182
+use vias_gen$5 vias_gen$5_18 0 1 2599 -1 0 200
+use vias_gen$5 vias_gen$5_17 0 1 2340 -1 0 200
+use vias_gen$5 vias_gen$5_16 0 1 2080 -1 0 200
+use vias_gen$2 vias_gen$2_33 0 1 2209 -1 0 387
+use vias_gen$6 vias_gen$6_13 0 -1 2269 1 0 567
+use vias_gen$2 vias_gen$2_32 0 1 2471 -1 0 387
+use vias_gen$6 vias_gen$6_12 0 -1 2531 1 0 567
+use vias_gen$2 vias_gen$2_23 0 1 2080 -1 0 387
+use vias_gen$2 vias_gen$2_22 0 1 2340 -1 0 387
+use vias_gen$2 vias_gen$2_21 0 1 2599 -1 0 387
+use vias_gen$5 vias_gen$5_19 0 1 2860 -1 0 200
+use vias_gen$2 vias_gen$2_20 0 1 2860 -1 0 387
+use vias_gen$6 vias_gen$6_10 0 -1 3049 1 0 567
+use vias_gen$2 vias_gen$2_30 0 1 2989 -1 0 387
+use vias_gen$6 vias_gen$6_11 0 -1 2790 1 0 567
+use vias_gen$2 vias_gen$2_31 0 1 2730 -1 0 387
+use vias_gen$5 vias_gen$5_20 0 1 3120 -1 0 200
+use vias_gen$2 vias_gen$2_40 0 1 3120 -1 0 387
+use nfet__4_0.15$1$2 nfet__4_0.15$1$2_0 1 0 3071 0 1 182
+use nfet__4_0.15$2$1 nfet__4_0.15$2$1_0 1 0 3591 0 1 182
+use vias_gen$5 vias_gen$5_1 0 1 3640 -1 0 200
+use vias_gen$5 vias_gen$5_0 0 1 3380 -1 0 200
+use vias_gen$2 vias_gen$2_18 0 1 3251 -1 0 387
+use vias_gen$6 vias_gen$6_8 0 -1 3311 1 0 567
+use vias_gen$2 vias_gen$2_17 0 1 3510 -1 0 387
+use vias_gen$6 vias_gen$6_7 0 -1 3570 1 0 567
+use vias_gen$2 vias_gen$2_16 0 1 3769 -1 0 387
+use vias_gen$2 vias_gen$2_15 0 1 3380 -1 0 387
+use vias_gen$2 vias_gen$2_14 0 1 3640 -1 0 387
+use vias_gen$6 vias_gen$6_6 0 -1 3829 1 0 567
+use nfet__4_0.15$1$1$1 nfet__4_0.15$1$1$1_0 1 0 4111 0 1 182
+use vias_gen$5 vias_gen$5_4 0 1 4421 -1 0 200
+use vias_gen$5 vias_gen$5_3 0 1 4160 -1 0 200
+use vias_gen$5 vias_gen$5_2 0 1 3900 -1 0 200
+use vias_gen$2 vias_gen$2_13 0 1 3900 -1 0 387
+use vias_gen$2 vias_gen$2_12 0 1 4160 -1 0 387
+use vias_gen$2 vias_gen$2_11 0 1 4421 -1 0 387
+use vias_gen$2 vias_gen$2_5 0 1 4031 -1 0 387
+use vias_gen$6 vias_gen$6_5 0 -1 4091 1 0 567
+use vias_gen$2 vias_gen$2_4 0 1 4290 -1 0 387
+use vias_gen$6 vias_gen$6_4 0 -1 4350 1 0 567
+use nfet__4_0.15$1$1$1$1 nfet__4_0.15$1$1$1$1_0 1 0 5151 0 1 182
+use nfet__4_0.15$2$1$1 nfet__4_0.15$2$1$1_0 1 0 4631 0 1 182
+use vias_gen$5 vias_gen$5_6 0 1 4939 -1 0 200
+use vias_gen$5 vias_gen$5_5 0 1 4679 -1 0 200
+use vias_gen$2 vias_gen$2_10 0 1 4679 -1 0 387
+use vias_gen$2 vias_gen$2_9 0 1 4939 -1 0 387
+use vias_gen$2 vias_gen$2_3 0 1 4549 -1 0 387
+use vias_gen$6 vias_gen$6_3 0 -1 4609 1 0 567
+use vias_gen$2 vias_gen$2_2 0 1 4811 -1 0 387
+use vias_gen$6 vias_gen$6_2 0 -1 4871 1 0 567
+use vias_gen$2 vias_gen$2_1 0 1 5070 -1 0 387
+use vias_gen$6 vias_gen$6_1 0 -1 5130 1 0 567
+use vias_gen$2 vias_gen$2_19 0 1 5591 -1 0 387
+use vias_gen$2 vias_gen$2_8 0 1 5200 -1 0 387
+use vias_gen$2 vias_gen$2_7 0 1 5461 -1 0 387
+use vias_gen$2 vias_gen$2_6 0 1 5720 -1 0 387
+use vias_gen$5 vias_gen$5_9 0 1 5720 -1 0 200
+use vias_gen$5 vias_gen$5_8 0 1 5461 -1 0 200
+use vias_gen$5 vias_gen$5_7 0 1 5200 -1 0 200
+use vias_gen$2 vias_gen$2_0 0 1 5329 -1 0 387
+use vias_gen$6 vias_gen$6_9 0 -1 5643 1 0 567
+use vias_gen$6 vias_gen$6_0 0 -1 5389 1 0 567
+use vias_gen vias_gen_0 1 0 5735 0 1 780
+use res_poly res_poly_2 0 1 3140 -1 0 1337
+use guard_ring_gen guard_ring_gen_0 1 0 71 0 1 -49
+use vias_gen vias_gen_5 1 0 5735 0 1 2046
+use res_poly res_poly_1 0 1 3140 -1 0 2603
+use res_poly res_poly_3 0 1 3140 -1 0 3869
+use res_poly res_poly_0 0 1 3140 -1 0 5135
+use vias_gen vias_gen_4 1 0 5735 0 1 4572
+use vias_gen vias_gen_3 1 0 5735 0 1 3312
+use vias_gen vias_gen_2 1 0 124 0 1 4571
+use guard_ring guard_ring_0 1 0 0 0 1 646
+port "HEN" 3 0 495 0 495 m3
+port "VGND" 2 0 100 0 100 m1
+port "HIN" 1 0 3236 0 3236 m1
+node "HEN" 1 195.592 0 495 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50820 1672 0 0 0 0 0 0
+node "m3_124_567#" 3 2019.04 124 567 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 551900 11238 0 0 0 0 0 0
+node "m2_5720_0#" 1 79.622 5720 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_5591_257#" 1 92.1559 5591 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_5461_0#" 1 32.48 5461 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_5329_257#" 1 49.8416 5329 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_5200_0#" 1 32.4207 5200 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_5070_257#" 1 49.7114 5070 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_4939_0#" 1 32.4101 4939 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_4811_257#" 1 49.8148 4811 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_4679_0#" 1 32.4589 4679 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_4549_257#" 1 49.7611 4549 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_4421_0#" 1 32.3889 4421 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_4290_257#" 1 49.7114 4290 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_4160_0#" 1 32.4101 4160 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_4031_257#" 1 49.8148 4031 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_3900_0#" 1 32.4801 3900 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_3769_257#" 1 49.8148 3769 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_3640_0#" 1 32.3995 3640 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_3510_257#" 1 49.6845 3510 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_3380_0#" 1 32.3995 3380 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_3251_257#" 1 49.8148 3251 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_3120_0#" 1 32.4801 3120 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_2989_257#" 1 49.8148 2989 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_2860_0#" 1 32.4101 2860 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_2730_257#" 1 49.7114 2730 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_2599_0#" 1 32.3995 2599 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_2471_257#" 1 49.788 2471 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_2340_0#" 1 32.4695 2340 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_2209_257#" 1 49.8148 2209 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_2080_0#" 1 32.3995 2080 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_1950_257#" 1 49.728 1950 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_1820_0#" 1 32.4158 1820 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_1690_257#" 1 49.7446 1690 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_1561_0#" 1 32.4369 1561 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_1430_257#" 1 49.8252 1430 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_1299_0#" 1 32.4581 1299 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_1170_257#" 1 49.7983 1170 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_1038_0#" 1 32.4369 1038 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_910_257#" 1 49.728 910 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_778_0#" 1 32.3783 778 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_651_257#" 1 75.3042 651 257 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 924 0 0 0 0 0 0 0 0
+node "m2_520_0#" 1 79.9213 520 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20124 878 0 0 0 0 0 0 0 0
+node "m2_5735_774#" 1 1424.31 5735 774 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1007032 5626 0 0 0 0 0 0 0 0
+node "m2_5735_3306#" 1 1435.44 5735 3306 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1007032 5626 0 0 0 0 0 0 0 0
+node "m2_124_567#" 2 2981.62 124 567 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2160151 11104 0 0 0 0 0 0 0 0
+node "VGND" 4 2801.19 0 100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1256000 12960 0 0 0 0 0 0 0 0 0 0
+node "m1_574_472#" 14 1620.85 574 472 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 236624 10380 0 0 0 0 0 0 0 0 0 0
+node "HIN" 0 327.08 0 3236 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76300 1370 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_4679_0#" "m1_574_472#" 5.86323
+cap "m3_124_567#" "m2_2599_0#" 5.60752
+cap "m2_1561_0#" "m2_1299_0#" 23.7963
+cap "m2_778_0#" "m2_1038_0#" 23.9739
+cap "m2_4549_257#" "m1_574_472#" 50.7751
+cap "m2_5200_0#" "m2_5461_0#" 23.8848
+cap "m2_5200_0#" "m1_574_472#" 5.86323
+cap "m2_4160_0#" "m2_4421_0#" 23.8848
+cap "m2_3900_0#" "m2_3640_0#" 23.9739
+cap "m2_1170_257#" "m2_1299_0#" 23.7226
+cap "m2_2340_0#" "VGND" 148.896
+cap "m2_2471_257#" "m1_574_472#" 50.7751
+cap "m2_910_257#" "VGND" 12.2522
+cap "m2_1038_0#" "m1_574_472#" 5.86323
+cap "m2_3769_257#" "VGND" 12.2522
+cap "m2_4290_257#" "m2_4421_0#" 23.3813
+cap "m3_124_567#" "m2_2080_0#" 5.60752
+cap "m2_520_0#" "VGND" 157.457
+cap "m2_4811_257#" "VGND" 12.2522
+cap "m3_124_567#" "m2_651_257#" 40.4125
+cap "m1_574_472#" "m2_3380_0#" 5.86323
+cap "m3_124_567#" "m2_1299_0#" 5.60752
+cap "m2_4421_0#" "m1_574_472#" 5.86323
+cap "m2_5200_0#" "m2_5070_257#" 23.5507
+cap "m3_124_567#" "m2_2860_0#" 5.60752
+cap "m2_3900_0#" "m2_4031_257#" 23.3813
+cap "m2_5591_257#" "m1_574_472#" 46.4841
+cap "m2_5461_0#" "m2_5591_257#" 23.5507
+cap "m2_5720_0#" "m2_5461_0#" 24.0637
+cap "m2_3769_257#" "m2_3510_257#" 26.2172
+cap "m1_574_472#" "m2_3640_0#" 5.86323
+cap "m2_2860_0#" "m2_2989_257#" 23.7226
+cap "m2_4160_0#" "m2_4031_257#" 23.7226
+cap "VGND" "m2_3510_257#" 12.2522
+cap "m1_574_472#" "m2_1820_0#" 5.86323
+cap "m2_3900_0#" "m2_3769_257#" 23.3813
+cap "m2_4290_257#" "m2_4031_257#" 26.2172
+cap "m2_3900_0#" "VGND" 148.961
+cap "m2_2471_257#" "m2_2599_0#" 23.8971
+cap "HEN" "m2_910_257#" 3.86922
+cap "m2_4031_257#" "m1_574_472#" 50.7751
+cap "HEN" "m2_520_0#" 10.9494
+cap "m3_124_567#" "m2_124_567#" 241.438
+cap "HEN" "VGND" 40.1967
+cap "VGND" "m2_2730_257#" 12.2522
+cap "m1_574_472#" "m2_3120_0#" 5.86323
+cap "m2_2209_257#" "m2_2340_0#" 23.3813
+cap "m2_4160_0#" "VGND" 149.026
+cap "m2_778_0#" "m2_910_257#" 23.2143
+cap "m2_5720_0#" "m2_5735_774#" 2.06935
+cap "m2_1038_0#" "m2_1299_0#" 23.8848
+cap "m2_778_0#" "m2_520_0#" 24.1541
+cap "m2_2209_257#" "VGND" 12.2522
+cap "m2_2340_0#" "m1_574_472#" 5.86323
+cap "m2_1950_257#" "m2_1690_257#" 26.1194
+cap "m2_4290_257#" "VGND" 12.2522
+cap "m2_778_0#" "VGND" 148.829
+cap "m2_3769_257#" "m1_574_472#" 50.7751
+cap "m2_910_257#" "m1_574_472#" 50.7453
+cap "m3_124_567#" "m2_1950_257#" 55.233
+cap "m2_1561_0#" "m2_1690_257#" 23.7226
+cap "m2_1430_257#" "VGND" 12.2522
+cap "m2_4811_257#" "m1_574_472#" 50.7751
+cap "m3_124_567#" "m2_1561_0#" 5.60752
+cap "m2_5461_0#" "VGND" 148.961
+cap "m1_574_472#" "VGND" 351.453
+cap "m3_124_567#" "m2_1170_257#" 55.262
+cap "m3_124_567#" "m2_4939_0#" 5.60752
+cap "m2_5329_257#" "m3_124_567#" 55.2904
+cap "m3_124_567#" "m2_1690_257#" 55.262
+cap "m2_2080_0#" "m2_1820_0#" 23.9739
+cap "m2_5070_257#" "m2_4811_257#" 26.2172
+cap "m2_5070_257#" "VGND" 12.2522
+cap "m2_3900_0#" "m2_4160_0#" 23.9739
+cap "m1_574_472#" "m2_3510_257#" 50.7302
+cap "m3_124_567#" "m2_2989_257#" 55.2904
+cap "HEN" "m2_2209_257#" 0.0410051
+cap "m2_3900_0#" "m1_574_472#" 5.86323
+cap "m2_5735_774#" "VGND" 8.06551
+cap "m2_2340_0#" "m2_2599_0#" 24.0637
+cap "HEN" "m2_1430_257#" 0.183139
+cap "m2_4160_0#" "m2_4290_257#" 23.5507
+cap "m2_2860_0#" "m2_3120_0#" 23.9739
+cap "HEN" "m1_574_472#" 20.0296
+cap "m1_574_472#" "m2_2730_257#" 50.7302
+cap "m2_2080_0#" "m2_2340_0#" 23.9739
+cap "VGND" "m2_2599_0#" 148.961
+cap "m2_4679_0#" "m2_4939_0#" 23.9739
+cap "m3_124_567#" "m2_3251_257#" 55.2904
+cap "m2_4160_0#" "m1_574_472#" 5.86323
+cap "m2_651_257#" "m2_910_257#" 26.2172
+cap "m2_5200_0#" "m2_4939_0#" 23.8848
+cap "m2_5329_257#" "m2_5200_0#" 23.7226
+cap "m2_1038_0#" "m2_1170_257#" 23.2143
+cap "m2_651_257#" "m2_520_0#" 23.3813
+cap "m2_2080_0#" "VGND" 148.961
+cap "m2_2209_257#" "m1_574_472#" 50.7751
+cap "m2_4290_257#" "m1_574_472#" 50.7302
+cap "m2_4679_0#" "m3_124_567#" 5.60752
+cap "m2_651_257#" "VGND" 12.2522
+cap "m2_778_0#" "m1_574_472#" 5.86323
+cap "m3_124_567#" "m2_4549_257#" 55.2904
+cap "m2_5200_0#" "m3_124_567#" 5.60752
+cap "m2_1299_0#" "VGND" 149.156
+cap "m2_1430_257#" "m1_574_472#" 50.7604
+cap "m3_124_567#" "m2_2471_257#" 55.2904
+cap "VGND" "m2_2860_0#" 149.026
+cap "m2_5461_0#" "m1_574_472#" 5.86323
+cap "m2_2989_257#" "m2_3251_257#" 25.9259
+cap "m3_124_567#" "m2_1038_0#" 5.60752
+cap "m3_124_567#" "m2_3380_0#" 5.60752
+cap "m3_124_567#" "m2_4421_0#" 5.60752
+cap "m2_5329_257#" "m2_5591_257#" 25.9259
+cap "m2_1950_257#" "m2_1820_0#" 23.5507
+cap "m2_1561_0#" "m2_1820_0#" 24.0637
+cap "m3_124_567#" "m2_5591_257#" 40.3008
+cap "m2_5070_257#" "m1_574_472#" 50.7302
+cap "m2_2730_257#" "m2_2599_0#" 23.3813
+cap "m2_1690_257#" "m2_1820_0#" 23.5507
+cap "m3_124_567#" "m2_3640_0#" 5.60752
+cap "m3_124_567#" "m2_1820_0#" 5.60752
+cap "m2_520_0#" "m2_124_567#" 2.60417
+cap "VGND" "m2_124_567#" 15.855
+cap "HEN" "m2_651_257#" 41.2536
+cap "m2_4679_0#" "m2_4549_257#" 23.5507
+cap "m2_2730_257#" "m2_2860_0#" 23.5507
+cap "m2_2080_0#" "m2_2209_257#" 23.7226
+cap "m3_124_567#" "m2_4031_257#" 55.2904
+cap "m1_574_472#" "m2_2599_0#" 5.86323
+cap "m2_3251_257#" "m2_3380_0#" 23.7226
+cap "m3_124_567#" "m2_3120_0#" 5.60752
+cap "m2_651_257#" "m2_778_0#" 24.0741
+cap "m2_4679_0#" "m2_4421_0#" 24.1541
+cap "m2_910_257#" "m2_1170_257#" 26.1194
+cap "m2_1950_257#" "VGND" 12.2522
+cap "m2_2080_0#" "m1_574_472#" 5.86323
+cap "m2_4421_0#" "m2_4549_257#" 23.8971
+cap "m2_1299_0#" "m2_1430_257#" 23.3813
+cap "m2_1561_0#" "VGND" 149.025
+cap "m2_651_257#" "m1_574_472#" 46.5684
+cap "m2_4939_0#" "m2_4811_257#" 23.8971
+cap "m2_1170_257#" "VGND" 12.2522
+cap "m2_1299_0#" "m1_574_472#" 5.86323
+cap "m3_124_567#" "m2_2340_0#" 5.60752
+cap "m2_4939_0#" "VGND" 149.026
+cap "m1_574_472#" "m2_2860_0#" 5.86323
+cap "m3_124_567#" "m2_3769_257#" 55.2904
+cap "m2_2989_257#" "m2_3120_0#" 23.3813
+cap "m3_124_567#" "m2_910_257#" 55.233
+cap "m2_5329_257#" "VGND" 12.2522
+cap "m3_124_567#" "m2_4811_257#" 55.2904
+cap "m3_124_567#" "m2_520_0#" 0.686232
+cap "VGND" "m2_1690_257#" 12.2522
+cap "m3_124_567#" "VGND" 133.001
+cap "HEN" "m2_124_567#" 24.4876
+cap "VGND" "m2_2989_257#" 12.2522
+cap "m2_3640_0#" "m2_3380_0#" 23.9739
+cap "m2_3120_0#" "m2_3251_257#" 23.3813
+cap "m2_5720_0#" "m2_5591_257#" 23.7226
+cap "m3_124_567#" "m2_3510_257#" 55.2039
+cap "HEN" "m2_1950_257#" 0.0603386
+cap "HEN" "m2_1170_257#" 0.455583
+cap "m3_124_567#" "m2_3900_0#" 5.60752
+cap "m2_1950_257#" "m2_2209_257#" 26.2172
+cap "HEN" "m2_1690_257#" 0.0975313
+cap "m2_3120_0#" "m2_3380_0#" 23.9739
+cap "m2_2860_0#" "m2_2599_0#" 23.8848
+cap "VGND" "m2_3251_257#" 12.2522
+cap "m2_2340_0#" "m2_2471_257#" 23.3813
+cap "m2_4679_0#" "m2_4811_257#" 23.2143
+cap "HEN" "m3_124_567#" 200.857
+cap "m2_4811_257#" "m2_4549_257#" 25.9259
+cap "m3_124_567#" "m2_2730_257#" 55.2039
+cap "m2_4679_0#" "VGND" 148.829
+cap "m2_1561_0#" "m2_1430_257#" 23.3813
+cap "m2_910_257#" "m2_1038_0#" 23.8971
+cap "m2_5200_0#" "VGND" 149.091
+cap "m2_4549_257#" "VGND" 12.2522
+cap "m2_1950_257#" "m1_574_472#" 50.7453
+cap "m2_1170_257#" "m2_1430_257#" 26.1194
+cap "m2_2471_257#" "VGND" 12.2522
+cap "m2_1561_0#" "m1_574_472#" 5.86323
+cap "m3_124_567#" "m2_4160_0#" 5.60752
+cap "m2_1038_0#" "VGND" 149.026
+cap "m2_1170_257#" "m1_574_472#" 50.7604
+cap "m3_124_567#" "m2_2209_257#" 55.2904
+cap "m2_4939_0#" "m1_574_472#" 5.86323
+cap "m3_124_567#" "m2_4290_257#" 55.2039
+cap "m2_2730_257#" "m2_2989_257#" 26.2172
+cap "m2_1430_257#" "m2_1690_257#" 26.1194
+cap "m2_5329_257#" "m2_5461_0#" 23.2143
+cap "m3_124_567#" "m2_778_0#" 5.60752
+cap "m2_5329_257#" "m1_574_472#" 50.7751
+cap "VGND" "m2_3380_0#" 148.961
+cap "m1_574_472#" "m2_1690_257#" 50.7604
+cap "m2_3251_257#" "m2_3510_257#" 26.2172
+cap "m3_124_567#" "m2_1430_257#" 55.262
+cap "m2_4421_0#" "VGND" 148.894
+cap "m3_124_567#" "m2_5461_0#" 5.60752
+cap "m3_124_567#" "m1_574_472#" 206.521
+cap "m2_5591_257#" "VGND" 12.2522
+cap "m2_3769_257#" "m2_3640_0#" 23.7226
+cap "m2_5070_257#" "m2_4939_0#" 23.3813
+cap "m2_5329_257#" "m2_5070_257#" 26.2172
+cap "m2_5720_0#" "VGND" 157.381
+cap "VGND" "m2_3640_0#" 148.961
+cap "m1_574_472#" "m2_2989_257#" 50.7751
+cap "m3_124_567#" "m2_5070_257#" 55.2039
+cap "VGND" "m2_1820_0#" 148.896
+cap "m2_3380_0#" "m2_3510_257#" 23.5507
+cap "m2_651_257#" "m2_124_567#" 15.0602
+cap "m2_4031_257#" "m2_3769_257#" 25.9259
+cap "HIN" "m2_124_567#" 424.823
+cap "m2_2471_257#" "m2_2730_257#" 26.2172
+cap "m2_5735_3306#" "m2_5735_774#" 52.625
+cap "m2_4031_257#" "VGND" 12.2522
+cap "m2_1950_257#" "m2_2080_0#" 23.5507
+cap "VGND" "m2_3120_0#" 148.961
+cap "m1_574_472#" "m2_3251_257#" 50.7751
+cap "m2_3640_0#" "m2_3510_257#" 23.5507
+cap "m2_4290_257#" "m2_4549_257#" 26.2172
+cap "m2_2209_257#" "m2_2471_257#" 25.9259
+cap "guard_ring_0/a_25_25#" "res_poly_1/a_n573_n3022#" 0.0338589
+cap "guard_ring_0/a_25_25#" "res_poly_2/a_n573_n3022#" 978.433
+cap "res_poly_1/a_n573_n3022#" "res_poly_2/a_n573_n3022#" 0.0791501
+cap "guard_ring_0/a_25_25#" "nfet__4_0.15$1$1_0/a_503_280#" 267.31
+cap "res_poly_2/a_n573_n3022#" "nfet__4_0.15$1$1_0/a_503_280#" 81.1445
+cap "nfet__4_0.15$1$1$1_0/a_243_280#" "guard_ring_0/a_25_25#" 418.068
+cap "nfet__4_0.15$1$1$1_0/a_243_280#" "res_poly_2/a_n573_n3022#" 117.476
+cap "guard_ring_0/a_25_25#" "res_poly_2/a_n573_n3022#" 622.366
+cap "guard_ring_gen_0/a_n46_n46#" "vias_gen$5_7/m1_0_0#" 493.763
+cap "guard_ring_gen_0/a_n46_n46#" "vias_gen$6_0/m2_0_0#" 380.613
+cap "guard_ring_gen_0/a_n46_n46#" "nfet__4_0.15$2$1$1_0/a_503_280#" 320.512
+cap "vias_gen$6_0/m2_0_0#" "vias_gen$5_7/m1_0_0#" 174.746
+cap "vias_gen$5_7/m1_0_0#" "nfet__4_0.15$2$1$1_0/a_503_280#" 115.094
+cap "vias_gen$6_0/m2_0_0#" "nfet__4_0.15$2$1$1_0/a_503_280#" 103.917
+cap "guard_ring_gen_0/a_n46_n46#" "nfet__4_0.15$2$1$1_0/a_503_280#" 434.816
+cap "guard_ring_gen_0/a_n46_n46#" "vias_gen$6_0/m2_0_0#" 579.881
+cap "vias_gen$6_0/m2_0_0#" "nfet__4_0.15$2$1$1_0/a_503_280#" 110.374
+cap "guard_ring_gen_0/a_n46_n46#" "vias_gen$6_0/m2_0_0#" 71.3633
+cap "nfet__4_0.15$2$1$1_0/a_503_280#" "vias_gen$6_0/m2_0_0#" 8.30442
+cap "guard_ring_gen_0/a_n46_n46#" "vias_gen_5/m1_0_0#" 441.386
+cap "guard_ring_gen_0/a_n46_n46#" "nfet__4_0.15$2$1$1_0/a_503_280#" 42.0135
+cap "res_poly_3/a_n573_n3022#" "res_poly_2/a_n573_n3022#" 1120.99
+cap "guard_ring_0/a_25_25#" "res_poly_2/a_n573_n3022#" 182.884
+cap "guard_ring_0/a_25_25#" "res_poly_3/a_n573_n3022#" 146.918
+cap "guard_ring_gen_0/a_n46_n46#" "res_poly_1/a_n573_2586#" 618.57
+cap "vias_gen_2/m1_0_0#" "res_poly_3/a_n573_n3022#" 1613.6
+cap "vias_gen_2/m1_0_0#" "guard_ring_0/a_25_25#" 29.605
+cap "guard_ring_0/a_25_25#" "res_poly_3/a_n573_n3022#" 358.335
+cap "res_poly_1/a_n573_2586#" "vias_gen_3/m1_0_0#" 132.971
+cap "res_poly_1/a_n573_2586#" "guard_ring_0/a_25_25#" 226.919
+cap "guard_ring_0/a_25_25#" "vias_gen_3/m1_0_0#" 358.183
+cap "res_poly_3/a_n573_n3022#" "vias_gen_2/m1_0_0#" 715.52
+cap "res_poly_3/a_n573_n3022#" "guard_ring_0/a_25_25#" 81.9221
+cap "guard_ring_0/a_25_25#" "vias_gen_2/m1_0_0#" 247.937
+cap "vias_gen_3/m1_0_0#" "guard_ring_0/a_25_25#" 618.57
+cap "res_poly_3/a_n573_n3022#" "guard_ring_0/a_25_25#" 0.0338589
+cap "guard_ring_0/a_25_25#" "vias_gen_2/m1_0_0#" 253.076
+cap "vias_gen_3/m1_0_0#" "guard_ring_0/a_25_25#" 300.411
+merge "vias_gen_4/VSUBS" "vias_gen_2/VSUBS" -18224.9 0 0 0 0 0 0 0 0 -180000 -5400 -28980 -9672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -71208 -12768 -444904 -31708 -371280 -18648 0 0 0 0 0 0 0 0
+merge "vias_gen_2/VSUBS" "res_poly_0/VSUBS"
+merge "res_poly_0/VSUBS" "vias_gen_3/VSUBS"
+merge "vias_gen_3/VSUBS" "res_poly_3/VSUBS"
+merge "res_poly_3/VSUBS" "vias_gen_5/VSUBS"
+merge "vias_gen_5/VSUBS" "vias_gen_0/VSUBS"
+merge "vias_gen_0/VSUBS" "vias_gen$6_0/VSUBS"
+merge "vias_gen$6_0/VSUBS" "vias_gen$6_9/VSUBS"
+merge "vias_gen$6_9/VSUBS" "vias_gen$2_0/VSUBS"
+merge "vias_gen$2_0/VSUBS" "vias_gen$5_7/VSUBS"
+merge "vias_gen$5_7/VSUBS" "vias_gen$5_7/m1_0_0#"
+merge "vias_gen$5_7/m1_0_0#" "vias_gen$2_8/m1_0_0#"
+merge "vias_gen$2_8/m1_0_0#" "m2_5200_0#"
+merge "m2_5200_0#" "nfet__4_0.15$2$1$1_0/a_545_40#"
+merge "nfet__4_0.15$2$1$1_0/a_545_40#" "nfet__4_0.15$1$1$1$1_0/a_25_40#"
+merge "nfet__4_0.15$1$1$1$1_0/a_25_40#" "vias_gen$5_8/VSUBS"
+merge "vias_gen$5_8/VSUBS" "vias_gen$5_8/m1_0_0#"
+merge "vias_gen$5_8/m1_0_0#" "vias_gen$2_7/m1_0_0#"
+merge "vias_gen$2_7/m1_0_0#" "m2_5461_0#"
+merge "m2_5461_0#" "nfet__4_0.15$1$1$1$1_0/a_285_40#"
+merge "nfet__4_0.15$1$1$1$1_0/a_285_40#" "vias_gen$5_9/VSUBS"
+merge "vias_gen$5_9/VSUBS" "vias_gen$5_9/m1_0_0#"
+merge "vias_gen$5_9/m1_0_0#" "vias_gen$2_6/m1_0_0#"
+merge "vias_gen$2_6/m1_0_0#" "m2_5720_0#"
+merge "m2_5720_0#" "nfet__4_0.15$1$1$1$1_0/a_545_40#"
+merge "nfet__4_0.15$1$1$1$1_0/a_545_40#" "vias_gen$2_6/VSUBS"
+merge "vias_gen$2_6/VSUBS" "vias_gen$2_7/VSUBS"
+merge "vias_gen$2_7/VSUBS" "vias_gen$2_8/VSUBS"
+merge "vias_gen$2_8/VSUBS" "vias_gen$2_19/VSUBS"
+merge "vias_gen$2_19/VSUBS" "vias_gen$6_1/VSUBS"
+merge "vias_gen$6_1/VSUBS" "vias_gen$2_1/VSUBS"
+merge "vias_gen$2_1/VSUBS" "vias_gen$6_2/VSUBS"
+merge "vias_gen$6_2/VSUBS" "vias_gen$2_2/VSUBS"
+merge "vias_gen$2_2/VSUBS" "vias_gen$6_3/VSUBS"
+merge "vias_gen$6_3/VSUBS" "vias_gen$2_3/VSUBS"
+merge "vias_gen$2_3/VSUBS" "vias_gen$2_9/VSUBS"
+merge "vias_gen$2_9/VSUBS" "vias_gen$2_9/m1_0_0#"
+merge "vias_gen$2_9/m1_0_0#" "nfet__4_0.15$2$1$1_0/a_285_40#"
+merge "nfet__4_0.15$2$1$1_0/a_285_40#" "vias_gen$2_10/VSUBS"
+merge "vias_gen$2_10/VSUBS" "vias_gen$2_10/m1_0_0#"
+merge "vias_gen$2_10/m1_0_0#" "nfet__4_0.15$2$1$1_0/a_25_40#"
+merge "nfet__4_0.15$2$1$1_0/a_25_40#" "nfet__4_0.15$1$1$1_0/a_545_40#"
+merge "nfet__4_0.15$1$1$1_0/a_545_40#" "vias_gen$5_5/VSUBS"
+merge "vias_gen$5_5/VSUBS" "vias_gen$5_5/m1_0_0#"
+merge "vias_gen$5_5/m1_0_0#" "m2_4679_0#"
+merge "m2_4679_0#" "vias_gen$5_6/VSUBS"
+merge "vias_gen$5_6/VSUBS" "vias_gen$5_6/m1_0_0#"
+merge "vias_gen$5_6/m1_0_0#" "m2_4939_0#"
+merge "m2_4939_0#" "nfet__4_0.15$2$1$1_0/VSUBS"
+merge "nfet__4_0.15$2$1$1_0/VSUBS" "nfet__4_0.15$1$1$1$1_0/VSUBS"
+merge "nfet__4_0.15$1$1$1$1_0/VSUBS" "vias_gen$2_11/VSUBS"
+merge "vias_gen$2_11/VSUBS" "vias_gen$2_11/m1_0_0#"
+merge "vias_gen$2_11/m1_0_0#" "nfet__4_0.15$1$1$1_0/a_285_40#"
+merge "nfet__4_0.15$1$1$1_0/a_285_40#" "vias_gen$5_4/VSUBS"
+merge "vias_gen$5_4/VSUBS" "vias_gen$5_4/m1_0_0#"
+merge "vias_gen$5_4/m1_0_0#" "m2_4421_0#"
+merge "m2_4421_0#" "vias_gen$6_4/VSUBS"
+merge "vias_gen$6_4/VSUBS" "vias_gen$2_4/VSUBS"
+merge "vias_gen$2_4/VSUBS" "vias_gen$6_5/VSUBS"
+merge "vias_gen$6_5/VSUBS" "vias_gen$2_5/VSUBS"
+merge "vias_gen$2_5/VSUBS" "vias_gen$2_12/VSUBS"
+merge "vias_gen$2_12/VSUBS" "vias_gen$2_12/m1_0_0#"
+merge "vias_gen$2_12/m1_0_0#" "nfet__4_0.15$1$1$1_0/a_25_40#"
+merge "nfet__4_0.15$1$1$1_0/a_25_40#" "nfet__4_0.15$2$1_0/a_545_40#"
+merge "nfet__4_0.15$2$1_0/a_545_40#" "vias_gen$2_13/VSUBS"
+merge "vias_gen$2_13/VSUBS" "vias_gen$2_13/m1_0_0#"
+merge "vias_gen$2_13/m1_0_0#" "nfet__4_0.15$2$1_0/a_285_40#"
+merge "nfet__4_0.15$2$1_0/a_285_40#" "vias_gen$5_2/VSUBS"
+merge "vias_gen$5_2/VSUBS" "vias_gen$5_2/m1_0_0#"
+merge "vias_gen$5_2/m1_0_0#" "m2_3900_0#"
+merge "m2_3900_0#" "vias_gen$5_3/VSUBS"
+merge "vias_gen$5_3/VSUBS" "vias_gen$5_3/m1_0_0#"
+merge "vias_gen$5_3/m1_0_0#" "m2_4160_0#"
+merge "m2_4160_0#" "nfet__4_0.15$1$1$1_0/VSUBS"
+merge "nfet__4_0.15$1$1$1_0/VSUBS" "vias_gen$6_6/VSUBS"
+merge "vias_gen$6_6/VSUBS" "vias_gen$2_14/VSUBS"
+merge "vias_gen$2_14/VSUBS" "vias_gen$2_14/m1_0_0#"
+merge "vias_gen$2_14/m1_0_0#" "nfet__4_0.15$2$1_0/a_25_40#"
+merge "nfet__4_0.15$2$1_0/a_25_40#" "nfet__4_0.15$1$2_0/a_545_40#"
+merge "nfet__4_0.15$1$2_0/a_545_40#" "vias_gen$2_15/VSUBS"
+merge "vias_gen$2_15/VSUBS" "vias_gen$2_15/m1_0_0#"
+merge "vias_gen$2_15/m1_0_0#" "nfet__4_0.15$1$2_0/a_285_40#"
+merge "nfet__4_0.15$1$2_0/a_285_40#" "vias_gen$2_16/VSUBS"
+merge "vias_gen$2_16/VSUBS" "vias_gen$6_7/VSUBS"
+merge "vias_gen$6_7/VSUBS" "vias_gen$2_17/VSUBS"
+merge "vias_gen$2_17/VSUBS" "vias_gen$6_8/VSUBS"
+merge "vias_gen$6_8/VSUBS" "vias_gen$2_18/VSUBS"
+merge "vias_gen$2_18/VSUBS" "vias_gen$5_0/VSUBS"
+merge "vias_gen$5_0/VSUBS" "vias_gen$5_0/m1_0_0#"
+merge "vias_gen$5_0/m1_0_0#" "m2_3380_0#"
+merge "m2_3380_0#" "vias_gen$5_1/VSUBS"
+merge "vias_gen$5_1/VSUBS" "vias_gen$5_1/m1_0_0#"
+merge "vias_gen$5_1/m1_0_0#" "m2_3640_0#"
+merge "m2_3640_0#" "nfet__4_0.15$2$1_0/VSUBS"
+merge "nfet__4_0.15$2$1_0/VSUBS" "nfet__4_0.15$1$2_0/VSUBS"
+merge "nfet__4_0.15$1$2_0/VSUBS" "nfet__4_0.15$1$2_0/a_25_40#"
+merge "nfet__4_0.15$1$2_0/a_25_40#" "vias_gen$2_40/VSUBS"
+merge "vias_gen$2_40/VSUBS" "vias_gen$2_40/m1_0_0#"
+merge "vias_gen$2_40/m1_0_0#" "nfet__4_0.15$3_0/a_545_40#"
+merge "nfet__4_0.15$3_0/a_545_40#" "vias_gen$5_20/VSUBS"
+merge "vias_gen$5_20/VSUBS" "vias_gen$5_20/m1_0_0#"
+merge "vias_gen$5_20/m1_0_0#" "m2_3120_0#"
+merge "m2_3120_0#" "guard_ring_0/a_25_25#"
+merge "guard_ring_0/a_25_25#" "res_poly_1/VSUBS"
+merge "res_poly_1/VSUBS" "guard_ring_gen_0/a_n46_n46#"
+merge "guard_ring_gen_0/a_n46_n46#" "vias_gen$2_20/m1_0_0#"
+merge "vias_gen$2_20/m1_0_0#" "nfet__4_0.15$3_0/a_285_40#"
+merge "nfet__4_0.15$3_0/a_285_40#" "vias_gen$5_19/m1_0_0#"
+merge "vias_gen$5_19/m1_0_0#" "m2_2860_0#"
+merge "m2_2860_0#" "vias_gen$2_21/m1_0_0#"
+merge "vias_gen$2_21/m1_0_0#" "nfet__4_0.15$1$1_0/a_545_40#"
+merge "nfet__4_0.15$1$1_0/a_545_40#" "nfet__4_0.15$3_0/a_25_40#"
+merge "nfet__4_0.15$3_0/a_25_40#" "vias_gen$2_22/m1_0_0#"
+merge "vias_gen$2_22/m1_0_0#" "nfet__4_0.15$1$1_0/a_285_40#"
+merge "nfet__4_0.15$1$1_0/a_285_40#" "vias_gen$2_23/m1_0_0#"
+merge "vias_gen$2_23/m1_0_0#" "nfet__4_0.15$1$1_0/a_25_40#"
+merge "nfet__4_0.15$1$1_0/a_25_40#" "nfet__4_0.15$2_0/a_545_40#"
+merge "nfet__4_0.15$2_0/a_545_40#" "vias_gen$5_16/m1_0_0#"
+merge "vias_gen$5_16/m1_0_0#" "m2_2080_0#"
+merge "m2_2080_0#" "vias_gen$5_17/m1_0_0#"
+merge "vias_gen$5_17/m1_0_0#" "m2_2340_0#"
+merge "m2_2340_0#" "vias_gen$5_18/m1_0_0#"
+merge "vias_gen$5_18/m1_0_0#" "m2_2599_0#"
+merge "m2_2599_0#" "vias_gen$2_24/m1_0_0#"
+merge "vias_gen$2_24/m1_0_0#" "nfet__4_0.15$2_0/a_285_40#"
+merge "nfet__4_0.15$2_0/a_285_40#" "vias_gen$2_25/m1_0_0#"
+merge "vias_gen$2_25/m1_0_0#" "nfet__4_0.15$2_0/a_25_40#"
+merge "nfet__4_0.15$2_0/a_25_40#" "nfet__4_0.15$1_0/a_545_40#"
+merge "nfet__4_0.15$1_0/a_545_40#" "vias_gen$5_14/m1_0_0#"
+merge "vias_gen$5_14/m1_0_0#" "m2_1561_0#"
+merge "m2_1561_0#" "vias_gen$5_15/m1_0_0#"
+merge "vias_gen$5_15/m1_0_0#" "m2_1820_0#"
+merge "m2_1820_0#" "vias_gen$2_26/m1_0_0#"
+merge "vias_gen$2_26/m1_0_0#" "nfet__4_0.15$1_0/a_285_40#"
+merge "nfet__4_0.15$1_0/a_285_40#" "vias_gen$2_27/m1_0_0#"
+merge "vias_gen$2_27/m1_0_0#" "nfet__4_0.15$1_0/a_25_40#"
+merge "nfet__4_0.15$1_0/a_25_40#" "nfet__4_0.15_0/a_545_40#"
+merge "nfet__4_0.15_0/a_545_40#" "vias_gen$2_28/m1_0_0#"
+merge "vias_gen$2_28/m1_0_0#" "nfet__4_0.15_0/a_285_40#"
+merge "nfet__4_0.15_0/a_285_40#" "vias_gen$5_11/m1_0_0#"
+merge "vias_gen$5_11/m1_0_0#" "m2_778_0#"
+merge "m2_778_0#" "vias_gen$5_12/m1_0_0#"
+merge "vias_gen$5_12/m1_0_0#" "m2_1038_0#"
+merge "m2_1038_0#" "vias_gen$5_13/m1_0_0#"
+merge "vias_gen$5_13/m1_0_0#" "m2_1299_0#"
+merge "m2_1299_0#" "nfet__4_0.15_0/a_25_40#"
+merge "nfet__4_0.15_0/a_25_40#" "vias_gen$2_29/m1_0_0#"
+merge "vias_gen$2_29/m1_0_0#" "vias_gen$5_10/m1_0_0#"
+merge "vias_gen$5_10/m1_0_0#" "m2_520_0#"
+merge "m2_520_0#" "VGND"
+merge "VGND" "res_poly_2/VSUBS"
+merge "res_poly_2/VSUBS" "vias_gen$2_31/VSUBS"
+merge "vias_gen$2_31/VSUBS" "vias_gen$6_11/VSUBS"
+merge "vias_gen$6_11/VSUBS" "vias_gen$2_30/VSUBS"
+merge "vias_gen$2_30/VSUBS" "vias_gen$6_10/VSUBS"
+merge "vias_gen$6_10/VSUBS" "vias_gen$2_20/VSUBS"
+merge "vias_gen$2_20/VSUBS" "vias_gen$5_19/VSUBS"
+merge "vias_gen$5_19/VSUBS" "vias_gen$2_21/VSUBS"
+merge "vias_gen$2_21/VSUBS" "vias_gen$2_22/VSUBS"
+merge "vias_gen$2_22/VSUBS" "vias_gen$2_23/VSUBS"
+merge "vias_gen$2_23/VSUBS" "vias_gen$6_12/VSUBS"
+merge "vias_gen$6_12/VSUBS" "vias_gen$2_32/VSUBS"
+merge "vias_gen$2_32/VSUBS" "vias_gen$6_13/VSUBS"
+merge "vias_gen$6_13/VSUBS" "vias_gen$2_33/VSUBS"
+merge "vias_gen$2_33/VSUBS" "vias_gen$5_16/VSUBS"
+merge "vias_gen$5_16/VSUBS" "vias_gen$5_17/VSUBS"
+merge "vias_gen$5_17/VSUBS" "vias_gen$5_18/VSUBS"
+merge "vias_gen$5_18/VSUBS" "nfet__4_0.15$1$1_0/VSUBS"
+merge "nfet__4_0.15$1$1_0/VSUBS" "nfet__4_0.15$3_0/VSUBS"
+merge "nfet__4_0.15$3_0/VSUBS" "vias_gen$2_24/VSUBS"
+merge "vias_gen$2_24/VSUBS" "vias_gen$2_25/VSUBS"
+merge "vias_gen$2_25/VSUBS" "vias_gen$6_14/VSUBS"
+merge "vias_gen$6_14/VSUBS" "vias_gen$2_34/VSUBS"
+merge "vias_gen$2_34/VSUBS" "vias_gen$6_15/VSUBS"
+merge "vias_gen$6_15/VSUBS" "vias_gen$2_35/VSUBS"
+merge "vias_gen$2_35/VSUBS" "vias_gen$6_16/VSUBS"
+merge "vias_gen$6_16/VSUBS" "vias_gen$2_36/VSUBS"
+merge "vias_gen$2_36/VSUBS" "vias_gen$5_14/VSUBS"
+merge "vias_gen$5_14/VSUBS" "vias_gen$5_15/VSUBS"
+merge "vias_gen$5_15/VSUBS" "nfet__4_0.15$2_0/VSUBS"
+merge "nfet__4_0.15$2_0/VSUBS" "vias_gen$2_26/VSUBS"
+merge "vias_gen$2_26/VSUBS" "vias_gen$2_27/VSUBS"
+merge "vias_gen$2_27/VSUBS" "vias_gen$2_28/VSUBS"
+merge "vias_gen$2_28/VSUBS" "vias_gen$6_17/VSUBS"
+merge "vias_gen$6_17/VSUBS" "vias_gen$2_37/VSUBS"
+merge "vias_gen$2_37/VSUBS" "vias_gen$6_18/VSUBS"
+merge "vias_gen$6_18/VSUBS" "vias_gen$2_38/VSUBS"
+merge "vias_gen$2_38/VSUBS" "vias_gen$5_11/VSUBS"
+merge "vias_gen$5_11/VSUBS" "vias_gen$5_12/VSUBS"
+merge "vias_gen$5_12/VSUBS" "vias_gen$5_13/VSUBS"
+merge "vias_gen$5_13/VSUBS" "nfet__4_0.15$1_0/VSUBS"
+merge "nfet__4_0.15$1_0/VSUBS" "nfet__4_0.15_0/VSUBS"
+merge "nfet__4_0.15_0/VSUBS" "vias_gen$1_0/VSUBS"
+merge "vias_gen$1_0/VSUBS" "vias_gen$2_39/VSUBS"
+merge "vias_gen$2_39/VSUBS" "vias_gen$6_19/VSUBS"
+merge "vias_gen$6_19/VSUBS" "vias_gen$2_29/VSUBS"
+merge "vias_gen$2_29/VSUBS" "vias_gen_1/VSUBS"
+merge "vias_gen_1/VSUBS" "vias_gen$3_0/VSUBS"
+merge "vias_gen$3_0/VSUBS" "vias_gen$5_10/VSUBS"
+merge "vias_gen$5_10/VSUBS" "VSUBS"
+merge "vias_gen_2/m1_0_0#" "res_poly_0/a_n573_n3022#" -13585.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1059980 -13198 -1225432 -20796 -185880 -8172 0 0 0 0 0 0
+merge "res_poly_0/a_n573_n3022#" "vias_gen$6_0/m2_0_0#"
+merge "vias_gen$6_0/m2_0_0#" "vias_gen$2_0/m1_0_0#"
+merge "vias_gen$2_0/m1_0_0#" "m2_5329_257#"
+merge "m2_5329_257#" "nfet__4_0.15$1$1$1$1_0/a_155_40#"
+merge "nfet__4_0.15$1$1$1$1_0/a_155_40#" "vias_gen$6_9/m2_0_0#"
+merge "vias_gen$6_9/m2_0_0#" "vias_gen$2_19/m1_0_0#"
+merge "vias_gen$2_19/m1_0_0#" "m2_5591_257#"
+merge "m2_5591_257#" "nfet__4_0.15$1$1$1$1_0/a_415_40#"
+merge "nfet__4_0.15$1$1$1$1_0/a_415_40#" "vias_gen$6_1/m2_0_0#"
+merge "vias_gen$6_1/m2_0_0#" "vias_gen$2_1/m1_0_0#"
+merge "vias_gen$2_1/m1_0_0#" "m2_5070_257#"
+merge "m2_5070_257#" "nfet__4_0.15$2$1$1_0/a_415_40#"
+merge "nfet__4_0.15$2$1$1_0/a_415_40#" "vias_gen$6_2/m2_0_0#"
+merge "vias_gen$6_2/m2_0_0#" "vias_gen$2_2/m1_0_0#"
+merge "vias_gen$2_2/m1_0_0#" "m2_4811_257#"
+merge "m2_4811_257#" "nfet__4_0.15$2$1$1_0/a_155_40#"
+merge "nfet__4_0.15$2$1$1_0/a_155_40#" "vias_gen$6_3/m2_0_0#"
+merge "vias_gen$6_3/m2_0_0#" "vias_gen$2_3/m1_0_0#"
+merge "vias_gen$2_3/m1_0_0#" "m2_4549_257#"
+merge "m2_4549_257#" "nfet__4_0.15$1$1$1_0/a_415_40#"
+merge "nfet__4_0.15$1$1$1_0/a_415_40#" "vias_gen$6_4/m2_0_0#"
+merge "vias_gen$6_4/m2_0_0#" "vias_gen$2_4/m1_0_0#"
+merge "vias_gen$2_4/m1_0_0#" "m2_4290_257#"
+merge "m2_4290_257#" "nfet__4_0.15$1$1$1_0/a_155_40#"
+merge "nfet__4_0.15$1$1$1_0/a_155_40#" "vias_gen$6_5/m2_0_0#"
+merge "vias_gen$6_5/m2_0_0#" "vias_gen$2_5/m1_0_0#"
+merge "vias_gen$2_5/m1_0_0#" "m2_4031_257#"
+merge "m2_4031_257#" "nfet__4_0.15$2$1_0/a_415_40#"
+merge "nfet__4_0.15$2$1_0/a_415_40#" "vias_gen$6_6/m2_0_0#"
+merge "vias_gen$6_6/m2_0_0#" "vias_gen$2_16/m1_0_0#"
+merge "vias_gen$2_16/m1_0_0#" "m2_3769_257#"
+merge "m2_3769_257#" "nfet__4_0.15$2$1_0/a_155_40#"
+merge "nfet__4_0.15$2$1_0/a_155_40#" "vias_gen$6_7/m2_0_0#"
+merge "vias_gen$6_7/m2_0_0#" "vias_gen$2_17/m1_0_0#"
+merge "vias_gen$2_17/m1_0_0#" "m2_3510_257#"
+merge "m2_3510_257#" "nfet__4_0.15$1$2_0/a_415_40#"
+merge "nfet__4_0.15$1$2_0/a_415_40#" "vias_gen$6_8/m2_0_0#"
+merge "vias_gen$6_8/m2_0_0#" "vias_gen$2_18/m1_0_0#"
+merge "vias_gen$2_18/m1_0_0#" "m2_3251_257#"
+merge "m2_3251_257#" "nfet__4_0.15$1$2_0/a_155_40#"
+merge "nfet__4_0.15$1$2_0/a_155_40#" "res_poly_2/a_n573_n3022#"
+merge "res_poly_2/a_n573_n3022#" "vias_gen$2_31/m1_0_0#"
+merge "vias_gen$2_31/m1_0_0#" "nfet__4_0.15$3_0/a_155_40#"
+merge "nfet__4_0.15$3_0/a_155_40#" "vias_gen$6_11/m2_0_0#"
+merge "vias_gen$6_11/m2_0_0#" "m2_2730_257#"
+merge "m2_2730_257#" "vias_gen$2_30/m1_0_0#"
+merge "vias_gen$2_30/m1_0_0#" "nfet__4_0.15$3_0/a_415_40#"
+merge "nfet__4_0.15$3_0/a_415_40#" "vias_gen$6_10/m2_0_0#"
+merge "vias_gen$6_10/m2_0_0#" "m2_2989_257#"
+merge "m2_2989_257#" "vias_gen$6_12/m2_0_0#"
+merge "vias_gen$6_12/m2_0_0#" "vias_gen$2_32/m1_0_0#"
+merge "vias_gen$2_32/m1_0_0#" "m2_2471_257#"
+merge "m2_2471_257#" "nfet__4_0.15$1$1_0/a_415_40#"
+merge "nfet__4_0.15$1$1_0/a_415_40#" "vias_gen$6_13/m2_0_0#"
+merge "vias_gen$6_13/m2_0_0#" "vias_gen$2_33/m1_0_0#"
+merge "vias_gen$2_33/m1_0_0#" "m2_2209_257#"
+merge "m2_2209_257#" "nfet__4_0.15$1$1_0/a_155_40#"
+merge "nfet__4_0.15$1$1_0/a_155_40#" "vias_gen$6_14/m2_0_0#"
+merge "vias_gen$6_14/m2_0_0#" "vias_gen$2_34/m1_0_0#"
+merge "vias_gen$2_34/m1_0_0#" "m2_1950_257#"
+merge "m2_1950_257#" "nfet__4_0.15$2_0/a_415_40#"
+merge "nfet__4_0.15$2_0/a_415_40#" "vias_gen$6_15/m2_0_0#"
+merge "vias_gen$6_15/m2_0_0#" "vias_gen$2_35/m1_0_0#"
+merge "vias_gen$2_35/m1_0_0#" "m2_1690_257#"
+merge "m2_1690_257#" "nfet__4_0.15$2_0/a_155_40#"
+merge "nfet__4_0.15$2_0/a_155_40#" "vias_gen$6_16/m2_0_0#"
+merge "vias_gen$6_16/m2_0_0#" "vias_gen$2_36/m1_0_0#"
+merge "vias_gen$2_36/m1_0_0#" "m2_1430_257#"
+merge "m2_1430_257#" "nfet__4_0.15$1_0/a_415_40#"
+merge "nfet__4_0.15$1_0/a_415_40#" "vias_gen$6_17/m2_0_0#"
+merge "vias_gen$6_17/m2_0_0#" "vias_gen$2_37/m1_0_0#"
+merge "vias_gen$2_37/m1_0_0#" "m2_1170_257#"
+merge "m2_1170_257#" "nfet__4_0.15$1_0/a_155_40#"
+merge "nfet__4_0.15$1_0/a_155_40#" "vias_gen$6_18/m2_0_0#"
+merge "vias_gen$6_18/m2_0_0#" "vias_gen$2_38/m1_0_0#"
+merge "vias_gen$2_38/m1_0_0#" "m2_910_257#"
+merge "m2_910_257#" "nfet__4_0.15_0/a_415_40#"
+merge "nfet__4_0.15_0/a_415_40#" "nfet__4_0.15_0/a_155_40#"
+merge "nfet__4_0.15_0/a_155_40#" "vias_gen$1_0/m2_0_0#"
+merge "vias_gen$1_0/m2_0_0#" "vias_gen_1/m1_0_0#"
+merge "vias_gen_1/m1_0_0#" "m2_124_567#"
+merge "m2_124_567#" "vias_gen$2_39/m1_0_0#"
+merge "vias_gen$2_39/m1_0_0#" "vias_gen$6_19/m2_0_0#"
+merge "vias_gen$6_19/m2_0_0#" "m3_124_567#"
+merge "m3_124_567#" "vias_gen$3_0/m2_0_0#"
+merge "vias_gen$3_0/m2_0_0#" "HEN"
+merge "HEN" "m2_651_257#"
+merge "nfet__4_0.15$2$1$1_0/a_503_280#" "nfet__4_0.15$2$1$1_0/a_373_280#" -3613.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -136160 -9600 0 0 0 0 0 0 0 0 0 0
+merge "nfet__4_0.15$2$1$1_0/a_373_280#" "nfet__4_0.15$2$1$1_0/a_243_280#"
+merge "nfet__4_0.15$2$1$1_0/a_243_280#" "nfet__4_0.15$2$1$1_0/a_113_280#"
+merge "nfet__4_0.15$2$1$1_0/a_113_280#" "nfet__4_0.15$1$1$1$1_0/a_503_280#"
+merge "nfet__4_0.15$1$1$1$1_0/a_503_280#" "nfet__4_0.15$1$1$1$1_0/a_373_280#"
+merge "nfet__4_0.15$1$1$1$1_0/a_373_280#" "nfet__4_0.15$1$1$1$1_0/a_243_280#"
+merge "nfet__4_0.15$1$1$1$1_0/a_243_280#" "nfet__4_0.15$1$1$1$1_0/a_113_280#"
+merge "nfet__4_0.15$1$1$1$1_0/a_113_280#" "nfet__4_0.15$1$1$1_0/a_503_280#"
+merge "nfet__4_0.15$1$1$1_0/a_503_280#" "nfet__4_0.15$1$1$1_0/a_373_280#"
+merge "nfet__4_0.15$1$1$1_0/a_373_280#" "nfet__4_0.15$1$1$1_0/a_243_280#"
+merge "nfet__4_0.15$1$1$1_0/a_243_280#" "nfet__4_0.15$1$1$1_0/a_113_280#"
+merge "nfet__4_0.15$1$1$1_0/a_113_280#" "nfet__4_0.15$2$1_0/a_503_280#"
+merge "nfet__4_0.15$2$1_0/a_503_280#" "nfet__4_0.15$2$1_0/a_373_280#"
+merge "nfet__4_0.15$2$1_0/a_373_280#" "nfet__4_0.15$2$1_0/a_243_280#"
+merge "nfet__4_0.15$2$1_0/a_243_280#" "nfet__4_0.15$2$1_0/a_113_280#"
+merge "nfet__4_0.15$2$1_0/a_113_280#" "nfet__4_0.15$1$2_0/a_503_280#"
+merge "nfet__4_0.15$1$2_0/a_503_280#" "nfet__4_0.15$1$2_0/a_373_280#"
+merge "nfet__4_0.15$1$2_0/a_373_280#" "nfet__4_0.15$1$2_0/a_243_280#"
+merge "nfet__4_0.15$1$2_0/a_243_280#" "nfet__4_0.15$1$2_0/a_113_280#"
+merge "nfet__4_0.15$1$2_0/a_113_280#" "nfet__4_0.15$3_0/a_503_280#"
+merge "nfet__4_0.15$3_0/a_503_280#" "nfet__4_0.15$1$1_0/a_503_280#"
+merge "nfet__4_0.15$1$1_0/a_503_280#" "nfet__4_0.15$1$1_0/a_373_280#"
+merge "nfet__4_0.15$1$1_0/a_373_280#" "nfet__4_0.15$1$1_0/a_243_280#"
+merge "nfet__4_0.15$1$1_0/a_243_280#" "nfet__4_0.15$1$1_0/a_113_280#"
+merge "nfet__4_0.15$1$1_0/a_113_280#" "nfet__4_0.15$3_0/a_373_280#"
+merge "nfet__4_0.15$3_0/a_373_280#" "nfet__4_0.15$3_0/a_243_280#"
+merge "nfet__4_0.15$3_0/a_243_280#" "nfet__4_0.15$3_0/a_113_280#"
+merge "nfet__4_0.15$3_0/a_113_280#" "nfet__4_0.15$2_0/a_503_280#"
+merge "nfet__4_0.15$2_0/a_503_280#" "nfet__4_0.15$2_0/a_373_280#"
+merge "nfet__4_0.15$2_0/a_373_280#" "nfet__4_0.15$2_0/a_243_280#"
+merge "nfet__4_0.15$2_0/a_243_280#" "nfet__4_0.15$2_0/a_113_280#"
+merge "nfet__4_0.15$2_0/a_113_280#" "nfet__4_0.15$1_0/a_503_280#"
+merge "nfet__4_0.15$1_0/a_503_280#" "nfet__4_0.15$1_0/a_373_280#"
+merge "nfet__4_0.15$1_0/a_373_280#" "nfet__4_0.15$1_0/a_243_280#"
+merge "nfet__4_0.15$1_0/a_243_280#" "nfet__4_0.15$1_0/a_113_280#"
+merge "nfet__4_0.15$1_0/a_113_280#" "nfet__4_0.15_0/a_503_280#"
+merge "nfet__4_0.15_0/a_503_280#" "nfet__4_0.15_0/a_373_280#"
+merge "nfet__4_0.15_0/a_373_280#" "nfet__4_0.15_0/a_243_280#"
+merge "nfet__4_0.15_0/a_243_280#" "nfet__4_0.15_0/a_113_280#"
+merge "nfet__4_0.15_0/a_113_280#" "m1_574_472#"
+merge "vias_gen_4/m1_0_0#" "res_poly_0/a_n573_2586#" -5529.97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -940800 -6160 -940800 -6160 0 0 0 0 0 0 0 0
+merge "res_poly_0/a_n573_2586#" "vias_gen_3/m1_0_0#"
+merge "vias_gen_3/m1_0_0#" "m2_5735_3306#"
+merge "m2_5735_3306#" "res_poly_3/a_n573_2586#"
+merge "res_poly_3/a_n573_n3022#" "res_poly_1/a_n573_n3022#" -1476.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1684 0 0 0 0 0 0 0 0 0 0
+merge "res_poly_1/a_n573_n3022#" "HIN"
+merge "res_poly_1/a_n573_2586#" "vias_gen_5/m1_0_0#" -5534.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -940800 -6160 -940800 -6160 0 0 0 0 0 0 0 0
+merge "vias_gen_5/m1_0_0#" "res_poly_2/a_n573_2586#"
+merge "res_poly_2/a_n573_2586#" "vias_gen_0/m1_0_0#"
+merge "vias_gen_0/m1_0_0#" "m2_5735_774#"

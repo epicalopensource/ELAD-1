@@ -1,0 +1,171 @@
+scale 1000 1 500000
+rnode "VGND.n0" 0 1.10467 200 42 0
+rnode "VGND.n1" 0 0.69553 200 42 0
+rnode "VGND.n2" 0 1.32396 128 42 0
+rnode "VGND.n3" 0 0.69553 42 229 0
+rnode "VGND.n4" 0 0.69553 42 229 0
+rnode "VGND.n5" 0 10.325 128 42 0
+rnode "VGND.n6" 0 1.32396 128 416 0
+rnode "VGND.n7" 0 0.69553 200 416 0
+rnode "VGND.n8" 0 0.941012 344 416 0
+rnode "VGND.n9" 0 0.69553 344 416 0
+rnode "VGND.n10" 0 0.69553 344 416 0
+rnode "VGND.n11" 0 0.69553 200 416 0
+rnode "VGND.n12" 0 9.41012 344 42 0
+rnode "VGND.n13" 0 9.41012 200 42 0
+rnode "VGND.n14" 0 0.69553 344 42 0
+rnode "VGND.n15" 0 0.69553 200 42 0
+rnode "VGND.n16" 0 0.69553 344 42 0
+rnode "VGND.n17" 0 1.69424 488 42 0
+rnode "VGND.n18" 0 1.32396 488 42 0
+rnode "VGND.n19" 0 1.32396 488 42 0
+rnode "VGND.n20" 0 10.325 488 42 0
+rnode "VGND.n21" 0 1.32396 488 416 0
+rnode "VGND.n22" 0 1.32396 488 416 0
+rnode "VGND.n23" 0 1.0433 574 229 0
+rnode "VGND.n24" 0 1.31325 574 301 0
+rnode "VGND.n25" 0 0.69553 574 229 0
+rnode "VGND.n26" 0 0 574 157 0
+rnode "VGND.n27" 0 11.2399 574 157 0
+rnode "VGND.n28" 0 1.31325 574 157 0
+rnode "VGND.n29" 0 1.96724 574 157 0
+rnode "VGND.n30" 0 1.31325 574 157 0
+rnode "VGND.n31" 0 0.69553 574 229 0
+rnode "VGND.n32" 0 1.31325 574 301 0
+rnode "VGND.n33" 0 1.93421 574 301 0
+rnode "VGND.n34" 0 1.85455 488 416 0
+rnode "VGND.n35" 0 0.941012 416 416 0
+rnode "VGND.n36" 0 0.69553 416 416 0
+rnode "VGND.n37" 0 0.69553 416 416 0
+rnode "VGND.n38" 0 9.41012 416 42 0
+rnode "VGND.n39" 0 0.69553 416 42 0
+rnode "VGND.n40" 0 0.695631 416 42 0
+rnode "VGND.n41" 0 6.15682 409 43 0
+rnode "VGND.n42" 0 1.05097 344 42 0
+rnode "VGND.n43" 0 1.10467 272 42 0
+rnode "VGND.n44" 0 0.69553 272 42 0
+rnode "VGND.n45" 0 0.69553 272 42 0
+rnode "VGND.n46" 0 9.41012 272 42 0
+rnode "VGND.n47" 0 0.69553 272 416 0
+rnode "VGND.n48" 0 0.69553 272 416 0
+rnode "VGND.n49" 0 3.41022 272 416 0
+rnode "VGND.n50" 0 0.251044 200 416 0
+rnode "VGND.n51" 0 1.3614 128 416 0
+rnode "VGND.n52" 0 1.31325 42 301 0
+rnode "VGND.n53" 0 1.31325 42 301 0
+rnode "VGND.n54" 0 0 42 301 0
+rnode "VGND.n55" 0 11.2399 42 157 0
+rnode "VGND.n56" 0 1.31325 42 157 0
+rnode "VGND.n57" 0 1.31325 42 157 0
+rnode "VGND.n58" 0 1.32396 128 42 0
+rnode "VGND.n59" 0 1.53426 128 42 0
+rnode "VGND" 0 0.981925 0 43 0
+resist "VGND.n41" "VGND.n17" 0.0486111
+resist "VGND.n42" "VGND.n41" 0.150463
+resist "VGND.n43" "VGND.n42" 0.166667
+resist "VGND.n43" "VGND.n0" 0.166667
+resist "VGND.n59" "VGND.n0" 0.166667
+resist "VGND.n33" "VGND.n23" 0.176471
+resist "VGND.n29" "VGND.n23" 0.176471
+resist "VGND.n35" "VGND.n34" 0.195652
+resist "VGND.n35" "VGND.n8" 0.195652
+resist "VGND.n49" "VGND.n8" 0.195652
+resist "VGND" "VGND.n59" 0.296296
+resist "VGND.n29" "VGND.n17" 0.412309
+resist "VGND.n34" "VGND.n33" 0.447624
+resist "VGND.n50" "VGND.n49" 2.12004
+resist "VGND.n50" "VGND.n7" 5.49236
+resist "VGND.n51" "VGND.n50" 5.60789
+resist "VGND.n30" "VGND.n29" 9.3
+resist "VGND.n31" "VGND.n23" 9.3
+resist "VGND.n33" "VGND.n32" 9.3
+resist "VGND.n34" "VGND.n22" 9.3
+resist "VGND.n36" "VGND.n35" 9.3
+resist "VGND.n9" "VGND.n8" 9.3
+resist "VGND.n49" "VGND.n48" 9.3
+resist "VGND.n18" "VGND.n17" 9.3
+resist "VGND.n59" "VGND.n58" 9.3
+resist "VGND.n1" "VGND.n0" 9.3
+resist "VGND.n44" "VGND.n43" 9.3
+resist "VGND.n42" "VGND.n16" 9.3
+resist "VGND.n41" "VGND.n40" 9.30216
+resist "VGND.n32" "VGND.n31" 27.1059
+resist "VGND.n31" "VGND.n30" 27.1059
+resist "VGND.n36" "VGND.n22" 27.1059
+resist "VGND.n36" "VGND.n9" 27.1059
+resist "VGND.n48" "VGND.n9" 27.1059
+resist "VGND.n48" "VGND.n7" 27.1059
+resist "VGND.n52" "VGND.n3" 27.1059
+resist "VGND.n57" "VGND.n3" 27.1059
+resist "VGND.n40" "VGND.n18" 27.1059
+resist "VGND.n40" "VGND.n16" 27.1059
+resist "VGND.n44" "VGND.n16" 27.1059
+resist "VGND.n44" "VGND.n1" 27.1059
+resist "VGND.n58" "VGND.n1" 27.1059
+resist "VGND.n32" "VGND.n22" 69.2706
+resist "VGND.n30" "VGND.n18" 69.2706
+resist "VGND.n52" "VGND.n51" 69.2706
+resist "VGND.n58" "VGND.n57" 69.2706
+resist "VGND.n54" "VGND.n53" 153.763
+resist "VGND.n26" "VGND.n24" 153.763
+resist "VGND.n26" "VGND.n25" 153.763
+resist "VGND.n54" "VGND.n4" 153.763
+resist "VGND.n27" "VGND.n26" 215.619
+resist "VGND.n55" "VGND.n54" 215.619
+resist "VGND.n37" "VGND.n21" 417.176
+resist "VGND.n37" "VGND.n10" 417.176
+resist "VGND.n47" "VGND.n10" 417.176
+resist "VGND.n47" "VGND.n11" 417.176
+resist "VGND.n11" "VGND.n6" 417.176
+resist "VGND.n56" "VGND.n4" 417.176
+resist "VGND.n39" "VGND.n19" 417.176
+resist "VGND.n39" "VGND.n14" 417.176
+resist "VGND.n45" "VGND.n14" 417.176
+resist "VGND.n45" "VGND.n15" 417.176
+resist "VGND.n15" "VGND.n2" 417.176
+resist "VGND.n28" "VGND.n25" 417.176
+resist "VGND.n30" "VGND.n28" 585
+resist "VGND.n28" "VGND.n27" 585
+resist "VGND.n31" "VGND.n25" 585
+resist "VGND.n32" "VGND.n24" 585
+resist "VGND.n22" "VGND.n21" 585
+resist "VGND.n21" "VGND.n20" 585
+resist "VGND.n37" "VGND.n36" 585
+resist "VGND.n38" "VGND.n37" 585
+resist "VGND.n10" "VGND.n9" 585
+resist "VGND.n12" "VGND.n10" 585
+resist "VGND.n48" "VGND.n47" 585
+resist "VGND.n47" "VGND.n46" 585
+resist "VGND.n11" "VGND.n7" 585
+resist "VGND.n13" "VGND.n11" 585
+resist "VGND.n51" "VGND.n6" 585
+resist "VGND.n6" "VGND.n5" 585
+resist "VGND.n53" "VGND.n52" 585
+resist "VGND.n4" "VGND.n3" 585
+resist "VGND.n57" "VGND.n56" 585
+resist "VGND.n56" "VGND.n55" 585
+resist "VGND.n58" "VGND.n2" 585
+resist "VGND.n5" "VGND.n2" 585
+resist "VGND.n15" "VGND.n1" 585
+resist "VGND.n15" "VGND.n13" 585
+resist "VGND.n45" "VGND.n44" 585
+resist "VGND.n46" "VGND.n45" 585
+resist "VGND.n16" "VGND.n14" 585
+resist "VGND.n14" "VGND.n12" 585
+resist "VGND.n40" "VGND.n39" 585
+resist "VGND.n39" "VGND.n38" 585
+resist "VGND.n19" "VGND.n18" 585
+resist "VGND.n20" "VGND.n19" 585
+resist "VGND.n38" "VGND.n20" 688.696
+resist "VGND.n38" "VGND.n12" 688.696
+resist "VGND.n46" "VGND.n12" 688.696
+resist "VGND.n46" "VGND.n13" 688.696
+resist "VGND.n13" "VGND.n5" 688.696
+resist "VGND.n27" "VGND.n20" 822.609
+resist "VGND.n55" "VGND.n5" 822.609
+resist "VGND.n24" "VGND.n21" 1066.12
+resist "VGND.n53" "VGND.n6" 1066.12
+resist "VGND.n56" "VGND.n2" 1066.12
+resist "VGND.n28" "VGND.n19" 1066.12
+rnode "CLR" 0 145.506 0 313 0
+rnode "NODE" 0 76.8821 0 195 0

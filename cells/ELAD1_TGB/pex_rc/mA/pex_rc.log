@@ -1,0 +1,38 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "run.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "vias_gen$2".
+Reading "vias_gen".
+Reading "nfet".
+Reading "pfet".
+Reading "vias_gen$1".
+Reading "ELAD1_TGB".
+Extracting ELAD1_TGB_flat into ELAD1_TGB_flat.ext:
+Processing ELAD1_TGB_flat
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting A
+Extracting B
+Total Nets: 6
+Nets extracted: 2 (0.333333)
+Nets output: 2 (0.333333)
+exttospice finished.

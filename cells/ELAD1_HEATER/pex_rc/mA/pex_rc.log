@@ -1,0 +1,55 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "run.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "guard_ring_gen".
+Reading "vias_gen$3".
+Reading "vias_gen$6".
+Reading "guard_ring".
+Reading "vias_gen$2".
+Reading "vias_gen$5".
+Reading "vias_gen$1".
+Reading "vias_gen".
+Reading "nfet__4_0.15$1$1$1$1".
+Reading "nfet__4_0.15$2$1$1".
+Reading "nfet__4_0.15$1$1$1".
+Reading "nfet__4_0.15$2$1".
+Reading "nfet__4_0.15$1$2".
+Reading "nfet__4_0.15$3".
+Reading "nfet__4_0.15$1$1".
+Reading "nfet__4_0.15$2".
+Reading "nfet__4_0.15$1".
+Reading "nfet__4_0.15".
+Reading "res_poly".
+Reading "nfet__4_0.15$4$1".
+Reading "nfet__4_0.15$4".
+Reading "ELAD1_HEATER".
+Extracting ELAD1_HEATER_flat into ELAD1_HEATER_flat.ext:
+Processing ELAD1_HEATER_flat
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting VGND
+Extracting HEN
+Extracting HIN
+Total Nets: 10
+Nets extracted: 3 (0.300000)
+Nets output: 3 (0.300000)
+exttospice finished.

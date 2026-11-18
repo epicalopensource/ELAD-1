@@ -1,0 +1,70 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "run.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nfet$1".
+Reading "vias_gen$5$1".
+Reading "vias_gen$2$1".
+Reading "vias_gen$3$1".
+Reading "vias_gen$1".
+Reading "vias_gen$4".
+Reading "pfet".
+Reading "vias_gen$8".
+Reading "vias_gen$6".
+Reading "nfet".
+Reading "vias_gen$2".
+Reading "vias_gen$3".
+Reading "vias_gen".
+Reading "ELAD1_TGA".
+Reading "pfet$1".
+Reading "nfet$1$1".
+Reading "vias_gen$4$1".
+Reading "vias_gen$1$1".
+Reading "vias_gen$3$1$1".
+Reading "vias_gen$2$1$1".
+Reading "vias_gen$5$1$1".
+Reading "nfet$2".
+Reading "vias_gen$5".
+Reading "vias_gen$2$2".
+Reading "vias_gen$3$2".
+Reading "vias_gen$1$2".
+Reading "vias_gen$7".
+Reading "pfet$2".
+Reading "elad1_tga_new".
+Reading "elad1_tga".
+Reading "ELAD1_TSW".
+Reading "ELAD1_TGA$1".
+Reading "ELAD1_TGA$2".
+Extracting ELAD1_TSW_flat into ELAD1_TSW_flat.ext:
+Processing ELAD1_TSW_flat
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting ELAD1_TGA_0.B
+Extracting VGND
+Extracting VDPWR
+Extracting ENB
+Extracting A
+Extracting B
+Extracting EN
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+exttospice finished.

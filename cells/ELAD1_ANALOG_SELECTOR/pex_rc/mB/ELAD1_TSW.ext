@@ -1,0 +1,160 @@
+timestamp 1623509501
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use vias_gen$33 vias_gen$33_1 1 0 771 0 1 1164
+use ELAD1_TGA ELAD1_TGA_1 1 0 111 0 1 0
+use nfet$5 nfet$5_0 1 0 1215 0 1 269
+use vias_gen$6$7 vias_gen$6$7_0 1 0 982 0 1 505
+use vias_gen$2$13 vias_gen$2$13_0 1 0 1634 0 1 936
+use vias_gen$33 vias_gen$33_2 1 0 1499 0 1 1164
+use vias_gen$33 vias_gen$33_0 0 1 1313 -1 0 432
+use ELAD1_TGA ELAD1_TGA_0 1 0 1401 0 1 0
+use vias_gen$6$7 vias_gen$6$7_1 1 0 1540 0 1 505
+use vias_gen$8 vias_gen$8_1 1 0 1258 0 1 1389
+use vias_gen$8 vias_gen$8_0 1 0 1259 0 1 524
+node "EN" 0 0 125 542 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ENB" 0 0 125 1412 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 0 0 125 1105 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m3_983_505#" 0 177.481 983 505 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41646 1394 0 0 0 0 0 0
+node "B" 1 451.364 125 936 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 109494 3450 0 0 0 0 0 0
+node "m2_1313_300#" 2 223.501 1313 300 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35152 1456 0 0 0 0 0 0 0 0
+node "m2_1264_525#" 2 254.957 1264 525 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47320 1924 0 0 0 0 0 0 0 0
+node "m1_772_1164#" 2 186.196 772 1164 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45032 1836 0 0 0 0 0 0 0 0 0 0
+node "m1_1165_1389#" 1 4.66162 1165 1389 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11500 592 0 0 0 0 0 0 0 0 0 0
+node "VDPWR" 2 835.158 0 2160 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 516000 5560 0 0 0 0 0 0 0 0 0 0
+node "VGND" 128 1495.48 1201 141 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3468 408 521106 5782 0 0 0 0 0 0 0 0 0 0
+node "w_0_1228#" 2343 8096.04 0 1228 nw 0 0 0 0 2698680 7252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VDPWR" "w_0_1228#" 578.371
+cap "VGND" "m1_772_1164#" 18.9611
+cap "VGND" "m1_1165_1389#" 0.0295186
+cap "B" "m3_983_505#" 52.4652
+cap "m2_1264_525#" "w_0_1228#" 64.4456
+cap "m2_1313_300#" "w_0_1228#" 7.89286
+cap "m1_772_1164#" "B" 28.7959
+cap "m1_1165_1389#" "B" 1.82826
+cap "VGND" "w_0_1228#" 28.326
+cap "VDPWR" "m2_1264_525#" 0.245171
+cap "VDPWR" "m2_1313_300#" 0.0820633
+cap "B" "w_0_1228#" 146.423
+cap "m1_772_1164#" "m3_983_505#" 1.85152
+cap "m2_1264_525#" "m2_1313_300#" 40.3027
+cap "VGND" "m2_1264_525#" 3.26506
+cap "m1_772_1164#" "m1_1165_1389#" 24.6637
+cap "VGND" "m2_1313_300#" 17.9743
+cap "VDPWR" "B" 10.9709
+cap "m2_1264_525#" "B" 63.2382
+cap "B" "m2_1313_300#" 8.78371
+cap "m1_772_1164#" "w_0_1228#" 104.024
+cap "m1_1165_1389#" "w_0_1228#" 69.8066
+cap "VGND" "B" 17.4932
+cap "m2_1264_525#" "m3_983_505#" 34.3069
+cap "m1_772_1164#" "VDPWR" 13.6338
+cap "m2_1313_300#" "m3_983_505#" 64.2196
+cap "VDPWR" "m1_1165_1389#" 7.09677
+cap "m1_772_1164#" "m2_1264_525#" 60.5899
+cap "VGND" "m3_983_505#" 33.123
+cap "m2_1264_525#" "m1_1165_1389#" 35.432
+cap "m1_772_1164#" "m2_1313_300#" 1.77826
+cap "m1_1165_1389#" "m2_1313_300#" 0.0759739
+cap "ELAD1_TGA_0/VDPWR" "ELAD1_TGA_0/VGND" -0.642644
+cap "ELAD1_TGA_0/VDPWR" "ELAD1_TGA_0/A" -17.4978
+cap "ELAD1_TGA_0/VDPWR" "ELAD1_TGA_1/A" -16.4586
+cap "vias_gen$6$7_1/m1_0_0#" "ELAD1_TGA_0/VDPWR" 0.00607286
+cap "ELAD1_TGA_0/B" "ELAD1_TGA_0/VDPWR" -46.3618
+cap "ELAD1_TGA_0/VDPWR" "vias_gen$8_0/m1_0_0#" -24.8861
+cap "ELAD1_TGA_0/VGND" "ELAD1_TGA_1/A" 4.02859
+cap "ELAD1_TGA_0/VGND" "ELAD1_TGA_0/A" 45.2162
+cap "vias_gen$6$7_1/m1_0_0#" "ELAD1_TGA_0/VGND" 55.9377
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_1/A" 167.208
+cap "vias_gen$6$7_1/m1_0_0#" "ELAD1_TGA_1/A" 12.7322
+cap "vias_gen$6$7_1/m1_0_0#" "ELAD1_TGA_0/A" 14.0796
+cap "ELAD1_TGA_0/B" "ELAD1_TGA_0/VGND" 8.73925
+cap "ELAD1_TGA_0/B" "ELAD1_TGA_1/A" 194.727
+cap "ELAD1_TGA_0/B" "ELAD1_TGA_0/A" 199.96
+cap "vias_gen$6$7_1/m1_0_0#" "ELAD1_TGA_0/B" 13.8288
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_0/VGND" 26.2466
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_1/A" 29.0397
+cap "vias_gen$6$7_1/m1_0_0#" "vias_gen$8_0/m1_0_0#" 41.4
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_0/A" 92.3493
+cap "ELAD1_TGA_0/B" "vias_gen$8_0/m1_0_0#" 40.0974
+cap "ELAD1_TGA_0/VDPWR" "vias_gen$6$7_1/m1_0_0#" 0.000768992
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_1/A" 0.0106186
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_0/VDPWR" -20.889
+cap "vias_gen$6$7_1/m1_0_0#" "ELAD1_TGA_0/B" 17.0037
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_0/VGND" 0.815594
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_0/B" 121.881
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_1/A" 4.50507
+cap "ELAD1_TGA_0/VGND" "vias_gen$6$7_1/m1_0_0#" 45.5045
+cap "ELAD1_TGA_0/VDPWR" "ELAD1_TGA_0/B" -16.9698
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_0/VGND" 17.9684
+cap "vias_gen$8_0/m1_0_0#" "vias_gen$6$7_1/m1_0_0#" 5.98091
+cap "ELAD1_TGA_0/A" "vias_gen$8_0/m1_0_0#" 33.2879
+cap "ELAD1_TGA_1/A" "ELAD1_TGA_0/B" 0.00741951
+cap "ELAD1_TGA_0/VDPWR" "ELAD1_TGA_0/VGND" -10.3145
+cap "ELAD1_TGA_0/VGND" "ELAD1_TGA_0/B" 6.68822
+cap "ELAD1_TGA_0/VDPWR" "vias_gen$8_0/m1_0_0#" 0.927769
+cap "ELAD1_TGA_0/A" "vias_gen$6$7_1/m1_0_0#" 65.5241
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_0/B" 13.0582
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_0/B" 0.00693295
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_1/A" 22.583
+cap "ELAD1_TGA_0/VDPWR" "ELAD1_TGA_0/B" -0.69933
+cap "ELAD1_TGA_0/VDPWR" "ELAD1_TGA_1/A" 115.491
+cap "ELAD1_TGA_0/A" "vias_gen$8_0/m1_0_0#" 1.67435
+cap "ELAD1_TGA_0/VDPWR" "vias_gen$8_0/m1_0_0#" 0.111262
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_0/VDPWR" -4.34909
+cap "ELAD1_TGA_1/A" "ELAD1_TGA_0/B" 0.0204751
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_0/B" 0.0210953
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_1/A" 3.92139
+cap "ELAD1_TGA_1/A" "vias_gen$8_0/m1_0_0#" 0.0551417
+cap "ELAD1_TGA_0/B" "ELAD1_TGA_0/VDPWR" -0.157809
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_0/VDPWR" 112.801
+cap "ELAD1_TGA_0/A" "vias_gen$8_0/m1_0_0#" 2.32167
+cap "vias_gen$6$7_1/m1_0_0#" "ELAD1_TGA_0/A" -0.00253452
+cap "ELAD1_TGA_0/A" "ELAD1_TGA_1/A" 22.5248
+cap "ELAD1_TGA_0/VGND" "ELAD1_TGA_0/A" -0.0104496
+cap "vias_gen$8_0/m1_0_0#" "ELAD1_TGA_0/VDPWR" 3.88943
+cap "ELAD1_TGA_0/B" "ELAD1_TGA_0/A" 0.0626545
+merge "vias_gen$8_0/VSUBS" "vias_gen$8_1/VSUBS" -1788.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3468 -408 -427522 -5178 0 0 0 0 0 0 0 0 0 0
+merge "vias_gen$8_1/VSUBS" "vias_gen$6$7_1/VSUBS"
+merge "vias_gen$6$7_1/VSUBS" "ELAD1_TGA_0/VSUBS"
+merge "ELAD1_TGA_0/VSUBS" "ELAD1_TGA_0/VGND"
+merge "ELAD1_TGA_0/VGND" "vias_gen$33_0/VSUBS"
+merge "vias_gen$33_0/VSUBS" "vias_gen$33_2/VSUBS"
+merge "vias_gen$33_2/VSUBS" "vias_gen$2$13_0/VSUBS"
+merge "vias_gen$2$13_0/VSUBS" "vias_gen$6$7_0/VSUBS"
+merge "vias_gen$6$7_0/VSUBS" "nfet$5_0/a_0_0#"
+merge "nfet$5_0/a_0_0#" "ELAD1_TGA_1/VSUBS"
+merge "ELAD1_TGA_1/VSUBS" "vias_gen$33_1/VSUBS"
+merge "vias_gen$33_1/VSUBS" "VSUBS"
+merge "VSUBS" "nfet$5_0/a_n123_n128#"
+merge "nfet$5_0/a_n123_n128#" "ELAD1_TGA_1/VGND"
+merge "ELAD1_TGA_1/VGND" "VGND"
+merge "ELAD1_TGA_0/VDPWR" "ELAD1_TGA_1/VDPWR" -7906.57 0 0 0 0 -2234256 -8456 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -427200 -5072 0 0 0 0 0 0 0 0 0 0
+merge "ELAD1_TGA_1/VDPWR" "VDPWR"
+merge "VDPWR" "w_0_1228#"
+merge "ELAD1_TGA_1/A" "A" -359.009 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "vias_gen$8_0/m1_0_0#" "nfet$5_0/a_48_240#" -470.069 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6856 -670 -5044 -402 0 0 0 0 0 0 0 0
+merge "nfet$5_0/a_48_240#" "vias_gen$8_1/m1_0_0#"
+merge "vias_gen$8_1/m1_0_0#" "m2_1264_525#"
+merge "m2_1264_525#" "ELAD1_TGA_0/ENB"
+merge "ELAD1_TGA_0/ENB" "ELAD1_TGA_1/ENB"
+merge "ELAD1_TGA_1/ENB" "ENB"
+merge "ENB" "m1_1165_1389#"
+merge "ELAD1_TGA_0/A" "vias_gen$33_0/m1_0_0#" -1161.64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19644 -1088 -13988 -954 0 0 0 0 0 0 0 0
+merge "vias_gen$33_0/m1_0_0#" "m2_1313_300#"
+merge "m2_1313_300#" "nfet$5_0/a_90_0#"
+merge "nfet$5_0/a_90_0#" "vias_gen$33_2/m1_0_0#"
+merge "vias_gen$33_2/m1_0_0#" "ELAD1_TGA_1/B"
+merge "ELAD1_TGA_1/B" "vias_gen$33_1/m1_0_0#"
+merge "vias_gen$33_1/m1_0_0#" "m1_772_1164#"
+merge "vias_gen$6$7_1/m1_0_0#" "ELAD1_TGA_0/EN" -384.816 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6808 -480 0 0 -9702 -558 0 0 0 0 0 0
+merge "ELAD1_TGA_0/EN" "vias_gen$6$7_0/m1_0_0#"
+merge "vias_gen$6$7_0/m1_0_0#" "m3_983_505#"
+merge "m3_983_505#" "ELAD1_TGA_1/EN"
+merge "ELAD1_TGA_1/EN" "EN"
+merge "ELAD1_TGA_0/B" "vias_gen$2$13_0/m2_0_0#" -381.416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7054 -388 -9900 -432 0 0 0 0 0 0
+merge "vias_gen$2$13_0/m2_0_0#" "B"
