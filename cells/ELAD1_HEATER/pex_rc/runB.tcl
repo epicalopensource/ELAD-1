@@ -1,4 +1,4 @@
-gds read /foss/designs/ELAD-1/cells/ELAD1_HEATER/layout/backups/ELAD1_HEATER_backup_2026-11-11_14h32m45_545.gds
+gds read /foss/designs/ELAD-1/cells/ELAD1_HEATER/layout/ELAD1_HEATER.gds
 load ELAD1_HEATER
 select top cell
 port makeall

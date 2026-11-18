@@ -1,0 +1,18 @@
+gds read /foss/designs/ELAD-1/cells/ELAD1_INV/layout/ELAD1_INV.gds
+load ELAD1_INV
+select top cell
+port makeall
+extract do local
+extract all
+ext2sim labels on
+ext2sim
+extresist tolerance 0
+extresist threshold 0
+extresist mindelay 0
+extresist minres 0
+extresist all
+ext2spice cthresh 0
+ext2spice rthresh 0
+ext2spice extresist on
+ext2spice -o ELAD1_INV_rc.spice
+quit -noprompt

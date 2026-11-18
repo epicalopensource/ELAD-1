@@ -1,0 +1,10 @@
+* SPICE3 file created from ELAD1_INV.ext - technology: sky130A
+
+X0 Y A VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.3 pd=2.6 as=0.3 ps=2.6 w=1 l=0.15
+X1 Y A VGND VGND sky130_fd_pr__nfet_01v8 ad=0.195 pd=1.9 as=0.195 ps=1.9 w=0.65 l=0.15
+C0 Y A 0.46178f
+C1 VDPWR Y 0.21763f
+C2 VDPWR A 0.29766f
+C3 Y VGND 0.74113f
+C4 A VGND 0.69763f
+C5 VDPWR VGND 1.52813f **FLOATING

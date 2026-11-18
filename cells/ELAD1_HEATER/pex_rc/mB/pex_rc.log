@@ -20,8 +20,8 @@ Warning: Calma reading is not undoable!  I hope that's OK.
 Library written using GDS-II Release 6.0
 Library name: LIB
 Reading "$$$CONTEXT_INFO$$$".
-Reading "guard_ring_gen".
 Reading "vias_gen$3".
+Reading "guard_ring_gen".
 Reading "vias_gen$6".
 Reading "guard_ring".
 Reading "vias_gen$2".
@@ -60,10 +60,10 @@ Extracting nfet__4_0.15$1 into nfet__4_0.15$1.ext:
 Processing nfet__4_0.15$1
 Extracting nfet__4_0.15$2 into nfet__4_0.15$2.ext:
 Processing nfet__4_0.15$2
-Extracting nfet__4_0.15$3 into nfet__4_0.15$3.ext:
-Processing nfet__4_0.15$3
 Extracting nfet__4_0.15$1$1 into nfet__4_0.15$1$1.ext:
 Processing nfet__4_0.15$1$1
+Extracting nfet__4_0.15$3 into nfet__4_0.15$3.ext:
+Processing nfet__4_0.15$3
 Extracting nfet__4_0.15$1$2 into nfet__4_0.15$1$2.ext:
 Processing nfet__4_0.15$1$2
 Extracting nfet__4_0.15$2$1 into nfet__4_0.15$2$1.ext:
@@ -87,7 +87,7 @@ Note:  This option has been deprecated and is unused.
 Extracting HIN
 Extracting VGND
 Extracting HEN
-Total Nets: 64
-Nets extracted: 3 (0.046875)
-Nets output: 3 (0.046875)
+Total Nets: 63
+Nets extracted: 3 (0.047619)
+Nets output: 3 (0.047619)
 exttospice finished.
