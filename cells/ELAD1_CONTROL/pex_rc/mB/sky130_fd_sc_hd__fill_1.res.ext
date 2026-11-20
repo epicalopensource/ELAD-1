@@ -1,0 +1,5 @@
+scale 1000 1 500000
+rnode "VNB" 0 0 28 -11 0
+rnode "VPB" 0 34.4134 31 534 0
+rnode "VPWR" 0 32.4979 22 527 0
+rnode "VGND" 0 14.8425 22 -13 0

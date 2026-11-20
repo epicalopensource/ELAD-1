@@ -1,0 +1,17 @@
+scale 1000 1 500000
+rnode "VNB" 0 0 29 -17 0
+rnode "VPB" 0 249.693 29 527 0
+rnode "VPWR.t0" 0 76.8681 69 332 0
+rnode "VPWR" 0 238.757 29 527 0
+resist "VPWR" "VPWR.t0" 142.818
+rnode "HI.t0" 0 60.8587 69 232 0
+rnode "HI" 0 141.447 67 225 0
+resist "HI" "HI.t0" 144.478
+rnode "LO.t0" 0 93.2533 207 332 0
+rnode "LO" 0 215.472 194 289 0
+resist "LO" "LO.t0" 132.503
+rnode "VGND.t0" 0 48.0219 207 232 0
+rnode "VGND" 0 148.309 29 -17 0
+resist "VGND" "VGND.t0" 156.285
+device rsubckt sky130_fd_pr__res_generic_po 21 232 22 233  "None" "a_21_232#" 192 0 "VPWR.t0" 100 18336,574 "HI.t0" 100 20256,614
+device rsubckt sky130_fd_pr__res_generic_po 159 232 160 233  "None" "a_159_232#" 192 0 "LO.t0" 100 18336,574 "VGND.t0" 100 20256,614

@@ -1,0 +1,101 @@
+scale 1000 1 500000
+rnode "VNB.t0" 0 0 368 102 0
+rnode "VNB" 0 0 29 -17 0
+resist "VNB" "VNB.t0" 4827.18
+rnode "VPB.t0" 0 232.972 368 410 0
+rnode "VPB" 0 95.7388 29 527 0
+resist "VPB" "VPB.t0" 1003.27
+rnode "VGND.n0" 0 26.4493 138 0 0
+rnode "VGND.n1" 0 43.2855 138 0 0
+rnode "VGND.t2" 0 241.048 368 410 0
+rnode "VGND.n2" 0 35.2176 368 410 0
+rnode "VGND.n3" 0 114.404 310 258 0
+rnode "VGND.t0" 0 17.3383 657 102 0
+rnode "VGND.n4" 0 217.859 684 95 0
+rnode "VGND.n5" 0 113.623 230 0 0
+rnode "VGND.n6" 0 43.2855 230 0 0
+rnode "VGND.n7" 0 40.2249 211 258 0
+rnode "VGND.n8" 0 157.08 211 258 0
+rnode "VGND.n9" 0 43.4759 112 258 0
+rnode "VGND.t1" 0 15.3878 79 102 0
+rnode "VGND.n10" 0 59.4952 52 95 0
+rnode "VGND.n11" 0 16.4855 46 0 0
+rnode "VGND" 0 10.781 29 -17 0
+resist "VGND" "VGND.n11" 0.0221354
+resist "VGND.n5" "VGND.n0" 0.119792
+resist "VGND.n11" "VGND.n0" 0.119792
+resist "VGND.n5" "VGND.n4" 0.53261
+resist "VGND.n7" "VGND.n6" 0.832877
+resist "VGND.n9" "VGND.n1" 1.13973
+resist "VGND.n10" "VGND.n9" 2.63014
+resist "VGND.n7" "VGND.n1" 3.2
+resist "VGND.n6" "VGND.n3" 3.50685
+resist "VGND.n8" "VGND.n2" 4.85712
+resist "VGND.n4" "VGND.n3" 5.14376
+resist "VGND.n1" "VGND.n0" 9.3
+resist "VGND.n6" "VGND.n5" 9.3
+resist "VGND.n11" "VGND.n10" 9.56301
+resist "VGND.n2" "VGND.t2" 34.2968
+resist "VGND.n8" "VGND.n7" 152
+resist "VGND.n3" "VGND.n2" 190.398
+resist "VGND.n9" "VGND.n8" 200.692
+resist "VGND.n10" "VGND.t1" 214.455
+resist "VGND.n4" "VGND.t0" 219.517
+rnode "VPWR.n0" 0 23.0134 138 544 0
+rnode "VPWR.n1" 0 59.411 322 544 0
+rnode "VPWR.n2" 0 23.0134 506 544 0
+rnode "VPWR.n3" 0 47.7726 506 544 0
+rnode "VPWR.n4" 0 45.2817 624 222 0
+rnode "VPWR.t1" 0 19.4774 657 410 0
+rnode "VPWR.n5" 0 65.4883 684 366 0
+rnode "VPWR.n6" 0 46.439 598 544 0
+rnode "VPWR.n7" 0 47.7726 598 544 0
+rnode "VPWR.n8" 0 42.6707 521 222 0
+rnode "VPWR.n9" 0 103.394 521 222 0
+rnode "VPWR.t2" 0 146.813 368 102 0
+rnode "VPWR.n10" 0 31.505 368 102 0
+rnode "VPWR.n11" 0 50.5809 418 222 0
+rnode "VPWR.n12" 0 42.0023 414 544 0
+rnode "VPWR.n13" 0 23.0134 414 544 0
+rnode "VPWR.n14" 0 23.0134 322 544 0
+rnode "VPWR.n15" 0 23.0134 230 544 0
+rnode "VPWR.n16" 0 60.4102 230 544 0
+rnode "VPWR.n17" 0 58.4403 138 544 0
+rnode "VPWR.t0" 0 19.4774 79 410 0
+rnode "VPWR.n18" 0 56.1078 52 468 0
+rnode "VPWR.n19" 0 14.3475 46 544 0
+rnode "VPWR" 0 9.38047 29 527 0
+resist "VPWR" "VPWR.n19" 0.0221354
+resist "VPWR.n6" "VPWR.n2" 0.119792
+resist "VPWR.n13" "VPWR.n2" 0.119792
+resist "VPWR.n14" "VPWR.n13" 0.119792
+resist "VPWR.n15" "VPWR.n14" 0.119792
+resist "VPWR.n15" "VPWR.n0" 0.119792
+resist "VPWR.n19" "VPWR.n0" 0.119792
+resist "VPWR.n12" "VPWR.n11" 0.14382
+resist "VPWR.n8" "VPWR.n3" 0.539326
+resist "VPWR.n7" "VPWR.n4" 0.934832
+resist "VPWR.n5" "VPWR.n4" 2.1573
+resist "VPWR.n8" "VPWR.n7" 2.76854
+resist "VPWR.n11" "VPWR.n3" 3.16404
+resist "VPWR.n12" "VPWR.n1" 4.18334
+resist "VPWR.n18" "VPWR.n17" 4.36825
+resist "VPWR.n16" "VPWR.n1" 4.67302
+resist "VPWR.n17" "VPWR.n16" 4.67302
+resist "VPWR.n10" "VPWR.n9" 7.11816
+resist "VPWR.n7" "VPWR.n6" 9.3
+resist "VPWR.n3" "VPWR.n2" 9.3
+resist "VPWR.n13" "VPWR.n12" 9.3
+resist "VPWR.n14" "VPWR.n1" 9.3
+resist "VPWR.n16" "VPWR.n15" 9.3
+resist "VPWR.n17" "VPWR.n0" 9.3
+resist "VPWR.n19" "VPWR.n18" 9.60476
+resist "VPWR.n6" "VPWR.n5" 9.63552
+resist "VPWR.n10" "VPWR.t2" 50.5052
+resist "VPWR.n9" "VPWR.n8" 152
+resist "VPWR.n11" "VPWR.n10" 190.164
+resist "VPWR.n9" "VPWR.n4" 202.659
+resist "VPWR.n5" "VPWR.t1" 388.655
+resist "VPWR.n18" "VPWR.t0" 388.655
+device msubckt sky130_fd_pr__pfet_01v8_hvt 79 323 80 324  "VPB.t0" "VGND.t2" 1156 0 "VPWR.t0" 174 0 "VPWR.t1" 174 9048,452
+device msubckt sky130_fd_pr__nfet_01v8 79 47 80 48  "VNB.t0" "VPWR.t2" 1156 0 "VGND.t0" 110 0 "VGND.t1" 110 5720,324
