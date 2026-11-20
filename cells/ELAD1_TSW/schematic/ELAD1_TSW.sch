@@ -33,7 +33,7 @@ C {devices/iopin.sym} -160 -130 0 1 {name=p4 lab=ENB}
 C {devices/iopin.sym} -160 -190 0 1 {name=p5 lab=VDPWR}
 C {devices/iopin.sym} -160 290 0 1 {name=p6 lab=VGND}
 C {ELAD1_TGA.sym} 0 0 0 0 {name=}
-C {ELAD1_TGA.sym} 240 0 0 0 {name=}
+C {ELAD1_TGA.sym} 240 0 0 0 {name=x2}
 C {sky130_fd_pr/nfet_01v8.sym} 100 200 0 0 {name=MN1 model=nfet_01v8 W=1 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
 C {devices/lab_pin.sym} 120 0 0 1 {name=l7 sig_type=std_logic lab=M}
 C {devices/lab_pin.sym} 40 200 0 0 {name=l8 sig_type=std_logic lab=ENB}

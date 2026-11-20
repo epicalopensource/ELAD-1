@@ -1,0 +1,160 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "run.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nfet".
+Reading "vias_gen$5$4".
+Reading "vias_gen$2$11".
+Reading "vias_gen$3$4".
+Reading "vias_gen$1$2".
+Reading "vias_gen$30".
+Reading "pfet$2".
+Reading "ELAD1_TGA".
+Reading "vias_gen$1$1".
+Reading "pfet$1".
+Reading "nfet$3".
+Reading "vias_gen$6".
+Reading "vias_gen$2$2".
+Reading "nfet$2".
+Reading "vias_gen$8".
+Reading "vias_gen$2$13".
+Reading "vias_gen$25".
+Reading "vias_gen$2$9".
+Reading "nfet_1_0.65$1".
+Reading "pfet".
+Reading "vias_gen$4$1".
+Reading "vias_gen$33".
+Reading "nfet$5".
+Reading "vias_gen$6$7".
+Reading "ELAD1_INV".
+Reading "vias_gen".
+Reading "vias_gen$16".
+Reading "vias_gen$15".
+Reading "vias_gen$19".
+Reading "vias_gen$12".
+Reading "vias_gen$11".
+Reading "ELAD1_TGB".
+Reading "ELAD1_CLAMP".
+Reading "vias_gen$20".
+Reading "vias_gen$22".
+Reading "ELAD1_TSW".
+Reading "vias_gen$23".
+Reading "nfet$2$2".
+Reading "nfet$2$1$1".
+Reading "nfet$2$1".
+Reading "vias_gen$2$2$1$1".
+Reading "pfet$1$1$1".
+Reading "vias_gen$6$1$1".
+Reading "vias_gen$1$1$1$1".
+Reading "nfet$3$1$1".
+Reading "vias_gen$2$2$1".
+Reading "pfet$1$1".
+Reading "vias_gen$6$1".
+Reading "vias_gen$1$1$1".
+Reading "nfet$3$1".
+Reading "ELAD1_ANALOG_SELECTOR".
+Extracting vias_gen$4$1 into vias_gen$4$1.ext:
+Processing vias_gen$4$1
+Extracting pfet into pfet.ext:
+Processing pfet
+Extracting nfet_1_0.65$1 into nfet_1_0.65$1.ext:
+Processing nfet_1_0.65$1
+Extracting vias_gen$2$9 into vias_gen$2$9.ext:
+Processing vias_gen$2$9
+Extracting vias_gen$25 into vias_gen$25.ext:
+Processing vias_gen$25
+Extracting ELAD1_INV into ELAD1_INV.ext:
+Processing ELAD1_INV
+Extracting vias_gen$11 into vias_gen$11.ext:
+Processing vias_gen$11
+Extracting vias_gen$19 into vias_gen$19.ext:
+Processing vias_gen$19
+Extracting vias_gen$12 into vias_gen$12.ext:
+Processing vias_gen$12
+Extracting vias_gen$20 into vias_gen$20.ext:
+Processing vias_gen$20
+Extracting vias_gen$22 into vias_gen$22.ext:
+Processing vias_gen$22
+Extracting vias_gen$30 into vias_gen$30.ext:
+Processing vias_gen$30
+Extracting vias_gen$2$11 into vias_gen$2$11.ext:
+Processing vias_gen$2$11
+Extracting vias_gen$3$4 into vias_gen$3$4.ext:
+Processing vias_gen$3$4
+Extracting nfet into nfet.ext:
+Processing nfet
+Extracting vias_gen$5$4 into vias_gen$5$4.ext:
+Processing vias_gen$5$4
+Extracting vias_gen$1$2 into vias_gen$1$2.ext:
+Processing vias_gen$1$2
+Extracting pfet$2 into pfet$2.ext:
+Processing pfet$2
+Extracting ELAD1_TGA into ELAD1_TGA.ext:
+Processing ELAD1_TGA
+Extracting vias_gen$15 into vias_gen$15.ext:
+Processing vias_gen$15
+Extracting vias_gen$16 into vias_gen$16.ext:
+Processing vias_gen$16
+Extracting vias_gen$33 into vias_gen$33.ext:
+Processing vias_gen$33
+Extracting nfet$5 into nfet$5.ext:
+Processing nfet$5
+Extracting vias_gen$6$7 into vias_gen$6$7.ext:
+Processing vias_gen$6$7
+Extracting vias_gen$2$13 into vias_gen$2$13.ext:
+Processing vias_gen$2$13
+Extracting vias_gen$8 into vias_gen$8.ext:
+Processing vias_gen$8
+Extracting ELAD1_TSW into ELAD1_TSW.ext:
+Processing ELAD1_TSW
+Extracting nfet$2 into nfet$2.ext:
+Processing nfet$2
+Extracting ELAD1_CLAMP into ELAD1_CLAMP.ext:
+Processing ELAD1_CLAMP
+Extracting vias_gen$2$2 into vias_gen$2$2.ext:
+Processing vias_gen$2$2
+Extracting pfet$1 into pfet$1.ext:
+Processing pfet$1
+Extracting vias_gen$1$1 into vias_gen$1$1.ext:
+Processing vias_gen$1$1
+Extracting vias_gen$6 into vias_gen$6.ext:
+Processing vias_gen$6
+Extracting nfet$3 into nfet$3.ext:
+Processing nfet$3
+Extracting ELAD1_TGB into ELAD1_TGB.ext:
+Processing ELAD1_TGB
+Extracting vias_gen into vias_gen.ext:
+Processing vias_gen
+Extracting vias_gen$23 into vias_gen$23.ext:
+Processing vias_gen$23
+Extracting ELAD1_ANALOG_SELECTOR into ELAD1_ANALOG_SELECTOR.ext:
+Processing ELAD1_ANALOG_SELECTOR
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting EN_MC
+Extracting EN_MG
+Extracting EN_PG
+Extracting EN_PC
+Extracting EN_N
+Total Nets: 492
+Nets extracted: 5 (0.010163)
+Nets output: 5 (0.010163)
+exttospice finished.

@@ -1,0 +1,37 @@
+| units: 500000 tech: sky130A format: MIT
+x ENB A B VDPWR s=24000,920 d=24000,920 l=30 w=400 x=256 y=1246 sky130_fd_pr__pfet_01v8
+x EN A B VGND s=12000,520 d=12000,520 l=30 w=200 x=255 y=269 sky130_fd_pr__nfet_01v8
+R B 1933
+= B pfet_0/a_90_0#
+= B vias_gen$2_0/m1_0_0#
+= B vias_gen_0/m1_0_0#
+= B m2_290_304#
+= B vias_gen_2/m1_0_0#
+= B nfet_0/a_90_0#
+R A 1933
+= A pfet_0/a_0_0#
+= A vias_gen$2_1/m1_0_0#
+= A vias_gen_1/m1_0_0#
+= A m2_199_304#
+= A vias_gen_3/m1_0_0#
+= A nfet_0/a_0_0#
+R VDPWR 7470
+= VDPWR pfet_0/w_n196_n269#
+= VDPWR vias_gen$1_0/li_0_0#
+R EN 570
+= EN nfet_0/a_48_240#
+R VGND 10049
+= VGND pfet_0/VSUBS
+= VGND vias_gen$2_0/VSUBS
+= VGND vias_gen$2_1/VSUBS
+= VGND vias_gen$1_0/VSUBS
+= VGND vias_gen_0/VSUBS
+= VGND vias_gen_1/VSUBS
+= VGND vias_gen_2/VSUBS
+= VGND vias_gen_3/VSUBS
+= VGND vias_gen$1_1/VSUBS
+= VGND vias_gen$1_1/li_0_0#
+= VGND VSUBS
+= VGND nfet_0/a_n123_n128#
+R ENB 893
+= ENB pfet_0/a_48_n106#

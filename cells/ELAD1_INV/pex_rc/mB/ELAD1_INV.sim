@@ -1,0 +1,33 @@
+| units: 500000 tech: sky130A format: MIT
+x A VDPWR Y VDPWR s=12000,520 d=12000,520 l=30 w=200 x=244 y=1150 sky130_fd_pr__pfet_01v8
+x A VGND Y VGND s=7800,380 d=7800,380 l=30 w=130 x=246 y=269 sky130_fd_pr__nfet_01v8
+R Y 1037
+= Y pfet_0/a_90_0#
+= Y nfet_1_0.65_0/li_251_185#
+= Y nfet_1_0.65_0/a_238_153#
+= Y a_290_317#
+= Y vias_gen_2/m1_0_0#
+= Y vias_gen$2_0/m1_0_0#
+= Y vias_gen$4_0/m1_0_0#
+= Y m2_301_299#
+R A 1170
+= A pfet_0/a_48_n106#
+= A nfet_1_0.65_0/a_196_323#
+= A vias_gen_1/m1_0_0#
+= A vias_gen_0/m1_0_0#
+= A vias_gen$4_1/m1_0_0#
+= A m2_245_449#
+R VGND 9538
+= VGND pfet_0/VSUBS
+= VGND nfet_1_0.65_0/a_148_153#
+= VGND nfet_1_0.65_0/a_25_25#
+= VGND VSUBS
+= VGND vias_gen_2/VSUBS
+= VGND vias_gen$2_0/VSUBS
+= VGND vias_gen_1/VSUBS
+= VGND vias_gen_0/VSUBS
+= VGND vias_gen$4_1/VSUBS
+= VGND vias_gen$4_0/VSUBS
+R VDPWR 8308
+= VDPWR pfet_0/a_0_0#
+= VDPWR pfet_0/w_n184_n257#

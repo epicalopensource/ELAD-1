@@ -1,0 +1,74 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__res_high_po_5p73 l=l+32
+parameters sky130_fd_pr__res_high_po_2p85 l=l+32
+parameters sky130_fd_pr__res_high_po_1p41 l=l+32
+parameters sky130_fd_pr__res_high_po_0p69 l=l+32
+parameters sky130_fd_pr__res_high_po_0p35 l=l+32
+parameters sky130_fd_pr__res_high_po l=l+32 w=w
+port "HEN" 3 0 575 0 575 m3
+port "HIN" 2 0 3316 0 3316 m1
+port "VGND" 1 0 171 0 171 m1
+node "HEN" 27958 6774.68 0 575 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 478560 32000 0 0 89760 8000 240970 10522 6600 332 50820 1672 0 0 0 0 0 0
+node "a_554_844#" 1443 0 554 844 ppres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5927112 12636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5726_844#" 232 3839.33 5726 844 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1998624 12656 948092 6188 1007032 5626 0 0 0 0 0 0 0 0
+node "a_554_2110#" 1443 0 554 2110 ppres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5927112 12636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_554_3376#" 1443 0 554 3376 ppres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5927112 12636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "HIN" 231 3081.78 0 3316 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1998624 12656 1024392 5874 0 0 0 0 0 0 0 0 0 0
+node "a_5726_3376#" 232 3850.93 5726 3376 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1998624 12656 948092 6188 1007032 5626 0 0 0 0 0 0 0 0
+node "a_554_4642#" 1443 0 554 4642 ppres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5927112 12636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_118_844#" 11136 12437.4 118 844 xpc 0 0 0 0 0 0 0 0 400000 12000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2092464 19536 1094112 13870 2637950 31342 551900 11238 0 0 0 0 0 0
+substrate "VGND" 149159 0 0 171 m1 0 0 0 0 0 0 0 0 420000 12600 1385796 60160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1484328 67384 2552240 58226 422604 18438 0 0 0 0 0 0 0 0
+cap "a_118_844#" "HEN" 2344.1
+cap "a_118_844#" "HIN" 3875
+cap "HIN" "HEN" 0.0299405
+cap "a_5726_3376#" "a_5726_844#" 185.596
+device msubckt sky130_fd_pr__nfet_01v8 5666 302 5667 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 20000,600
+device msubckt sky130_fd_pr__nfet_01v8 5536 302 5537 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 5406 302 5407 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 5276 302 5277 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 5146 302 5147 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 5016 302 5017 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 4886 302 4887 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 4756 302 4757 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 4626 302 4627 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 4496 302 4497 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 4366 302 4367 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 4236 302 4237 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 4106 302 4107 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 3976 302 3977 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 3846 302 3847 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 3716 302 3717 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 3586 302 3587 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 3456 302 3457 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 3326 302 3327 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 3196 302 3197 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 3066 302 3067 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 2936 302 2937 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 2806 302 2807 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 2676 302 2677 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 2546 302 2547 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 2416 302 2417 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 2286 302 2287 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 2156 302 2157 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 2026 302 2027 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1896 302 1897 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1766 302 1767 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1636 302 1637 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1506 302 1507 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1376 302 1377 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1246 302 1247 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 1116 302 1117 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 986 302 987 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 856 302 857 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 10000,300 "a_118_844#" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 726 302 727 303 l=30 w=200 "VGND" "HEN" 60 0 "a_118_844#" 200 10000,300 "VGND" 200 10000,300
+device msubckt sky130_fd_pr__nfet_01v8 596 302 597 303 l=30 w=200 "VGND" "HEN" 60 0 "VGND" 200 20000,600 "a_118_844#" 200 10000,300
+device rsubckt sky130_fd_pr__res_high_po_5p73 554 844 555 845 l=5172 "VGND" "a_554_844#" 0 0 "a_118_844#" 1146 499656,3164 "a_5726_844#" 1146 499656,3164
+device rsubckt sky130_fd_pr__res_high_po_5p73 554 2110 555 2111 l=5172 "VGND" "a_554_2110#" 0 0 "HIN" 1146 499656,3164 "a_5726_844#" 1146 499656,3164
+device rsubckt sky130_fd_pr__res_high_po_5p73 554 3376 555 3377 l=5172 "VGND" "a_554_3376#" 0 0 "HIN" 1146 499656,3164 "a_5726_3376#" 1146 499656,3164
+device rsubckt sky130_fd_pr__res_high_po_5p73 554 4642 555 4643 l=5172 "VGND" "a_554_4642#" 0 0 "a_118_844#" 1146 499656,3164 "a_5726_3376#" 1146 499656,3164

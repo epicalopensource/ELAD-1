@@ -1,0 +1,9 @@
+| units: 500000 tech: sky130A format: MIT
+x ENB A B VDPWR s=24000,920 d=24000,920 l=30 w=400 x=256 y=1246 sky130_fd_pr__pfet_01v8
+x EN A B VGND s=12000,520 d=12000,520 l=30 w=200 x=255 y=269 sky130_fd_pr__nfet_01v8
+R EN 570
+R B 1933
+R A 1933
+R ENB 893
+R VDPWR 7469
+R VGND 10048

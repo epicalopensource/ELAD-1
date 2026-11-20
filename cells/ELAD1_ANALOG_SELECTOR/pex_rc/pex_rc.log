@@ -1,0 +1,119 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "run.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nfet".
+Reading "vias_gen$5$4".
+Reading "vias_gen$2$11".
+Reading "vias_gen$3$4".
+Reading "vias_gen$1$2".
+Reading "vias_gen$30".
+Reading "pfet$2".
+Reading "ELAD1_TGA".
+Reading "vias_gen$1$1".
+Reading "pfet$1".
+Reading "nfet$3".
+Reading "vias_gen$6".
+Reading "vias_gen$2$2".
+Reading "nfet$2".
+Reading "vias_gen$8".
+Reading "vias_gen$2$13".
+Reading "vias_gen$25".
+Reading "vias_gen$2$9".
+Reading "nfet_1_0.65$1".
+Reading "pfet".
+Reading "vias_gen$4$1".
+Reading "vias_gen$33".
+Reading "nfet$5".
+Reading "vias_gen$6$7".
+Reading "ELAD1_INV".
+Reading "vias_gen".
+Reading "vias_gen$16".
+Reading "vias_gen$15".
+Reading "vias_gen$19".
+Reading "vias_gen$12".
+Reading "vias_gen$11".
+Reading "ELAD1_TGB".
+Reading "ELAD1_CLAMP".
+Reading "vias_gen$20".
+Reading "vias_gen$22".
+Reading "ELAD1_TSW".
+Reading "vias_gen$23".
+Reading "nfet$2$2".
+Reading "nfet$2$1$1".
+Reading "nfet$2$1".
+Reading "vias_gen$2$2$1$1".
+Reading "pfet$1$1$1".
+Reading "vias_gen$6$1$1".
+Reading "vias_gen$1$1$1$1".
+Reading "nfet$3$1$1".
+Reading "vias_gen$2$2$1".
+Reading "pfet$1$1".
+Reading "vias_gen$6$1".
+Reading "vias_gen$1$1$1".
+Reading "nfet$3$1".
+Reading "ELAD1_ANALOG_SELECTOR".
+Extracting ELAD1_ANALOG_SELECTOR_flat into ELAD1_ANALOG_SELECTOR_flat.ext:
+Processing ELAD1_ANALOG_SELECTOR_flat
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting VGND
+Extracting VDPWR
+Extracting ELAD1_TSW_0.ENB
+Extracting ELAD1_INV_0.Y
+Extracting UA4
+Extracting OUT_G
+Extracting ELAD1_INV_1.Y
+Extracting OUT_C
+Extracting ELAD1_TGA_8.ENB
+Extracting D2_G
+Extracting ELAD1_TGA_1.ENB
+Extracting D2_C
+Extracting ELAD1_TSW_1.ELAD1_TGA_1.B
+Extracting OUT_B
+Extracting UA3
+Extracting D1_C
+Extracting UA0
+Extracting SUBI
+Extracting UA1
+Extracting VINP_G
+Extracting VINP_C
+Extracting VQUIET_A
+Extracting VQUIET_B
+Extracting UA2
+Extracting VINM_G
+Extracting VINM_C
+Extracting REF_G
+Extracting REF_C
+Extracting VBIAS_G
+Extracting VBIAS_C
+Extracting D1_G
+Extracting ELAD1_TSW_0.ELAD1_TGA_1.B
+Extracting OUT_A
+Extracting EN_N
+Extracting EN_PC
+Extracting EN_MG
+Extracting EN_MC
+Extracting EN_PG
+Total Nets: 43
+Nets extracted: 38 (0.883721)
+Nets output: 38 (0.883721)
+exttospice finished.

@@ -1,0 +1,180 @@
+scale 1000 1 500000
+rnode "VGND.n0" 0 0 200 42 0
+rnode "VGND.n1" 0 0 200 42 0
+rnode "VGND.n2" 0 0 128 42 0
+rnode "VGND.n3" 0 0 42 229 0
+rnode "VGND.n4" 0 0 42 229 0
+rnode "VGND.n5" 0 0 128 416 0
+rnode "VGND.n6" 0 0 128 416 0
+rnode "VGND.n7" 0 0 200 416 0
+rnode "VGND.n8" 0 0 344 416 0
+rnode "VGND.n9" 0 0 344 416 0
+rnode "VGND.n10" 0 0 344 416 0
+rnode "VGND.n11" 0 0 200 416 0
+rnode "VGND.t0" 0 0 308 195 0
+rnode "VGND.n12" 0 0 344 42 0
+rnode "VGND.n13" 0 0 344 42 0
+rnode "VGND.n14" 0 0 488 42 0
+rnode "VGND.t1" 0 0 408 195 0
+rnode "VGND.n15" 0 0 488 42 0
+rnode "VGND.n16" 0 0 488 42 0
+rnode "VGND.n17" 0 0 488 416 0
+rnode "VGND.n18" 0 0 344 416 0
+rnode "VGND.n19" 0 0 488 416 0
+rnode "VGND.n20" 0 0 488 416 0
+rnode "VGND.n21" 0 0 574 229 0
+rnode "VGND.n22" 0 0 574 301 0
+rnode "VGND.n23" 0 0 574 229 0
+rnode "VGND.n24" 0 0 574 157 0
+rnode "VGND.n25" 0 0 574 157 0
+rnode "VGND.n26" 0 0 574 157 0
+rnode "VGND.n27" 0 0 574 157 0
+rnode "VGND.n28" 0 0 574 157 0
+rnode "VGND.n29" 0 0 574 229 0
+rnode "VGND.n30" 0 0 574 301 0
+rnode "VGND.n31" 0 0 574 301 0
+rnode "VGND.n32" 0 0 488 416 0
+rnode "VGND.n33" 0 0 416 416 0
+rnode "VGND.n34" 0 0 416 416 0
+rnode "VGND.n35" 0 0 416 416 0
+rnode "VGND.n36" 0 0 416 416 0
+rnode "VGND.n37" 0 0 416 42 0
+rnode "VGND.n38" 0 0 416 42 0
+rnode "VGND.n39" 0 0 409 43 0
+rnode "VGND.n40" 0 0 344 42 0
+rnode "VGND.n41" 0 0 272 42 0
+rnode "VGND.n42" 0 0 272 42 0
+rnode "VGND.n43" 0 0 272 42 0
+rnode "VGND.n44" 0 0 200 42 0
+rnode "VGND.n45" 0 0 200 416 0
+rnode "VGND.n46" 0 0 272 416 0
+rnode "VGND.n47" 0 0 272 416 0
+rnode "VGND.n48" 0 0 272 416 0
+rnode "VGND.n49" 0 0 272 416 0
+rnode "VGND.n50" 0 0 200 416 0
+rnode "VGND.n51" 0 0 128 416 0
+rnode "VGND.n52" 0 0 42 301 0
+rnode "VGND.n53" 0 0 42 301 0
+rnode "VGND.n54" 0 0 42 301 0
+rnode "VGND.n55" 0 0 42 301 0
+rnode "VGND.n56" 0 0 42 157 0
+rnode "VGND.n57" 0 0 42 157 0
+rnode "VGND.n58" 0 0 128 42 0
+rnode "VGND.n59" 0 0 128 42 0
+rnode "VGND" 0 0 0 43 0
+resist "VGND.n39" "VGND.n14" 0.0486111
+resist "VGND.n40" "VGND.n39" 0.150463
+resist "VGND.n41" "VGND.n40" 0.166667
+resist "VGND.n41" "VGND.n0" 0.166667
+resist "VGND.n59" "VGND.n0" 0.166667
+resist "VGND.n31" "VGND.n21" 0.176471
+resist "VGND.n27" "VGND.n21" 0.176471
+resist "VGND.n33" "VGND.n32" 0.195652
+resist "VGND.n33" "VGND.n8" 0.195652
+resist "VGND.n49" "VGND.n8" 0.195652
+resist "VGND" "VGND.n59" 0.296296
+resist "VGND.n27" "VGND.n14" 0.412309
+resist "VGND.n32" "VGND.n31" 0.447624
+resist "VGND.n50" "VGND.n49" 2.12004
+resist "VGND.n50" "VGND.n7" 5.49236
+resist "VGND.n51" "VGND.n50" 5.60789
+resist "VGND.n28" "VGND.n27" 9.3
+resist "VGND.n29" "VGND.n21" 9.3
+resist "VGND.n31" "VGND.n30" 9.3
+resist "VGND.n32" "VGND.n20" 9.3
+resist "VGND.n34" "VGND.n33" 9.3
+resist "VGND.n9" "VGND.n8" 9.3
+resist "VGND.n49" "VGND.n48" 9.3
+resist "VGND.n15" "VGND.n14" 9.3
+resist "VGND.n59" "VGND.n58" 9.3
+resist "VGND.n1" "VGND.n0" 9.3
+resist "VGND.n42" "VGND.n41" 9.3
+resist "VGND.n40" "VGND.n13" 9.3
+resist "VGND.n39" "VGND.n38" 9.30216
+resist "VGND.n30" "VGND.n29" 27.1059
+resist "VGND.n29" "VGND.n28" 27.1059
+resist "VGND.n34" "VGND.n20" 27.1059
+resist "VGND.n34" "VGND.n9" 27.1059
+resist "VGND.n48" "VGND.n9" 27.1059
+resist "VGND.n48" "VGND.n7" 27.1059
+resist "VGND.n52" "VGND.n3" 27.1059
+resist "VGND.n57" "VGND.n3" 27.1059
+resist "VGND.n38" "VGND.n15" 27.1059
+resist "VGND.n38" "VGND.n13" 27.1059
+resist "VGND.n42" "VGND.n13" 27.1059
+resist "VGND.n42" "VGND.n1" 27.1059
+resist "VGND.n58" "VGND.n1" 27.1059
+resist "VGND.n30" "VGND.n20" 69.2706
+resist "VGND.n28" "VGND.n15" 69.2706
+resist "VGND.n52" "VGND.n51" 69.2706
+resist "VGND.n58" "VGND.n57" 69.2706
+resist "VGND.n54" "VGND.n53" 153.763
+resist "VGND.n24" "VGND.n22" 153.763
+resist "VGND.n24" "VGND.n23" 153.763
+resist "VGND.n54" "VGND.n4" 153.763
+resist "VGND.n25" "VGND.n24" 215.619
+resist "VGND.n55" "VGND.n54" 215.619
+resist "VGND.n39" "VGND.t1" 237.485
+resist "VGND.n18" "VGND.t0" 344.348
+resist "VGND.n46" "VGND.t0" 344.348
+resist "VGND.n35" "VGND.n19" 417.176
+resist "VGND.n35" "VGND.n10" 417.176
+resist "VGND.n47" "VGND.n10" 417.176
+resist "VGND.n47" "VGND.n11" 417.176
+resist "VGND.n11" "VGND.n6" 417.176
+resist "VGND.n56" "VGND.n4" 417.176
+resist "VGND.n37" "VGND.n16" 417.176
+resist "VGND.n37" "VGND.n12" 417.176
+resist "VGND.n43" "VGND.n12" 417.176
+resist "VGND.n44" "VGND.n43" 417.176
+resist "VGND.n44" "VGND.n2" 417.176
+resist "VGND.n26" "VGND.n23" 417.176
+resist "VGND.n28" "VGND.n26" 585
+resist "VGND.n26" "VGND.n25" 585
+resist "VGND.n29" "VGND.n23" 585
+resist "VGND.n30" "VGND.n22" 585
+resist "VGND.n20" "VGND.n19" 585
+resist "VGND.n19" "VGND.n17" 585
+resist "VGND.n35" "VGND.n34" 585
+resist "VGND.n36" "VGND.n35" 585
+resist "VGND.n10" "VGND.n9" 585
+resist "VGND.n18" "VGND.n10" 585
+resist "VGND.n48" "VGND.n47" 585
+resist "VGND.n47" "VGND.n46" 585
+resist "VGND.n11" "VGND.n7" 585
+resist "VGND.n45" "VGND.n11" 585
+resist "VGND.n51" "VGND.n6" 585
+resist "VGND.n6" "VGND.n5" 585
+resist "VGND.n53" "VGND.n52" 585
+resist "VGND.n4" "VGND.n3" 585
+resist "VGND.n57" "VGND.n56" 585
+resist "VGND.n56" "VGND.n55" 585
+resist "VGND.n58" "VGND.n2" 585
+resist "VGND.n5" "VGND.n2" 585
+resist "VGND.n44" "VGND.n1" 585
+resist "VGND.n45" "VGND.n44" 585
+resist "VGND.n43" "VGND.n42" 585
+resist "VGND.n46" "VGND.n43" 585
+resist "VGND.n13" "VGND.n12" 585
+resist "VGND.n18" "VGND.n12" 585
+resist "VGND.n38" "VGND.n37" 585
+resist "VGND.n37" "VGND.n36" 585
+resist "VGND.n16" "VGND.n15" 585
+resist "VGND.n17" "VGND.n16" 585
+resist "VGND.n36" "VGND.n17" 688.696
+resist "VGND.n36" "VGND.n18" 688.696
+resist "VGND.n46" "VGND.n45" 688.696
+resist "VGND.n45" "VGND.n5" 688.696
+resist "VGND.n25" "VGND.n17" 822.609
+resist "VGND.n55" "VGND.n5" 822.609
+resist "VGND.n22" "VGND.n19" 1066.12
+resist "VGND.n53" "VGND.n6" 1066.12
+resist "VGND.n56" "VGND.n2" 1066.12
+resist "VGND.n26" "VGND.n16" 1066.12
+rnode "CLR.t0" 0 33.7715 308 195 0
+rnode "CLR" 0 25.521 0 313 0
+resist "CLR" "CLR.t0" 71.4435
+rnode "NODE.t0" 0 13.7106 208 195 0
+rnode "NODE" 0 45.5819 0 195 0
+resist "NODE" "NODE.t0" 237.541
+device msubckt sky130_fd_pr__nfet_01v8 208 153 209 154  "VGND.t0" "CLR.t0" 400 0 "NODE.t0" 84 5040,288 "VGND.t1" 84 5040,288
