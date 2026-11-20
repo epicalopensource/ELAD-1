@@ -31,9 +31,8 @@ C {devices/code_shown.sym} 200 200 0 0 {name=s1 only_toplevel=false value=".cont
 op
 let i_heater = -i(VEXT)
 let r_hin = v(HIN)/i_heater
-let p_heater = (v(HIN)-v(xdut.HD))*i_heater
-let p_switch = v(xdut.HD)*i_heater
-print i_heater r_hin p_heater p_switch
+let p_heater = v(hin)*i_heater
+print i_heater r_hin p_heater
 alter VHEN dc = 0
 op
 let i_off = abs(i(VEXT))
