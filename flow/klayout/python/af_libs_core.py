@@ -204,9 +204,9 @@ def create_cell(project, name, library, dbu=0.001):
 
 # ------------------------------------------------------------------ KLayout library building
 def build_layout(cells, log=print):
-    """One layout holding the given cells' trees. Device sub-cells that share names across GDS
-    files are kept apart; a copy of a project cell inside another one (e.g. inv inside buf) is
-    re-pointed to the library's own cell."""
+    """One layout holding the given cells' trees. Copies of project cells inside other cells are
+    re-pointed to the library's own cell, except a copy inside itself (kept, reported). Works on
+    a snapshot of indices/names and prunes only at the end."""
     lay = kdb.Layout()
     sources = []
     for cell, gds in cells:
@@ -232,17 +232,36 @@ def build_layout(cells, log=print):
     for cell, _src, top in sources:
         lay.cell(cell).copy_tree(top)
     own = {n: lay.cell(n).cell_index() for n in added}
-    for c in list(lay.each_cell()):
-        m = _DUP_RE.match(c.name)
-        if not m or m.group(1) not in own or c.cell_index() == own[m.group(1)]:
+
+    # snapshot first (indices + names only), change afterwards
+    dups = []
+    for ci, name in [(c.cell_index(), c.name) for c in lay.each_cell()]:
+        m = _DUP_RE.match(name)
+        if m and m.group(1) in own and ci != own[m.group(1)]:
+            dups.append((ci, name, own[m.group(1)]))
+
+    def under(real_ci):
+        return {real_ci} | set(lay.cell(real_ci).called_cells())
+
+    replaced = []
+    for dup, dup_name, real in dups:
+        if lay.cell(dup) is None:
             continue
-        dup, real = c.cell_index(), own[m.group(1)]
-        for parent_ci in list(c.each_parent_cell()):
+        parents = list(lay.cell(dup).each_parent_cell())
+        if [p for p in parents if p in under(real)]:
+            log(f"af-lib: {dup_name} sits inside {lay.cell(real).name} itself; kept as a plain "
+                f"copy (remove that instance from {lay.cell(real).name}'s layout)")
+            continue
+        for parent_ci in parents:
             parent = lay.cell(parent_ci)
             for inst in list(parent.each_inst()):
                 if inst.cell_index == dup:
                     inst.cell_index = real
-        lay.prune_cell(dup, -1)
+        replaced.append(dup)
+    for dup in replaced:
+        c = lay.cell(dup)
+        if c is not None and c.parent_cells() == 0:
+            lay.prune_cell(dup, -1)
     return lay, added
 
 
@@ -258,7 +277,11 @@ def register_all(log=print):
             if name in done:
                 name = f"{lib_name}@{project.folder}"
                 log(f"af-lib: library name {lib_name} used twice; registered as {name}")
-            lay, added = build_layout([(c, paths.get(c)) for c in sorted(cells)], log)
+            try:
+                lay, added = build_layout([(c, paths.get(c)) for c in sorted(cells)], log)
+            except Exception as e:
+                log(f"af-lib: library {name} not rebuilt ({type(e).__name__}: {e}); the previous version stays active")
+                continue
             lib = kdb.Library()
             lib.description = f"{project.folder}: {', '.join(added) if added else '(empty)'}"
             lib.layout().assign(lay)
