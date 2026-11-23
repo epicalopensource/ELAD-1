@@ -47,12 +47,11 @@ Offset: VINP swept +-20 mV around VCM with VINM fixed; VOS = VINP - VCM where ID
 C {devices/code_shown.sym} 200 200 0 0 {name=s1 only_toplevel=false value=".control
 op
 let vbias = v(VBIAS)
-let vtail = v(xdut.TAIL)
 let id1 = -i(VD1)
 let id2 = -i(VD2)
 let isum = id1+id2
 let imbalance_pct = 100*(id1-id2)/isum
-print vbias vtail id1 id2 isum imbalance_pct
+print vbias id1 id2 isum imbalance_pct
 dc VP 0.98 1.02 0.0005
 let did = i(VD2)-i(VD1)
 meas dc vinp_bal find v(VINP) when did=0
