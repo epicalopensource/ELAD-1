@@ -33,8 +33,8 @@ C {devices/iopin.sym} 180 -50 0 0 {name=p2 lab=OUT}
 C {devices/iopin.sym} -220 -130 0 1 {name=p3 lab=VDPWR}
 C {devices/iopin.sym} -220 80 0 1 {name=p4 lab=VGND}
 C {devices/iopin.sym} -220 230 0 1 {name=p5 lab=SUBQ}
-C {sky130_fd_pr/nfet_01v8.sym} 0 0 0 0 {name=MVIC model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} -100 160 0 0 {name=M1 model=nfet_01v8 W=2 L=1 nf=1 mult=2 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 0 0 0 0 {name=MVIC[1:0] model=nfet_01v8 W=1 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} -100 160 0 0 {name=M1[1:0] model=nfet_01v8 W=1 L=1 nf=1 mult=2 sa=0 sb=0 sd=0}
 C {devices/lab_pin.sym} -20 -100 0 0 {name=l6 sig_type=std_logic lab=SUBQ}
 C {sky130_fd_pr/res_xhigh_po_0p69.sym} 20 -100 0 0 {name=R1
 L=31.7

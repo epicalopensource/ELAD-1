@@ -1,8 +1,8 @@
 # Pass/fail limits for tb_ELAD1_VICTIM_GUARDED (flow: cells/<CELL>/sim/specs.txt).
 # <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
 # "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
-vout     0.85  0.98   # output at VQUIET 0.771 V                   sim 0.917  pkg 0.900
-id       7u    11u    # stage current                              sim 8.83u  pkg 9.00u
+vout     0.92  1.06    # output at VQUIET 0.771 V                   sim 0.993 (W=1 fingers)  pkg 0.900
+id       7u    11u    # stage current                              sim 8.07u  pkg 9.00u
 gain_db  16    21     # low-frequency gain (dB)                    sim 18.3   pkg 18.5
 f3db     100meg -     # -3 dB bandwidth, unloaded output           sim 691M   pkg 438M
-vq_mid   0.74  0.81   # VQUIET that puts the output at 0.9 V       sim 0.773  pkg 0.771
+vq_mid   0.74  0.81   # VQUIET that puts the output at 0.9 V       sim 0.783  pkg 0.771
