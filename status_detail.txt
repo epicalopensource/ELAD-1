@@ -1,0 +1,140 @@
+################ ELAD1_AGGRESSOR
+| lvs | FAIL | 8s | LVS mismatch: ELAD1_AGGRESSOR:NoMatch — inspect verify/lvs/ |
+| pex | NOT_RUN |  | upstream failed or gated |
+| postsim | NOT_RUN |  | upstream failed or gated |
+-- sim
+-- lvs
+2026-11-23 10:22:31 +0100: ERROR : Netlists don't match
+--- LAYOUT
+   ELAD1_AGGRESSOR    $1           r__pfet_01v8 W=2 L=0.15  S=$47 G=$30 D=VDPWR B=VDPWR
+   ELAD1_AGGRESSOR    $2           r__pfet_01v8 W=2 L=0.15  S=$47 G=$38 D=$13 B=VDPWR
+   ELAD1_AGGRESSOR    $3           r__pfet_01v8 W=1 L=0.15  S=VDPWR G=EN D=$30 B=VDPWR
+   ELAD1_AGGRESSOR    $4           r__pfet_01v8 W=2 L=0.15  S=$42 G=AGG_CLK D=$11 B=VDPWR
+   ELAD1_AGGRESSOR    $5           r__pfet_01v8 W=2 L=0.15  S=$42 G=$30 D=VDPWR B=VDPWR
+   ELAD1_AGGRESSOR    $6           r__pfet_01v8 W=1 L=0.15  S=$38 G=AGG_CLK D=VDPWR B=VDPWR
+   ELAD1_AGGRESSOR    $7           s_generic_po W=1 L=15  A=$4 B=VGND
+   ELAD1_AGGRESSOR    $8           r__nfet_01v8 W=2 L=0.15  S=SUBI G=$13 D=$8 B=VGND
+   ELAD1_AGGRESSOR    $9           r__nfet_01v8 W=2 L=0.15  S=$4 G=$11 D=$8 B=VGND
+   ELAD1_AGGRESSOR    $10          r__nfet_01v8 W=0.42 L=1  S=VGND G=$30 D=$11 B=VGND
+   ELAD1_AGGRESSOR    $11          r__nfet_01v8 W=0.42 L=1  S=$11 G=AGG_CLK D=VGND B=VGND
+   ELAD1_AGGRESSOR    $12          r__nfet_01v8 W=0.42 L=1  S=VGND G=$30 D=$13 B=VGND
+   ELAD1_AGGRESSOR    $13          r__nfet_01v8 W=0.42 L=1  S=$13 G=$38 D=VGND B=VGND
+   ELAD1_AGGRESSOR    $14          r__nfet_01v8 W=0.65 L=0.15  S=VGND G=AGG_CLK D=$38 B=VGND
+   ELAD1_AGGRESSOR    $15          r__nfet_01v8 W=0.65 L=0.15  S=VGND G=EN D=$30 B=VGND
+   ELAD1_AGGRESSOR    $16          high_po_0p69 W=0.69 L=7.3  A=$8 B=VDPWR W=VGND
+--- SCHEMATIC
+   ELAD1_AGGRESSOR    GIP1         R__PFET_01V8 W=2 L=0.15  S=VDPWR G=ENB D=GIP B=VDPWR
+   ELAD1_AGGRESSOR    GIP2         R__PFET_01V8 W=2 L=0.15  S=GIP G=CKB D=GI B=VDPWR
+   ELAD1_AGGRESSOR    GIN1         R__NFET_01V8 W=0.42 L=1  S=VGND G=ENB D=GI B=VGND
+   ELAD1_AGGRESSOR    GIN2         R__NFET_01V8 W=0.42 L=1  S=VGND G=CKB D=GI B=VGND
+   ELAD1_AGGRESSOR    GDP1         R__PFET_01V8 W=2 L=0.15  S=VDPWR G=ENB D=GDP B=VDPWR
+   ELAD1_AGGRESSOR    GDP2         R__PFET_01V8 W=2 L=0.15  S=GDP G=AGG_CLK D=GD B=VDPWR
+   ELAD1_AGGRESSOR    GDN1         R__NFET_01V8 W=0.42 L=1  S=VGND G=ENB D=GD B=VGND
+   ELAD1_AGGRESSOR    GDN2         R__NFET_01V8 W=0.42 L=1  S=VGND G=AGG_CLK D=GD B=VGND
+   ELAD1_AGGRESSOR    INJ          R__NFET_01V8 W=2 L=0.15  S=SUBI G=GI D=X B=VGND
+   ELAD1_AGGRESSOR    DUM          R__NFET_01V8 W=2 L=0.15  S=D G=GD D=X B=VGND
+   ELAD1_AGGRESSOR    DUM          S_GENERIC_PO W=1 L=15  A=VGND B=D
+   ELAD1_AGGRESSOR    IC.P         R__PFET_01V8 W=1 L=0.15  S=VDPWR G=AGG_CLK D=CKB B=VDPWR
+   ELAD1_AGGRESSOR    IC.N         R__NFET_01V8 W=0.65 L=0.15  S=VGND G=AGG_CLK D=CKB B=VGND
+   ELAD1_AGGRESSOR    IE.P         R__PFET_01V8 W=1 L=0.15  S=VDPWR G=EN D=ENB B=VDPWR
+   ELAD1_AGGRESSOR    IE.N         R__NFET_01V8 W=0.65 L=0.15  S=VGND G=EN D=ENB B=VGND
+   tb probe: 53:meas tran vx_max max v(xdut.x) from=55u to=110u
+################ ELAD1_ANALOG_CORE
+| sim | FAIL | 3s | simulation ran but specs violated (see measurements.json) |
+-- sim
+spec noise_vout_base      FAIL    value=0.9933785 min=0.85 max=0.98
+spec noise_vout_guard     FAIL    value=0.9933785 min=0.85 max=0.98
+################ ELAD1_ANALOG_SELECTOR
+| drc | FAIL | 8s | 8 DRC violation(s) — open verify/drc/*.lyrdb in KLayout (Tools > Marker Browser) |
+| lvs | FAIL | 9s | LVS mismatch: ELAD1_ANALOG_SELECTOR:Skipped; ELAD1_CLAMP:NoMatch; ELAD1_TGB:NoMatch — inspect verify/lvs/ |
+| pex | NOT_RUN |  | upstream failed or gated |
+| postsim | NOT_RUN |  | upstream failed or gated |
+-- sim
+-- drc by rule
+      4  m1.2
+      2  via.2
+      1  via.1a
+      1  m3.1
+-- lvs
+2026-11-23 10:22:45 +0100: ERROR : Netlists don't match
+--- LAYOUT
+   ELAD1_TGB          $1           r__pfet_01v8 W=2 L=0.15  S=A G=ENB D=B B=VDPWR
+   ELAD1_TGB          $2           r__nfet_01v8 W=1 L=0.15  S=A G=EN D=B B=VGND
+   ELAD1_CLAMP        $1           r__nfet_01v8 W=0.42 L=1  S=NODE G=CLR D=VGND B=VGND
+   ELAD1_ANALOG_SELEC $1           r__nfet_01v8 W=0.42 L=1  S=$89.NODE G=$89.CLR D=VGND B=VGND
+   ELAD1_ANALOG_SELEC $2           r__nfet_01v8 W=0.42 L=1  S=$90.NODE G=$90.CLR D=VGND B=VGND
+   ELAD1_ANALOG_SELEC $3           r__nfet_01v8 W=0.42 L=1  S=$95.NODE G=$95.CLR D=VGND B=VGND
+   ELAD1_ANALOG_SELEC $4           r__nfet_01v8 W=0.42 L=1  S=$96.NODE G=$96.CLR D=VGND B=VGND
+   ELAD1_ANALOG_SELEC $5           r__nfet_01v8 W=0.65 L=0.15  S=VGND G=EN_MC D=$14 B=VGND
+   ELAD1_ANALOG_SELEC $6           r__pfet_01v8 W=1 L=0.15  S=VDPWR G=EN_MC D=$14 B=VDPWR
+   ELAD1_ANALOG_SELEC $7           r__nfet_01v8 W=0.65 L=0.15  S=VGND G=EN_MG D=$15 B=VGND
+   ELAD1_ANALOG_SELEC $8           r__pfet_01v8 W=1 L=0.15  S=VDPWR G=EN_MG D=$15 B=VDPWR
+   ELAD1_ANALOG_SELEC $9           r__nfet_01v8 W=0.65 L=0.15  S=VGND G=EN_N D=$15 B=VGND
+   ELAD1_ANALOG_SELEC $10          r__pfet_01v8 W=1 L=0.15  S=VDPWR G=EN_N D=$15 B=VDPWR
+   ELAD1_ANALOG_SELEC $11          r__nfet_01v8 W=0.65 L=0.15  S=VGND G=EN_PC D=$9 B=VGND
+   ELAD1_ANALOG_SELEC $12          r__pfet_01v8 W=1 L=0.15  S=VDPWR G=EN_PC D=$9 B=VDPWR
+   ELAD1_ANALOG_SELEC $13          r__nfet_01v8 W=1 L=0.15  S=VGND G=$9 D=UA3 B=VGND
+   ELAD1_ANALOG_SELEC $14          r__nfet_01v8 W=1 L=0.15  S=VGND G=$I96 D=UA4 B=VGND
+   ELAD1_ANALOG_SELEC $15          r__pfet_01v8 W=2 L=0.15  S=UA1 G=$9 D=$7.B B=VDPWR
+   ELAD1_ANALOG_SELEC $16          r__pfet_01v8 W=2 L=0.15  S=UA2 G=$14 D=$12.B B=VDPWR
+   ELAD1_ANALOG_SELEC $17          r__pfet_01v8 W=2 L=0.15  S=UA2 G=$15 D=$13.B B=VDPWR
+   ELAD1_ANALOG_SELEC $18          r__pfet_01v8 W=2 L=0.15  S=UA2 G=$8 D=$14.B B=VDPWR
+   ELAD1_ANALOG_SELEC $19          r__nfet_01v8 W=1 L=0.15  S=UA1 G=$7.EN D=$7.B B=VGND
+   ELAD1_ANALOG_SELEC $20          r__nfet_01v8 W=1 L=0.15  S=UA2 G=$12.EN D=$12.B B=VGND
+   ELAD1_ANALOG_SELEC $21          r__nfet_01v8 W=1 L=0.15  S=UA2 G=$13.EN D=$13.B B=VGND
+   ELAD1_ANALOG_SELEC $22          r__nfet_01v8 W=1 L=0.15  S=UA2 G=$14.EN D=$14.B B=VGND
+   ELAD1_ANALOG_SELEC $23          r__pfet_01v8 W=2 L=0.15  S=UA2 G=$9 D=$8.B B=VDPWR
+   ELAD1_ANALOG_SELEC $24          r__pfet_01v8 W=2 L=0.15  S=UA3 G=$14 D=$9.B B=VDPWR
+   ELAD1_ANALOG_SELEC $25          r__pfet_01v8 W=2 L=0.15  S=UA3 G=$15 D=$10.B B=VDPWR
+   ELAD1_ANALOG_SELEC $26          r__pfet_01v8 W=2 L=0.15  S=UA2 G=$15 D=$11.B B=VDPWR
+   ELAD1_ANALOG_SELEC $27          r__nfet_01v8 W=1 L=0.15  S=UA2 G=$8.EN D=$8.B B=VGND
+   ELAD1_ANALOG_SELEC $28          r__nfet_01v8 W=1 L=0.15  S=UA3 G=$9.EN D=$9.B B=VGND
+   ELAD1_ANALOG_SELEC $29          r__nfet_01v8 W=1 L=0.15  S=UA3 G=$10.EN D=$10.B B=VGND
+   ELAD1_ANALOG_SELEC $30          r__nfet_01v8 W=1 L=0.15  S=UA2 G=$11.EN D=$11.B B=VGND
+   ELAD1_ANALOG_SELEC $31          r__nfet_01v8 W=0.42 L=1  S=$88.NODE G=$88.CLR D=VGND B=VGND
+   ELAD1_ANALOG_SELEC $32          r__nfet_01v8 W=0.42 L=1  S=$93.NODE G=$93.CLR D=VGND B=VGND
+   ELAD1_ANALOG_SELEC $33          r__nfet_01v8 W=0.42 L=1  S=$94.NODE G=$94.CLR D=VGND B=VGND
+   ELAD1_ANALOG_SELEC $34          r__nfet_01v8 W=0.65 L=0.15  S=VGND G=EN_PG D=$8 B=VGND
+   ELAD1_ANALOG_SELEC $35          r__pfet_01v8 W=1 L=0.15  S=VDPWR G=EN_PG D=$8 B=VDPWR
+   ELAD1_ANALOG_SELEC $36          fet_01v8_lvt W=12 L=0.35  S=UA3 G=$I50 D=$I20 B=VDPWR
+################ ELAD1_INV
+| sim | FAIL | 16s | ngspice reported errors: 34:Error: &tphl: no such variable. |
+| postsim | FAIL | 3s | ngspice reported errors: 8:ERROR: fatal error in ngspice, exit(1) |
+-- sim
+spec vsw                  MISSING value=None min=0.75 max=0.98
+[10:26:58] [ELAD1_INV/sim] FAIL: ngspice reported errors: 34:Error: &tphl: no such variable.
+-- postsim
+spec tphl                 MISSING value=None min=None max=1e-10
+spec tplh                 MISSING value=None min=None max=1.5e-10
+spec vsw                  MISSING value=None min=0.75 max=0.98
+################ ELAD1_NDUMMY
+| postsim | FAIL | 3s | ngspice reported errors: 18:Error: RHS "@m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]" invalid |
+-- sim
+-- postsim
+spec i_dummy              MISSING value=None min=None max=1e-09
+spec vth                  MISSING value=None min=0.55 max=0.66
+spec w_um                 MISSING value=None min=1.99 max=2.01
+[10:27:14] [ELAD1_NDUMMY/postsim] FAIL: ngspice reported errors: 18:Error: RHS "@m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]" invalid
+   tb probe: 21:let vth = @m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]
+   tb probe: 22:let w_um = @m.xdut.xm.msky130_fd_pr__nfet_01v8[w]*1e6
+################ ELAD1_NUNIT
+| sim | FAIL | 5s | ngspice reported errors: 8:ERROR: fatal error in ngspice, exit(1) |
+| postsim | FAIL | 6s | ngspice reported errors: 8:ERROR: fatal error in ngspice, exit(1) |
+-- sim
+spec vgs                  MISSING value=None min=0.58 max=0.68
+spec vth                  MISSING value=None min=0.55 max=0.66
+spec gm_id                MISSING value=None min=15.0 max=22.0
+-- postsim
+spec vgs                  MISSING value=None min=0.58 max=0.68
+spec vth                  MISSING value=None min=0.55 max=0.66
+spec gm_id                MISSING value=None min=15.0 max=22.0
+   tb probe: 30:.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[id]
+   tb probe: 31:.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gm]
+   tb probe: 32:.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gds]
+   tb probe: 33:.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]
+   tb probe: 34:.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[vdsat]
+################ ELAD1_TSW
+| postsim | FAIL | 7s | simulation ran but specs violated (see measurements.json) |
+-- sim
+-- postsim
+spec i_leak_off           FAIL    value=4.573262e-08 min=None max=1e-10

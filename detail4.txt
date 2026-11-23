@@ -1,0 +1,125 @@
+#### ELAD1_TSW instances
+  DBU 0.001
+  ELAD1_TGA              at (7.005,0.000) rot=0 mirror=False mag=1 array=0x0
+  nfet                   at (6.075,1.345) rot=0 mirror=False mag=1 array=0x0
+  ELAD1_TGA              at (0.555,0.000) rot=0 mirror=False mag=1 array=0x0
+#### ELAD1_TSW pex log
+Warning: Calma reading is not undoable!  I hope that's OK.
+#### ELAD1_TSW magic cell uses
+ELAD1_TGA.ext
+ELAD1_TGA.nodes
+ELAD1_TGA.res.ext
+ELAD1_TGA.sim
+nfet$1.ext
+pfet.ext
+vias_gen$1.ext
+vias_gen$2$1.ext
+vias_gen$3$1.ext
+vias_gen$4.ext
+vias_gen$5$1.ext
+#### ELAD1_AGGRESSOR instances
+  DBU 0.005
+  res_poly$1             at (7.075,15.775) rot=90 mirror=False mag=1 array=0x0
+  guard_ring_gen         at (12.325,14.585) rot=180 mirror=False mag=1 array=0x0
+  pfet                   at (7.725,13.720) rot=180 mirror=False mag=1 array=0x0
+  NORP                   at (7.890,12.000) rot=0 mirror=False mag=1 array=0x0
+  pfet                   at (6.365,13.720) rot=180 mirror=False mag=1 array=0x0
+  NORP                   at (1.690,12.000) rot=0 mirror=False mag=1 array=0x0
+  nfet                   at (5.615,6.790) rot=0 mirror=False mag=1 array=0x0
+  NORN                   at (1.720,6.820) rot=0 mirror=False mag=1 array=0x0
+  guard_ring_gen$5       at (0.355,0.355) rot=0 mirror=False mag=1 array=0x0
+  NMOS                   at (3.370,4.375) rot=0 mirror=False mag=1 array=0x0
+  res_poly               at (6.850,1.985) rot=270 mirror=False mag=1 array=0x0
+  res_poly               at (6.850,3.195) rot=270 mirror=False mag=1 array=0x0
+  NORN                   at (11.620,6.820) rot=180 mirror=True mag=1 array=0x0
+  NMOS                   at (6.740,4.375) rot=0 mirror=False mag=1 array=0x0
+  nfet                   at (7.725,6.790) rot=180 mirror=True mag=1 array=0x0
+#### ELAD1_AGGRESSOR pex log
+Warning: Calma reading is not undoable!  I hope that's OK.
+#### ELAD1_AGGRESSOR magic cell uses
+use vias_gen$25 vias_gen$25_0 1 0 0 0 1 0
+use vias_gen$7 vias_gen$7_0 1 0 2125 0 1 297
+use vias_gen$6 vias_gen$6_0 1 0 2125 0 1 539
+use res_poly res_poly_0 0 1 1370 -1 0 639
+use res_poly res_poly_1 0 1 1370 -1 0 397
+use vias_gen$6 vias_gen$6_1 1 0 194 0 1 539
+use vias_gen$6 vias_gen$6_2 1 0 194 0 1 297
+use vias_gen$8 vias_gen$8_0 1 0 2125 0 1 827
+use vias_gen$10 vias_gen$10_2 -1 0 2007 0 -1 879
+use vias_gen$10 vias_gen$10_6 -1 0 1746 0 -1 879
+use vias_gen$10 vias_gen$10_7 -1 0 1520 0 -1 879
+use vias_gen$11 vias_gen$11_0 -1 0 827 0 -1 879
+use vias_gen$11 vias_gen$11_1 -1 0 1078 0 -1 879
+use vias_gen$11 vias_gen$11_2 -1 0 1302 0 -1 879
+use vias_gen$28 vias_gen$28_0 0 1 690 -1 0 1225
+use NMOS NMOS_1 1 0 674 0 1 875
+use vias_gen$3 vias_gen$3_9 0 1 1106 -1 0 1037
+use vias_gen$3 vias_gen$3_8 0 1 846 -1 0 1037
+use vias_gen$3 vias_gen$3_7 0 1 976 -1 0 1037
+use vias_gen$3 vias_gen$3_6 0 1 1236 -1 0 1037
+ELAD1_AGGRESSOR.ext
+ELAD1_AGGRESSOR.nodes
+ELAD1_AGGRESSOR.res.ext
+ELAD1_AGGRESSOR.sim
+guard_ring_gen$5.ext
+guard_ring_gen.ext
+nfet.ext
+NMOS.ext
+NORN.ext
+NORP.ext
+pfet.ext
+res_poly$1.ext
+res_poly.ext
+vias_gen$10.ext
+vias_gen$11.ext
+vias_gen$12.ext
+vias_gen$14.ext
+vias_gen$16.ext
+vias_gen$18.ext
+vias_gen$20.ext
+vias_gen$21.ext
+vias_gen$23.ext
+vias_gen$24.ext
+vias_gen$25.ext
+vias_gen$26.ext
+vias_gen$28.ext
+vias_gen$31.ext
+vias_gen$32.ext
+vias_gen$33.ext
+vias_gen$3.ext
+vias_gen$6.ext
+vias_gen$7.ext
+vias_gen$8.ext
+vias_gen.ext
+#### AGGRESSOR extracted devices
+.subckt ELAD1_AGGRESSOR AGG_CLK EN VDPWR VGND SUBI
+X0 VDPWR EN m2_553_1532# w_154_2098# sky130_fd_pr__pfet_01v8 ad=0.3 pd=2.6 as=0.3 ps=2.6 w=1 l=0.15
+X1 m1_768_1532# AGG_CLK VDPWR w_154_2098# sky130_fd_pr__pfet_01v8 ad=0.3 pd=2.6 as=1.6 ps=11.2 w=1 l=0.15
+X2 m2_2125_539# m2_194_297# sky130_fd_pr__res_generic_po w=1 l=7.5
+X3 VGND m2_194_297# sky130_fd_pr__res_generic_po w=1 l=7.5
+X4 VDPWR m2_846_907# VGND sky130_fd_pr__res_xhigh_po_0p69 l=7.3
+X5 m1_768_1532# AGG_CLK VGND VGND sky130_fd_pr__nfet_01v8 ad=0.195 pd=1.9 as=0.195 ps=1.9 w=0.65 l=0.15
+X6 m2_2125_539# m2_1920_1065# m2_846_907# VGND sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X7 m2_846_907# m2_1920_1065# m2_2125_539# VGND sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X8 m2_2125_539# m2_1920_1065# m2_846_907# VGND sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X9 m2_846_907# m2_1920_1065# m2_2125_539# VGND sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X10 m2_553_1532# EN VGND VGND sky130_fd_pr__nfet_01v8 ad=0.195 pd=1.9 as=1.23 ps=11.16 w=0.65 l=0.15
+X11 SUBI m2_813_1807# m2_846_907# VGND sky130_fd_pr__nfet_01v8 ad=0.75 pd=6 as=1 ps=8 w=0.5 l=0.15
+X12 m2_846_907# m2_813_1807# SUBI VGND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X13 SUBI m2_813_1807# m2_846_907# VGND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X14 m2_846_907# m2_813_1807# SUBI VGND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.15
+X15 m2_813_1807# m1_768_1532# m2_943_2284# w_154_2098# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X16 m2_943_2284# m2_553_1532# VDPWR w_154_2098# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X17 VDPWR m2_553_1532# m2_943_2284# w_154_2098# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X18 m2_943_2284# m1_768_1532# m2_813_1807# w_154_2098# sky130_fd_pr__pfet_01v8 ad=0.55 pd=3.1 as=0.25 ps=1.5 w=1 l=0.15
+X19 VDPWR m2_553_1532# m2_2183_2284# w_154_2098# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=1.55 ps=9.1 w=1 l=0.15
+X20 m2_2183_2284# AGG_CLK m2_1920_1065# w_154_2098# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0.5 ps=3 w=1 l=0.15
+X21 m2_1920_1065# AGG_CLK m2_2183_2284# w_154_2098# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X22 m2_2183_2284# m2_553_1532# VDPWR w_154_2098# sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X23 m2_1920_1065# m2_553_1532# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.105 pd=0.92 as=0.21 ps=1.84 w=0.42 l=1
+X24 VGND AGG_CLK m2_1920_1065# VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.84 as=0.105 ps=0.92 w=0.42 l=1
+X25 m2_813_1807# m2_553_1532# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.84 as=0 ps=0 w=0.42 l=1
+X26 VGND m1_768_1532# m2_813_1807# VGND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.42 l=1
+.ends ELAD1_AGGRESSOR
+#### schematics that use NUNIT
+cells/ELAD1_NUNIT/schematic/tb_ELAD1_NUNIT.sch

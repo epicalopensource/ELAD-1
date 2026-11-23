@@ -1,0 +1,30 @@
+--- LAYOUT devices (circuit, type, size): count
+     1  ELAD1_PAIR_CC  sky130_fd_pr__nfet_01v8  W=3.2e+07 L=1e+06
+     5  ELAD1_PAIR_CC  sky130_fd_pr__nfet_01v8  W=8e+06 L=1e+06
+--- SCHEMATIC devices (circuit, type, size): count
+     5  ELAD1_PAIR_CC  SKY130_FD_PR__NFET_01V8  W=2e+06 L=1e+06
+--- circuit ELAD1_PAIR_CC <-> ELAD1_PAIR_CC: NoMatch
+   net    Mismatch   layout=-                      schematic=D1
+   net    Mismatch   layout=-                      schematic=D2
+   net    Mismatch   layout=-                      schematic=TAIL
+   net    Mismatch   layout=-                      schematic=VBIAS
+   net    Mismatch   layout=-                      schematic=VGND
+   net    Mismatch   layout=-                      schematic=VINM
+   net    Mismatch   layout=-                      schematic=VINP
+   net    Mismatch   layout=$27                    schematic=-
+   net    Mismatch   layout=D1                     schematic=-
+   net    Mismatch   layout=D2                     schematic=-
+   net    Mismatch   layout=VBIAS                  schematic=-
+   net    Mismatch   layout=VGND                   schematic=-
+   ... 2 more net mismatches
+   device Mismatch   layout=-                      schematic=N1
+   device Mismatch   layout=-                      schematic=N2
+   device Mismatch   layout=-                      schematic=N3
+   device Mismatch   layout=-                      schematic=R2
+   device Mismatch   layout=-                      schematic=N4
+   device Mismatch   layout=$1                     schematic=-
+   device Mismatch   layout=$2                     schematic=-
+   device Mismatch   layout=$3                     schematic=-
+   device Mismatch   layout=$5                     schematic=-
+   device Mismatch   layout=$6                     schematic=-
+   device Mismatch   layout=$4                     schematic=-

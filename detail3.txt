@@ -1,0 +1,121 @@
+#### AGGRESSOR postsim
+spec i_off                FAIL    value=0.00385386 min=None max=1e-08
+spec i_inj                PASS    value=7.41911e-05 min=4.9999999999999996e-05 max=0.00013
+spec i_dum                PASS    value=7.42982e-05 min=4.9999999999999996e-05 max=0.00013
+spec i_step_pct           PASS    value=-0.144176 min=-5.0 max=5.0
+spec v_tap_step           PASS    value=0.05935085 min=0.04 max=0.12
+#### TSW extracted netlist (devices)
+
+.subckt ELAD1_TSW A B EN ENB VDPWR VGND
+X0 B ENB A VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.75 pd=3.5 as=0.9 ps=6.6 w=3 l=0.35
+X1 A ENB B VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.35
+X2 A ENB B VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.9 pd=6.6 as=0.75 ps=3.5 w=3 l=0.35
+X3 B ENB A VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.35
+X4 A EN B VGND sky130_fd_pr__nfet_01v8_lvt ad=0.25 pd=1.5 as=0.3 ps=2.6 w=1 l=0.15
+X5 A EN B VGND sky130_fd_pr__nfet_01v8_lvt ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X6 B EN A VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3 pd=2.6 as=0.25 ps=1.5 w=1 l=0.15
+X7 B EN A VGND sky130_fd_pr__nfet_01v8_lvt ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+.ends ELAD1_TSW
+#### SELECTOR LVS: unmatched circuits
+--- ELAD1_ANALOG_SELECTOR <-> ELAD1_ANALOG_SELECTOR: Skipped
+--- ELAD1_CLAMP <-> ELAD1_CLAMP: NoMatch
+   pin  Mismatch         layout=-              schematic=CLR
+   pin  Mismatch         layout=-              schematic=NODE
+   pin  Match            layout=VGND           schematic=VGND
+--- ELAD1_TGB <-> ELAD1_TGB: NoMatch
+   pin  Mismatch         layout=-              schematic=B
+   pin  Mismatch         layout=-              schematic=EN
+   pin  Match            layout=A              schematic=A
+   pin  Match            layout=ENB            schematic=ENB
+   pin  Match            layout=VDPWR          schematic=VDPWR
+   pin  Match            layout=VGND           schematic=VGND
+#### ELAD1_TGB as used inside the SELECTOR schematic
+.subckt ELAD1_TGB A B EN ENB VDPWR VGND
+*.PININFO A:B B:B EN:B ENB:B VDPWR:B VGND:B
+XMP A ENB B VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1
+XMN A EN B VGND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1
+.ends
+#### ELAD1_TGB own netlist
+.subckt ELAD1_TGB A B EN ENB VDPWR VGND
+*.PININFO A:B B:B EN:B ENB:B VDPWR:B VGND:B
+XMP A ENB B VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1
+XMN A EN B VGND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1
+.ends
+#### ELAD1_CLAMP as used inside the SELECTOR schematic
+.subckt ELAD1_CLAMP NODE CLR VGND
+*.PININFO NODE:B CLR:B VGND:B
+XM NODE CLR VGND VGND sky130_fd_pr__nfet_01v8 L=1 W=0.42 nf=1
+.ends
+#### ELAD1_CLAMP own netlist
+.subckt ELAD1_CLAMP NODE CLR VGND
+*.PININFO NODE:B CLR:B VGND:B
+XM NODE CLR VGND VGND sky130_fd_pr__nfet_01v8 L=1 W=0.42 nf=1
+.ends
+#### INV control file
+*ng_script
+let half = $vddv/2
+let v10 = 0.1*$vddv
+let v90 = 0.9*$vddv
+tran 5p 12n
+meas tran tphl trig v(a) val=$&half rise=1 targ v(y) val=$&half fall=1
+meas tran tplh trig v(a) val=$&half fall=1 targ v(y) val=$&half rise=1
+meas tran trise trig v(y) val=$&v10 rise=1 targ v(y) val=$&v90 rise=1
+meas tran tfall trig v(y) val=$&v90 fall=1 targ v(y) val=$&v10 fall=1
+let pw = -i(vdd)*$vddv
+meas tran pavg avg pw from=1n to=11n
+let ecyc = pavg*10e-9
+write tb_inv_tran
+dc VA 0 $vddv 0.001
+let d = v(y)-v(a)
+meas dc vm find v(a) when d=0
+meas dc voh max v(y)
+meas dc vol min v(y)
+let gain = deriv(v(y))
+meas dc gain_max min gain
+meas dc vil when gain=-1 cross=1
+meas dc vih when gain=-1 cross=2
+let isc = -i(vdd)
+meas dc isc_pk max isc
+meas dc ileak find isc at=0
+write tb_inv_dc
+echo SUM $&vm $&voh $&vol $&gain_max $&vil $&vih $&isc_pk $&ileak $&tphl $&tplh $&trise $&tfall $&pavg $&ecyc
+#### NUNIT testbench netlist
+** sch_path: /foss/designs/ELAD-1/cells/ELAD1_NUNIT/schematic/tb_ELAD1_NUNIT.sch
+**.subckt tb_ELAD1_NUNIT
+XDUT D G 0 0 ELAD1_NUNIT
+VGS G 0 0.7
+VDS D 0 0.9
+**** begin user architecture code
+
+.option temp=27
+.param W=2
+.param LEN=1
+.save all
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[id]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gm]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gds]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[vdsat]
+.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[cgg]
+.control
+set vdsv = 0.9
+source nfet_ctl.cir
+.endc
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  ELAD1_NUNIT.sym # of pins=4
+** sym_path: /foss/designs/ELAD-1/cells/ELAD1_NUNIT/schematic/ELAD1_NUNIT.sym
+** sch_path: /foss/designs/ELAD-1/cells/ELAD1_NUNIT/schematic/ELAD1_NUNIT.sch
+.subckt ELAD1_NUNIT D G S B
+*.iopin D
+*.iopin G
+*.iopin S
+*.iopin B
+XM D G S B sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad=0.2436 as=0.2436 pd=2.26 ps=2.26 nrd=0.345238095238095
++ nrs=0.345238095238095 sa=0 sb=0 sd=0 mult=1
+.ends
+
+.end
