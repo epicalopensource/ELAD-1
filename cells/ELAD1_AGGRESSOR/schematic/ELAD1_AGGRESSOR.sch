@@ -1,83 +1,91 @@
-v {xschem version=3.4.4 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
-N -760 -300 -700 -300 {}
-N -760 300 -700 300 {}
-N -760 -60 -620 -60 {}
-N -500 -60 -440 -60 {}
-N -760 140 -620 140 {}
-N -500 140 -440 140 {}
-N -180 -80 -160 -80 {}
-N -180 -20 -180 10 {}
-N -180 10 -180 30 {}
-N -180 -110 -100 -110 {}
-N -100 -140 -100 -110 {}
-N -180 -140 -100 -140 {}
-N -180 -50 -100 -50 {}
-N -100 -110 -100 -50 {}
-N -180 10 -40 10 {}
-N -40 10 -40 30 {}
-N -40 10 60 10 {}
-N -180 90 -180 120 {}
-N -180 120 -150 120 {}
-N -150 120 -110 120 {}
-N -110 120 -70 120 {}
-N -70 120 -40 120 {}
-N -40 90 -40 120 {}
-N -180 60 -150 60 {}
-N -150 60 -150 120 {}
-N -70 60 -40 60 {}
-N -70 60 -70 120 {}
-N -260 -110 -220 -110 {}
-N -260 -50 -220 -50 {}
-N -260 60 -220 60 {}
-N 0 60 60 60 {}
-N 300 -80 320 -80 {}
-N 300 -20 300 10 {}
-N 300 10 300 30 {}
-N 300 -110 380 -110 {}
-N 380 -140 380 -110 {}
-N 300 -140 380 -140 {}
-N 300 -50 380 -50 {}
-N 380 -110 380 -50 {}
-N 300 10 440 10 {}
-N 440 10 440 30 {}
-N 440 10 540 10 {}
-N 300 90 300 120 {}
-N 300 120 330 120 {}
-N 330 120 370 120 {}
-N 370 120 410 120 {}
-N 410 120 440 120 {}
-N 440 90 440 120 {}
-N 300 60 330 60 {}
-N 330 60 330 120 {}
-N 410 60 440 60 {}
-N 410 60 410 120 {}
-N 220 -110 260 -110 {}
-N 220 -50 260 -50 {}
-N 220 60 260 60 {}
-N 480 60 540 60 {}
-N 800 -220 840 -220 {}
-N 860 -190 860 -130 {}
-N 780 -130 780 -100 {}
-N 780 -130 860 -130 {}
-N 860 -130 920 -130 {}
-N 920 -130 980 -130 {}
-N 980 -130 980 -100 {}
-N 700 -70 740 -70 {}
-N 780 -70 820 -70 {}
-N 820 -70 820 -30 {}
-N 780 -40 780 30 {}
-N 660 30 780 30 {}
-N 1020 -70 1060 -70 {}
-N 940 -70 980 -70 {}
-N 940 -70 940 -30 {}
-N 980 -40 980 -10 {}
-N 980 -10 980 20 {}
-N 980 -10 1020 -10 {}
+T {ELAD1_AGGRESSOR: on-chip substrate aggressor, steered current into the shared tap SUBI} -760 -470 0 0 0.4 0.4 {}
+T {EN = 1 (noise mode): ~90 uA from VDPWR through RL is steered by AGG_CLK -
+AGG_CLK = 1: through MINJ out of SUBI into the substrate tap (the tap rises ~60 mV)
+AGG_CLK = 0: through MDUM and RDUM to VGND.  The supply current stays the same in both states.
+EN = 0: both switches off, no current.  SUBI is the same tap that ua0 (force) and ua2 (sense) reach.} -760 -425 0 0 0.22 0.22 {}
+T {Layout: SUBI = P+ taps of an isolated tap island (SUBCUT), equidistant from both victims;
+no VGND taps inside it.  RL, RDUM and the logic outside the island, away from the victims.} -760 380 0 0 0.22 0.22 {}
+N -760 -300 -700 -300 {lab=VDPWR}
+N -760 300 -700 300 {lab=VGND}
+N -760 -60 -620 -60 {lab=AGG_CLK}
+N -500 -60 -440 -60 {lab=CKB}
+N -760 140 -620 140 {lab=EN}
+N -500 140 -440 140 {lab=ENB}
+N -180 -80 -160 -80 {lab=gip}
+N -180 -20 -180 10 {lab=GI}
+N -180 10 -180 30 {lab=GI}
+N -180 -110 -100 -110 {lab=VDPWR}
+N -100 -140 -100 -110 {lab=VDPWR}
+N -180 -140 -100 -140 {lab=VDPWR}
+N -180 -50 -100 -50 {lab=VDPWR}
+N -100 -110 -100 -50 {lab=VDPWR}
+N -180 10 -40 10 {lab=GI}
+N -40 10 -40 30 {lab=GI}
+N -40 10 60 10 {lab=GI}
+N -180 90 -180 120 {lab=VGND}
+N -180 120 -150 120 {lab=VGND}
+N -150 120 -110 120 {lab=VGND}
+N -110 120 -70 120 {lab=VGND}
+N -70 120 -40 120 {lab=VGND}
+N -40 90 -40 120 {lab=VGND}
+N -180 60 -150 60 {lab=VGND}
+N -150 60 -150 120 {lab=VGND}
+N -70 60 -40 60 {lab=VGND}
+N -70 60 -70 120 {lab=VGND}
+N -260 -110 -220 -110 {lab=ENB}
+N -260 -50 -220 -50 {lab=CKB}
+N -260 60 -220 60 {lab=ENB}
+N 0 60 60 60 {lab=CKB}
+N 300 -80 320 -80 {lab=gdp}
+N 300 -20 300 10 {lab=GD}
+N 300 10 300 30 {lab=GD}
+N 300 -110 380 -110 {lab=VDPWR}
+N 380 -140 380 -110 {lab=VDPWR}
+N 300 -140 380 -140 {lab=VDPWR}
+N 300 -50 380 -50 {lab=VDPWR}
+N 380 -110 380 -50 {lab=VDPWR}
+N 300 10 440 10 {lab=GD}
+N 440 10 440 30 {lab=GD}
+N 440 10 540 10 {lab=GD}
+N 300 90 300 120 {lab=VGND}
+N 300 120 330 120 {lab=VGND}
+N 330 120 370 120 {lab=VGND}
+N 370 120 410 120 {lab=VGND}
+N 410 120 440 120 {lab=VGND}
+N 440 90 440 120 {lab=VGND}
+N 300 60 330 60 {lab=VGND}
+N 330 60 330 120 {lab=VGND}
+N 410 60 440 60 {lab=VGND}
+N 410 60 410 120 {lab=VGND}
+N 220 -110 260 -110 {lab=ENB}
+N 220 -50 260 -50 {lab=AGG_CLK}
+N 220 60 260 60 {lab=ENB}
+N 480 60 540 60 {lab=AGG_CLK}
+N 800 -220 840 -220 {lab=VGND}
+N 860 -190 860 -130 {lab=X}
+N 780 -130 780 -100 {lab=X}
+N 780 -130 860 -130 {lab=X}
+N 860 -130 920 -130 {lab=X}
+N 920 -130 980 -130 {lab=X}
+N 980 -130 980 -100 {lab=X}
+N 700 -70 740 -70 {lab=GI}
+N 780 -70 820 -70 {lab=VGND}
+N 820 -70 820 -30 {lab=VGND}
+N 780 -40 780 30 {lab=SUBI}
+N 660 30 780 30 {lab=SUBI}
+N 1020 -70 1060 -70 {lab=GD}
+N 940 -70 980 -70 {lab=VGND}
+N 940 -70 940 -30 {lab=VGND}
+N 980 -40 980 -10 {lab=D}
+N 980 -10 980 20 {lab=D}
+N 980 -10 1020 -10 {lab=D}
 C {devices/iopin.sym} -760 -60 0 1 {name=p1 lab=AGG_CLK}
 C {devices/iopin.sym} -760 140 0 1 {name=p2 lab=EN}
 C {devices/iopin.sym} -760 -300 0 1 {name=p3 lab=VDPWR}
@@ -130,10 +138,3 @@ C {devices/gnd.sym} 940 -30 0 0 {name=l36 lab=VGND global=false}
 C {sky130_fd_pr/res_generic_po.sym} 980 50 0 0 {name=RDUM model=res_generic_po W=1 L=15 mult=1}
 C {devices/lab_pin.sym} 1020 -10 0 1 {name=l37 sig_type=std_logic lab=D}
 C {devices/gnd.sym} 980 80 0 0 {name=l38 lab=VGND global=false}
-T {ELAD1_AGGRESSOR: on-chip substrate aggressor, steered current into the shared tap SUBI} -760 -470 0 0 0.4 0.4 {}
-T {EN = 1 (noise mode): ~90 uA from VDPWR through RL is steered by AGG_CLK -
-AGG_CLK = 1: through MINJ out of SUBI into the substrate tap (the tap rises ~60 mV)
-AGG_CLK = 0: through MDUM and RDUM to VGND.  The supply current stays the same in both states.
-EN = 0: both switches off, no current.  SUBI is the same tap that ua0 (force) and ua2 (sense) reach.} -760 -425 0 0 0.22 0.22 {}
-T {Layout: SUBI = P+ taps of an isolated tap island (SUBCUT), equidistant from both victims;
-no VGND taps inside it.  RL, RDUM and the logic outside the island, away from the victims.} -760 380 0 0 0.22 0.22 {}

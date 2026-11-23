@@ -1,0 +1,892 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "run.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: ELAD1_CONTROL
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__inv_1".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_1".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__o41ai_1".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__o21ai_0".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__nor2b_1".
+Reading "sky130_fd_sc_hd__and2_0".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__o211ai_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_1".
+Reading "sky130_fd_sc_hd__mux2i_1".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__o31ai_1".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__nand3b_1".
+Reading "sky130_fd_sc_hd__mux4_2".
+Reading "sky130_fd_sc_hd__nor3b_1".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__nand4_1".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__a32oi_1".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__a211oi_1".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "ELAD1_CONTROL".
+Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
+Processing sky130_fd_sc_hd__decap_8
+sky130_fd_sc_hd__decap_8: 2 warnings
+Extracting sky130_fd_sc_hd__decap_12 into sky130_fd_sc_hd__decap_12.ext:
+Processing sky130_fd_sc_hd__decap_12
+sky130_fd_sc_hd__decap_12: 2 warnings
+Extracting sky130_fd_sc_hd__decap_3 into sky130_fd_sc_hd__decap_3.ext:
+Processing sky130_fd_sc_hd__decap_3
+sky130_fd_sc_hd__decap_3: 2 warnings
+Extracting sky130_fd_sc_hd__buf_2 into sky130_fd_sc_hd__buf_2.ext:
+Processing sky130_fd_sc_hd__buf_2
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Processing sky130_fd_sc_hd__fill_1
+Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Processing sky130_fd_sc_hd__tapvpwrvgnd_1
+Extracting sky130_fd_sc_hd__dfrtp_1 into sky130_fd_sc_hd__dfrtp_1.ext:
+Processing sky130_fd_sc_hd__dfrtp_1
+Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
+Processing sky130_fd_sc_hd__decap_4
+sky130_fd_sc_hd__decap_4: 2 warnings
+Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
+Processing sky130_fd_sc_hd__fill_2
+Extracting sky130_fd_sc_hd__a32o_1 into sky130_fd_sc_hd__a32o_1.ext:
+Processing sky130_fd_sc_hd__a32o_1
+Extracting sky130_fd_sc_hd__dlygate4sd3_1 into sky130_fd_sc_hd__dlygate4sd3_1.ext:
+Processing sky130_fd_sc_hd__dlygate4sd3_1
+Extracting sky130_fd_sc_hd__decap_6 into sky130_fd_sc_hd__decap_6.ext:
+Processing sky130_fd_sc_hd__decap_6
+sky130_fd_sc_hd__decap_6: 2 warnings
+Extracting sky130_fd_sc_hd__mux2_1 into sky130_fd_sc_hd__mux2_1.ext:
+Processing sky130_fd_sc_hd__mux2_1
+Extracting sky130_fd_sc_hd__dfstp_1 into sky130_fd_sc_hd__dfstp_1.ext:
+Processing sky130_fd_sc_hd__dfstp_1
+Extracting sky130_fd_sc_hd__inv_1 into sky130_fd_sc_hd__inv_1.ext:
+Processing sky130_fd_sc_hd__inv_1
+Extracting sky130_fd_sc_hd__nor2_1 into sky130_fd_sc_hd__nor2_1.ext:
+Processing sky130_fd_sc_hd__nor2_1
+Extracting sky130_fd_sc_hd__clkdlybuf4s25_1 into sky130_fd_sc_hd__clkdlybuf4s25_1.ext:
+Processing sky130_fd_sc_hd__clkdlybuf4s25_1
+Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
+Processing sky130_fd_sc_hd__clkbuf_1
+Extracting sky130_fd_sc_hd__or3_1 into sky130_fd_sc_hd__or3_1.ext:
+Processing sky130_fd_sc_hd__or3_1
+Extracting sky130_fd_sc_hd__buf_1 into sky130_fd_sc_hd__buf_1.ext:
+Processing sky130_fd_sc_hd__buf_1
+Extracting sky130_fd_sc_hd__o41ai_1 into sky130_fd_sc_hd__o41ai_1.ext:
+Processing sky130_fd_sc_hd__o41ai_1
+Extracting sky130_fd_sc_hd__clkbuf_16 into sky130_fd_sc_hd__clkbuf_16.ext:
+Processing sky130_fd_sc_hd__clkbuf_16
+Extracting sky130_fd_sc_hd__nand2_1 into sky130_fd_sc_hd__nand2_1.ext:
+Processing sky130_fd_sc_hd__nand2_1
+Extracting sky130_fd_sc_hd__o21ai_0 into sky130_fd_sc_hd__o21ai_0.ext:
+Processing sky130_fd_sc_hd__o21ai_0
+Extracting sky130_fd_sc_hd__nor3_1 into sky130_fd_sc_hd__nor3_1.ext:
+Processing sky130_fd_sc_hd__nor3_1
+Extracting sky130_fd_sc_hd__nor2b_1 into sky130_fd_sc_hd__nor2b_1.ext:
+Processing sky130_fd_sc_hd__nor2b_1
+Extracting sky130_fd_sc_hd__and2_0 into sky130_fd_sc_hd__and2_0.ext:
+Processing sky130_fd_sc_hd__and2_0
+Extracting sky130_fd_sc_hd__a21oi_1 into sky130_fd_sc_hd__a21oi_1.ext:
+Processing sky130_fd_sc_hd__a21oi_1
+Extracting sky130_fd_sc_hd__a21bo_1 into sky130_fd_sc_hd__a21bo_1.ext:
+Processing sky130_fd_sc_hd__a21bo_1
+Extracting sky130_fd_sc_hd__o211ai_1 into sky130_fd_sc_hd__o211ai_1.ext:
+Processing sky130_fd_sc_hd__o211ai_1
+Extracting sky130_fd_sc_hd__clkdlybuf4s50_1 into sky130_fd_sc_hd__clkdlybuf4s50_1.ext:
+Processing sky130_fd_sc_hd__clkdlybuf4s50_1
+Extracting sky130_fd_sc_hd__mux2i_1 into sky130_fd_sc_hd__mux2i_1.ext:
+Processing sky130_fd_sc_hd__mux2i_1
+Extracting sky130_fd_sc_hd__nand3_1 into sky130_fd_sc_hd__nand3_1.ext:
+Processing sky130_fd_sc_hd__nand3_1
+Extracting sky130_fd_sc_hd__a31oi_1 into sky130_fd_sc_hd__a31oi_1.ext:
+Processing sky130_fd_sc_hd__a31oi_1
+Extracting sky130_fd_sc_hd__nor4b_1 into sky130_fd_sc_hd__nor4b_1.ext:
+Processing sky130_fd_sc_hd__nor4b_1
+Extracting sky130_fd_sc_hd__o31ai_1 into sky130_fd_sc_hd__o31ai_1.ext:
+Processing sky130_fd_sc_hd__o31ai_1
+Extracting sky130_fd_sc_hd__nand3b_1 into sky130_fd_sc_hd__nand3b_1.ext:
+Processing sky130_fd_sc_hd__nand3b_1
+Extracting sky130_fd_sc_hd__mux4_2 into sky130_fd_sc_hd__mux4_2.ext:
+Processing sky130_fd_sc_hd__mux4_2
+Extracting sky130_fd_sc_hd__nor3b_1 into sky130_fd_sc_hd__nor3b_1.ext:
+Processing sky130_fd_sc_hd__nor3b_1
+Extracting sky130_fd_sc_hd__and3_1 into sky130_fd_sc_hd__and3_1.ext:
+Processing sky130_fd_sc_hd__and3_1
+Extracting sky130_fd_sc_hd__nand4_1 into sky130_fd_sc_hd__nand4_1.ext:
+Processing sky130_fd_sc_hd__nand4_1
+Extracting sky130_fd_sc_hd__nand2b_1 into sky130_fd_sc_hd__nand2b_1.ext:
+Processing sky130_fd_sc_hd__nand2b_1
+Extracting sky130_fd_sc_hd__a32oi_1 into sky130_fd_sc_hd__a32oi_1.ext:
+Processing sky130_fd_sc_hd__a32oi_1
+Extracting sky130_fd_sc_hd__xor2_1 into sky130_fd_sc_hd__xor2_1.ext:
+Processing sky130_fd_sc_hd__xor2_1
+Extracting sky130_fd_sc_hd__clkbuf_2 into sky130_fd_sc_hd__clkbuf_2.ext:
+Processing sky130_fd_sc_hd__clkbuf_2
+Extracting sky130_fd_sc_hd__a211oi_1 into sky130_fd_sc_hd__a211oi_1.ext:
+Processing sky130_fd_sc_hd__a211oi_1
+Extracting sky130_fd_sc_hd__a22o_1 into sky130_fd_sc_hd__a22o_1.ext:
+Processing sky130_fd_sc_hd__a22o_1
+Extracting sky130_fd_sc_hd__o21ai_1 into sky130_fd_sc_hd__o21ai_1.ext:
+Processing sky130_fd_sc_hd__o21ai_1
+Extracting sky130_fd_sc_hd__nor4_1 into sky130_fd_sc_hd__nor4_1.ext:
+Processing sky130_fd_sc_hd__nor4_1
+Extracting sky130_fd_sc_hd__buf_4 into sky130_fd_sc_hd__buf_4.ext:
+Processing sky130_fd_sc_hd__buf_4
+Extracting sky130_fd_sc_hd__clkbuf_4 into sky130_fd_sc_hd__clkbuf_4.ext:
+Processing sky130_fd_sc_hd__clkbuf_4
+Extracting sky130_fd_sc_hd__conb_1 into sky130_fd_sc_hd__conb_1.ext:
+Processing sky130_fd_sc_hd__conb_1
+Extracting ELAD1_CONTROL into ELAD1_CONTROL.ext:
+Processing ELAD1_CONTROL
+Total of 10 warnings.
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting VNB
+Extracting VPB
+Extracting VGND
+Extracting VPWR
+Total Nets: 4
+Nets extracted: 4 (1.000000)
+Nets output: 4 (1.000000)
+Extracting VNB
+Extracting VPB
+Extracting VGND
+Extracting VPWR
+Total Nets: 4
+Nets extracted: 4 (1.000000)
+Nets output: 4 (1.000000)
+Extracting VNB
+Extracting VPB
+Extracting VGND
+Extracting VPWR
+Total Nets: 4
+Nets extracted: 4 (1.000000)
+Nets output: 4 (1.000000)
+Extracting a_27_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+Extracting VNB
+Extracting VPB
+Extracting VPWR
+Extracting VGND
+Total Nets: 4
+Nets extracted: 4 (1.000000)
+Nets output: 4 (1.000000)
+Extracting VGND
+Extracting VPWR
+Total Nets: 2
+Nets extracted: 2 (1.000000)
+Nets output: 2 (1.000000)
+Extracting a_27_47#
+Extracting a_193_47#
+Extracting a_761_289#
+Extracting a_543_47#
+Extracting a_1283_21#
+Extracting a_1108_47#
+Extracting a_448_47#
+Extracting a_651_413#
+Extracting a_1270_413#
+Extracting a_639_47#
+Extracting a_805_47#
+Extracting a_1217_47#
+Extracting a_1462_47#
+Extracting VNB
+Extracting VPB
+Extracting CLK
+Extracting D
+Extracting RESET_B
+Extracting VPWR
+Extracting VGND
+Extracting Q
+Total Nets: 21
+Nets extracted: 21 (1.000000)
+Nets output: 21 (1.000000)
+Extracting VNB
+Extracting VPB
+Extracting VGND
+Extracting VPWR
+Total Nets: 4
+Nets extracted: 4 (1.000000)
+Nets output: 4 (1.000000)
+Extracting VNB
+Extracting VPB
+Extracting VPWR
+Extracting VGND
+Total Nets: 4
+Nets extracted: 4 (1.000000)
+Nets output: 4 (1.000000)
+Extracting a_93_21#
+Extracting a_250_297#
+Extracting a_256_47#
+Extracting a_346_47#
+Extracting a_584_47#
+Extracting VNB
+Extracting VPB
+Extracting A3
+Extracting A2
+Extracting A1
+Extracting B1
+Extracting B2
+Extracting X
+Extracting VPWR
+Extracting VGND
+Total Nets: 15
+Nets extracted: 15 (1.000000)
+Nets output: 15 (1.000000)
+Extracting a_49_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 9
+Nets extracted: 7 (0.777778)
+Nets output: 7 (0.777778)
+Extracting VNB
+Extracting VPB
+Extracting VGND
+Extracting VPWR
+Total Nets: 4
+Nets extracted: 4 (1.000000)
+Nets output: 4 (1.000000)
+Extracting a_76_199#
+Extracting a_505_21#
+Extracting a_218_374#
+Extracting a_535_374#
+Extracting a_218_47#
+Extracting a_439_47#
+Extracting VNB
+Extracting VPB
+Extracting X
+Extracting VPWR
+Extracting S
+Extracting A0
+Extracting A1
+Extracting VGND
+Total Nets: 14
+Nets extracted: 14 (1.000000)
+Nets output: 14 (1.000000)
+Extracting a_27_47#
+Extracting a_193_47#
+Extracting a_652_21#
+Extracting a_476_47#
+Extracting a_1182_261#
+Extracting a_1032_413#
+Extracting a_1602_47#
+Extracting a_381_47#
+Extracting a_562_413#
+Extracting a_956_413#
+Extracting a_1140_413#
+Extracting a_586_47#
+Extracting a_796_47#
+Extracting a_1056_47#
+Extracting a_1224_47#
+Extracting a_1296_47#
+Extracting VNB
+Extracting VPB
+Extracting CLK
+Extracting D
+Extracting SET_B
+Extracting VPWR
+Extracting VGND
+Extracting Q
+Total Nets: 24
+Nets extracted: 24 (1.000000)
+Nets output: 24 (1.000000)
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 6
+Nets extracted: 6 (1.000000)
+Nets output: 6 (1.000000)
+Extracting a_109_297#
+Extracting VNB
+Extracting VPB
+Extracting B
+Extracting A
+Extracting Y
+Extracting VPWR
+Extracting VGND
+Total Nets: 8
+Nets extracted: 8 (1.000000)
+Nets output: 8 (1.000000)
+Extracting a_27_47#
+Extracting a_244_47#
+Extracting a_355_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 9
+Nets extracted: 9 (1.000000)
+Nets output: 9 (1.000000)
+Extracting a_75_212#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting X
+Extracting VPWR
+Extracting VGND
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+Extracting a_29_53#
+Extracting a_111_297#
+Extracting a_183_297#
+Extracting VNB
+Extracting VPB
+Extracting VPWR
+Extracting B
+Extracting C
+Extracting A
+Extracting X
+Extracting VGND
+Total Nets: 11
+Nets extracted: 11 (1.000000)
+Nets output: 11 (1.000000)
+Extracting a_27_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+Extracting a_193_297#
+Extracting a_348_297#
+Extracting a_432_297#
+Extracting a_109_47#
+Extracting VNB
+Extracting VPB
+Extracting B1
+Extracting A4
+Extracting A3
+Extracting A2
+Extracting A1
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 14
+Nets extracted: 14 (1.000000)
+Nets output: 14 (1.000000)
+Extracting a_110_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+Extracting a_113_47#
+Extracting VNB
+Extracting VPB
+Extracting B
+Extracting A
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 8
+Nets extracted: 8 (1.000000)
+Nets output: 8 (1.000000)
+Extracting a_120_369#
+Extracting a_32_47#
+Extracting VNB
+Extracting VPB
+Extracting A1
+Extracting A2
+Extracting B1
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 10
+Nets extracted: 10 (1.000000)
+Nets output: 10 (1.000000)
+Extracting a_109_297#
+Extracting a_193_297#
+Extracting VNB
+Extracting VPB
+Extracting C
+Extracting B
+Extracting A
+Extracting Y
+Extracting VPWR
+Extracting VGND
+Total Nets: 10
+Nets extracted: 10 (1.000000)
+Nets output: 10 (1.000000)
+Extracting a_74_47#
+Extracting a_265_297#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting B_N
+Extracting Y
+Extracting VGND
+Total Nets: 9
+Nets extracted: 9 (1.000000)
+Nets output: 9 (1.000000)
+Extracting a_40_47#
+Extracting a_123_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting B
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 9
+Nets extracted: 9 (1.000000)
+Nets output: 9 (1.000000)
+Extracting a_113_297#
+Extracting a_199_47#
+Extracting VNB
+Extracting VPB
+Extracting B1
+Extracting A1
+Extracting A2
+Extracting Y
+Extracting VPWR
+Extracting VGND
+Total Nets: 10
+Nets extracted: 10 (1.000000)
+Nets output: 10 (1.000000)
+Extracting a_27_413#
+Extracting a_215_297#
+Extracting a_298_297#
+Extracting a_382_47#
+Extracting VNB
+Extracting VPB
+Extracting B1_N
+Extracting A1
+Extracting A2
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 12
+Nets extracted: 12 (1.000000)
+Nets output: 12 (1.000000)
+Extracting a_110_297#
+Extracting a_27_47#
+Extracting a_326_47#
+Extracting VNB
+Extracting VPB
+Extracting A1
+Extracting A2
+Extracting B1
+Extracting C1
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 12
+Nets extracted: 12 (1.000000)
+Nets output: 12 (1.000000)
+Extracting a_27_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 9
+Nets extracted: 7 (0.777778)
+Nets output: 7 (0.777778)
+Extracting a_283_205#
+Extracting a_27_297#
+Extracting a_204_297#
+Extracting a_27_47#
+Extracting a_193_47#
+Extracting VNB
+Extracting VPB
+Extracting A0
+Extracting A1
+Extracting S
+Extracting Y
+Extracting VPWR
+Extracting VGND
+Total Nets: 13
+Nets extracted: 13 (1.000000)
+Nets output: 13 (1.000000)
+Extracting a_109_47#
+Extracting a_193_47#
+Extracting VNB
+Extracting VPB
+Extracting C
+Extracting B
+Extracting A
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 10
+Nets extracted: 10 (1.000000)
+Nets output: 10 (1.000000)
+Extracting a_109_297#
+Extracting a_109_47#
+Extracting a_181_47#
+Extracting VNB
+Extracting VPB
+Extracting A3
+Extracting A2
+Extracting A1
+Extracting B1
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 12
+Nets extracted: 12 (1.000000)
+Nets output: 12 (1.000000)
+Extracting a_91_199#
+Extracting a_161_297#
+Extracting a_245_297#
+Extracting a_341_297#
+Extracting VNB
+Extracting VPB
+Extracting C
+Extracting B
+Extracting A
+Extracting Y
+Extracting VPWR
+Extracting D_N
+Extracting VGND
+Total Nets: 13
+Nets extracted: 13 (1.000000)
+Nets output: 13 (1.000000)
+Extracting a_109_297#
+Extracting a_193_297#
+Extracting a_109_47#
+Extracting VNB
+Extracting VPB
+Extracting A1
+Extracting A2
+Extracting A3
+Extracting B1
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 12
+Nets extracted: 12 (1.000000)
+Nets output: 12 (1.000000)
+Extracting a_53_93#
+Extracting a_232_47#
+Extracting a_316_47#
+Extracting VNB
+Extracting VPB
+Extracting C
+Extracting B
+Extracting VPWR
+Extracting A_N
+Extracting Y
+Extracting VGND
+Total Nets: 11
+Nets extracted: 11 (1.000000)
+Nets output: 11 (1.000000)
+Extracting a_27_47#
+Extracting a_193_369#
+Extracting a_288_47#
+Extracting a_372_413#
+Extracting a_788_316#
+Extracting a_600_345#
+Extracting a_193_47#
+Extracting a_872_316#
+Extracting a_1060_369#
+Extracting a_1279_413#
+Extracting a_397_47#
+Extracting a_1064_47#
+Extracting a_1281_47#
+Extracting VNB
+Extracting VPB
+Extracting S0
+Extracting A2
+Extracting VPWR
+Extracting A3
+Extracting S1
+Extracting A1
+Extracting A0
+Extracting VGND
+Extracting X
+Total Nets: 24
+Nets extracted: 24 (1.000000)
+Nets output: 24 (1.000000)
+Extracting a_91_199#
+Extracting a_161_297#
+Extracting a_245_297#
+Extracting VNB
+Extracting VPB
+Extracting B
+Extracting A
+Extracting Y
+Extracting VPWR
+Extracting C_N
+Extracting VGND
+Total Nets: 11
+Nets extracted: 11 (1.000000)
+Nets output: 11 (1.000000)
+Extracting a_27_47#
+Extracting a_109_47#
+Extracting a_181_47#
+Extracting VNB
+Extracting VPB
+Extracting B
+Extracting VPWR
+Extracting A
+Extracting C
+Extracting X
+Extracting VGND
+Total Nets: 11
+Nets extracted: 11 (1.000000)
+Nets output: 11 (1.000000)
+Extracting a_109_47#
+Extracting a_193_47#
+Extracting a_277_47#
+Extracting VNB
+Extracting VPB
+Extracting D
+Extracting C
+Extracting B
+Extracting A
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 12
+Nets extracted: 12 (1.000000)
+Nets output: 12 (1.000000)
+Extracting a_27_93#
+Extracting a_206_47#
+Extracting VNB
+Extracting VPB
+Extracting B
+Extracting VPWR
+Extracting A_N
+Extracting Y
+Extracting VGND
+Total Nets: 9
+Nets extracted: 9 (1.000000)
+Nets output: 9 (1.000000)
+Extracting a_27_297#
+Extracting a_109_47#
+Extracting a_309_47#
+Extracting a_383_47#
+Extracting VNB
+Extracting VPB
+Extracting B2
+Extracting B1
+Extracting A1
+Extracting A2
+Extracting A3
+Extracting Y
+Extracting VPWR
+Extracting VGND
+Total Nets: 14
+Nets extracted: 14 (1.000000)
+Nets output: 14 (1.000000)
+Extracting a_35_297#
+Extracting a_117_297#
+Extracting a_285_297#
+Extracting a_285_47#
+Extracting VNB
+Extracting VPB
+Extracting B
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 11
+Nets extracted: 11 (1.000000)
+Nets output: 11 (1.000000)
+Extracting a_27_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+Extracting a_56_297#
+Extracting a_311_297#
+Extracting a_139_47#
+Extracting VNB
+Extracting VPB
+Extracting A2
+Extracting A1
+Extracting B1
+Extracting C1
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 12
+Nets extracted: 12 (1.000000)
+Nets output: 12 (1.000000)
+Extracting a_27_297#
+Extracting a_109_297#
+Extracting a_109_47#
+Extracting a_373_47#
+Extracting VNB
+Extracting VPB
+Extracting B2
+Extracting B1
+Extracting A1
+Extracting A2
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 13
+Nets extracted: 13 (1.000000)
+Nets output: 13 (1.000000)
+Extracting a_109_297#
+Extracting a_27_47#
+Extracting VNB
+Extracting VPB
+Extracting A1
+Extracting A2
+Extracting B1
+Extracting VPWR
+Extracting Y
+Extracting VGND
+Total Nets: 10
+Nets extracted: 10 (1.000000)
+Nets output: 10 (1.000000)
+Extracting a_109_297#
+Extracting a_191_297#
+Extracting a_297_297#
+Extracting VNB
+Extracting VPB
+Extracting D
+Extracting C
+Extracting B
+Extracting A
+Extracting Y
+Extracting VPWR
+Extracting VGND
+Total Nets: 12
+Nets extracted: 12 (1.000000)
+Nets output: 12 (1.000000)
+Extracting a_27_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+Extracting a_27_47#
+Extracting VNB
+Extracting VPB
+Extracting A
+Extracting VPWR
+Extracting X
+Extracting VGND
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+Extracting VNB
+Extracting VPB
+Extracting VPWR
+Extracting HI
+Extracting LO
+Extracting VGND
+Total Nets: 8
+Nets extracted: 6 (0.750000)
+Nets output: 6 (0.750000)
+Extracting ui_in[7]
+Extracting ui_in[6]
+Extracting ui_in[5]
+Extracting ui_in[4]
+Extracting ui_in[3]
+Extracting ui_in[2]
+Extracting ui_in[1]
+Extracting ui_in[0]
+Extracting rst_n
+Extracting ena
+Extracting status[7]
+Extracting status[6]
+Extracting status[5]
+Extracting status[4]
+Extracting status[3]
+Extracting status[2]
+Extracting status[1]
+Extracting status[0]
+Extracting clk
+Extracting en_mg
+Extracting en_mc
+Extracting en_pg
+Extracting en_pc
+Extracting en_n
+Extracting clr_mg
+Extracting clr_mc
+Extracting clr_pg
+Extracting clr_pc
+Extracting clr_n
+Extracting hen
+Extracting agg_clk
+Extracting VGND
+Extracting VDPWR
+Total Nets: 2099
+Nets extracted: 33 (0.015722)
+Nets output: 33 (0.015722)
+exttospice finished.
