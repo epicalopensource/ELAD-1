@@ -50,7 +50,6 @@ meas tran i_inj avg idd from=80u to=84.9u
 meas tran i_dum avg idd from=105u to=109.9u
 meas tran v_tap_hi avg v(SUBI) from=80u to=84.9u
 meas tran v_tap_lo avg v(SUBI) from=105u to=109.9u
-meas tran vx_max max v(xdut.x) from=55u to=110u
 let i_step_pct = 100*(i_inj-i_dum)/i_dum
 let v_tap_step = v_tap_hi-v_tap_lo
 print i_step_pct v_tap_step

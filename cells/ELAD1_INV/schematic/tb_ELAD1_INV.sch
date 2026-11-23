@@ -36,6 +36,30 @@ C {devices/code_shown.sym} 420 200 0 0 {name=s1 only_toplevel=false value=".opti
 .param LEN=0.15
 .control
 set vddv = 1.8
-source inv_ctl.cir
+let half = $vddv/2
+let v10 = 0.1*$vddv
+let v90 = 0.9*$vddv
+tran 5p 12n
+meas tran tphl trig v(a) val=$&half rise=1 targ v(y) val=$&half fall=1
+meas tran tplh trig v(a) val=$&half fall=1 targ v(y) val=$&half rise=1
+meas tran trise trig v(y) val=$&v10 rise=1 targ v(y) val=$&v90 rise=1
+meas tran tfall trig v(y) val=$&v90 fall=1 targ v(y) val=$&v10 fall=1
+let pw = -i(vdd)*$vddv
+meas tran pavg avg pw from=1n to=11n
+let ecyc = pavg*10e-9
+write tb_inv_tran
+dc VA 0 $vddv 0.001
+let d = v(y)-v(a)
+meas dc vsw find v(a) when d=0
+meas dc voh max v(y)
+meas dc vol min v(y)
+let gain = deriv(v(y))
+meas dc gain_max min gain
+meas dc vil when gain=-1 cross=1
+meas dc vih when gain=-1 cross=2
+let isc = -i(vdd)
+meas dc isc_pk max isc
+meas dc ileak find isc at=0
+write tb_inv_dc
 .endc"}
 C {sky130_fd_pr/corner.sym} 420 0 0 0 {name=CORNER only_toplevel=true corner=tt}
