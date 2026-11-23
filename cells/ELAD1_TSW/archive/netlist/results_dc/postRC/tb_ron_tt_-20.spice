@@ -1,0 +1,21 @@
+* tsw ron postRC tt
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/designs/ELAD-1/cells/ELAD1_TSW/pex_rc/ELAD1_TSW_rc_sub.spice
+XDUT A B EN ENB VDPWR VGND  ELAD1_TSW
+VDD VDPWR 0 1.8
+VG0 VGND 0 0
+.option rshunt=1e12
+.temp -20
+VEN EN 0 1.8
+VENB ENB 0 0
+VCM CM 0 0.9
+EA A 0 vol='v(CM)+0.05'
+EB B1 0 vol='v(CM)-0.05'
+VSB B1 B 0
+.control
+set filetype=ascii
+dc VCM 0.05 1.75 0.01
+wrdata results_dc/postRC/sweeps/ron_tt_-20.txt i(VSB)
+quit
+.endc
+.end

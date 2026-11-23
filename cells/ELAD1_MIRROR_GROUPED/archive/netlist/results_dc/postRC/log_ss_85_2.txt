@@ -1,0 +1,15 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * mirror dc testbench
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  2.70000e-02 Reference value :  5.20000e-02 Reference value :  7.70000e-02 Reference value :  1.01000e-01 Reference value :  1.24000e-01 Reference value :  1.47000e-01 Reference value :  1.71000e-01 Reference value :  1.94000e-01 Reference value :  2.17000e-01 Reference value :  2.39000e-01 Reference value :  2.61000e-01 Reference value :  2.82000e-01 Reference value :  3.04000e-01 Reference value :  3.25000e-01 Reference value :  3.46000e-01 Reference value :  3.68000e-01 Reference value :  3.90000e-01 Reference value :  4.12000e-01 Reference value :  4.35000e-01 Reference value :  4.57000e-01 Reference value :  4.80000e-01 Reference value :  5.03000e-01 Reference value :  5.27000e-01 Reference value :  5.50000e-01 Reference value :  5.73000e-01 Reference value :  5.96000e-01 Reference value :  6.20000e-01 Reference value :  6.41000e-01 Reference value :  6.62000e-01 Reference value :  6.84000e-01 Reference value :  7.06000e-01 Reference value :  7.28000e-01 Reference value :  7.50000e-01 Reference value :  7.73000e-01 Reference value :  7.96000e-01 Reference value :  8.19000e-01 Reference value :  8.42000e-01 Reference value :  8.65000e-01 Reference value :  8.88000e-01 Reference value :  9.10000e-01 Reference value :  9.32000e-01 Reference value :  9.54000e-01 Reference value :  9.77000e-01 Reference value :  9.99000e-01 Reference value :  1.02100e+00 Reference value :  1.04200e+00 Reference value :  1.06300e+00 Reference value :  1.08500e+00 Reference value :  1.10600e+00 Reference value :  1.12800e+00 Reference value :  1.14900e+00 Reference value :  1.17100e+00 Reference value :  1.19300e+00
+No. of Data Rows : 1201
+ngspice-47 done

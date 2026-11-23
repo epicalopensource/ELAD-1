@@ -1,0 +1,19 @@
+* tsw leak postC ff
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ff
+.include /foss/designs/ELAD-1/cells/ELAD1_TSW/pex/ELAD1_TSW_pex_sub.spice
+XDUT A B EN ENB VDPWR VGND  ELAD1_TSW
+VDD VDPWR 0 1.8
+VG0 VGND 0 0
+.option rshunt=1e12
+.temp 85
+VEN EN 0 0
+VENB ENB 0 1.8
+VA A 0 1.8
+VB B 0 0
+.control
+set filetype=ascii
+dc VA 1.8 1.8 1
+wrdata results_dc/postC/sweeps/leak_ff_85.txt i(VA)
+quit
+.endc
+.end

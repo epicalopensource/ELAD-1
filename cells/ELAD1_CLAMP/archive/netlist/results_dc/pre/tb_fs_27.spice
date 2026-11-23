@@ -1,0 +1,23 @@
+* clamp pre fs_27
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice fs
+.include /foss/designs/ELAD-1/cells/ELAD1_CLAMP/netlist/ELAD1_CLAMP.spice
+XDUT NODE CLR VGND  ELAD1_CLAMP
+VG0 VGND 0 0
+VCLR CLR 0 1.8
+VNODE NODE 0 0.9
+.option rshunt=1e12
+.temp 27
+.control
+set filetype=ascii
+dc VNODE 0 1.8 0.05
+wrdata results_dc/pre/sweeps/on_fs_27.txt i(VNODE)
+alter VCLR dc=0
+dc VNODE 0 1.8 0.05
+wrdata results_dc/pre/sweeps/off_fs_27.txt i(VNODE)
+alter VCLR dc=1.8
+alter VNODE dc=0.9
+dc VCLR 0 1.8 0.05
+wrdata results_dc/pre/sweeps/clr_fs_27.txt i(VNODE)
+quit
+.endc
+.end

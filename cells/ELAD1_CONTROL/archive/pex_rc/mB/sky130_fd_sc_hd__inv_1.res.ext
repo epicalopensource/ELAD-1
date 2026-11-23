@@ -1,0 +1,33 @@
+scale 1000 1 500000
+rnode "VNB.t0" 0 0 135 112 0
+rnode "VNB" 0 0 29 -17 0
+resist "VNB" "VNB.t0" 1612.5
+rnode "VPB.t0" 0 89.2199 135 397 0
+rnode "VPB" 0 53.2656 29 527 0
+resist "VPB" "VPB.t0" 350.852
+rnode "A.t1" 0 42.9761 135 397 0
+rnode "A.t0" 0 31.0126 135 112 0
+rnode "A.n0" 0 60.2812 97 232 0
+rnode "A" 0 21.9148 72 221 0
+resist "A.n0" "A.t0" 158.275
+resist "A" "A.n0" 158.667
+resist "A.n0" "A.t1" 230.575
+rnode "VPWR.t0" 0 39.2634 120 397 0
+rnode "VPWR" 0 156.056 29 527 0
+resist "VPWR" "VPWR.t0" 264.903
+rnode "Y.t1" 0 44.1696 150 397 0
+rnode "Y" 0 -1.13788 164 289 0
+rnode "Y.n0" 0 58.3433 187 297 0
+rnode "Y" 0 7.53417 164 289 0
+rnode "Y.t0" 0 28.7746 150 112 0
+rnode "Y" 0 51.6703 164 221 0
+resist "Y.n0" "Y" 1.55152
+resist "Y" "Y.n0" 2.22609
+resist "Y" "Y" 18.9217
+resist "Y" "Y.t0" 152.889
+resist "Y.n0" "Y.t1" 235.56
+rnode "VGND.t0" 0 18.5703 120 112 0
+rnode "VGND" 0 109.868 29 -17 0
+resist "VGND" "VGND.t0" 166.95
+device msubckt sky130_fd_pr__pfet_01v8_hvt 120 297 121 298  "VPB.t0" "A.t1" 60 0 "VPWR.t0" 200 10400,504 "Y.t1" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 120 47 121 48  "VNB.t0" "A.t0" 60 0 "VGND.t0" 130 6760,364 "Y.t0" 130 6760,364

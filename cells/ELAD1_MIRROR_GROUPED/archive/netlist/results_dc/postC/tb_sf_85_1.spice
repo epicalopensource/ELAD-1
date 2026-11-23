@@ -1,0 +1,16 @@
+* mirror DC testbench
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice sf
+.include /foss/designs/ELAD-1/cells/ELAD1_MIRROR_GROUPED/pex/ELAD1_MIRROR_GROUPED_pex_sub.spice
+XDUT REF OUT VGND ELAD1_MIRROR_GROUPED
+IREF 0 REF dc 1u
+VOUT OUT 0 0.9
+VGND VGND 0 0
+.temp 85
+.control
+set filetype=ascii
+dc VOUT 0 1.2 0.001
+let iout = -i(VOUT)
+wrdata results_dc/postC/sweeps/sf_85_1.txt v(ref) iout
+quit
+.endc
+.end

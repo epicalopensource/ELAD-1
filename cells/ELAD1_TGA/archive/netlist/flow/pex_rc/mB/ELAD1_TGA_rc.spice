@@ -1,0 +1,25 @@
+* SPICE3 file created from ELAD1_TGA.ext - technology: sky130A
+
+X0 B ENB A VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.75 pd=3.5 as=0.9 ps=6.6 w=3 l=0.35
+X1 A ENB B VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.35
+X2 A ENB B VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.9 pd=6.6 as=0.75 ps=3.5 w=3 l=0.35
+X3 B ENB A VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.35
+X4 A EN B VGND sky130_fd_pr__nfet_01v8_lvt ad=0.25 pd=1.5 as=0.3 ps=2.6 w=1 l=0.15
+X5 A EN B VGND sky130_fd_pr__nfet_01v8_lvt ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X6 B EN A VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3 pd=2.6 as=0.25 ps=1.5 w=1 l=0.15
+X7 B EN A VGND sky130_fd_pr__nfet_01v8_lvt ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+C0 EN A 0.2353f
+C1 A B 2.63507f
+C2 ENB A 0.61358f
+C3 VDPWR EN 0.00256f
+C4 VDPWR B 0.32802f
+C5 EN B 0.22293f
+C6 ENB VDPWR 0.85825f
+C7 ENB EN 0.00111f
+C8 VDPWR A 0.85124f
+C9 ENB B 0.47114f
+C10 A VGND 1.18411f **FLOATING
+C11 VDPWR VGND 4.15791f **FLOATING
+C12 EN VGND 0.80656f **FLOATING
+C13 B VGND 0.68198f **FLOATING
+C14 ENB VGND 0.11228f **FLOATING

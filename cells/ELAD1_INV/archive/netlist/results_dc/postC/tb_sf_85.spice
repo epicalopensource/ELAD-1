@@ -1,0 +1,17 @@
+* inverter postC sf_85
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice sf
+.include /foss/designs/ELAD-1/cells/ELAD1_INV/pex/ELAD1_INV_pex_sub.spice
+XDUT A Y VDPWR VGND  ELAD1_INV
+VG0 VGND 0 0
+VDD VDPWR 0 1.8
+VIN A 0 0
+.option rshunt=1e12
+.temp 85
+.control
+set filetype=ascii
+dc VIN 0 1.8 0.005
+wrdata results_dc/postC/sweeps/vtc_sf_85.txt v(Y)
+wrdata results_dc/postC/sweeps/idd_sf_85.txt i(VDD)
+quit
+.endc
+.end

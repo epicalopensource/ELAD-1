@@ -1,0 +1,220 @@
+* selector pre fs 85
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice fs
+.include /foss/designs/ELAD-1/cells/ELAD1_ANALOG_SELECTOR/netlist/ELAD1_ANALOG_SELECTOR_pre.spice
+XDUT UA0 UA1 UA2 UA3 UA4 REF_G OUT_G REF_C OUT_C VBIAS_G VINP_G VINM_G D1_G D2_G VBIAS_C VINP_C VINM_C D1_C D2_C VQUIET_A VQUIET_B OUT_A OUT_B SUBI EN_MG EN_MC EN_PG EN_PC EN_N CLR_MG CLR_MC CLR_PG CLR_PC CLR_N VDPWR VGND ELAD1_ANALOG_SELECTOR
+VDD VDPWR 0 1.8
+VGS VGND 0 0
+VUA0 UA0 0 0.9
+VUA1 UA1 0 0.9
+VUA2 UA2 0 0.9
+VUA3 UA3 0 0.9
+VUA4 UA4 0 0.9
+VD1_C D1_C 0 0.9
+VD1_G D1_G 0 0.9
+VD2_C D2_C 0 0.9
+VD2_G D2_G 0 0.9
+VOUT_A OUT_A 0 0.9
+VOUT_B OUT_B 0 0.9
+VOUT_C OUT_C 0 0.9
+VOUT_G OUT_G 0 0.9
+VREF_C REF_C 0 0.9
+VREF_G REF_G 0 0.9
+VSUBI SUBI 0 0.9
+VVBIAS_C VBIAS_C 0 0.9
+VVBIAS_G VBIAS_G 0 0.9
+VVINM_C VINM_C 0 0.9
+VVINM_G VINM_G 0 0.9
+VVINP_C VINP_C 0 0.9
+VVINP_G VINP_G 0 0.9
+VVQUIET_A VQUIET_A 0 0.9
+VVQUIET_B VQUIET_B 0 0.9
+VEN_MG EN_MG 0 0
+VEN_MC EN_MC 0 0
+VEN_PG EN_PG 0 0
+VEN_PC EN_PC 0 0
+VEN_N EN_N 0 0
+VCLR_MG CLR_MG 0 0
+VCLR_MC CLR_MC 0 0
+VCLR_PG CLR_PG 0 0
+VCLR_PC CLR_PC 0 0
+VCLR_N CLR_N 0 0
+.option rshunt=1e12
+.temp 85
+.control
+alter VEN_MG dc=1.8
+alter VUA0 dc=1.0
+op
+echo "### sw MG:UA0>REF_G"
+print i(VREF_G)
+alter VUA0 dc=0.9
+alter VUA3 dc=1.0
+op
+echo "### sw MG:UA3>REF_G"
+print i(VREF_G)
+alter VUA3 dc=0.9
+alter VUA2 dc=1.0
+op
+echo "### sw MG:UA2>OUT_G"
+print i(VOUT_G)
+alter VUA2 dc=0.9
+alter VUA4 dc=1.0
+op
+echo "### sw MG:UA4>OUT_G"
+print i(VOUT_G)
+alter VUA4 dc=0.9
+alter VEN_MG dc=0
+alter VEN_MC dc=1.8
+alter VUA0 dc=1.0
+op
+echo "### sw MC:UA0>REF_C"
+print i(VREF_C)
+alter VUA0 dc=0.9
+alter VUA3 dc=1.0
+op
+echo "### sw MC:UA3>REF_C"
+print i(VREF_C)
+alter VUA3 dc=0.9
+alter VUA2 dc=1.0
+op
+echo "### sw MC:UA2>OUT_C"
+print i(VOUT_C)
+alter VUA2 dc=0.9
+alter VUA4 dc=1.0
+op
+echo "### sw MC:UA4>OUT_C"
+print i(VOUT_C)
+alter VUA4 dc=0.9
+alter VEN_MC dc=0
+alter VEN_PG dc=1.8
+alter VUA0 dc=1.0
+op
+echo "### sw PG:UA0>VBIAS_G"
+print i(VVBIAS_G)
+alter VUA0 dc=0.9
+alter VUA1 dc=1.0
+op
+echo "### sw PG:UA1>VINP_G"
+print i(VVINP_G)
+alter VUA1 dc=0.9
+alter VUA2 dc=1.0
+op
+echo "### sw PG:UA2>VINM_G"
+print i(VVINM_G)
+alter VUA2 dc=0.9
+alter VUA3 dc=1.0
+op
+echo "### sw PG:UA3>D1_G"
+print i(VD1_G)
+alter VUA3 dc=0.9
+alter VUA4 dc=1.0
+op
+echo "### sw PG:UA4>D2_G"
+print i(VD2_G)
+alter VUA4 dc=0.9
+alter VEN_PG dc=0
+alter VEN_PC dc=1.8
+alter VUA0 dc=1.0
+op
+echo "### sw PC:UA0>VBIAS_C"
+print i(VVBIAS_C)
+alter VUA0 dc=0.9
+alter VUA1 dc=1.0
+op
+echo "### sw PC:UA1>VINP_C"
+print i(VVINP_C)
+alter VUA1 dc=0.9
+alter VUA2 dc=1.0
+op
+echo "### sw PC:UA2>VINM_C"
+print i(VVINM_C)
+alter VUA2 dc=0.9
+alter VUA3 dc=1.0
+op
+echo "### sw PC:UA3>D1_C"
+print i(VD1_C)
+alter VUA3 dc=0.9
+alter VUA4 dc=1.0
+op
+echo "### sw PC:UA4>D2_C"
+print i(VD2_C)
+alter VUA4 dc=0.9
+alter VEN_PC dc=0
+alter VEN_N dc=1.8
+alter VUA0 dc=1.0
+op
+echo "### sw N:UA0>SUBI"
+print i(VSUBI)
+alter VUA0 dc=0.9
+alter VUA2 dc=1.0
+op
+echo "### sw N:UA2>SUBI"
+print i(VSUBI)
+alter VUA2 dc=0.9
+alter VUA1 dc=1.0
+op
+echo "### sw N:UA1>VQUIET_A,VQUIET_B"
+print i(VVQUIET_A) i(VVQUIET_B)
+alter VUA1 dc=0.9
+alter VUA3 dc=1.0
+op
+echo "### sw N:UA3>OUT_A"
+print i(VOUT_A)
+alter VUA3 dc=0.9
+alter VUA4 dc=1.0
+op
+echo "### sw N:UA4>OUT_B"
+print i(VOUT_B)
+alter VUA4 dc=0.9
+alter VEN_N dc=0
+alter VCLR_MG dc=1.8
+op
+echo "### clamp CLR_MG:REF_G"
+print i(VREF_G)
+alter VCLR_MG dc=0
+alter VCLR_MC dc=1.8
+op
+echo "### clamp CLR_MC:REF_C"
+print i(VREF_C)
+alter VCLR_MC dc=0
+alter VCLR_PG dc=1.8
+op
+echo "### clamp CLR_PG:VBIAS_G,VINP_G,VINM_G"
+print i(VVBIAS_G) i(VVINP_G) i(VVINM_G)
+alter VCLR_PG dc=0
+alter VCLR_PC dc=1.8
+op
+echo "### clamp CLR_PC:VBIAS_C,VINP_C,VINM_C"
+print i(VVBIAS_C) i(VVINP_C) i(VVINM_C)
+alter VCLR_PC dc=0
+alter VCLR_N dc=1.8
+op
+echo "### clamp CLR_N:VQUIET_A,VQUIET_B"
+print i(VVQUIET_A) i(VVQUIET_B)
+alter VCLR_N dc=0
+alter VUA0 dc=1.0
+alter VUA1 dc=1.0
+alter VUA2 dc=1.0
+alter VUA3 dc=1.0
+alter VUA4 dc=1.0
+op
+echo "### leak off"
+print i(VD1_C) i(VD1_G) i(VD2_C) i(VD2_G) i(VOUT_A) i(VOUT_B) i(VOUT_C) i(VOUT_G) i(VREF_C) i(VREF_G) i(VSUBI) i(VVBIAS_C) i(VVBIAS_G) i(VVINM_C) i(VVINM_G) i(VVINP_C) i(VVINP_G) i(VVQUIET_A) i(VVQUIET_B)
+alter VUA0 dc=0.9
+alter VUA1 dc=0.9
+alter VUA2 dc=0.9
+alter VUA3 dc=0.9
+alter VUA4 dc=0.9
+op
+echo "### idd idle"
+print i(VDD)
+alter VEN_MG dc=1.8
+alter VEN_MC dc=1.8
+alter VEN_PG dc=1.8
+alter VEN_PC dc=1.8
+alter VEN_N dc=1.8
+op
+echo "### idd allon"
+print i(VDD)
+quit
+.endc
+.end

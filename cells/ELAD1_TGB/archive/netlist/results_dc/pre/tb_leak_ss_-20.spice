@@ -1,0 +1,19 @@
+* tgb leak pre ss
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ss
+.include /foss/designs/ELAD-1/cells/ELAD1_TGB/netlist/ELAD1_TGB.spice
+XDUT A B EN ENB VDPWR VGND  ELAD1_TGB
+VDD VDPWR 0 1.8
+VG0 VGND 0 0
+.option rshunt=1e12
+.temp -20
+VEN EN 0 0
+VENB ENB 0 1.8
+VA A 0 1.8
+VB B 0 0
+.control
+set filetype=ascii
+dc VA 1.8 1.8 1
+wrdata results_dc/pre/sweeps/leak_ss_-20.txt i(VB)
+quit
+.endc
+.end

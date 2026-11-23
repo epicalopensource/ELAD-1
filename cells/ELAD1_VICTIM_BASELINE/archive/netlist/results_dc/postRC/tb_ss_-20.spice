@@ -1,0 +1,21 @@
+* victim baseline: DC sweep + AC, quiet bias VQ = 0.771 V
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ss
+.include /foss/designs/ELAD-1/cells/ELAD1_VICTIM_BASELINE/pex_rc/ELAD1_VICTIM_BASELINE_rc_sub.spice
+XDUT VQUIET OUT VDPWR VGND SUBQ ELAD1_VICTIM_BASELINE
+VDD VDPWR 0 1.8
+VQ VQUIET 0 0.771 AC 1
+VG1 VGND 0 0
+VG2 SUBQ 0 0
+.option rshunt=1e12
+.temp -20
+.control
+set filetype=ascii
+dc VQ 0.3 1.2 0.001
+let id = -i(VDD)
+wrdata results_dc/postRC/sweeps/dc_ss_-20.txt v(OUT) id
+ac dec 50 1 10g
+let gdb = vdb(OUT)
+wrdata results_dc/postRC/sweeps/ac_ss_-20.txt gdb
+quit
+.endc
+.end

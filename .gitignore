@@ -32,15 +32,4 @@ __pycache__/
 sky130_drc.txt
 unsaved_backup_*
 untitled*.sch
-cells/*/pex_rc/
-cells/*/netlist/results_dc/
-cells/*/netlist/flow/results/
-cells/*/layout/backups/
-cells/*/layout/*.lvsdb
-cells/*/layout/*_extracted.cir
-cells/*/layout/sky130_drc.txt
-cells/*/_manual/results_dc/
-cells/*/_manual/old_copy_flow/results/
-cells/*/_manual/layout_backups/
-cells/*/_manual/gui_verify/
 cells/*/schematic/*.bak

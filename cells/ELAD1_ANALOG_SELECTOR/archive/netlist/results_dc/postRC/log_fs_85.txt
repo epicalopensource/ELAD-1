@@ -1,0 +1,251 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * selector postrc fs 85
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw MG:UA0>REF_G
+i(vref_g) = 1.071539e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw MG:UA3>REF_G
+i(vref_g) = 9.999800e-06
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw MG:UA2>OUT_G
+i(vout_g) = 9.861670e-06
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw MG:UA4>OUT_G
+i(vout_g) = 1.070870e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw MC:UA0>REF_C
+i(vref_c) = 1.070733e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw MC:UA3>REF_C
+i(vref_c) = 1.000008e-05
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw MC:UA2>OUT_C
+i(vout_c) = 9.860821e-06
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw MC:UA4>OUT_C
+i(vout_c) = 1.070735e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PG:UA0>VBIAS_G
+i(vvbias_g) = 1.070720e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PG:UA1>VINP_G
+i(vvinp_g) = 1.002630e-05
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PG:UA2>VINM_G
+i(vvinm_g) = 9.861310e-06
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PG:UA3>D1_G
+i(vd1_g) = 1.066195e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PG:UA4>D2_G
+i(vd2_g) = 1.070820e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PC:UA0>VBIAS_C
+i(vvbias_c) = 1.070520e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PC:UA1>VINP_C
+i(vvinp_c) = 1.002469e-05
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PC:UA2>VINM_C
+i(vvinm_c) = 9.862230e-06
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PC:UA3>D1_C
+i(vd1_c) = 1.065680e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw PC:UA4>D2_C
+i(vd2_c) = 1.070909e-04
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw N:UA0>SUBI
+i(vsubi) = 2.280180e-05
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw N:UA2>SUBI
+i(vsubi) = 2.275795e-05
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw N:UA1>VQUIET_A,VQUIET_B
+i(vvquiet_a) = 2.279217e-05
+i(vvquiet_b) = 2.279151e-05
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw N:UA3>OUT_A
+i(vout_a) = 7.160079e-05
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### sw N:UA4>OUT_B
+i(vout_b) = 7.160423e-05
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### clamp CLR_MG:REF_G
+i(vref_g) = -3.13491e-09
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### clamp CLR_MC:REF_C
+i(vref_c) = -3.13041e-09
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### clamp CLR_PG:VBIAS_G,VINP_G,VINM_G
+i(vvbias_g) = -1.07869e-09
+i(vvinp_g) = -1.06887e-09
+i(vvinm_g) = -1.06887e-09
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### clamp CLR_PC:VBIAS_C,VINP_C,VINM_C
+i(vvbias_c) = -1.07693e-09
+i(vvinp_c) = -1.06797e-09
+i(vvinm_c) = -1.06797e-09
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### clamp CLR_N:VQUIET_A,VQUIET_B
+i(vvquiet_a) = -1.56170e-09
+i(vvquiet_b) = -1.56169e-09
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### leak off
+i(vd1_c) = 1.617280e-05
+i(vd1_g) = 1.617458e-05
+i(vd2_c) = 1.617437e-05
+i(vd2_g) = 1.617417e-05
+i(vout_a) = 7.735140e-06
+i(vout_b) = 7.735051e-06
+i(vout_c) = 1.632902e-05
+i(vout_g) = 1.632928e-05
+i(vref_c) = 1.632924e-05
+i(vref_g) = 1.633108e-05
+i(vsubi) = 3.099297e-07
+i(vvbias_c) = 1.617347e-05
+i(vvbias_g) = 1.617427e-05
+i(vvinm_c) = 1.549665e-07
+i(vvinm_g) = 1.549656e-07
+i(vvinp_c) = 1.549664e-07
+i(vvinp_g) = 1.549660e-07
+i(vvquiet_a) = 1.549668e-07
+i(vvquiet_b) = 1.549667e-07
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### idd idle
+i(vdd) = -1.80000e-12
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### idd allon
+i(vdd) = -1.80000e-12
+ngspice-47 done
