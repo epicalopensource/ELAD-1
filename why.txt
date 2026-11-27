@@ -1,0 +1,51 @@
+--- LAYOUT devices (circuit, type, size): count
+     1  ELAD1_PAIR_GROUPED  sky130_fd_pr__nfet_01v8  W=3.2e+07 L=1e+06
+     5  ELAD1_PAIR_GROUPED  sky130_fd_pr__nfet_01v8  W=8e+06 L=1e+06
+--- SCHEMATIC devices (circuit, type, size): count
+     1  ELAD1_PAIR_GROUPED  SKY130_FD_PR__NFET_01V8  W=6.4e+07 L=1e+06
+     4  ELAD1_PAIR_GROUPED  SKY130_FD_PR__NFET_01V8  W=8e+06 L=1e+06
+--- circuit ELAD1_PAIR_GROUPED <-> ELAD1_PAIR_GROUPED: NoMatch
+   net    Mismatch   layout=$13                    schematic=TAIL
+   net    Mismatch   layout=VGND                   schematic=VGND
+   device Mismatch   layout=$1                     schematic=-
+   device MatchWithWarning layout=$2                     schematic=DUM[31]   [W=8e+06 L=1e+06] vs [W=6.4e+07 L=1e+06]
+-C {sky130_fd_pr/nfet_01v8.sym} 0 0 0 0 {name=A[3:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+-C {sky130_fd_pr/nfet_01v8.sym} 200 0 0 1 {name=B[3:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+-C {sky130_fd_pr/nfet_01v8.sym} 80 130 0 0 {name=T[3:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+-C {sky130_fd_pr/nfet_01v8.sym} -80 130 0 1 {name=R[3:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+-C {sky130_fd_pr/nfet_01v8.sym} 500 130 0 0 {name=DUM[31:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
++C {sky130_fd_pr/nfet_01v8.sym} 0 0 0 0 {name=MA[3:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
++C {sky130_fd_pr/nfet_01v8.sym} 200 0 0 1 {name=MB[3:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
++C {sky130_fd_pr/nfet_01v8.sym} 80 130 0 0 {name=MT[3:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
++C {sky130_fd_pr/nfet_01v8.sym} -80 130 0 1 {name=MR[3:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
++C {sky130_fd_pr/nfet_01v8.sym} 500 130 0 0 {name=MDUM[31:0] model=nfet_01v8 W=2 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+#### mirror ngspice errors
+16: Reference value :  0.00000e+00Error: &vref: no such variable.
+.control
+set iref = 5e-6
+alter IREF dc = $iref
+op
+let vref = v(REF)
+set vrefs = $&vref
+alter VOUT dc = $vrefs
+op
+let iout = -i(VOUT)
+let err_pct = 100*(iout-$iref)/$iref
+echo OP $&vref $&iout $&err_pct
+dc VOUT 0 1.8 0.002
+let io = -i(VOUT)
+meas dc i_at_ref find io at=$vrefs
+let i99 = 0.99*i_at_ref
+meas dc v_out_99pct find v(OUT) when io=i99 cross=1
+meas dc i_0p9 find io at=0.9
+let rout_ohm = (0.9-$vrefs)/(i_0p9-i_at_ref)
+echo SWEEP $&i_at_ref $&v_out_99pct $&i_0p9 $&rout_ohm
+write tb_ELAD1_MIRROR_CC_pre.raw
+.endc
+# Pass/fail limits for tb_ELAD1_MIRROR_CC (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
+# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
+vref         0.58  0.68   # V(REF) at IREF 5 uA                                     sim 0.631  pkg 0.632
+err_pct      -0.1  0.1    # ratio error (%) at matched VDS; nominal = systematic    sim ~0     pkg ~0
+v_out_99pct  -     0.60   # compliance: IOUT 99 % of matched value (must be < VREF) sim 0.558  pkg 0.554
+rout_ohm     1meg  -      # output resistance between V(REF) and 0.9 V             sim 1.63M  pkg 1.58M

@@ -1,0 +1,15 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * mirror dc testbench
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  3.60000e-02 Reference value :  6.90000e-02 Reference value :  1.02000e-01 Reference value :  1.36000e-01 Reference value :  1.68000e-01 Reference value :  2.01000e-01 Reference value :  2.34000e-01 Reference value :  2.66000e-01 Reference value :  2.98000e-01 Reference value :  3.30000e-01 Reference value :  3.61000e-01 Reference value :  3.93000e-01 Reference value :  4.25000e-01 Reference value :  4.54000e-01 Reference value :  4.87000e-01 Reference value :  5.17000e-01 Reference value :  5.46000e-01 Reference value :  5.76000e-01 Reference value :  6.09000e-01 Reference value :  6.41000e-01 Reference value :  6.72000e-01 Reference value :  7.02000e-01 Reference value :  7.34000e-01 Reference value :  7.66000e-01 Reference value :  7.97000e-01 Reference value :  8.28000e-01 Reference value :  8.59000e-01 Reference value :  8.91000e-01 Reference value :  9.22000e-01 Reference value :  9.54000e-01 Reference value :  9.86000e-01 Reference value :  1.01800e+00 Reference value :  1.04900e+00 Reference value :  1.08100e+00 Reference value :  1.11400e+00 Reference value :  1.14400e+00 Reference value :  1.17500e+00
+No. of Data Rows : 1201
+ngspice-47 done

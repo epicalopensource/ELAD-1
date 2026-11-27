@@ -35,7 +35,7 @@ C {devices/gnd.sym} 0 180 0 0 {name=l8 lab=0 global=false}
 C {devices/vdd.sym} -440 350 0 0 {name=l9 lab=VDPWR global=false}
 C {devices/res.sym} -380 350 1 0 {name=RPDN value=5}
 C {devices/lab_pin.sym} -320 350 0 1 {name=l10 sig_type=std_logic lab=VSUP}
-C {devices/vsource.sym} -200 400 0 0 {name=VSUP value=1.8}
+C {devices/vsource.sym} -200 400 0 0 {name=VSUP value="PWL(0 0 200n 1.8)"}
 C {devices/gnd.sym} -200 430 0 0 {name=l11 lab=0 global=false}
 T {tb_ELAD1_AGGRESSOR - on-chip substrate aggressor: ~90 uA steered into the shared tap SUBI.} -480 -197.5 0 0 0.4 0.4 {}
 T {AGG_CLK: 20 kHz square wave (TT clock 40 kHz / 2), EN switched on at 5 us.
@@ -50,7 +50,6 @@ meas tran i_inj avg idd from=80u to=84.9u
 meas tran i_dum avg idd from=105u to=109.9u
 meas tran v_tap_hi avg v(SUBI) from=80u to=84.9u
 meas tran v_tap_lo avg v(SUBI) from=105u to=109.9u
-meas tran vx_max max v(xdut.x) from=55u to=110u
 let i_step_pct = 100*(i_inj-i_dum)/i_dum
 let v_tap_step = v_tap_hi-v_tap_lo
 print i_step_pct v_tap_step

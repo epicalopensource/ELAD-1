@@ -1,0 +1,155 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "run_pex_rc.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nfet_pair_cc$1$2$1$2".
+Reading "nfet_pair_cc$2$1$2".
+Reading "nfet_pair_cc$1$1$1$1$1$1$1$2".
+Reading "nfet_pair_cc$1$1$1$1$2$1$2".
+Reading "nfet_pair_cc$2$1$1$1".
+Reading "nfet_pair_cc$1$1$1$1$1$1$1$1$1".
+Reading "nfet_pair_cc$1$1$1$1$2$1$1$1".
+Reading "nfet_pair_cc$1$1$1$2$1$1$1".
+Reading "nfet_pair_cc$1$1$2$1$1$1".
+Reading "nfet_pair_cc$1$2$1$1$1".
+Reading "nfet_pair_cc$1$1$1$2$1$2".
+Reading "nfet_pair_cc$1$1$2$1$2".
+Reading "vias_gen".
+Reading "nfet_pair_cc".
+Reading "nfet_pair_cc$1".
+Reading "nfet_pair_cc$1$1".
+Reading "nfet_pair_cc$1$1$1".
+Reading "nfet_pair_cc$1$1$1$1".
+Reading "nfet_pair_cc$1$1$1$1$1".
+Reading "nfet_pair_cc$1$2".
+Reading "nfet_pair_cc$1$1$2".
+Reading "nfet_pair_cc$1$1$1$2".
+Reading "nfet_pair_cc$1$1$1$1$2".
+Reading "nfet_pair_cc$1$1$1$1$1$1".
+Reading "nfet_pair_cc$2".
+Reading "nfet_pair_cc$1$2$1".
+Reading "nfet_pair_cc$1$1$2$1".
+Reading "nfet_pair_cc$1$1$1$2$1".
+Reading "nfet_pair_cc$1$1$1$1$2$1".
+Reading "nfet_pair_cc$1$1$1$1$1$1$1".
+Reading "nfet_pair_cc$2$1".
+Reading "nfet_pair_cc$1$2$1$1".
+Reading "nfet_pair_cc$1$1$2$1$1".
+Reading "nfet_pair_cc$1$1$1$2$1$1".
+Reading "nfet_pair_cc$1$1$1$1$2$1$1".
+Reading "nfet_pair_cc$1$1$1$1$1$1$1$1".
+Reading "nfet_pair_cc$2$1$1".
+Reading "vias_gen$2".
+Reading "vias_gen$11".
+Reading "vias_gen$9".
+Reading "vias_gen$10".
+Reading "vias_gen$12".
+Reading "vias_gen$15".
+Reading "vias_gen$4".
+Reading "guard_ring_gen".
+Reading "guard_ring_gen$1".
+Reading "vias_gen$5".
+Reading "nfet_1_2$7$2$1$1".
+Reading "nfet_1_2$7$3$1".
+Reading "nfet_1_2$8$1".
+Reading "nfet_1_2$4$3$1".
+Reading "nfet_1_2$1$3$3$1".
+Reading "nfet_1_2$1$6$1".
+Reading "nfet_1_2$7$2$1".
+Reading "nfet_1_2$7$3".
+Reading "nfet_1_2$8".
+Reading "nfet_1_2$4$3".
+Reading "nfet_1_2$1$3$3".
+Reading "nfet_1_2$1$6".
+Reading "nfet_1_2$7$1$1".
+Reading "nfet_1_2$7$2".
+Reading "nfet_1_2$7$1".
+Reading "nfet_1_2$7".
+Reading "nfet_1_2".
+Reading "nfet_1_2$1".
+Reading "nfet_1_2$1$3".
+Reading "nfet_1_2$4".
+Reading "nfet_1_2$1$4".
+Reading "nfet_1_2$1$3$1".
+Reading "nfet_1_2$4$1".
+Reading "nfet_1_2$5".
+Reading "nfet_1_2$6$1$1".
+Reading "nfet_1_2$6$2".
+Reading "ELAD1_PAIR_CC".
+Reading "nfet_1_2$1$1".
+Reading "nfet_1_2$2".
+Reading "nfet_1_2$1$2".
+Reading "nfet_1_2$1$1$1".
+Reading "nfet_1_2$2$1".
+Reading "nfet_1_2$3".
+Reading "nfet_1_2$1$2$1".
+Reading "nfet_1_2$1$1$1$1".
+Reading "nfet_1_2$2$1$1".
+Reading "nfet_1_2$3$1".
+Reading "nfet_1_2$1$2$1$1".
+Reading "nfet_1_2$1$1$1$1$1".
+Reading "nfet_1_2$2$1$1$1".
+Reading "nfet_1_2$3$1$1".
+Reading "nfet_1_2$1$4$1".
+Reading "nfet_1_2$1$3$1$1".
+Reading "nfet_1_2$4$1$1".
+Reading "nfet_1_2$5$1".
+Reading "nfet_1_2$6$3$1$1".
+Reading "nfet_1_2$6$3$2".
+Reading "nfet_1_2$6$3$1".
+Reading "nfet_1_2$6$3".
+Reading "nfet_1_2$1$5".
+Reading "nfet_1_2$1$3$2".
+Reading "nfet_1_2$4$2".
+Reading "nfet_1_2$6".
+Reading "nfet_1_2$1$5$1".
+Reading "nfet_1_2$1$3$2$1".
+Reading "nfet_1_2$4$2$1".
+Reading "nfet_1_2$6$1".
+Extracting ELAD1_PAIR_CC_flat into ELAD1_PAIR_CC_flat.ext:
+Processing ELAD1_PAIR_CC_flat
+ELAD1_PAIR_CC_flat: 40 warnings
+Total of 40 warnings.
+exttosim finished.
+Added port at 0 516 0 516
+Added port at 0 2709 0 2709
+Added port at 0 2343 0 2343
+Added port at 0 2137 0 2137
+Added port at 0 2523 0 2523
+Added port at 0 100 0 100
+Extracting a_433_1469# (Rnode = 39606.00ohm ; Rthresh = 0.00ohm)
+Adding a_433_1469# (maxres = 294.88ohm)
+Extracting VGND (Rnode = 103094.00ohm ; Rthresh = 0.00ohm)
+Adding VGND (maxres = 1219.92ohm)
+Extracting VINP (Rnode = 2399.00ohm ; Rthresh = 0.00ohm)
+Adding VINP (maxres = 141.97ohm)
+Extracting VINM (Rnode = 2404.00ohm ; Rthresh = 0.00ohm)
+Adding VINM (maxres = 132.24ohm)
+Extracting D1 (Rnode = 2247.00ohm ; Rthresh = 0.00ohm)
+Adding D1 (maxres = 145.81ohm)
+Extracting D2 (Rnode = 2251.00ohm ; Rthresh = 0.00ohm)
+Adding D2 (maxres = 145.61ohm)
+Extracting VBIAS (Rnode = 7158.00ohm ; Rthresh = 0.00ohm)
+Adding VBIAS (maxres = 141.63ohm)
+Total Nets: 7
+Nets extracted: 7 (1.000000)
+Nets output: 7 (1.000000)
+exttospice finished.

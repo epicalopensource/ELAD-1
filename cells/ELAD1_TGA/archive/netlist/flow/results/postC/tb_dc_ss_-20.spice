@@ -1,0 +1,33 @@
+* TGA dc postC ss_-20
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ss
+.include /foss/designs/ELAD-1/cells/ELAD1_TGA/netlist/flow/pex/ELAD1_TGA_pex_sub.spice
+XDUT A B EN ENB VDPWR VGND  ELAD1_TGA
+VDD VDPWR 0 1.8
+VG0 VGND 0 0
+.option rshunt=1e12
+.temp -20
+VEN EN 0 1.8
+VENB ENB 0 0
+VC cm 0 0.9
+VA A cm 0.005
+VB B cm -0.005
+.control
+set filetype=ascii
+dc VC 0.05 1.75 0.01
+let ia = -i(VA)
+wrdata results/postC/sweeps/ron_ss_-20.txt ia
+alter VEN dc=0
+alter VENB dc=1.8
+alter VA dc=0.9
+alter VB dc=-0.9
+dc VC 0.9 0.9 1
+let il = -i(VA)
+wrdata results/postC/sweeps/leak1_ss_-20.txt il
+alter VA dc=-0.9
+alter VB dc=0.9
+dc VC 0.9 0.9 1
+let il = -i(VA)
+wrdata results/postC/sweeps/leak2_ss_-20.txt il
+quit
+.endc
+.end

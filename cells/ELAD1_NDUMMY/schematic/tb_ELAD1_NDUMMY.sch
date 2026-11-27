@@ -18,9 +18,7 @@ T {VS holds the pin at 1.8 V: no current may flow (D=G=S=B), and the device must
 C {devices/code_shown.sym} 320 140 0 0 {name=s1 only_toplevel=false value=".control
 op
 let i_dummy = abs(i(VS))
-let vth = @m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]
-let w_um = @m.xdut.xm.msky130_fd_pr__nfet_01v8[w]*1e6
-print i_dummy vth w_um
+print i_dummy
 write tb_ELAD1_NDUMMY.raw
 .endc"}
 C {sky130_fd_pr/corner.sym} 320 -60 0 0 {name=CORNER only_toplevel=true corner=tt}

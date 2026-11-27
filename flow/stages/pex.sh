@@ -32,6 +32,8 @@ raw="$work/raw_pex.spice"
   echo "select top cell"
   echo "# Port indices from the schematic so the .subckt pin order matches (best effort)."
   echo "if {[catch {readspice {$net}} err]} { puts \"FLOW-WARN: readspice failed: \$err\" }"
+  echo "load {$CELL}"
+  echo "select top cell"
   echo "extract do local"
   echo "extract all"
   if [[ $PEX_MODE == rc ]]; then

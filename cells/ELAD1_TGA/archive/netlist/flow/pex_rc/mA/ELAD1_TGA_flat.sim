@@ -1,0 +1,17 @@
+| units: 500000 tech: sky130A format: MIT
+x ENB B A VDPWR s=30000,700 d=30000,700 l=70 w=600 x=414 y=1485 sky130_fd_pr__pfet_01v8_lvt
+x ENB B A VDPWR s=30000,700 d=36000,1320 l=70 w=600 x=754 y=1485 sky130_fd_pr__pfet_01v8_lvt
+x EN B A VGND s=10000,300 d=10000,300 l=30 w=200 x=584 y=269 sky130_fd_pr__nfet_01v8_lvt
+x EN A B VGND s=10000,300 d=10000,300 l=30 w=200 x=454 y=269 sky130_fd_pr__nfet_01v8_lvt
+x ENB A B VDPWR s=36000,1320 d=30000,700 l=70 w=600 x=244 y=1485 sky130_fd_pr__pfet_01v8_lvt
+x EN B A VGND s=12000,520 d=10000,300 l=30 w=200 x=324 y=269 sky130_fd_pr__nfet_01v8_lvt
+x ENB A B VDPWR s=30000,700 d=30000,700 l=70 w=600 x=584 y=1485 sky130_fd_pr__pfet_01v8_lvt
+x EN A B VGND s=10000,300 d=12000,520 l=30 w=200 x=714 y=269 sky130_fd_pr__nfet_01v8_lvt
+C B A 2.6
+R EN 2686
+R B 5109
+R A 7393
+R ENB 2566
+C VDPWR0 4.2
+R VDPWR 14674
+R VGND 14816

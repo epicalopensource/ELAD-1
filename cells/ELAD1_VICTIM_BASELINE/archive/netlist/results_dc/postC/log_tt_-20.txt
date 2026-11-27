@@ -1,0 +1,20 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * victim baseline: dc sweep + ac, quiet bias vq = 0.771 v
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  3.00000e-01 Reference value :  3.62000e-01 Reference value :  4.19000e-01 Reference value :  4.72000e-01 Reference value :  5.23000e-01 Reference value :  5.74000e-01 Reference value :  6.31000e-01 Reference value :  6.86000e-01 Reference value :  7.31000e-01 Reference value :  7.72000e-01 Reference value :  8.11000e-01 Reference value :  8.49000e-01 Reference value :  8.84000e-01 Reference value :  9.21000e-01 Reference value :  9.50000e-01 Reference value :  9.83000e-01 Reference value :  1.01600e+00 Reference value :  1.05300e+00 Reference value :  1.08700e+00 Reference value :  1.11500e+00 Reference value :  1.14500e+00 Reference value :  1.17800e+00
+No. of Data Rows : 901
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 501
+ngspice-47 done

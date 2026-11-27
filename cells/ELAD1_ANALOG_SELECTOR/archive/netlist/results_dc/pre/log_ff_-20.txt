@@ -1,0 +1,299 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * selector pre ff -20
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+### sw MG:UA0>REF_G
+i(vref_g) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw MG:UA3>REF_G
+i(vref_g) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw MG:UA2>OUT_G
+i(vout_g) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw MG:UA4>OUT_G
+i(vout_g) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw MC:UA0>REF_C
+i(vref_c) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw MC:UA3>REF_C
+i(vref_c) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw MC:UA2>OUT_C
+i(vout_c) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+### sw MC:UA4>OUT_C
+i(vout_c) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PG:UA0>VBIAS_G
+i(vvbias_g) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PG:UA1>VINP_G
+i(vvinp_g) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PG:UA2>VINM_G
+i(vvinm_g) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PG:UA3>D1_G
+i(vd1_g) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+### sw PG:UA4>D2_G
+i(vd2_g) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PC:UA0>VBIAS_C
+i(vvbias_c) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PC:UA1>VINP_C
+i(vvinp_c) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PC:UA2>VINM_C
+i(vvinm_c) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PC:UA3>D1_C
+i(vd1_c) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw PC:UA4>D2_C
+i(vd2_c) = 2.887667e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw N:UA0>SUBI
+i(vsubi) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+### sw N:UA2>SUBI
+i(vsubi) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw N:UA1>VQUIET_A,VQUIET_B
+i(vvquiet_a) = 1.783131e-05
+i(vvquiet_b) = 1.783131e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw N:UA3>OUT_A
+i(vout_a) = 1.414553e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### sw N:UA4>OUT_B
+i(vout_b) = 1.414553e-04
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### clamp CLR_MG:REF_G
+i(vref_g) = -7.66185e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### clamp CLR_MC:REF_C
+i(vref_c) = -7.66185e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### clamp CLR_PG:VBIAS_G,VINP_G,VINM_G
+i(vvbias_g) = -7.66185e-05
+i(vvinp_g) = -7.66185e-05
+i(vvinm_g) = -7.66185e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### clamp CLR_PC:VBIAS_C,VINP_C,VINM_C
+i(vvbias_c) = -7.66185e-05
+i(vvinp_c) = -7.66185e-05
+i(vvinm_c) = -7.66185e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### clamp CLR_N:VQUIET_A,VQUIET_B
+i(vvquiet_a) = -7.66185e-05
+i(vvquiet_b) = -7.66185e-05
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### leak off
+i(vd1_c) = -2.69296e-12
+i(vd1_g) = -2.69296e-12
+i(vd2_c) = -2.69296e-12
+i(vd2_g) = -2.69296e-12
+i(vout_a) = -3.68061e-12
+i(vout_b) = -3.68061e-12
+i(vout_c) = -4.50484e-12
+i(vout_g) = -4.50040e-12
+i(vref_c) = -6.31672e-12
+i(vref_g) = -6.31672e-12
+i(vsubi) = -4.49241e-12
+i(vvbias_c) = -4.51195e-12
+i(vvbias_g) = -4.51195e-12
+i(vvinm_c) = -4.51461e-12
+i(vvinm_g) = -4.51461e-12
+i(vvinp_c) = -4.51461e-12
+i(vvinp_g) = -4.51461e-12
+i(vvquiet_a) = -4.51461e-12
+i(vvquiet_b) = -4.51550e-12
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+### idd idle
+i(vdd) = -2.65123e-10
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+### idd allon
+i(vdd) = -3.06985e-09
+ngspice-47 done

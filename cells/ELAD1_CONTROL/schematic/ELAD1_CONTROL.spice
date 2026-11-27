@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/ELAD-1/cells/ELAD1_CONTROL/schematic/ELAD1_CONTROL.sym
+.subckt ELAD1_CONTROL clk rst_n ena ui_in[7] ui_in[6] ui_in[5] ui_in[4] ui_in[3] ui_in[2] ui_in[1] ui_in[0] en_mg en_mc en_pg
++ en_pc en_n clr_mg clr_mc clr_pg clr_pc clr_n hen agg_clk status[7] status[6] status[5] status[4] status[3] status[2] status[1]
++ status[0] VDPWR VGND
+
+.ends

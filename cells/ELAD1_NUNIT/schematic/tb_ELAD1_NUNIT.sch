@@ -27,15 +27,15 @@ C {devices/code_shown.sym} 290 180 0 0 {name=s1 only_toplevel=false value=".opti
 .param W=2
 .param LEN=1
 .save all
-.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[id]
-.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gm]
-.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[gds]
-.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[vth]
-.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[vdsat]
-.save @m.xdut.xm.msky130_fd_pr__nfet_01v8[cgg]
 .control
 set vdsv = 0.9
-source nfet_ctl.cir
+dc VGS 0 1.2 1m
+let id = -i(VDS)
+let gm = deriv(id)
+let gmid = gm/id
+meas dc vgs find v(G) when id=1.25e-6
+meas dc gm_id find gmid when id=1.25e-6
+meas dc vth find v(G) when id=5.6e-7
 .endc "
 }
 C {sky130_fd_pr/corner.sym} 290 -20 0 0 {name=CORNER only_toplevel=true corner=tt}

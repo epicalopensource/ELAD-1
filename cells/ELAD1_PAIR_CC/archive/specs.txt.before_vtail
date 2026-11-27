@@ -1,0 +1,8 @@
+# Pass/fail limits for tb_ELAD1_PAIR_CC (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
+# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
+vbias          0.60  0.75   # V(VBIAS) with ITAIL 10 uA forced                       sim 0.672  pkg 0.672
+vtail          0.20  -      # tail node: keeps the tail device saturated              sim 0.308  pkg 0.307
+isum           9u    10u    # ID1+ID2 (tail mirror at different VDS than its diode)  sim 9.47u  pkg 9.47u
+imbalance_pct  -0.1  0.1    # (ID1-ID2)/(ID1+ID2) at VIN+ = VIN-, nominal             sim 0
+vos            -0.1m 0.1m   # balance offset, nominal (systematic only)               sim 0      pkg ~0

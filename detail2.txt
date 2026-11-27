@@ -1,0 +1,97 @@
+#### AGGRESSOR: resistors in schematic netlist and schematic
+14:XRL X VDPWR VGND sky130_fd_pr__res_xhigh_po W=0.69 L=7.3 mult=1
+17:XRDUM VGND D sky130_fd_pr__res_generic_po W=1 L=15
+128:C {sky130_fd_pr/res_xhigh_po.sym} 860 -220 0 0 {name=RL model=res_xhigh_po W=0.69 L=7.3 mult=1}
+138:C {sky130_fd_pr/res_generic_po.sym} 980 50 0 0 {name=RDUM model=res_generic_po W=1 L=15 mult=1}
+#### SELECTOR: copies inside vs current cells
+  ELAD1_CLAMP                  placed 3x   vs ELAD1_CLAMP.gds: IDENTICAL
+  ELAD1_CLAMP$1                placed 3x   vs ELAD1_CLAMP.gds: IDENTICAL
+  ELAD1_CLAMP$1$1              placed 3x   vs ELAD1_CLAMP.gds: IDENTICAL
+  ELAD1_CLAMP$2                placed 1x   vs ELAD1_CLAMP.gds: IDENTICAL
+  ELAD1_INV$4                  placed 1x   vs ELAD1_INV.gds: IDENTICAL
+  ELAD1_INV$4$1                placed 1x   vs ELAD1_INV.gds: IDENTICAL
+  ELAD1_INV$4$1$1              placed 1x   vs ELAD1_INV.gds: IDENTICAL
+  ELAD1_INV$4$1$1$1            placed 1x   vs ELAD1_INV.gds: IDENTICAL
+  ELAD1_INV$4$2                placed 1x   vs ELAD1_INV.gds: IDENTICAL
+  ELAD1_TGA$1                  placed 12x   vs ELAD1_TGA.gds: IDENTICAL
+  ELAD1_TGB                    placed 4x   vs ELAD1_TGB.gds: IDENTICAL
+  ELAD1_TGB$1                  placed 4x   vs ELAD1_TGB.gds: IDENTICAL
+  ELAD1_TGB$1$1                placed 4x   vs ELAD1_TGB.gds: IDENTICAL
+  ELAD1_TSW$2                  placed 2x   vs ELAD1_TSW.gds: IDENTICAL
+#### ELAD1_INV testbench
+.control
+set vddv = 1.8
+source inv_ctl.cir
+.endc
+tphl  -     100p       # output fall delay, 10 fF load   sim 65 ps
+tplh  -     150p       # output rise delay, 10 fF load   sim 95 ps
+vsw   0.75  0.98       # switching threshold V(Y)=V(A)   sim 0.863 V
+-- sim/results/ngspice.log
+34:Error: &tphl: no such variable.
+35:Error: &tplh: no such variable.
+36:Error: &trise: no such variable.
+37:Error: &tfall: no such variable.
+38:Error: &pavg: no such variable.
+39:Error: &ecyc: no such variable.
+-- sim/postlayout/ngspice.log
+4:inv_ctl.cir: No such file or directory
+5:    Simulation interrupted due to error!
+8:ERROR: fatal error in ngspice, exit(1)
+sim.log:spec tphl                 PASS    value=6.45997e-11 min=None max=1e-10
+sim.log:spec tplh                 PASS    value=9.47144e-11 min=None max=1.5e-10
+sim.log:spec vsw                  MISSING value=None min=0.75 max=0.98
+postsim.log:spec tphl                 MISSING value=None min=None max=1e-10
+postsim.log:spec tplh                 MISSING value=None min=None max=1.5e-10
+postsim.log:spec vsw                  MISSING value=None min=0.75 max=0.98
+#### ELAD1_NUNIT testbench
+.control
+set vdsv = 0.9
+source nfet_ctl.cir
+.endc
+vgs     0.58  0.68     # VGS at 1.25 uA per unit          sim 0.631  pkg 0.632
+vth     0.55  0.66     # threshold voltage                sim 0.606  pkg 0.603
+gm_id   15    22       # gm/ID (1/V), moderate inversion  sim 18.2   pkg 18.5
+-- sim/results/ngspice.log
+4:nfet_ctl.cir: No such file or directory
+5:    Simulation interrupted due to error!
+8:ERROR: fatal error in ngspice, exit(1)
+-- sim/postlayout/ngspice.log
+4:nfet_ctl.cir: No such file or directory
+5:    Simulation interrupted due to error!
+8:ERROR: fatal error in ngspice, exit(1)
+sim.log:spec vgs                  MISSING value=None min=0.58 max=0.68
+sim.log:spec vth                  MISSING value=None min=0.55 max=0.66
+sim.log:spec gm_id                MISSING value=None min=15.0 max=22.0
+postsim.log:spec vgs                  MISSING value=None min=0.58 max=0.68
+postsim.log:spec vth                  MISSING value=None min=0.55 max=0.66
+postsim.log:spec gm_id                MISSING value=None min=15.0 max=22.0
+#### ELAD1_TSW testbench
+.control
+op
+let i_leak_off = abs(i(VAO))
+print i_leak_off
+dc VA 0 1.8 0.01
+let ron = (v(A)-v(B))/1e-6
+meas dc ron_max max ron
+meas dc ron_0p7 find ron at=0.7
+meas dc ron_1p2 find ron at=1.2
+write tb_ELAD1_TSW.raw
+.endc
+ron_max     -  4k      # T-switch = 2 x TGA in series                                        sim 1.40k pkg 1.28k
+ron_0p7     -  2k      # Ron at 0.7 V                                                        sim 747
+ron_1p2     -  3k      # Ron at 1.2 V                                                        sim 1.26k
+i_leak_off  -  100p    # off leakage with the grounded mid node, A=0.3 V, B=1.8 V            sim 1.6 pA
+-- sim/results/ngspice.log
+-- sim/postlayout/ngspice.log
+sim.log:spec ron_max              PASS    value=1395.41 min=None max=4000.0
+sim.log:spec ron_0p7              PASS    value=746.589 min=None max=2000.0
+sim.log:spec ron_1p2              PASS    value=1256.5 min=None max=3000.0
+sim.log:spec i_leak_off           PASS    value=1.623765e-12 min=None max=1e-10
+postsim.log:spec ron_max              PASS    value=748.269 min=None max=4000.0
+postsim.log:spec ron_0p7              PASS    value=385.209 min=None max=2000.0
+postsim.log:spec ron_1p2              PASS    value=642.082 min=None max=3000.0
+postsim.log:spec i_leak_off           FAIL    value=4.573262e-08 min=None max=1e-10
+#### TSW ports: schematic vs extracted
+cells/ELAD1_TSW/netlist/ELAD1_TSW.spice:.subckt ELAD1_TSW A B EN ENB VDPWR VGND
+cells/ELAD1_TSW/netlist/ELAD1_TSW.spice:.subckt ELAD1_TGA A B EN ENB VDPWR VGND
+cells/ELAD1_TSW/pex/ELAD1_TSW_pex.spice:.subckt ELAD1_TSW A B EN ENB VDPWR VGND

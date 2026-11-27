@@ -1,0 +1,144 @@
+#### n-well tap audit, all cells
+ELAD1_AGGRESSOR: 1 n-well island(s)
+  well 0: (0.77,10.49)-(12.87,15.00) um  pfet-diff=4 contacted-ntaps=1  labels=[]  -> OK
+ELAD1_ANALOG_SELECTOR: 8 n-well island(s)
+  well 0: (0.00,4.46)-(2.59,7.70) um  pfet-diff=1 contacted-ntaps=1  labels=[]  -> OK
+  well 1: (11.43,6.14)-(53.30,11.38) um  pfet-diff=7 contacted-ntaps=7  labels=[]  -> OK
+  well 2: (0.00,12.91)-(2.59,16.14) um  pfet-diff=1 contacted-ntaps=1  labels=[]  -> OK
+  well 3: (0.00,21.32)-(2.59,24.55) um  pfet-diff=1 contacted-ntaps=1  labels=[]  -> OK
+  well 4: (11.43,22.75)-(53.30,27.09) um  pfet-diff=12 contacted-ntaps=12  labels=[]  -> OK
+  well 5: (0.00,29.75)-(2.59,32.98) um  pfet-diff=1 contacted-ntaps=1  labels=[]  -> OK
+  well 6: (0.00,38.16)-(2.59,41.40) um  pfet-diff=1 contacted-ntaps=1  labels=[]  -> OK
+  well 7: (11.43,36.22)-(53.31,41.45) um  pfet-diff=7 contacted-ntaps=7  labels=[]  -> OK
+ELAD1_CLAMP: 0 n-well island(s)
+ELAD1_CONTROL: 7 n-well island(s)
+  well 0: (5.33,12.19)-(154.29,15.02) um  pfet-diff=94 contacted-ntaps=16  labels=['VPB']  -> OK
+  well 1: (5.33,17.62)-(154.29,20.46) um  pfet-diff=92 contacted-ntaps=11  labels=['VPB']  -> OK
+  well 2: (5.33,23.07)-(154.29,25.89) um  pfet-diff=108 contacted-ntaps=11  labels=['VPB']  -> OK
+  well 3: (5.33,28.50)-(154.29,31.34) um  pfet-diff=102 contacted-ntaps=11  labels=['VPB']  -> OK
+  well 4: (5.33,33.95)-(154.29,36.77) um  pfet-diff=110 contacted-ntaps=11  labels=['VPB']  -> OK
+  well 5: (5.33,39.38)-(154.29,42.22) um  pfet-diff=114 contacted-ntaps=11  labels=['VPB']  -> OK
+  well 6: (5.33,44.83)-(154.29,47.66) um  pfet-diff=105 contacted-ntaps=17  labels=['VPB']  -> OK
+ELAD1_HEATER: 0 n-well island(s)
+ELAD1_INV: 1 n-well island(s)
+  well 0: (0.00,4.46)-(2.59,7.70) um  pfet-diff=1 contacted-ntaps=1  labels=[]  -> OK
+ELAD1_MIRROR_CC: 0 n-well island(s)
+ELAD1_MIRROR_GROUPED: 0 n-well island(s)
+ELAD1_NDUMMY: 0 n-well island(s)
+ELAD1_NUNIT: 0 n-well island(s)
+ELAD1_PAIR_CC: 0 n-well island(s)
+ELAD1_PAIR_GROUPED: 0 n-well island(s)
+ELAD1_TGA: 1 n-well island(s)
+  well 0: (0.00,6.14)-(5.34,11.37) um  pfet-diff=1 contacted-ntaps=1  labels=[]  -> OK
+ELAD1_TGB: 1 n-well island(s)
+  well 0: (0.00,4.88)-(2.71,9.23) um  pfet-diff=1 contacted-ntaps=1  labels=[]  -> OK
+ELAD1_TSW: 1 n-well island(s)
+  well 0: (0.00,6.14)-(12.90,11.37) um  pfet-diff=2 contacted-ntaps=2  labels=[]  -> OK
+ELAD1_VICTIM_BASELINE: 0 n-well island(s)
+ELAD1_VICTIM_GUARDED: 0 n-well island(s)
+#### TSW pex log
+[10:27:59] [ELAD1_TSW/pex] start (PDK=sky130A)
+
+$ magic -dnull -noconsole -rcfile /foss/pdks/sky130A/libs.tech/magic/sky130A.magicrc /foss/designs/ELAD-1/cells/ELAD1_TSW/.pex.N1Iil1/pex.tcl
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/foss/designs/ELAD-1/cells/ELAD1_TSW/.pex.N1Iil1/pex.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "pfet".
+Reading "vias_gen$4".
+Reading "vias_gen$1".
+Reading "vias_gen$3$1".
+Reading "vias_gen$2$1".
+Reading "vias_gen$5$1".
+Reading "nfet$1".
+Reading "ELAD1_TGA".
+Reading "vias_gen".
+Reading "vias_gen$2".
+Reading "nfet".
+Reading "vias_gen$6".
+Reading "vias_gen$8".
+Reading "ELAD1_TSW".
+Annotating port orders from /foss/designs/ELAD-1/cells/ELAD1_TSW/netlist/ELAD1_TSW.spice
+Annotating cell ELAD1_TSW
+Cell ELAD1_TSW port order was modified.
+Annotating cell ELAD1_TGA
+Cell ELAD1_TGA port order was modified.
+Extracting vias_gen$2$1 into vias_gen$2$1.ext:
+Processing vias_gen$2$1
+Extracting vias_gen$4 into vias_gen$4.ext:
+Processing vias_gen$4
+Extracting vias_gen$3$1 into vias_gen$3$1.ext:
+Processing vias_gen$3$1
+Extracting nfet$1 into nfet$1.ext:
+Processing nfet$1
+Extracting pfet into pfet.ext:
+Processing pfet
+Extracting vias_gen$1 into vias_gen$1.ext:
+Processing vias_gen$1
+Extracting vias_gen$5$1 into vias_gen$5$1.ext:
+Processing vias_gen$5$1
+Extracting ELAD1_TGA into ELAD1_TGA.ext:
+Processing ELAD1_TGA
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Cannot open file ELAD1_TSW.ext
+Extracting VDPWR
+Extracting ENB
+Extracting A
+Extracting B
+Extracting EN
+Extracting VGND
+Total Nets: 24
+Nets extracted: 6 (0.250000)
+Nets output: 0 (0.000000)
+exttospice finished.
+note: PEX subckt 'ELAD1_TGA' renamed to 'ELAD1_TSW'
+[10:28:00] [ELAD1_TSW/pex] PASS: PEX (rc): 8 devices, 15 C, 0 R
+#### TSW pex.tcl
+drc off
+gds read {/foss/designs/ELAD-1/cells/ELAD1_TSW/layout/ELAD1_TSW.gds}
+load {ELAD1_TSW}
+select top cell
+# Port indices from the schematic so the .subckt pin order matches (best effort).
+if {[catch {readspice {/foss/designs/ELAD-1/cells/ELAD1_TSW/netlist/ELAD1_TSW.spice}} err]} { puts "FLOW-WARN: readspice failed: $err" }
+extract do local
+extract all
+ext2sim labels on
+ext2sim
+extresist tolerance 10
+extresist all
+ext2spice lvs
+ext2spice format ngspice
+ext2spice hierarchy off
+ext2spice subcircuit top on
+ext2spice cthresh 0
+ext2spice extresist on
+ext2spice -o {/foss/designs/ELAD-1/cells/ELAD1_TSW/.pex.N1Iil1/raw_pex.spice}
+quit -noprompt
+#### INV result
+| sim | PASS | 8s | simulation ok, all specs met |
+| postsim | PASS | 8s | simulation ok, all specs met |
+sim.log:spec tphl                 PASS    value=6.45997e-11 min=None max=1e-10
+sim.log:spec tplh                 PASS    value=9.47144e-11 min=None max=1.5e-10
+sim.log:spec vsw                  PASS    value=0.862797 min=0.75 max=0.98
+postsim.log:spec tphl                 PASS    value=6.86826e-11 min=None max=1e-10
+postsim.log:spec tplh                 PASS    value=9.91646e-11 min=None max=1.5e-10
+postsim.log:spec vsw                  PASS    value=0.863401 min=0.75 max=0.98

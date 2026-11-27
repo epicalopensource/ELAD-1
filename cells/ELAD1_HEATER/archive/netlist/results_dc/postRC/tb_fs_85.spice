@@ -1,0 +1,23 @@
+* heater postRC fs_85
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice fs
+.include /foss/designs/ELAD-1/cells/ELAD1_HEATER/pex_rc/ELAD1_HEATER_rc_sub.spice
+XDUT HIN HEN VGND  ELAD1_HEATER
+VG0 VGND 0 0
+VHEN HEN 0 1.8
+VHIN HIN 0 1.8
+.option rshunt=1e12
+.temp 85
+.control
+set filetype=ascii
+dc VHIN 0 1.8 0.05
+wrdata results_dc/postRC/sweeps/on_fs_85.txt i(VHIN)
+alter VHEN dc=0
+dc VHIN 0 1.8 0.05
+wrdata results_dc/postRC/sweeps/off_fs_85.txt i(VHIN)
+alter VHEN dc=1.8
+alter VHIN dc=1.8
+dc VHEN 0 1.8 0.05
+wrdata results_dc/postRC/sweeps/hen_fs_85.txt i(VHIN)
+quit
+.endc
+.end

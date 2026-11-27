@@ -1,0 +1,11 @@
+# Pass/fail limits for tb_ELAD1_ANALOG_CORE (flow: cells/<CELL>/sim/specs.txt).
+# <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
+# "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
+mirror_err_pct      -0.1  0.1    # mirror via selector, Kelvin servo (%)    sim -0.0003  pkg -0.0004
+mirror_vref         0.58  0.68   # V(ua3) = REF at 5 uA                     sim 0.631    pkg 0.632
+pair_isum           9u    10u    # pair via selector: ID1+ID2 at ua3+ua4    sim 9.47u    pkg 9.47u
+pair_imbalance_pct  -0.1  0.1    # nominal drain current imbalance          sim ~0
+noise_vout_base     0.85  0.98   # baseline victim at ua3                   sim 0.917
+noise_vout_guard    0.85  0.98   # guarded victim at ua4                    sim 0.917
+heater_i            0.75m 1.0m   # heater current from ua5                  sim 0.875m   pkg 0.893m
+idle_leak_ua0       -     1n     # idle selector: leakage into ua0 at 0.9 V sim 39 pA

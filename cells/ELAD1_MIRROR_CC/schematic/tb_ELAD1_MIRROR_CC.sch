@@ -32,12 +32,14 @@ set iref = 5e-6
 alter IREF dc = $iref
 op
 let vref = v(REF)
+print vref
 set vrefs = $&vref
 alter VOUT dc = $vrefs
 op
 let iout = -i(VOUT)
 let err_pct = 100*(iout-$iref)/$iref
-echo OP $&vref $&iout $&err_pct
+print err_pct
+echo OP $vrefs $&iout $&err_pct
 dc VOUT 0 1.8 0.002
 let io = -i(VOUT)
 meas dc i_at_ref find io at=$vrefs
@@ -45,6 +47,7 @@ let i99 = 0.99*i_at_ref
 meas dc v_out_99pct find v(OUT) when io=i99 cross=1
 meas dc i_0p9 find io at=0.9
 let rout_ohm = (0.9-$vrefs)/(i_0p9-i_at_ref)
+print rout_ohm
 echo SWEEP $&i_at_ref $&v_out_99pct $&i_0p9 $&rout_ohm
 write tb_ELAD1_MIRROR_CC_pre.raw
 .endc"}

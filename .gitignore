@@ -32,3 +32,4 @@ __pycache__/
 sky130_drc.txt
 unsaved_backup_*
 untitled*.sch
+cells/*/schematic/*.bak

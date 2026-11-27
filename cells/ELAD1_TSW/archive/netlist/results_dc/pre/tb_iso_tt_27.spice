@@ -1,0 +1,18 @@
+* tsw iso pre tt
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/designs/ELAD-1/cells/ELAD1_TSW/netlist/ELAD1_TSW.spice
+XDUT A B EN ENB VDPWR VGND  ELAD1_TSW
+VDD VDPWR 0 1.8
+VG0 VGND 0 0
+.option rshunt=1e12
+.temp 27
+VEN EN 0 0
+VENB ENB 0 1.8
+VA A 0 dc 0.9 ac 1
+RL B 0 1k
+.control
+ac dec 40 1e6 50e9
+meas ac iso find vdb(B) at=1e8
+quit
+.endc
+.end

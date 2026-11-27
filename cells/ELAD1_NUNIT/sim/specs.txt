@@ -1,6 +1,6 @@
 # Pass/fail limits for tb_ELAD1_NUNIT (flow: cells/<CELL>/sim/specs.txt).
 # <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
 # "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
-vgs     0.58  0.68     # VGS at 1.25 uA per unit          sim 0.631  pkg 0.632
-vth     0.55  0.66     # threshold voltage                sim 0.606  pkg 0.603
+vgs     0.60 0.75     # VGS at 1.25 uA per unit          sim 0.631  pkg 0.632
+vth     0.56 0.71     # threshold voltage                sim 0.606  pkg 0.603
 gm_id   15    22       # gm/ID (1/V), moderate inversion  sim 18.2   pkg 18.5

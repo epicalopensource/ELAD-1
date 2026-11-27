@@ -13,11 +13,8 @@ EN = 0: both switches off, no current.  SUBI is the same tap that ua0 (force) an
 T {Layout: SUBI = P+ taps of an isolated tap island (SUBCUT), equidistant from both victims;
 no VGND taps inside it.  RL, RDUM and the logic outside the island, away from the victims.} -760 380 0 0 0.22 0.22 {}
 N -760 -300 -700 -300 {lab=VDPWR}
-N -760 300 -700 300 {lab=VGND}
-N -760 -60 -620 -60 {lab=AGG_CLK}
-N -500 -60 -440 -60 {lab=CKB}
-N -760 140 -620 140 {lab=EN}
-N -500 140 -440 140 {lab=ENB}
+N -790 300 -730 300 {lab=VGND}
+N -390 -140 -330 -140 {lab=CKB}
 N -180 -80 -160 -80 {lab=gip}
 N -180 -20 -180 10 {lab=GI}
 N -180 10 -180 30 {lab=GI}
@@ -86,25 +83,58 @@ N 940 -70 940 -30 {lab=VGND}
 N 980 -40 980 -10 {lab=D}
 N 980 -10 980 20 {lab=D}
 N 980 -10 1020 -10 {lab=D}
-C {devices/iopin.sym} -760 -60 0 1 {name=p1 lab=AGG_CLK}
-C {devices/iopin.sym} -760 140 0 1 {name=p2 lab=EN}
+N -650 -140 -580 -140 {lab=AGG_CLK}
+N -580 -200 -550 -200 {lab=AGG_CLK}
+N -580 -200 -580 -140 {lab=AGG_CLK}
+N -580 -140 -580 -80 {lab=AGG_CLK}
+N -580 -80 -550 -80 {lab=AGG_CLK}
+N -510 -140 -510 -110 {lab=CKB}
+N -510 -140 -390 -140 {lab=CKB}
+N -650 -260 -510 -260 {lab=VDPWR}
+N -510 -260 -470 -260 {lab=VDPWR}
+N -510 -260 -510 -230 {lab=VDPWR}
+N -510 -200 -470 -200 {lab=VDPWR}
+N -470 -260 -470 -200 {lab=VDPWR}
+N -650 -20 -510 -20 {lab=VGND}
+N -510 -20 -470 -20 {lab=VGND}
+N -510 -50 -510 -20 {lab=VGND}
+N -510 -80 -470 -80 {lab=VGND}
+N -470 -80 -470 -20 {lab=VGND}
+N -390 180 -330 180 {lab=ENB}
+N -650 180 -580 180 {lab=EN}
+N -580 120 -550 120 {lab=EN}
+N -580 120 -580 180 {lab=EN}
+N -580 180 -580 240 {lab=EN}
+N -580 240 -550 240 {lab=EN}
+N -510 180 -510 210 {lab=ENB}
+N -510 180 -390 180 {lab=ENB}
+N -650 60 -510 60 {lab=VDPWR}
+N -510 60 -470 60 {lab=VDPWR}
+N -510 60 -510 90 {lab=VDPWR}
+N -510 120 -470 120 {lab=VDPWR}
+N -470 60 -470 120 {lab=VDPWR}
+N -650 300 -510 300 {lab=VGND}
+N -510 300 -470 300 {lab=VGND}
+N -510 270 -510 300 {lab=VGND}
+N -510 240 -470 240 {lab=VGND}
+N -470 240 -470 300 {lab=VGND}
+N -510 -170 -510 -140 {lab=CKB}
+N -510 150 -510 180 {lab=ENB}
+C {devices/iopin.sym} -650 -140 0 1 {name=p1 lab=AGG_CLK}
+C {devices/iopin.sym} -650 180 0 1 {name=p2 lab=EN}
 C {devices/iopin.sym} -760 -300 0 1 {name=p3 lab=VDPWR}
-C {devices/iopin.sym} -760 300 0 1 {name=p4 lab=VGND}
+C {devices/iopin.sym} -790 300 0 1 {name=p4 lab=VGND}
 C {devices/iopin.sym} 660 30 0 1 {name=p34 lab=SUBI}
 C {devices/vdd.sym} -700 -300 0 0 {name=l5 lab=VDPWR global=false}
-C {devices/gnd.sym} -700 300 0 0 {name=l6 lab=VGND global=false}
-C {ELAD1_INV.sym} -560 -60 0 0 {name=XIC}
-C {devices/lab_pin.sym} -440 -60 0 1 {name=l7 sig_type=std_logic lab=CKB}
-C {devices/vdd.sym} -560 -110 0 0 {name=l8 lab=VDPWR global=false}
-C {devices/gnd.sym} -560 -10 0 0 {name=l9 lab=VGND global=false}
-C {ELAD1_INV.sym} -560 140 0 0 {name=XIE}
-C {devices/lab_pin.sym} -440 140 0 1 {name=l10 sig_type=std_logic lab=ENB}
-C {devices/vdd.sym} -560 90 0 0 {name=l11 lab=VDPWR global=false}
-C {devices/gnd.sym} -560 190 0 0 {name=l12 lab=VGND global=false}
-C {sky130_fd_pr/pfet_01v8.sym} -200 -110 0 0 {name=GIP1 model=pfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/pfet_01v8.sym} -200 -50 0 0 {name=GIP2 model=pfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} -200 60 0 0 {name=GIN1 model=nfet_01v8 W=0.42 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} -20 60 0 1 {name=GIN2 model=nfet_01v8 W=0.42 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {devices/gnd.sym} -730 300 0 0 {name=l6 lab=VGND global=false}
+C {devices/lab_pin.sym} -330 -140 0 1 {name=l7 sig_type=std_logic lab=CKB}
+C {devices/vdd.sym} -650 -260 0 0 {name=l8 lab=VDPWR global=false}
+C {devices/gnd.sym} -650 -20 0 0 {name=l9 lab=VGND global=false}
+C {devices/lab_pin.sym} -330 180 0 1 {name=l10 sig_type=std_logic lab=ENB}
+C {sky130_fd_pr/pfet_01v8.sym} -200 -110 0 0 {name=MGIP1 model=pfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} -200 -50 0 0 {name=MGIP2 model=pfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} -200 60 0 0 {name=MGIN1 model=nfet_01v8 W=0.42 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} -20 60 0 1 {name=MGIN2 model=nfet_01v8 W=0.42 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
 C {devices/vdd.sym} -180 -140 0 0 {name=l13 lab=VDPWR global=false}
 C {devices/lab_pin.sym} -160 -80 0 1 {name=l14 sig_type=std_logic lab=gip}
 C {devices/lab_pin.sym} 60 10 0 1 {name=l15 sig_type=std_logic lab=GI}
@@ -113,10 +143,10 @@ C {devices/lab_pin.sym} -260 -110 0 0 {name=l17 sig_type=std_logic lab=ENB}
 C {devices/lab_pin.sym} -260 -50 0 0 {name=l18 sig_type=std_logic lab=CKB}
 C {devices/lab_pin.sym} -260 60 0 0 {name=l19 sig_type=std_logic lab=ENB}
 C {devices/lab_pin.sym} 60 60 0 1 {name=l20 sig_type=std_logic lab=CKB}
-C {sky130_fd_pr/pfet_01v8.sym} 280 -110 0 0 {name=GDP1 model=pfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/pfet_01v8.sym} 280 -50 0 0 {name=GDP2 model=pfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} 280 60 0 0 {name=GDN1 model=nfet_01v8 W=0.42 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
-C {sky130_fd_pr/nfet_01v8.sym} 460 60 0 1 {name=GDN2 model=nfet_01v8 W=0.42 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} 280 -110 0 0 {name=MGDP1 model=pfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/pfet_01v8.sym} 280 -50 0 0 {name=MGDP2 model=pfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 280 60 0 0 {name=MGDN1 model=nfet_01v8 W=0.42 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} 460 60 0 1 {name=MGDN2 model=nfet_01v8 W=0.42 L=1 nf=1 mult=1 sa=0 sb=0 sd=0}
 C {devices/vdd.sym} 300 -140 0 0 {name=l21 lab=VDPWR global=false}
 C {devices/lab_pin.sym} 320 -80 0 1 {name=l22 sig_type=std_logic lab=gdp}
 C {devices/lab_pin.sym} 540 10 0 1 {name=l23 sig_type=std_logic lab=GD}
@@ -125,7 +155,7 @@ C {devices/lab_pin.sym} 220 -110 0 0 {name=l25 sig_type=std_logic lab=ENB}
 C {devices/lab_pin.sym} 220 -50 0 0 {name=l26 sig_type=std_logic lab=AGG_CLK}
 C {devices/lab_pin.sym} 220 60 0 0 {name=l27 sig_type=std_logic lab=ENB}
 C {devices/lab_pin.sym} 540 60 0 1 {name=l28 sig_type=std_logic lab=AGG_CLK}
-C {sky130_fd_pr/res_xhigh_po.sym} 860 -220 0 0 {name=RL model=res_xhigh_po W=0.69 L=7.3 mult=1}
+C {sky130_fd_pr/res_xhigh_po_0p69.sym} 860 -220 0 0 {name=RL model=res_xhigh_po_0p69 L=7.3 mult=1}
 C {devices/vdd.sym} 860 -250 0 0 {name=l29 lab=VDPWR global=false}
 C {devices/lab_pin.sym} 800 -220 0 0 {name=l30 sig_type=std_logic lab=VGND}
 C {sky130_fd_pr/nfet_01v8.sym} 760 -70 0 0 {name=MINJ model=nfet_01v8 W=2 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
@@ -138,3 +168,9 @@ C {devices/gnd.sym} 940 -30 0 0 {name=l36 lab=VGND global=false}
 C {sky130_fd_pr/res_generic_po.sym} 980 50 0 0 {name=RDUM model=res_generic_po W=1 L=15 mult=1}
 C {devices/lab_pin.sym} 1020 -10 0 1 {name=l37 sig_type=std_logic lab=D}
 C {devices/gnd.sym} 980 80 0 0 {name=l38 lab=VGND global=false}
+C {sky130_fd_pr/pfet_01v8.sym} -530 -200 0 0 {name=MP model=pfet_01v8 W=1 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} -530 -80 0 0 {name=MN model=nfet_01v8 W=0.65 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {devices/vdd.sym} -650 60 0 0 {name=l2 lab=VDPWR global=false}
+C {devices/gnd.sym} -650 300 0 0 {name=l3 lab=VGND global=false}
+C {sky130_fd_pr/pfet_01v8.sym} -530 120 0 0 {name=MP1 model=pfet_01v8 W=1 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}
+C {sky130_fd_pr/nfet_01v8.sym} -530 240 0 0 {name=MN1 model=nfet_01v8 W=0.65 L=0.15 nf=1 mult=1 sa=0 sb=0 sd=0}

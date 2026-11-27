@@ -2,5 +2,5 @@
 # <name>  <min|->  <max|->   SI suffixes allowed. Typical-corner (tt, 27 C, 1.8 V) values in comments:
 # "sim" = this testbench with the open_pdks sky130A models, "pkg" = ELAD1 design package results.
 i_dummy  -     1n      # no current with all terminals tied     sim ~0
-vth      0.55  0.66    # device present: nfet_01v8 threshold    sim 0.605
-w_um     1.99  2.01    # device width 2 um (same as the unit)   sim 2.00
+# vth (pre-layout only: device model parameter)      0.55  0.66    # device present: nfet_01v8 threshold    sim 0.605
+# w_um (pre-layout only: device model parameter)     1.99  2.01    # device width 2 um (same as the unit)   sim 2.00
